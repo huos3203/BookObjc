@@ -104,7 +104,7 @@
    * [Square Register中的扩张](publish/issue22/issue-22-3-April.md)
    * [代码审查的艺术：Dropbox的故事](publish/issue22/issue-22-4-morisunshine.md)
    * [响应式视图](publish/issue22/issue-22-5-lizixroy.md)
-<!--* [调试](publish/issue19/issue-19-0-bifidy.md)* 
+* [调试](publish/issue19/issue-19-0-bifidy.md)
    * [调试：案例学习](publish/issue19/issue-19-1-weekwood.md)
    * [与调试器共舞 - LLDB的华尔兹](publish/issue19/issue-19-2-nangege.md)
    * [调试核对清单](publish/issue19/issue-19-3-bifidy.md)
