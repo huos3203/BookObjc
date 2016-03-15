@@ -83,11 +83,6 @@
    * [GPU加速下的图像处理](publish/issue21/issue-21-7-nangege.md)
    * [GPU加速下的图像视觉](publish/issue21/issue-21-8-dopcn.md)
    * [基于OpenCV的人脸识别](publish/issue21/issue-21-9-Phenmod.md)
-* 音频
-   * [音频处理的狗屋](publish/issue24/issue-24-1-april.md)
-   * [使用Swift进行函数式信号处理](publish/issue24/issue-24-2-lizix.md)
-   * [播放，失败，迭代：面向产品的音效设计](publish/issue24/issue-24-3-bifidy.md)
-   * [音频API一览](publish/issue24/issue-24-4-draveness.md)
 * [视频](publish/issue23/issue-23-0-bifidy.md)
    * [在iOS上捕获视频](publish/issue23/issue-23-1-nathanwhy.md)
    * [Core Image 和视频](publish/issue23/issue-23-2-pupboss.md)
