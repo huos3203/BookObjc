@@ -104,7 +104,7 @@
    * [Square Register中的扩张](publish/issue22/issue-22-3-April.md)
    * [代码审查的艺术：Dropbox的故事](publish/issue22/issue-22-4-morisunshine.md)
    * [响应式视图](publish/issue22/issue-22-5-lizixroy.md)
-* [调试](publish/issue19/issue-19-0-bifidy.md)* 
+<!--* [调试](publish/issue19/issue-19-0-bifidy.md)* 
    * [调试：案例学习](publish/issue19/issue-19-1-weekwood.md)
    * [与调试器共舞 - LLDB的华尔兹](publish/issue19/issue-19-2-nangege.md)
    * [调试核对清单](publish/issue19/issue-19-3-bifidy.md)
@@ -118,7 +118,7 @@
    * [置换测试：Mock,Stub和其他](publish/issue15/issue-15-5-ryan.md)
    * [UI测试](publish/issue15/issue-15-6-callmewhy.md)
    * [截图测试](publish/issue15/issue-15-7-oa414.md)
-<!-- * [安全](publish/issue17/issue-17-0-weekwood.md)
+* [安全](publish/issue17/issue-17-0-weekwood.md)
    * [为什么今天安全仍然重要](publish/issue17/issue-17-1-programmerDu.md)
    * [代码签名探析](publish/issue17/issue-17-2-dopcn.md)
    * [收据验证](publish/issue17/issue-17-3-callmewhy.md)
