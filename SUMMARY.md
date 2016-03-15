@@ -149,5 +149,5 @@
    * [在沙盒中编写脚本](publish/issue14/issue-14-2-onevcat.md)
    * [插件](publish/issue14/issue-14-3-oa414.md)
    * [XPC](publish/issue14/issue-14-4-hewigovens.md)
-   * [从UIKit到AppKit](publish/issue14/issue-14-5-crazycatcher.md)-->
+   * [从UIKit到AppKit](publish/issue14/issue-14-5-crazycatcher.md)
 
