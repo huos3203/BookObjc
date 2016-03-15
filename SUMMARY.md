@@ -4,7 +4,7 @@
    * [Scene Kit](publish/issue18/issue-18-3-sunnyxx.md)
    * [游戏中的多点互联](publish/issue18/issue-18-4-callmewhy.md)
    * [虚拟音域-声音设计的艺术](publish/issue18/issue-18-5-shuye.md)
-* 音频
+* [音频](publish/issue24/issue-24-1-april.md)
    * [音频处理的狗屋](publish/issue24/issue-24-1-april.md)
    * [使用Swift进行函数式信号处理](publish/issue24/issue-24-2-lizix.md)
    * [播放，失败，迭代：面向产品的音效设计](publish/issue24/issue-24-3-bifidy.md)
