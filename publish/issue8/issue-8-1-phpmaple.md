@@ -48,9 +48,9 @@
 
 [话题 #8 下的更多文章][4]
 
-   [1]: http://img.objccn.io/issue-8/iphone-above.jpg
-   [2]: http://img.objccn.io/issue-8/iphone-below.jpg
-   [3]: http://img.objccn.io/issue-8/client-app.jpg
+   [1]: https://objccn.io/images/issue-8/iphone-above.jpg
+   [2]: https://objccn.io/images/issue-8/iphone-below.jpg
+   [3]: https://objccn.io/images/issue-8/client-app.jpg
    [4]: http://objccn.io/issue-8
    [5]: http://objccn.io/issue-8-2/
    [6]: http://objccn.io/issue-8-3/
