@@ -1,0 +1,2726 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>使用VIPER构建IOS应用 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../issue16/issue-16-0-hewigovens.html" />
+    
+    
+    <link rel="prev" href="issue-13-4-Phenmod.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../issue1/issue-1-0-tang3w.html">
+            
+                <a href="../issue1/issue-1-0-tang3w.html">
+            
+                    
+                    更轻量的 View Controllers
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../issue1/issue-1-1-tang3w.html">
+            
+                <a href="../issue1/issue-1-1-tang3w.html">
+            
+                    
+                    更轻量的 View Controllers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../issue1/issue-1-2-tang3w.html">
+            
+                <a href="../issue1/issue-1-2-tang3w.html">
+            
+                    
+                    整洁的 Table View 代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../issue1/issue-1-3-tang3w.html">
+            
+                <a href="../issue1/issue-1-3-tang3w.html">
+            
+                    
+                    测试View Controllers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../issue1/issue-1-4-tang3w.html">
+            
+                <a href="../issue1/issue-1-4-tang3w.html">
+            
+                    
+                    View Controller容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../issue2/issue-2-0-FangYiXiong.html">
+            
+                <a href="../issue2/issue-2-0-FangYiXiong.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../issue2/issue-2-1-beyondvincent.html">
+            
+                <a href="../issue2/issue-2-1-beyondvincent.html">
+            
+                    
+                    并发编程：API 及挑战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../issue2/issue-2-2-onevcat.html">
+            
+                <a href="../issue2/issue-2-2-onevcat.html">
+            
+                    
+                    常见的后台实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../issue2/issue-2-3-webfrogs.html">
+            
+                <a href="../issue2/issue-2-3-webfrogs.html">
+            
+                    
+                    底层并发API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../issue2/issue-2-4-onevcat.html">
+            
+                <a href="../issue2/issue-2-4-onevcat.html">
+            
+                    
+                    线程安全类的设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../issue2/issue-2-5-xinjixjz.html">
+            
+                <a href="../issue2/issue-2-5-xinjixjz.html">
+            
+                    
+                    测试并发程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../issue3/issue-3-0-answer-huang.html">
+            
+                <a href="../issue3/issue-3-0-answer-huang.html">
+            
+                    
+                    Views
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../issue3/issue-3-1-answer-huang.html">
+            
+                <a href="../issue3/issue-3-1-answer-huang.html">
+            
+                    
+                    绘制像素到屏幕上
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../issue3/issue-3-2-answer-huang.html">
+            
+                <a href="../issue3/issue-3-2-answer-huang.html">
+            
+                    
+                    理解Scroll Views
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../issue3/issue-3-3-answer-huang.html">
+            
+                <a href="../issue3/issue-3-3-answer-huang.html">
+            
+                    
+                    自定义Collection View布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../issue3/issue-3-4-Migrant.html">
+            
+                <a href="../issue3/issue-3-4-Migrant.html">
+            
+                    
+                    自定义控件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../issue3/issue-3-5-answer-huang.html">
+            
+                <a href="../issue3/issue-3-5-answer-huang.html">
+            
+                    
+                    先进的自动布局工具箱
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../issue4/issue-4-0-unblue.html">
+            
+                <a href="../issue4/issue-4-0-unblue.html">
+            
+                    
+                    Core Data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../issue4/issue-4-1-shjborage.html">
+            
+                <a href="../issue4/issue-4-1-shjborage.html">
+            
+                    
+                    Core Data概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../issue4/issue-4-2-itouch2.html">
+            
+                <a href="../issue4/issue-4-2-itouch2.html">
+            
+                    
+                    一个完整的Core Data应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../issue4/issue-4-3-sjpsega.html">
+            
+                <a href="../issue4/issue-4-3-sjpsega.html">
+            
+                    
+                    用SQLite和FMDB替代Core Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../issue4/issue-4-4-panda.html">
+            
+                <a href="../issue4/issue-4-4-panda.html">
+            
+                    
+                    数据模型和模型对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../issue4/issue-4-5-liming.html">
+            
+                <a href="../issue4/issue-4-5-liming.html">
+            
+                    
+                    导入大数据集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../issue4/issue-4-6-ckitakishi.html">
+            
+                <a href="../issue4/issue-4-6-ckitakishi.html">
+            
+                    
+                    Fetch请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../issue4/issue-4-7-xinjixjz.html">
+            
+                <a href="../issue4/issue-4-7-xinjixjz.html">
+            
+                    
+                    自定义Core Data迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../issue5/issue-5-0-FangYiXiong.html">
+            
+                <a href="../issue5/issue-5-0-FangYiXiong.html">
+            
+                    
+                    iOS7
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../issue5/issue-5-1-hexielaoyuehan.html">
+            
+                <a href="../issue5/issue-5-1-hexielaoyuehan.html">
+            
+                    
+                    初识TextKit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../issue5/issue-5-2-morisunshine.html">
+            
+                <a href="../issue5/issue-5-2-morisunshine.html">
+            
+                    
+                    UICollectionView + UIKit力学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../issue5/issue-5-3-FangYixiong.html">
+            
+                <a href="../issue5/issue-5-3-FangYixiong.html">
+            
+                    
+                    View Controller转场
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../issue5/issue-5-4-FangYixiong.html">
+            
+                <a href="../issue5/issue-5-4-FangYixiong.html">
+            
+                    
+                    从NSURLConnection到NSURLSession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../issue5/issue-5-5-demon1105.html">
+            
+                <a href="../issue5/issue-5-5-demon1105.html">
+            
+                    
+                    iOS7的多任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../issue5/issue-5-6-test_0x01.html">
+            
+                <a href="../issue5/issue-5-6-test_0x01.html">
+            
+                    
+                    iOS7:隐藏技巧和变通之道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../issue5/issue-5-7-FangYixiong.html">
+            
+                <a href="../issue5/issue-5-7-FangYixiong.html">
+            
+                    
+                    为iOS7重新设计App
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../issue7/issue-7-0-JeOam.html">
+            
+                <a href="../issue7/issue-7-0-JeOam.html">
+            
+                    
+                    Foundation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../issue7/issue-7-1-FANWENBIN.html">
+            
+                <a href="../issue7/issue-7-1-FANWENBIN.html">
+            
+                    
+                    基础集合类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../issue7/issue-7-2-onevcat.html">
+            
+                <a href="../issue7/issue-7-2-onevcat.html">
+            
+                    
+                    值对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../issue7/issue-7-3-DJBen.html">
+            
+                <a href="../issue7/issue-7-3-DJBen.html">
+            
+                    
+                    KVC 和 KVO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../issue7/issue-7-4-DJBen.html">
+            
+                <a href="../issue7/issue-7-4-DJBen.html">
+            
+                    
+                    消息传递机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../issue7/issue-7-5-itouch2.html">
+            
+                <a href="../issue7/issue-7-5-itouch2.html">
+            
+                    
+                    自定义Formatters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../issue7/issue-7-6-onevcat.html">
+            
+                <a href="../issue7/issue-7-6-onevcat.html">
+            
+                    
+                    语言标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../issue9/issue-9-0-FangYiXiong.html">
+            
+                <a href="../issue9/issue-9-0-FangYiXiong.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../issue9/issue-9-1-frederick036.html">
+            
+                <a href="../issue9/issue-9-1-frederick036.html">
+            
+                    
+                    NSString与Unicode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../issue9/issue-9-2-Nix.html">
+            
+                <a href="../issue9/issue-9-2-Nix.html">
+            
+                    
+                    玩转字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../issue9/issue-9-3-YCFlame.html">
+            
+                <a href="../issue9/issue-9-3-YCFlame.html">
+            
+                    
+                    字符串本地化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../issue9/issue-9-4-riven.html">
+            
+                <a href="../issue9/issue-9-4-riven.html">
+            
+                    
+                    字符串解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../issue9/issue-9-5-answer-huang.html">
+            
+                <a href="../issue9/issue-9-5-answer-huang.html">
+            
+                    
+                    字符串渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../issue10/issue-10-0-sjpsega.html">
+            
+                <a href="../issue10/issue-10-0-sjpsega.html">
+            
+                    
+                    同步数据
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../issue10/issue-10-1-xinjixjz.html">
+            
+                <a href="../issue10/issue-10-1-xinjixjz.html">
+            
+                    
+                    数据同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../issue10/issue-10-2-weekwood.html">
+            
+                <a href="../issue10/issue-10-2-weekwood.html">
+            
+                    
+                    iCloud和Core Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../issue10/issue-10-3-migrant.html">
+            
+                <a href="../issue10/issue-10-3-migrant.html">
+            
+                    
+                    精通iCloud文档存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../issue10/issue-10-4-YCFlame.html">
+            
+                <a href="../issue10/issue-10-4-YCFlame.html">
+            
+                    
+                    同步案例学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../issue10/issue-10-5-answer-huang.html">
+            
+                <a href="../issue10/issue-10-5-answer-huang.html">
+            
+                    
+                    Core Data 网络应用实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../issue10/issue-10-6-sunset.html">
+            
+                <a href="../issue10/issue-10-6-sunset.html">
+            
+                    
+                    IP,TCP 和 HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../issue12/issue-12-0-FangYiXiojng.html">
+            
+                <a href="../issue12/issue-12-0-FangYiXiojng.html">
+            
+                    
+                    动画
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../issue12/issue-12-1-ckitakishi.html">
+            
+                <a href="../issue12/issue-12-1-ckitakishi.html">
+            
+                    
+                    动画解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../issue12/issue-12-2-nixzhu.html">
+            
+                <a href="../issue12/issue-12-2-nixzhu.html">
+            
+                    
+                    Layer中自定义属性的动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../issue12/issue-12-3-happyjiahan.html">
+            
+                <a href="../issue12/issue-12-3-happyjiahan.html">
+            
+                    
+                    自定义ViewController容器转场
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../issue12/issue-12-4-onevcat.html">
+            
+                <a href="../issue12/issue-12-4-onevcat.html">
+            
+                    
+                    View-Layer协作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../issue12/issue-12-5-weekwood.html">
+            
+                <a href="../issue12/issue-12-5-weekwood.html">
+            
+                    
+                    Collection View 动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../issue12/issue-12-6-morisunshine.html">
+            
+                <a href="../issue12/issue-12-6-morisunshine.html">
+            
+                    
+                    交互式动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="issue-13-0-panda.html">
+            
+                <a href="issue-13-0-panda.html">
+            
+                    
+                    架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="issue-13-1-nixzhu.html">
+            
+                <a href="issue-13-1-nixzhu.html">
+            
+                    
+                    MVVM介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="issue-13-2-happyjiahan.html">
+            
+                <a href="issue-13-2-happyjiahan.html">
+            
+                    
+                    避免滥用单例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="issue-13-3-panda.html">
+            
+                <a href="issue-13-3-panda.html">
+            
+                    
+                    IOS中的行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="issue-13-4-Phenmod.html">
+            
+                <a href="issue-13-4-Phenmod.html">
+            
+                    
+                    子类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11.5" data-path="issue-13-5-weekwood.html">
+            
+                <a href="issue-13-5-weekwood.html">
+            
+                    
+                    使用VIPER构建IOS应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../issue16/issue-16-0-hewigovens.html">
+            
+                <a href="../issue16/issue-16-0-hewigovens.html">
+            
+                    
+                    swift
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../issue16/issue-16-1-lizixroy.html">
+            
+                <a href="../issue16/issue-16-1-lizixroy.html">
+            
+                    
+                    Swift强大之处
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../issue16/issue-16-2-Onetaway.html">
+            
+                <a href="../issue16/issue-16-2-Onetaway.html">
+            
+                    
+                    结构体和值类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../issue16/issue-16-3-weekwood.html">
+            
+                <a href="../issue16/issue-16-3-weekwood.html">
+            
+                    
+                    swift方法的多面性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../issue16/issue-16-4-callmewhy.html">
+            
+                <a href="../issue16/issue-16-4-callmewhy.html">
+            
+                    
+                    Swift的函数式API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../issue16/issue-16-5-programmerDu.html">
+            
+                <a href="../issue16/issue-16-5-programmerDu.html">
+            
+                    
+                    Playground快速原型制作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../issue18/issue-18-0-yulingtianxia.html">
+            
+                <a href="../issue18/issue-18-0-yulingtianxia.html">
+            
+                    
+                    游戏
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../issue18/issue-18-1-weekwood.html">
+            
+                <a href="../issue18/issue-18-1-weekwood.html">
+            
+                    
+                    设计优雅的移动游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../issue18/issue-18-2-migrant.html">
+            
+                <a href="../issue18/issue-18-2-migrant.html">
+            
+                    
+                    Metal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../issue18/issue-18-3-sunnyxx.html">
+            
+                <a href="../issue18/issue-18-3-sunnyxx.html">
+            
+                    
+                    Scene Kit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../issue18/issue-18-4-callmewhy.html">
+            
+                <a href="../issue18/issue-18-4-callmewhy.html">
+            
+                    
+                    游戏中的多点互联
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../issue18/issue-18-5-shuye.html">
+            
+                <a href="../issue18/issue-18-5-shuye.html">
+            
+                    
+                    虚拟音域-声音设计的艺术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../issue21/issue-21-0-bifidy.html">
+            
+                <a href="../issue21/issue-21-0-bifidy.html">
+            
+                    
+                    相机与照片
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../issue21/issue-21-1-onevcat.html">
+            
+                <a href="../issue21/issue-21-1-onevcat.html">
+            
+                    
+                    相机工作原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../issue21/issue-21-2-bifidy.html">
+            
+                <a href="../issue21/issue-21-2-bifidy.html">
+            
+                    
+                    图片格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../issue21/issue-21-3-nathanwhy.html">
+            
+                <a href="../issue21/issue-21-3-nathanwhy.html">
+            
+                    
+                    iOS上的相机捕捉
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="../issue21/issue-21-4-CrazyZombies.html">
+            
+                <a href="../issue21/issue-21-4-CrazyZombies.html">
+            
+                    
+                    照片框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.5" data-path="../issue21/issue-21-5-weekwood.html">
+            
+                <a href="../issue21/issue-21-5-weekwood.html">
+            
+                    
+                    照片扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.6" data-path="../issue21/issue-21-6-april.html">
+            
+                <a href="../issue21/issue-21-6-april.html">
+            
+                    
+                    Core Image 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.7" data-path="../issue21/issue-21-7-nangege.html">
+            
+                <a href="../issue21/issue-21-7-nangege.html">
+            
+                    
+                    GPU加速下的图像处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.8" data-path="../issue21/issue-21-8-dopcn.html">
+            
+                <a href="../issue21/issue-21-8-dopcn.html">
+            
+                    
+                    GPU加速下的图像视觉
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.9" data-path="../issue21/issue-21-9-Phenmod.html">
+            
+                <a href="../issue21/issue-21-9-Phenmod.html">
+            
+                    
+                    基于OpenCV的人脸识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../issue24/issue-24-1-april.html">
+            
+                <a href="../issue24/issue-24-1-april.html">
+            
+                    
+                    音频
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../issue24/issue-24-1-april.html">
+            
+                <a href="../issue24/issue-24-1-april.html">
+            
+                    
+                    音频处理的狗屋
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../issue24/issue-24-2-lizix.html">
+            
+                <a href="../issue24/issue-24-2-lizix.html">
+            
+                    
+                    使用Swift进行函数式信号处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../issue24/issue-24-3-bifidy.html">
+            
+                <a href="../issue24/issue-24-3-bifidy.html">
+            
+                    
+                    播放，失败，迭代：面向产品的音效设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="../issue24/issue-24-4-draveness.html">
+            
+                <a href="../issue24/issue-24-4-draveness.html">
+            
+                    
+                    音频API一览
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../issue23/issue-23-0-bifidy.html">
+            
+                <a href="../issue23/issue-23-0-bifidy.html">
+            
+                    
+                    视频
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../issue23/issue-23-1-nathanwhy.html">
+            
+                <a href="../issue23/issue-23-1-nathanwhy.html">
+            
+                    
+                    在iOS上捕获视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../issue23/issue-23-2-pupboss.html">
+            
+                <a href="../issue23/issue-23-2-pupboss.html">
+            
+                    
+                    Core Image 和视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../issue23/issue-23-3-pupboss.html">
+            
+                <a href="../issue23/issue-23-3-pupboss.html">
+            
+                    
+                    视频工具箱和硬件加速
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../issue19/issue-19-0-bifidy.html">
+            
+                <a href="../issue19/issue-19-0-bifidy.html">
+            
+                    
+                    调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../issue19/issue-19-1-weekwood.html">
+            
+                <a href="../issue19/issue-19-1-weekwood.html">
+            
+                    
+                    调试：案例学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../issue19/issue-19-2-nangege.html">
+            
+                <a href="../issue19/issue-19-2-nangege.html">
+            
+                    
+                    与调试器共舞 - LLDB的华尔兹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../issue19/issue-19-3-bifidy.html">
+            
+                <a href="../issue19/issue-19-3-bifidy.html">
+            
+                    
+                    调试核对清单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.4" data-path="../issue19/issue-19-4-migrant.html">
+            
+                <a href="../issue19/issue-19-4-migrant.html">
+            
+                    
+                    DTrace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.5" data-path="../issue19/issue-19-5-dopcn.html">
+            
+                <a href="../issue19/issue-19-5-dopcn.html">
+            
+                    
+                    活动追踪
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../issue15/issue-15-0-yulingtianxia.html">
+            
+                <a href="../issue15/issue-15-0-yulingtianxia.html">
+            
+                    
+                    测试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../issue15/issue-15-1-weekwood.html">
+            
+                <a href="../issue15/issue-15-1-weekwood.html">
+            
+                    
+                    行为驱动开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../issue15/issue-15-2-morisunshine.html">
+            
+                <a href="../issue15/issue-15-2-morisunshine.html">
+            
+                    
+                    XCTest测试实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../issue15/issue-15-3-sunsets.html">
+            
+                <a href="../issue15/issue-15-3-sunsets.html">
+            
+                    
+                    依赖注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.4" data-path="../issue15/issue-15-4-Onetaway.html">
+            
+                <a href="../issue15/issue-15-4-Onetaway.html">
+            
+                    
+                    糟糕的测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.5" data-path="../issue15/issue-15-5-ryan.html">
+            
+                <a href="../issue15/issue-15-5-ryan.html">
+            
+                    
+                    置换测试：Mock,Stub和其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.6" data-path="../issue15/issue-15-6-callmewhy.html">
+            
+                <a href="../issue15/issue-15-6-callmewhy.html">
+            
+                    
+                    UI测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.7" data-path="../issue15/issue-15-7-oa414.html">
+            
+                <a href="../issue15/issue-15-7-oa414.html">
+            
+                    
+                    截图测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../issue17/issue-17-0-weekwood.html">
+            
+                <a href="../issue17/issue-17-0-weekwood.html">
+            
+                    
+                    安全
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../issue17/issue-17-1-programmerDu.html">
+            
+                <a href="../issue17/issue-17-1-programmerDu.html">
+            
+                    
+                    为什么今天安全仍然重要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../issue17/issue-17-2-dopcn.html">
+            
+                <a href="../issue17/issue-17-2-dopcn.html">
+            
+                    
+                    代码签名探析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../issue17/issue-17-3-callmewhy.html">
+            
+                <a href="../issue17/issue-17-3-callmewhy.html">
+            
+                    
+                    收据验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../issue20/issue-20-0-bifidy.html">
+            
+                <a href="../issue20/issue-20-0-bifidy.html">
+            
+                    
+                    访谈
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../issue20/issue-20-1-april.html">
+            
+                <a href="../issue20/issue-20-1-april.html">
+            
+                    
+                    终身学习的一代人
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="../issue20/issue-20-2-programmerDu.html">
+            
+                <a href="../issue20/issue-20-2-programmerDu.html">
+            
+                    
+                    让东西变得不那么糟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3" data-path="../issue20/issue-20-3-hewigovens.html">
+            
+                <a href="../issue20/issue-20-3-hewigovens.html">
+            
+                    
+                    学无止境
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../issue6/issue-6-0-FangYiXiong.html">
+            
+                <a href="../issue6/issue-6-0-FangYiXiong.html">
+            
+                    
+                    Build工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" data-path="../issue6/issue-6-1-BeyondVincent.html">
+            
+                <a href="../issue6/issue-6-1-BeyondVincent.html">
+            
+                    
+                    Build过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" data-path="../issue6/issue-6-2-sunsets.html">
+            
+                <a href="../issue6/issue-6-2-sunsets.html">
+            
+                    
+                    编译器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.3" data-path="../issue6/issue-6-3-yishuiliunian.html">
+            
+                <a href="../issue6/issue-6-3-yishuiliunian.html">
+            
+                    
+                    Mach-O可执行文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.4" data-path="../issue6/issue-6-4-programmer.du.html">
+            
+                <a href="../issue6/issue-6-4-programmer.du.html">
+            
+                    
+                    深入理解CocoaPods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.5" data-path="../issue6/issue-6-5-yuan12xin.html">
+            
+                <a href="../issue6/issue-6-5-yuan12xin.html">
+            
+                    
+                    为iOS建立Travis CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../issue8/issue-8-0-vienta.html">
+            
+                <a href="../issue8/issue-8-0-vienta.html">
+            
+                    
+                    四轴无人机项目
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../issue8/issue-8-1-phpmaple.html">
+            
+                <a href="../issue8/issue-8-1-phpmaple.html">
+            
+                    
+                    项目介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.2" data-path="../issue8/issue-8-2-weekwood.html">
+            
+                <a href="../issue8/issue-8-2-weekwood.html">
+            
+                    
+                    与四轴无人机的通讯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.3" data-path="../issue8/issue-8-3-weekwood.html">
+            
+                <a href="../issue8/issue-8-3-weekwood.html">
+            
+                    
+                    导航应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.4" data-path="../issue8/issue-8-4-zincsamael.html">
+            
+                <a href="../issue8/issue-8-4-zincsamael.html">
+            
+                    
+                    客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../issue11/issue-11-0-FangYixiong.html">
+            
+                <a href="../issue11/issue-11-0-FangYixiong.html">
+            
+                    
+                    Android
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="../issue11/issue-11-1-nixzhu.html">
+            
+                <a href="../issue11/issue-11-1-nixzhu.html">
+            
+                    
+                    iOS开发者的Android第一课
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.2" data-path="../issue11/Issue-11-2-sunset.html">
+            
+                <a href="../issue11/Issue-11-2-sunset.html">
+            
+                    
+                    Android Intents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.3" data-path="../issue11/issue-11-3-Daisyyaya.html">
+            
+                <a href="../issue11/issue-11-3-Daisyyaya.html">
+            
+                    
+                    响应式Android应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.4" data-path="../issue11/issue-11-4-weekwood.html">
+            
+                <a href="../issue11/issue-11-4-weekwood.html">
+            
+                    
+                    Android通讯中心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.5" data-path="../issue11/issue-11-5-zinc.html">
+            
+                <a href="../issue11/issue-11-5-zinc.html">
+            
+                    
+                    Android中的SQLite数据库支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.6" data-path="../issue11/issue-11-6-Bayonetta.html">
+            
+                <a href="../issue11/issue-11-6-Bayonetta.html">
+            
+                    
+                    依赖注入和注解，为什么Java比你想象的要好
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../issue14/issue-14-0-johnnywjy.html">
+            
+                <a href="../issue14/issue-14-0-johnnywjy.html">
+            
+                    
+                    回到Mac
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="../issue14/issue-14-1-ckitakishi.html">
+            
+                <a href="../issue14/issue-14-1-ckitakishi.html">
+            
+                    
+                    使Mac应用数据脚本化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.2" data-path="../issue14/issue-14-2-onevcat.html">
+            
+                <a href="../issue14/issue-14-2-onevcat.html">
+            
+                    
+                    在沙盒中编写脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.3" data-path="../issue14/issue-14-3-oa414.html">
+            
+                <a href="../issue14/issue-14-3-oa414.html">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.4" data-path="../issue14/issue-14-4-hewigovens.html">
+            
+                <a href="../issue14/issue-14-4-hewigovens.html">
+            
+                    
+                    XPC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.5" data-path="../issue14/issue-14-5-crazycatcher.html">
+            
+                <a href="../issue14/issue-14-5-crazycatcher.html">
+            
+                    
+                    从UIKit到AppKit
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../issue22/issue-22-0-programmerDu.html">
+            
+                <a href="../issue22/issue-22-0-programmerDu.html">
+            
+                    
+                    iOS项目管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.1" data-path="../issue22/issue-22-1-bifidy.html">
+            
+                <a href="../issue22/issue-22-1-bifidy.html">
+            
+                    
+                    Omni内部
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.2" data-path="../issue22/issue-22-2-wongzigii.html">
+            
+                <a href="../issue22/issue-22-2-wongzigii.html">
+            
+                    
+                    Artsy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.3" data-path="../issue22/issue-22-3-April.html">
+            
+                <a href="../issue22/issue-22-3-April.html">
+            
+                    
+                    Square Register中的扩张
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.4" data-path="../issue22/issue-22-4-morisunshine.html">
+            
+                <a href="../issue22/issue-22-4-morisunshine.html">
+            
+                    
+                    代码审查的艺术：Dropbox的故事
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.5" data-path="../issue22/issue-22-5-lizixroy.html">
+            
+                <a href="../issue22/issue-22-5-lizixroy.html">
+            
+                    
+                    响应式视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >使用VIPER构建IOS应用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x5EFA;&#x7B51;&#x9886;&#x57DF;&#x6D41;&#x884C;&#x8FD9;&#x6837;&#x4E00;&#x53E5;&#x8BDD;&#xFF0C;&#x201C;&#x6211;&#x4EEC;&#x867D;&#x7136;&#x5728;&#x8425;&#x9020;&#x5EFA;&#x7B51;&#xFF0C;&#x4F46;&#x5EFA;&#x7B51;&#x4E5F;&#x4F1A;&#x91CD;&#x65B0;&#x5851;&#x9020;&#x6211;&#x4EEC;&#x201D;&#x3002;&#x6B63;&#x5982;&#x6240;&#x6709;&#x5F00;&#x53D1;&#x8005;&#x6700;&#x7EC8;&#x9886;&#x609F;&#x5230;&#x7684;&#xFF0C;&#x8FD9;&#x53E5;&#x8BDD;&#x540C;&#x6837;&#x9002;&#x7528;&#x4E8E;&#x6784;&#x5EFA;&#x8F6F;&#x4EF6;&#x3002;</p>
+<p>&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x4E2D;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x7684;&#x662F;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x6BCF;&#x4E00;&#x90E8;&#x5206;&#x5BB9;&#x6613;&#x88AB;&#x8BC6;&#x522B;&#xFF0C;&#x8D4B;&#x6709;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x800C;&#x660E;&#x663E;&#x7684;&#x76EE;&#x7684;&#xFF0C;&#x5E76;&#x4E0E;&#x5176;&#x4ED6;&#x90E8;&#x5206;&#x5728;&#x903B;&#x8F91;&#x5173;&#x7CFB;&#x4E2D;&#x5B8C;&#x7F8E;&#x5951;&#x5408;&#x3002;&#x8FD9;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x6240;&#x8BF4;&#x7684;&#x8F6F;&#x4EF6;&#x67B6;&#x6784;&#x3002;&#x597D;&#x7684;&#x67B6;&#x6784;&#x4E0D;&#x4EC5;&#x8BA9;&#x4E00;&#x4E2A;&#x4EA7;&#x54C1;&#x6210;&#x529F;&#x6295;&#x5165;&#x4F7F;&#x7528;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x8BA9;&#x4EA7;&#x54C1;&#x5177;&#x6709;&#x53EF;&#x7EF4;&#x62A4;&#x6027;&#xFF0C;&#x5E76;&#x8BA9;&#x4EBA;&#x4E0D;&#x65AD;&#x5934;&#x8111;&#x6E05;&#x9192;&#x7684;&#x5BF9;&#x5B83;&#x8FDB;&#x884C;&#x7EF4;&#x62A4;&#xFF01;</p>
+<p>&#x5728;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4ECB;&#x7ECD;&#x4E86;&#x4E00;&#x79CD;&#x79F0;&#x4E4B;&#x4E3A; <a href="http://mutualmobile.github.io/blog/2013/12/04/viper-introduction/" target="_blank">VIPER</a> &#x7684; iOS &#x5E94;&#x7528;&#x67B6;&#x6784;&#x7684;&#x65B9;&#x5F0F;&#x3002;VIPER &#x5DF2;&#x7ECF;&#x5728;&#x5F88;&#x591A;&#x5927;&#x578B;&#x7684;&#x9879;&#x76EE;&#x4E0A;&#x6210;&#x529F;&#x5B9E;&#x8DF5;&#xFF0C;&#x4F46;&#x662F;&#x51FA;&#x4E8E;&#x672C;&#x6587;&#x7684;&#x76EE;&#x7684;&#x6211;&#x4EEC;&#x5C06;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x6E05;&#x5355; (to-do app) &#x6765;&#x4ECB;&#x7ECD; VIPER &#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728; <a href="https://github.com/objcio/issue-13-viper" target="_blank">GitHub</a> &#x4E0A;&#x5173;&#x6CE8;&#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#x3002;</p>
+<video style="display:block;max-width:316px;height:auto;border:0;" poster="/issue-13/2014-06-07-viper-screenshot.png" controls="1">
+  <source src="https://objccn.io/images//issue-13/2014-06-07-viper-preview.mp4">
+</video>
+
+<h2 id="&#x4EC0;&#x4E48;&#x662F;-viper&#xFF1F;">&#x4EC0;&#x4E48;&#x662F; VIPER&#xFF1F;</h2>
+<p>&#x6D4B;&#x8BD5;&#x6C38;&#x8FDC;&#x4E0D;&#x662F;&#x6784;&#x5EFA; iOS &#x5E94;&#x7528;&#x7684;&#x4E3B;&#x8981;&#x90E8;&#x5206;&#x3002;&#x5F53;&#x6211;&#x4EEC; (<a href="https://github.com/mutualmobile/" target="_blank">Mutual Mobile</a>) &#x7740;&#x624B;&#x6539;&#x5584;&#x6211;&#x4EEC;&#x7684;&#x6D4B;&#x8BD5;&#x5B9E;&#x8DF5;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x53D1;&#x73B0;&#x7ED9; iOS &#x5E94;&#x7528;&#x5199;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;&#x975E;&#x5E38;&#x56F0;&#x96BE;&#x3002;&#x56E0;&#x6B64;&#x5982;&#x679C;&#x60F3;&#x8981;&#x8BBE;&#x6CD5;&#x6539;&#x53D8;&#x6D4B;&#x8BD5;&#x7684;&#x73B0;&#x72B6;&#xFF0C;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x66F4;&#x597D;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x67B6;&#x6784;&#x5E94;&#x7528;&#xFF0C;&#x6211;&#x4EEC;&#x79F0;&#x4E4B;&#x4E3A; VIPER&#x3002;</p>
+<p>VIPER &#x662F;&#x4E00;&#x4E2A;&#x521B;&#x5EFA; iOS &#x5E94;&#x7528;<a href="http://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html" target="_blank">&#x7B80;&#x660E;&#x6784;&#x67B6;</a>&#x7684;&#x7A0B;&#x5E8F;&#x3002;VIPER &#x53EF;&#x4EE5;&#x662F;&#x89C6;&#x56FE; (View)&#xFF0C;&#x4EA4;&#x4E92;&#x5668; (Interactor)&#xFF0C;&#x5C55;&#x793A;&#x5668; (Presenter)&#xFF0C;&#x5B9E;&#x4F53; (Entity) &#x4EE5;&#x53CA;&#x8DEF;&#x7531; (Routing) &#x7684;&#x9996;&#x5B57;&#x6BCD;&#x7F29;&#x5199;&#x3002;&#x7B80;&#x660E;&#x67B6;&#x6784;&#x5C06;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x903B;&#x8F91;&#x7ED3;&#x6784;&#x5212;&#x5206;&#x4E3A;&#x4E0D;&#x540C;&#x7684;&#x8D23;&#x4EFB;&#x5C42;&#x3002;&#x8FD9;&#x4F7F;&#x5F97;&#x5B83;&#x66F4;&#x5BB9;&#x6613;&#x9694;&#x79BB;&#x4F9D;&#x8D56;&#x9879; (&#x5982;&#x6570;&#x636E;&#x5E93;)&#xFF0C;&#x4E5F;&#x66F4;&#x5BB9;&#x6613;&#x6D4B;&#x8BD5;&#x5404;&#x5C42;&#x95F4;&#x7684;&#x8FB9;&#x754C;&#x5904;&#x7684;&#x4EA4;&#x4E92;&#xFF1A;</p>
+<p><img alt="VIPER stands for View Interactor Presenter Entity Routing." src="https://objccn.io/images/issue-13/2014-06-07-viper-intro.jpg"></p>
+<p>&#x5927;&#x90E8;&#x5206; iOS &#x5E94;&#x7528;&#x5229;&#x7528; MVC &#x6784;&#x5EFA;&#xFF0C;&#x4F7F;&#x7528; MVC &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x67B6;&#x6784;&#x53EF;&#x4EE5;&#x5F15;&#x5BFC;&#x4F60;&#x5C06;&#x6BCF;&#x4E00;&#x4E2A;&#x7C7B;&#x770B;&#x505A;&#x6A21;&#x578B;&#xFF0C;&#x89C6;&#x56FE;&#x6216;&#x63A7;&#x5236;&#x5668;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x3002;&#x4F46;&#x7531;&#x4E8E;&#x5927;&#x90E8;&#x5206;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x903B;&#x8F91;&#x4E0D;&#x4F1A;&#x5B58;&#x5728;&#x4E8E;&#x6A21;&#x578B;&#x6216;&#x89C6;&#x56FE;&#x4E2D;&#xFF0C;&#x6240;&#x4EE5;&#x901A;&#x5E38;&#x6700;&#x7EC8;&#x603B;&#x662F;&#x5728;&#x63A7;&#x5236;&#x5668;&#x91CC;&#x5B9E;&#x73B0;&#x3002;&#x8FD9;&#x5C31;&#x5BFC;&#x81F4;&#x4E00;&#x4E2A;&#x79F0;&#x4E3A;<a href="https://twitter.com/Colin_Campbell/status/293167951132098560" target="_blank">&#x91CD;&#x91CF;&#x7EA7;&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;</a>&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#xFF0C;&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;&#x505A;&#x4E86;&#x592A;&#x591A;&#x5DE5;&#x4F5C;&#x3002;&#x4E3A;&#x8FD9;&#x4E9B;&#x91CD;&#x91CF;&#x7EA7;&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;<a href="http://www.objc.io/issue-1/lighter-view-controllers.html" target="_blank">&#x7626;&#x8EAB;</a>&#x5E76;&#x4E0D;&#x662F; iOS &#x5F00;&#x53D1;&#x8005;&#x5BFB;&#x6C42;&#x63D0;&#x9AD8;&#x4EE3;&#x7801;&#x7684;&#x8D28;&#x91CF;&#x6240;&#x8981;&#x9762;&#x4E34;&#x7684;&#x552F;&#x4E00;&#x6311;&#x6218;&#xFF0C;&#x4F46;&#x81F3;&#x5C11;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x597D;&#x7684;&#x5F00;&#x7AEF;&#x3002;</p>
+<p>VIPER &#x7684;&#x4E0D;&#x540C;&#x5C42;&#x63D0;&#x4F9B;&#x4E86;&#x660E;&#x786E;&#x7684;&#x7A0B;&#x5E8F;&#x903B;&#x8F91;&#x4EE5;&#x53CA;&#x5BFC;&#x822A;&#x63A7;&#x5236;&#x4EE3;&#x7801;&#x6765;&#x5E94;&#x5BF9;&#x8FD9;&#x4E2A;&#x6311;&#x6218;&#xFF0C;&#x5229;&#x7528; VIPER &#xFF0C;&#x4F60;&#x4F1A;&#x6CE8;&#x610F;&#x5230;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x793A;&#x4F8B;&#x6E05;&#x5355;&#x4E2D;&#x7684;&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;&#x53EF;&#x4EE5;&#x7B80;&#x6D01;&#x9AD8;&#x6548;&#xFF0C;&#x610F;&#x4E49;&#x660E;&#x786E;&#x5730;&#x63A7;&#x5236;&#x89C6;&#x56FE;&#x3002;&#x4F60;&#x4E5F;&#x4F1A;&#x53D1;&#x73B0;&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;&#x4E2D;&#x4EE3;&#x7801;&#x548C;&#x6240;&#x6709;&#x7684;&#x5176;&#x4ED6;&#x7C7B;&#x5F88;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#xFF0C;&#x5BB9;&#x6613;&#x6D4B;&#x8BD5;&#xFF0C;&#x7406;&#x6240;&#x5F53;&#x7136;&#x4E5F;&#x66F4;&#x6613;&#x7EF4;&#x62A4;&#x3002;</p>
+<h2 id="&#x57FA;&#x4E8E;&#x7528;&#x4F8B;&#x7684;&#x5E94;&#x7528;&#x8BBE;&#x8BA1;">&#x57FA;&#x4E8E;&#x7528;&#x4F8B;&#x7684;&#x5E94;&#x7528;&#x8BBE;&#x8BA1;</h2>
+<p>&#x5E94;&#x7528;&#x901A;&#x5E38;&#x662F;&#x4E00;&#x4E9B;&#x7528;&#x6237;&#x7528;&#x4F8B;&#x7684;&#x96C6;&#x5408;&#x3002;&#x7528;&#x4F8B;&#x4E5F;&#x88AB;&#x79F0;&#x4E3A;&#x9A8C;&#x6536;&#x6807;&#x51C6;&#xFF0C;&#x6216;&#x884C;&#x4E3A;&#x96C6;&#xFF0C;&#x5B83;&#x4EEC;&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x5E94;&#x7528;&#x7684;&#x7528;&#x9014;&#x3002;&#x6E05;&#x5355;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x65F6;&#x95F4;&#xFF0C;&#x7C7B;&#x578B;&#x4EE5;&#x53CA;&#x540D;&#x5B57;&#x6392;&#x5E8F;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x7528;&#x4F8B;&#x3002;&#x7528;&#x4F8B;&#x662F;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#x7528;&#x6765;&#x8D1F;&#x8D23;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x7684;&#x4E00;&#x5C42;&#xFF0C;&#x5E94;&#x72EC;&#x7ACB;&#x4E8E;&#x7528;&#x6237;&#x754C;&#x9762;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x540C;&#x65F6;&#x8981;&#x8DB3;&#x591F;&#x5C0F;&#xFF0C;&#x5E76;&#x4E14;&#x6709;&#x826F;&#x597D;&#x7684;&#x5B9A;&#x4E49;&#x3002;&#x51B3;&#x5B9A;&#x5982;&#x4F55;&#x5C06;&#x4E00;&#x4E2A;&#x590D;&#x6742;&#x7684;&#x5E94;&#x7528;&#x5206;&#x89E3;&#x6210;&#x8F83;&#x5C0F;&#x7684;&#x7528;&#x4F8B;&#x975E;&#x5E38;&#x5177;&#x6709;&#x6311;&#x6218;&#x6027;&#xFF0C;&#x5E76;&#x4E14;&#x9700;&#x8981;&#x957F;&#x671F;&#x5B9E;&#x8DF5;&#xFF0C;&#x4F46;&#x8FD9;&#x5BF9;&#x4E8E;&#x7F29;&#x5C0F;&#x4F60;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#x65F6;&#x6240;&#x8981;&#x9762;&#x4E34;&#x7684;&#x8303;&#x56F4;&#x53CA;&#x5B8C;&#x6210;&#x7684;&#x6BCF;&#x4E2A;&#x7C7B;&#x7684;&#x6240;&#x8981;&#x6D89;&#x53CA;&#x7684;&#x5185;&#x5BB9;&#x6765;&#x8BF4;&#xFF0C;&#x662F;&#x5F88;&#x6709;&#x5E2E;&#x52A9;&#x7684;&#x3002;</p>
+<p>&#x5229;&#x7528; VIPER &#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x9700;&#x8981;&#x5B9E;&#x65BD;&#x4E00;&#x7EC4;&#x5957;&#x4EF6;&#x6765;&#x6EE1;&#x8DB3;&#x6240;&#x6709;&#x7684;&#x7528;&#x4F8B;&#xFF0C;&#x5E94;&#x7528;&#x903B;&#x8F91;&#x662F;&#x5B9E;&#x73B0;&#x7528;&#x4F8B;&#x7684;&#x4E3B;&#x8981;&#x7EC4;&#x6210;&#x90E8;&#x5206;&#xFF0C;&#x4F46;&#x5374;&#x4E0D;&#x662F;&#x552F;&#x4E00;&#x3002;&#x7528;&#x4F8B;&#x4E5F;&#x4F1A;&#x5F71;&#x54CD;&#x7528;&#x6237;&#x754C;&#x9762;&#x3002;&#x53E6;&#x4E00;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x65B9;&#x9762;&#xFF0C;&#x662F;&#x8981;&#x8003;&#x8651;&#x7528;&#x4F8B;&#x5982;&#x4F55;&#x4E0E;&#x5176;&#x4ED6;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x6838;&#x5FC3;&#x7EC4;&#x4EF6;&#x76F8;&#x4E92;&#x914D;&#x5408;&#xFF0C;&#x4F8B;&#x5982;&#x7F51;&#x7EDC;&#x548C;&#x6570;&#x636E;&#x6301;&#x4E45;&#x5316;&#x3002;&#x7EC4;&#x4EF6;&#x5C31;&#x597D;&#x6BD4;&#x7528;&#x4F8B;&#x7684;&#x63D2;&#x4EF6;&#xFF0C;VIPER &#x5219;&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x8FD9;&#x4E9B;&#x7EC4;&#x4EF6;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x4EC0;&#x4E48;&#xFF0C;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x7528;&#x4F8B;&#xFF0C;&#x6216;&#x8005;&#x8BF4;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x6E05;&#x5355;&#x4E2D;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x9700;&#x6C42;&#x662F;&#x53EF;&#x4EE5;&#x57FA;&#x4E8E;&#x7528;&#x6237;&#x7684;&#x9009;&#x62E9;&#x6765;&#x5C06;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x5206;&#x7EC4;&#x3002;&#x901A;&#x8FC7;&#x5206;&#x79BB;&#x7684;&#x903B;&#x8F91;&#x5C06;&#x6570;&#x636E;&#x7EC4;&#x7EC7;&#x6210;&#x4E00;&#x4E2A;&#x7528;&#x4F8B;&#xFF0C;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x5728;&#x6D4B;&#x8BD5;&#x65F6;&#x4F7F;&#x7528;&#x6237;&#x754C;&#x9762;&#x4EE3;&#x7801;&#x4FDD;&#x6301;&#x5E72;&#x51C0;&#xFF0C;&#x7528;&#x4F8B;&#x66F4;&#x6613;&#x7EC4;&#x88C5;&#xFF0C;&#x4ECE;&#x800C;&#x786E;&#x4FDD;&#x5B83;&#x5982;&#x6211;&#x4EEC;&#x9884;&#x671F;&#x7684;&#x65B9;&#x5F0F;&#x5DE5;&#x4F5C;&#x3002;</p>
+<h2 id="viper-&#x7684;&#x4E3B;&#x8981;&#x90E8;&#x5206;">VIPER &#x7684;&#x4E3B;&#x8981;&#x90E8;&#x5206;</h2>
+<p>VIPER &#x7684;&#x4E3B;&#x8981;&#x90E8;&#x5206;&#x662F;&#xFF1A;</p>
+<ul>
+<li>&#x89C6;&#x56FE;&#xFF1A;&#x6839;&#x636E;&#x5C55;&#x793A;&#x5668;&#x7684;&#x8981;&#x6C42;&#x663E;&#x793A;&#x754C;&#x9762;&#xFF0C;&#x5E76;&#x5C06;&#x7528;&#x6237;&#x8F93;&#x5165;&#x53CD;&#x9988;&#x7ED9;&#x5C55;&#x793A;&#x5668;&#x3002;</li>
+<li>&#x4EA4;&#x4E92;&#x5668;&#xFF1A;&#x5305;&#x542B;&#x7531;&#x7528;&#x4F8B;&#x6307;&#x5B9A;&#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x3002;</li>
+<li>&#x5C55;&#x793A;&#x5668;&#xFF1A;&#x5305;&#x542B;&#x4E3A;&#x663E;&#x793A;&#xFF08;&#x4ECE;&#x4EA4;&#x4E92;&#x5668;&#x63A5;&#x53D7;&#x7684;&#x5185;&#x5BB9;&#xFF09;&#x505A;&#x7684;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#x7684;&#x76F8;&#x5173;&#x89C6;&#x56FE;&#x903B;&#x8F91;&#xFF0C;&#x5E76;&#x5BF9;&#x7528;&#x6237;&#x8F93;&#x5165;&#x8FDB;&#x884C;&#x53CD;&#x9988;&#xFF08;&#x4ECE;&#x4EA4;&#x4E92;&#x5668;&#x83B7;&#x53D6;&#x65B0;&#x6570;&#x636E;&#xFF09;&#x3002;</li>
+<li>&#x5B9E;&#x4F53;&#xFF1A;&#x5305;&#x542B;&#x4EA4;&#x4E92;&#x5668;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x57FA;&#x672C;&#x6A21;&#x578B;&#x5BF9;&#x8C61;&#x3002;</li>
+<li>&#x8DEF;&#x7531;&#xFF1A;&#x5305;&#x542B;&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x5C4F;&#x5E55;&#x663E;&#x793A;&#x548C;&#x663E;&#x793A;&#x987A;&#x5E8F;&#x7684;&#x5BFC;&#x822A;&#x903B;&#x8F91;&#x3002;</li>
+</ul>
+<p>&#x8FD9;&#x79CD;&#x5206;&#x9694;&#x5F62;&#x5F0F;&#x540C;&#x6837;&#x9075;&#x5FAA;<a href="http://www.objectmentor.com/resources/articles/srp.pdf" target="_blank">&#x5355;&#x4E00;&#x8D23;&#x4EFB;&#x539F;&#x5219;</a>&#x3002;&#x4EA4;&#x4E92;&#x5668;&#x8D1F;&#x8D23;&#x4E1A;&#x52A1;&#x5206;&#x6790;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x5C55;&#x793A;&#x5668;&#x4EE3;&#x8868;&#x4EA4;&#x4E92;&#x8BBE;&#x8BA1;&#x5E08;&#xFF0C;&#x800C;&#x89C6;&#x56FE;&#x76F8;&#x5F53;&#x4E8E;&#x89C6;&#x89C9;&#x8BBE;&#x8BA1;&#x5E08;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x5219;&#x662F;&#x4E0D;&#x540C;&#x7EC4;&#x4EF6;&#x7684;&#x76F8;&#x5173;&#x56FE;&#x89E3;&#xFF0C;&#x5E76;&#x5C55;&#x793A;&#x4E86;&#x4ED6;&#x4EEC;&#x4E4B;&#x95F4;&#x662F;&#x5982;&#x4F55;&#x5173;&#x8054;&#x7684;&#xFF1A;</p>
+<p><img alt="VIPER breaks down an app into different components based around use cases, including components that create the user interface and the logic that powers it." src="https://objccn.io/images/issue-13/2014-06-07-viper-wireframe.png"></p>
+<p>&#x867D;&#x7136;&#x5728;&#x5E94;&#x7528;&#x4E2D; VIPER &#x7684;&#x7EC4;&#x4EF6;&#x53EF;&#x4EE5;&#x4EE5;&#x4EFB;&#x610F;&#x987A;&#x5E8F;&#x5B9E;&#x73B0;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x8FD9;&#x91CC;&#x9009;&#x62E9;&#x6309;&#x7167;&#x6211;&#x4EEC;&#x63A8;&#x8350;&#x7684;&#x987A;&#x5E8F;&#x6765;&#x8FDB;&#x884C;&#x4ECB;&#x7ECD;&#x3002;&#x4F60;&#x4F1A;&#x6CE8;&#x610F;&#x5230;&#x8FD9;&#x4E2A;&#x987A;&#x5E8F;&#x4E0E;&#x6784;&#x5EFA;&#x6574;&#x4E2A;&#x5E94;&#x7528;&#x7684;&#x8FDB;&#x7A0B;&#x5927;&#x81F4;&#x7B26;&#x5408; -- &#x9996;&#x5148;&#x8981;&#x8BA8;&#x8BBA;&#x7684;&#x662F;&#x4EA7;&#x54C1;&#x9700;&#x8981;&#x505A;&#x4EC0;&#x4E48;&#xFF0C;&#x4EE5;&#x53CA;&#x7528;&#x6237;&#x4F1A;&#x5982;&#x4F55;&#x4E0E;&#x4E4B;&#x4EA4;&#x4E92;&#x3002;</p>
+<h3 id="&#x4EA4;&#x4E92;&#x5668;">&#x4EA4;&#x4E92;&#x5668;</h3>
+<p>&#x4EA4;&#x4E92;&#x5668;&#x5728;&#x5E94;&#x7528;&#x4E2D;&#x4EE3;&#x8868;&#x7740;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x7528;&#x4F8B;&#x3002;&#x5B83;&#x5177;&#x6709;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x4EE5;&#x64CD;&#x7EB5;&#x6A21;&#x578B;&#x5BF9;&#x8C61;&#xFF08;&#x5B9E;&#x4F53;&#xFF09;&#x6267;&#x884C;&#x7279;&#x5B9A;&#x7684;&#x4EFB;&#x52A1;&#x3002;&#x4EA4;&#x4E92;&#x5668;&#x4E2D;&#x7684;&#x5DE5;&#x4F5C;&#x5E94;&#x5F53;&#x72EC;&#x7ACB;&#x4E0E;&#x4EFB;&#x4F55;&#x7528;&#x6237;&#x754C;&#x9762;&#xFF0C;&#x540C;&#x6837;&#x7684;&#x4EA4;&#x4E92;&#x5668;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x8FD0;&#x7528;&#x4E8E; iOS &#x5E94;&#x7528;&#x6216;&#x8005; OS X &#x5E94;&#x7528;&#x4E2D;&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x4EA4;&#x4E92;&#x5668;&#x662F;&#x4E00;&#x4E2A; PONSO (Plain Old <code>NSObject</code>&#xFF0C;&#x666E;&#x901A;&#x7684; <code>NSObject</code>)&#xFF0C;&#x5B83;&#x4E3B;&#x8981;&#x5305;&#x542B;&#x4E86;&#x903B;&#x8F91;&#xFF0C;&#x56E0;&#x6B64;&#x5F88;&#x5BB9;&#x6613;&#x4F7F;&#x7528; TDD &#x8FDB;&#x884C;&#x5F00;&#x53D1;&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#x5E94;&#x7528;&#x7684;&#x4E3B;&#x8981;&#x7528;&#x4F8B;&#x662F;&#x5411;&#x7528;&#x6237;&#x5C55;&#x793A;&#x6240;&#x6709;&#x7684;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#xFF08;&#x6BD4;&#x5982;&#x4EFB;&#x4F55;&#x622A;&#x6B62;&#x4E8E;&#x4E0B;&#x5468;&#x672B;&#x7684;&#x4EFB;&#x52A1;&#xFF09;&#x3002;&#x6B64;&#x7C7B;&#x7528;&#x4F8B;&#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x4E3B;&#x8981;&#x662F;&#x627E;&#x51FA;&#x4ECA;&#x5929;&#x81F3;&#x4E0B;&#x5468;&#x672B;&#x4E4B;&#x95F4;&#x5C06;&#x8981;&#x5230;&#x671F;&#x7684;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#xFF0C;&#x7136;&#x540E;&#x4E3A;&#x5B83;&#x4EEC;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x76F8;&#x5BF9;&#x7684;&#x622A;&#x6B62;&#x65E5;&#x671F;&#xFF0C;&#x6BD4;&#x5982;&#x4ECA;&#x5929;&#xFF0C;&#x660E;&#x5929;&#xFF0C;&#x672C;&#x5468;&#x4EE5;&#x5185;&#xFF0C;&#x6216;&#x8005;&#x4E0B;&#x5468;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x662F;&#x6765;&#x81EA; VTDListInteractor &#x7684;&#x5BF9;&#x5E94;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code>- (void)findUpcomingItems
+{
+    __weak typeof(self) welf = self;
+    NSDate* today = [self.clock today];
+    NSDate* endOfNextWeek = [[NSCalendar currentCalendar] dateForEndOfFollowingWeekWithDate:today];
+    [self.dataManager todoItemsBetweenStartDate:today endDate:endOfNextWeek completionBlock:^(NSArray* todoItems) {
+        [welf.output foundUpcomingItems:[welf upcomingItemsFromToDoItems:todoItems]];
+    }];
+}
+</code></pre><h3 id="&#x5B9E;&#x4F53;">&#x5B9E;&#x4F53;</h3>
+<p>&#x5B9E;&#x4F53;&#x662F;&#x88AB;&#x4EA4;&#x4E92;&#x5668;&#x64CD;&#x4F5C;&#x7684;&#x6A21;&#x578B;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x4E14;&#x5B83;&#x4EEC;&#x53EA;&#x88AB;&#x4EA4;&#x4E92;&#x5668;&#x6240;&#x64CD;&#x4F5C;&#x3002;&#x4EA4;&#x4E92;&#x5668;&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x4F20;&#x8F93;&#x5B9E;&#x4F53;&#x81F3;&#x8868;&#x73B0;&#x5C42; (&#x6BD4;&#x5982;&#x8BF4;&#x5C55;&#x793A;&#x5668;)&#x3002;</p>
+<p>&#x5B9E;&#x4F53;&#x4E5F;&#x5E94;&#x8BE5;&#x662F; PONSOs&#x3002;&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528; Core Data&#xFF0C;&#x6700;&#x597D;&#x662F;&#x5C06;&#x6258;&#x7BA1;&#x5BF9;&#x8C61;&#x4FDD;&#x6301;&#x5728;&#x4F60;&#x7684;&#x6570;&#x636E;&#x5C42;&#x4E4B;&#x540E;&#xFF0C;&#x4EA4;&#x4E92;&#x5668;&#x4E0D;&#x5E94;&#x4E0E; NSManageObjects &#x534F;&#x540C;&#x5DE5;&#x4F5C;&#x3002;</p>
+<p>&#x8FD9;&#x91CC;&#x662F;&#x6211;&#x4EEC;&#x7684;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x670D;&#x52A1;&#x7684;&#x5B9E;&#x4F53;&#xFF1A;</p>
+<pre><code>@interface VTDTodoItem : NSObject
+
+@property (nonatomic, strong)   NSDate*     dueDate;
+@property (nonatomic, copy)     NSString*   name;
+
++ (instancetype)todoItemWithDueDate:(NSDate*)dueDate name:(NSString*)name;
+
+@end
+</code></pre><p>&#x4E0D;&#x8981;&#x8BE7;&#x5F02;&#x4E8E;&#x4F60;&#x7684;&#x5B9E;&#x4F53;&#x4EC5;&#x4EC5;&#x662F;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x4EFB;&#x4F55;&#x4F9D;&#x8D56;&#x4E8E;&#x5E94;&#x7528;&#x7684;&#x903B;&#x8F91;&#x90FD;&#x5E94;&#x8BE5;&#x653E;&#x5230;&#x4EA4;&#x4E92;&#x5668;&#x4E2D;&#x3002;</p>
+<h3 id="&#x5C55;&#x793A;&#x5668;">&#x5C55;&#x793A;&#x5668;</h3>
+<p>&#x5C55;&#x793A;&#x5668;&#x662F;&#x4E00;&#x4E2A;&#x4E3B;&#x8981;&#x5305;&#x542B;&#x4E86;&#x9A71;&#x52A8;&#x7528;&#x6237;&#x754C;&#x9762;&#x7684;&#x903B;&#x8F91;&#x7684; PONSO&#xFF0C;&#x5B83;&#x603B;&#x662F;&#x77E5;&#x9053;&#x4F55;&#x65F6;&#x5448;&#x73B0;&#x7528;&#x6237;&#x754C;&#x9762;&#x3002;&#x57FA;&#x4E8E;&#x5176;&#x6536;&#x96C6;&#x6765;&#x81EA;&#x7528;&#x6237;&#x4EA4;&#x4E92;&#x7684;&#x8F93;&#x5165;&#x529F;&#x80FD;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x5728;&#x5408;&#x9002;&#x7684;&#x65F6;&#x5019;&#x66F4;&#x65B0;&#x7528;&#x6237;&#x754C;&#x9762;&#x5E76;&#x5411;&#x4EA4;&#x4E92;&#x5668;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x3002;</p>
+<p>&#x5F53;&#x7528;&#x6237;&#x70B9;&#x51FB; &#x201C;+&#x201D; &#x952E;&#x65B0;&#x5EFA;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x65F6;&#xFF0C;<code>addNewEntry</code> &#x88AB;&#x8C03;&#x7528;&#x3002;&#x5BF9;&#x4E8E;&#x6B64;&#x9879;&#x64CD;&#x4F5C;&#xFF0C;&#x5C55;&#x793A;&#x5668;&#x4F1A;&#x8981;&#x6C42; <code>wireframe</code> &#x663E;&#x793A;&#x7528;&#x6237;&#x754C;&#x9762;&#x4EE5;&#x589E;&#x52A0;&#x65B0;&#x9879;&#x76EE;&#xFF1A;</p>
+<pre><code>- (void)addNewEntry
+{
+    [self.listWireframe presentAddInterface];
+}
+</code></pre><p>&#x5C55;&#x793A;&#x5668;&#x8FD8;&#x4F1A;&#x4ECE;&#x4EA4;&#x4E92;&#x5668;&#x63A5;&#x6536;&#x7ED3;&#x679C;&#x5E76;&#x5C06;&#x7ED3;&#x679C;&#x8F6C;&#x6362;&#x6210;&#x80FD;&#x591F;&#x5728;&#x89C6;&#x56FE;&#x4E2D;&#x6709;&#x6548;&#x663E;&#x793A;&#x7684;&#x5F62;&#x5F0F;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x5982;&#x4F55;&#x4ECE;&#x4EA4;&#x4E92;&#x5668;&#x63A5;&#x53D7;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x5904;&#x7406;&#x6570;&#x636E;&#x7684;&#x8FC7;&#x7A0B;&#x5E76;&#x51B3;&#x5B9A;&#x5C55;&#x73B0;&#x7ED9;&#x7528;&#x6237;&#x54EA;&#x4E9B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code>- (void)foundUpcomingItems:(NSArray*)upcomingItems
+{
+    if ([upcomingItems count] == 0)
+    {
+        [self.userInterface showNoContentMessage];
+    }
+    else
+    {
+        [self updateUserInterfaceWithUpcomingItems:upcomingItems];
+    }
+}
+</code></pre><p>&#x5B9E;&#x4F53;&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x7531;&#x4EA4;&#x4E92;&#x5668;&#x4F20;&#x8F93;&#x7ED9;&#x5C55;&#x793A;&#x5668;&#xFF0C;&#x53D6;&#x800C;&#x4EE3;&#x4E4B;&#xFF0C;&#x90A3;&#x4E9B;&#x65E0;&#x884C;&#x4E3A;&#x7684;&#x7B80;&#x5355;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4F1A;&#x4ECE;&#x4EA4;&#x4E92;&#x5668;&#x4F20;&#x8F93;&#x5230;&#x5C55;&#x793A;&#x5668;&#x90A3;&#x91CC;&#x3002;&#x8FD9;&#x5C31;&#x9632;&#x6B62;&#x4E86;&#x90A3;&#x4E9B;&#x201C;&#x771F;&#x6B63;&#x7684;&#x5DE5;&#x4F5C;&#x201D;&#x5728;&#x5C55;&#x793A;&#x5668;&#x90A3;&#x91CC;&#x8FDB;&#x884C;&#xFF0C;&#x5C55;&#x793A;&#x5668;&#x53EA;&#x80FD;&#x8D1F;&#x8D23;&#x51C6;&#x5907;&#x90A3;&#x4E9B;&#x5728;&#x89C6;&#x56FE;&#x91CC;&#x663E;&#x793A;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<h3 id="&#x89C6;&#x56FE;">&#x89C6;&#x56FE;</h3>
+<p>&#x89C6;&#x56FE;&#x4E00;&#x822C;&#x662F;&#x88AB;&#x52A8;&#x7684;&#xFF0C;&#x5B83;&#x901A;&#x5E38;&#x7B49;&#x5F85;&#x5C55;&#x793A;&#x5668;&#x4E0B;&#x53D1;&#x9700;&#x8981;&#x663E;&#x793A;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x800C;&#x4E0D;&#x4F1A;&#x5411;&#x5176;&#x7D22;&#x53D6;&#x6570;&#x636E;&#x3002;&#x89C6;&#x56FE;&#xFF08;&#x4F8B;&#x5982;&#x767B;&#x5F55;&#x754C;&#x9762;&#x7684;&#x767B;&#x5F55;&#x89C6;&#x56FE;&#x63A7;&#x4EF6;&#xFF09;&#x6240;&#x5B9A;&#x4E49;&#x7684;&#x65B9;&#x6CD5;&#x5E94;&#x8BE5;&#x5141;&#x8BB8;&#x5C55;&#x793A;&#x5668;&#x5728;&#x9AD8;&#x5EA6;&#x62BD;&#x8C61;&#x7684;&#x5C42;&#x6B21;&#x4E0E;&#x4E4B;&#x4EA4;&#x6D41;&#x3002;&#x5C55;&#x793A;&#x5668;&#x901A;&#x8FC7;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x8868;&#x8FBE;&#xFF0C;&#x800C;&#x4E0D;&#x5173;&#x5FC3;&#x90A3;&#x4E9B;&#x5185;&#x5BB9;&#x6240;&#x663E;&#x793A;&#x7684;&#x6837;&#x5B50;&#x3002;&#x5C55;&#x793A;&#x5668;&#x4E0D;&#x77E5;&#x9053; <code>UILabel</code>&#xFF0C;<code>UIButton</code> &#x7B49;&#x7684;&#x5B58;&#x5728;&#xFF0C;&#x5B83;&#x53EA;&#x77E5;&#x9053;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x7684;&#x5185;&#x5BB9;&#x4EE5;&#x53CA;&#x4F55;&#x65F6;&#x9700;&#x8981;&#x663E;&#x793A;&#x3002;&#x5185;&#x5BB9;&#x5982;&#x4F55;&#x88AB;&#x663E;&#x793A;&#x662F;&#x7531;&#x89C6;&#x56FE;&#x6765;&#x8FDB;&#x884C;&#x63A7;&#x5236;&#x7684;&#x3002;</p>
+<p>&#x89C6;&#x56FE;&#x662F;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x7684;&#x63A5;&#x53E3; (Interface)&#xFF0C;&#x5728; Objective-C &#x4E2D;&#x4F7F;&#x7528;&#x534F;&#x8BAE;&#x88AB;&#x5B9A;&#x4E49;&#x3002;&#x4E00;&#x4E2A; <code>UIViewController</code> &#x6216;&#x8005;&#x5B83;&#x7684;&#x4E00;&#x4E2A;&#x5B50;&#x7C7B;&#x4F1A;&#x5B9E;&#x73B0;&#x89C6;&#x56FE;&#x534F;&#x8BAE;&#x3002;&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x7684;&#x793A;&#x4F8B;&#x4E2D; &#x201C;&#x6DFB;&#x52A0;&#x201D; &#x754C;&#x9762;&#x4F1A;&#x6709;&#x4EE5;&#x4E0B;&#x63A5;&#x53E3;&#xFF1A;</p>
+<pre><code>@protocol VTDAddViewInterface &lt;NSObject&gt;
+
+- (void)setEntryName:(NSString *)name;
+- (void)setEntryDueDate:(NSDate *)date;
+
+@end
+</code></pre><p>&#x89C6;&#x56FE;&#x548C;&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;&#x540C;&#x6837;&#x4F1A;&#x64CD;&#x7EB5;&#x7528;&#x6237;&#x754C;&#x9762;&#x548C;&#x76F8;&#x5173;&#x8F93;&#x5165;&#x3002;&#x56E0;&#x4E3A;&#x901A;&#x5E38;&#x6765;&#x8BF4;&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;&#x662F;&#x6700;&#x5BB9;&#x6613;&#x5904;&#x7406;&#x8FD9;&#x4E9B;&#x8F93;&#x5165;&#x548C;&#x6267;&#x884C;&#x67D0;&#x4E9B;&#x64CD;&#x4F5C;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x6240;&#x4EE5;&#x4E5F;&#x5C31;&#x4E0D;&#x96BE;&#x7406;&#x89E3;&#x4E3A;&#x4EC0;&#x4E48;&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;&#x603B;&#x662F;&#x8FD9;&#x4E48;&#x5927;&#x4E86;&#x3002;&#x4E3A;&#x4E86;&#x4F7F;&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;&#x4FDD;&#x6301;&#x82D7;&#x6761;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4F7F;&#x5B83;&#x4EEC;&#x5728;&#x7528;&#x6237;&#x8FDB;&#x884C;&#x76F8;&#x5173;&#x64CD;&#x4F5C;&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x6709;&#x9014;&#x5F84;&#x6765;&#x901A;&#x77E5;&#x76F8;&#x5173;&#x90E8;&#x5206;&#x3002;&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;&#x4E0D;&#x5E94;&#x5F53;&#x6839;&#x636E;&#x8FD9;&#x4E9B;&#x884C;&#x4E3A;&#x8FDB;&#x884C;&#x76F8;&#x5173;&#x51B3;&#x5B9A;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x5E94;&#x5F53;&#x5C06;&#x53D1;&#x751F;&#x7684;&#x4E8B;&#x4EF6;&#x4F20;&#x9012;&#x5230;&#x80FD;&#x591F;&#x505A;&#x51B3;&#x5B9A;&#x7684;&#x90E8;&#x5206;&#x3002;</p>
+<p>&#x5728;&#x6211;&#x4EEC;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;Add View Controller &#x6709;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x5B83;&#x5B9E;&#x73B0;&#x4E86;&#x5982;&#x4E0B;&#x63A5;&#x53E3;&#xFF1A;</p>
+<pre><code>@protocol VTDAddModuleInterface &lt;NSObject&gt;
+
+- (void)cancelAddAction;
+- (void)saveAddActionWithName:(NSString *)name dueDate:(NSDate *)dueDate
+
+@end
+</code></pre><p>&#x5F53;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x53D6;&#x6D88;&#x952E;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;&#x544A;&#x77E5;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x7528;&#x6237;&#x9700;&#x8981;&#x5176;&#x53D6;&#x6D88;&#x8FD9;&#x6B21;&#x6DFB;&#x52A0;&#x7684;&#x52A8;&#x4F5C;&#x3002;&#x8FD9;&#x6837;&#x4E00;&#x6765;&#xFF0C;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x4FBF;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x5173;&#x95ED; add view controller &#x5E76;&#x544A;&#x77E5;&#x5217;&#x8868;&#x89C6;&#x56FE;&#x8FDB;&#x884C;&#x66F4;&#x65B0;&#x3002;</p>
+<p>&#x89C6;&#x56FE;&#x548C;&#x5C55;&#x793A;&#x5668;&#x4E4B;&#x95F4;&#x8FB9;&#x754C;&#x5904;&#x662F;&#x4E00;&#x4E2A;&#x4F7F;&#x7528; <a href="https://github.com/ReactiveCocoa/ReactiveCocoa" target="_blank">ReactiveCocoa</a> &#x7684;&#x597D;&#x5730;&#x65B9;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4EE3;&#x8868;&#x6309;&#x94AE;&#x64CD;&#x4F5C;&#x7684;&#x4FE1;&#x53F7;&#x3002;&#x8FD9;&#x5C06;&#x5141;&#x8BB8;&#x5C55;&#x793A;&#x5668;&#x5728;&#x4E0D;&#x6253;&#x7834;&#x804C;&#x8D23;&#x5206;&#x79BB;&#x7684;&#x524D;&#x63D0;&#x4E0B;&#x8F7B;&#x677E;&#x5730;&#x5BF9;&#x90A3;&#x4E9B;&#x4FE1;&#x53F7;&#x8FDB;&#x884C;&#x54CD;&#x5E94;&#x3002;</p>
+<h3 id="&#x8DEF;&#x7531;">&#x8DEF;&#x7531;</h3>
+<p>&#x5C4F;&#x5E55;&#x95F4;&#x7684;&#x8DEF;&#x5F84;&#x4F1A;&#x5728;&#x4EA4;&#x4E92;&#x8BBE;&#x8BA1;&#x5E08;&#x521B;&#x5EFA;&#x7684;&#x7EBF;&#x6846; (wireframes) &#x91CC;&#x8FDB;&#x884C;&#x5B9A;&#x4E49;&#x3002;&#x5728; VIPER &#x4E2D;&#xFF0C;&#x8DEF;&#x7531;&#x662F;&#x7531;&#x4E24;&#x4E2A;&#x90E8;&#x5206;&#x6765;&#x8D1F;&#x8D23;&#x7684;&#xFF1A;&#x5C55;&#x793A;&#x5668;&#x548C;&#x7EBF;&#x6846;&#x3002;&#x4E00;&#x4E2A;&#x7EBF;&#x6846;&#x5BF9;&#x8C61;&#x5305;&#x62EC; <code>UIWindow</code>&#xFF0C;<code>UINavigationController</code>&#xFF0C;<code>UIViewController</code> &#x7B49;&#x90E8;&#x5206;&#xFF0C;&#x5B83;&#x8D1F;&#x8D23;&#x521B;&#x5EFA;&#x89C6;&#x56FE;/&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;&#x5E76;&#x5C06;&#x5176;&#x88C5;&#x914D;&#x5230;&#x7A97;&#x53E3;&#x4E2D;&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x5C55;&#x793A;&#x5668;&#x5305;&#x542B;&#x4E86;&#x54CD;&#x5E94;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x903B;&#x8F91;&#xFF0C;&#x56E0;&#x6B64;&#x5B83;&#x5C31;&#x62E5;&#x6709;&#x77E5;&#x6653;&#x4F55;&#x65F6;&#x5BFC;&#x822A;&#x81F3;&#x53E6;&#x4E00;&#x4E2A;&#x5C4F;&#x5E55;&#x4EE5;&#x53CA;&#x5177;&#x4F53;&#x662F;&#x54EA;&#x4E00;&#x4E2A;&#x5C4F;&#x5E55;&#x7684;&#x80FD;&#x529B;&#x3002;&#x800C;&#x540C;&#x65F6;&#xFF0C;&#x7EBF;&#x6846;&#x77E5;&#x9053;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x5BFC;&#x822A;&#x3002;&#x5728;&#x4E24;&#x8005;&#x7ED3;&#x5408;&#x8D77;&#x6765;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5C55;&#x793A;&#x5668;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7EBF;&#x6846;&#x6765;&#x8FDB;&#x884C;&#x5B9E;&#x73B0;&#x5BFC;&#x822A;&#x529F;&#x80FD;&#xFF0C;&#x5B83;&#x4EEC;&#x4E24;&#x8005;&#x4E00;&#x8D77;&#x63CF;&#x8FF0;&#x4E86;&#x4ECE;&#x4E00;&#x4E2A;&#x5C4F;&#x5E55;&#x81F3;&#x53E6;&#x4E00;&#x4E2A;&#x5C4F;&#x5E55;&#x7684;&#x8DEF;&#x7531;&#x8FC7;&#x7A0B;&#x3002;</p>
+<p>&#x7EBF;&#x6846;&#x540C;&#x65F6;&#x4E5F;&#x660E;&#x663E;&#x662F;&#x4E00;&#x4E2A;&#x5904;&#x7406;&#x5BFC;&#x822A;&#x8F6C;&#x573A;&#x52A8;&#x753B;&#x7684;&#x5730;&#x65B9;&#x3002;&#x6765;&#x770B;&#x770B;&#x8FD9;&#x4E2A; add wireframe &#x4E2D;&#x7684;&#x4F8B;&#x5B50;&#x5427;&#xFF1A;</p>
+<pre><code>@implementation VTDAddWireframe
+
+- (void)presentAddInterfaceFromViewController:(UIViewController *)viewController 
+{
+    VTDAddViewController *addViewController = [self addViewController];
+    addViewController.eventHandler = self.addPresenter;
+    addViewController.modalPresentationStyle = UIModalPresentationCustom;
+    addViewController.transitioningDelegate = self;
+
+    [viewController presentViewController:addViewController animated:YES completion:nil];
+
+    self.presentedViewController = viewController;
+}
+
+#pragma mark - UIViewControllerTransitioningDelegate Methods
+
+- (id&lt;UIViewControllerAnimatedTransitioning&gt;)animationControllerForDismissedController:(UIViewController *)dismissed 
+{
+    return [[VTDAddDismissalTransition alloc] init];
+}
+
+- (id&lt;UIViewControllerAnimatedTransitioning&gt;)animationControllerForPresentedController:(UIViewController *)presented
+                                                                  presentingController:(UIViewController *)presenting
+                                                                      sourceController:(UIViewController *)source 
+{
+    return [[VTDAddPresentationTransition alloc] init];
+}
+
+@end
+</code></pre><p>&#x5E94;&#x7528;&#x4F7F;&#x7528;&#x4E86;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;&#x8F6C;&#x573A;&#x6765;&#x5448;&#x73B0; add view controller&#x3002;&#x56E0;&#x4E3A;&#x7EBF;&#x6846;&#x90E8;&#x4EF6;&#x8D1F;&#x8D23;&#x5B9E;&#x65BD;&#x8FD9;&#x4E2A;&#x8F6C;&#x573A;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x6210;&#x4E3A;&#x4E86; add view controller &#x8F6C;&#x573A;&#x7684;&#x59D4;&#x6258;&#xFF0C;&#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x9002;&#x5F53;&#x7684;&#x8F6C;&#x573A;&#x52A8;&#x753B;&#x3002;</p>
+<h2 id="&#x5229;&#x7528;-viper-&#x7EC4;&#x7EC7;&#x5E94;&#x7528;&#x7EC4;&#x4EF6;">&#x5229;&#x7528; VIPER &#x7EC4;&#x7EC7;&#x5E94;&#x7528;&#x7EC4;&#x4EF6;</h2>
+<p>iOS &#x5E94;&#x7528;&#x7684;&#x6784;&#x67B6;&#x9700;&#x8981;&#x8003;&#x8651;&#x5230; UIKit &#x548C; Cocoa Touch &#x662F;&#x5EFA;&#x7ACB;&#x5E94;&#x7528;&#x7684;&#x4E3B;&#x8981;&#x5DE5;&#x5177;&#x3002;&#x67B6;&#x6784;&#x9700;&#x8981;&#x548C;&#x5E94;&#x7528;&#x7684;&#x6240;&#x6709;&#x7EC4;&#x4EF6;&#x90FD;&#x80FD;&#x591F;&#x548C;&#x5E73;&#x76F8;&#x5904;&#xFF0C;&#x4F46;&#x53C8;&#x9700;&#x8981;&#x4E3A;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x6846;&#x67B6;&#x7684;&#x67D0;&#x4E9B;&#x90E8;&#x5206;&#x4EE5;&#x53CA;&#x5B83;&#x4EEC;&#x5E94;&#x8BE5;&#x5728;&#x4EC0;&#x4E48;&#x4F4D;&#x7F6E;&#x63D0;&#x4F9B;&#x4E00;&#x4E9B;&#x6307;&#x5BFC;&#x548C;&#x5EFA;&#x8BAE;&#x3002;</p>
+<p>iOS &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x4E3B;&#x529B;&#x662F; <code>UIViewController</code>&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x96BE;&#x60F3;&#x8C61;&#x627E;&#x4E00;&#x4E2A;&#x7ADE;&#x4E89;&#x8005;&#x6765;&#x53D6;&#x4EE3; MVC &#x5C31;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x5927;&#x91CF;&#x4F7F;&#x7528;&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;&#x3002;&#x4F46;&#x662F;&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;&#x73B0;&#x5728;&#x662F;&#x8FD9;&#x4E2A;&#x5E73;&#x53F0;&#x7684;&#x6838;&#x5FC3;&#xFF1A;&#x5B83;&#x4EEC;&#x5904;&#x7406;&#x8BBE;&#x5907;&#x65B9;&#x5411;&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x56DE;&#x5E94;&#x7528;&#x6237;&#x7684;&#x8F93;&#x5165;&#xFF0C;&#x548C;&#x7C7B;&#x4F3C;&#x5BFC;&#x822A;&#x63A7;&#x5236;&#x5668;&#x4E4B;&#x7C7B;&#x7684;&#x7CFB;&#x7EDF;&#x7CFB;&#x7EDF;&#x7EC4;&#x4EF6;&#x96C6;&#x6210;&#x5F97;&#x5F88;&#x597D;&#xFF0C;&#x800C;&#x73B0;&#x5728;&#x5728; iOS 7 &#x4E2D;&#x53C8;&#x80FD;&#x5B9E;&#x73B0;&#x81EA;&#x5B9A;&#x4E49;&#x5C4F;&#x5E55;&#x4E4B;&#x95F4;&#x7684;&#x8F6C;&#x6362;&#xFF0C;&#x529F;&#x80FD;&#x5B9E;&#x5728;&#x662F;&#x592A;&#x5F3A;&#x5927;&#x4E86;&#x3002;</p>
+<p>&#x6709;&#x4E86; VIPER&#xFF0C;&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;&#x4FBF;&#x5C31;&#x80FD;&#x771F;&#x6B63;&#x7684;&#x505A;&#x5B83;&#x672C;&#x6765;&#x5E94;&#x8BE5;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x4E86;&#xFF0C;&#x90A3;&#x5C31;&#x662F;&#x63A7;&#x5236;&#x89C6;&#x56FE;&#x3002; &#x6211;&#x4EEC;&#x7684;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x5E94;&#x62E5;&#x6709;&#x4E24;&#x4E2A;&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x5217;&#x8868;&#x89C6;&#x56FE;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x662F;&#x65B0;&#x5EFA;&#x5F85;&#x529E;&#x3002;&#x56E0;&#x4E3A; add view controller &#x8981;&#x505A;&#x7684;&#x6240;&#x6709;&#x4E8B;&#x60C5;&#x5C31;&#x662F;&#x63A7;&#x5236;&#x89C6;&#x56FE;&#xFF0C;&#x6240;&#x4EE5;&#x5B9E;&#x73B0;&#x8D77;&#x6765;&#x975E;&#x5E38;&#x7684;&#x7B80;&#x5355;&#x57FA;&#x7840;&#xFF1A;</p>
+<pre><code>@implementation VTDAddViewController
+
+- (void)viewDidAppear:(BOOL)animated 
+{
+    [super viewDidAppear:animated];
+
+    UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                                        action:@selector(dismiss)];
+    [self.transitioningBackgroundView addGestureRecognizer:gestureRecognizer];
+    self.transitioningBackgroundView.userInteractionEnabled = YES;
+}
+
+- (void)dismiss 
+{
+    [self.eventHandler cancelAddAction];
+}
+
+- (void)setEntryName:(NSString *)name 
+{
+    self.nameTextField.text = name;
+}
+
+- (void)setEntryDueDate:(NSDate *)date 
+{
+    [self.datePicker setDate:date];
+}
+
+- (IBAction)save:(id)sender 
+{
+    [self.eventHandler saveAddActionWithName:self.nameTextField.text
+                                     dueDate:self.datePicker.date];
+}
+
+- (IBAction)cancel:(id)sender 
+{
+    [self.eventHandler cancelAddAction];
+}
+
+
+#pragma mark - UITextFieldDelegate Methods
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField 
+{
+    [textField resignFirstResponder];
+
+    return YES;
+}
+
+@end
+</code></pre><p>&#x5E94;&#x7528;&#x5728;&#x63A5;&#x5165;&#x7F51;&#x7EDC;&#x4EE5;&#x540E;&#x4F1A;&#x53D8;&#x5F97;&#x66F4;&#x6709;&#x7528;&#x5904;&#xFF0C;&#x4F46;&#x662F;&#x7A76;&#x7ADF;&#x8BE5;&#x5728;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x8054;&#x7F51;&#x5462;&#xFF1F;&#x53C8;&#x7531;&#x8C01;&#x6765;&#x8D1F;&#x8D23;&#x542F;&#x52A8;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x5462;&#xFF1F;&#x5178;&#x578B;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7531;&#x4EA4;&#x4E92;&#x5668;&#x6765;&#x542F;&#x52A8;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x64CD;&#x4F5C;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x4E0D;&#x4F1A;&#x76F4;&#x63A5;&#x5904;&#x7406;&#x7F51;&#x7EDC;&#x4EE3;&#x7801;&#x3002;&#x5B83;&#x4F1A;&#x5BFB;&#x627E;&#x4E00;&#x4E2A;&#x50CF;&#x662F; network manager &#x6216;&#x8005; API client &#x8FD9;&#x6837;&#x7684;&#x4F9D;&#x8D56;&#x9879;&#x3002;&#x4EA4;&#x4E92;&#x5668;&#x53EF;&#x80FD;&#x805A;&#x5408;&#x6765;&#x81EA;&#x591A;&#x4E2A;&#x6E90;&#x7684;&#x6570;&#x636E;&#x6765;&#x63D0;&#x4F9B;&#x6240;&#x9700;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x4ECE;&#x800C;&#x5B8C;&#x6210;&#x4E00;&#x4E2A;&#x7528;&#x4F8B;&#x3002;&#x6700;&#x7EC8;&#xFF0C;&#x5C31;&#x7531;&#x5C55;&#x793A;&#x5668;&#x6765;&#x91C7;&#x96C6;&#x4EA4;&#x4E92;&#x5668;&#x53CD;&#x9988;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x7136;&#x540E;&#x7EC4;&#x7EC7;&#x5E76;&#x8FDB;&#x884C;&#x5C55;&#x793A;&#x3002;</p>
+<p>&#x6570;&#x636E;&#x5B58;&#x50A8;&#x6A21;&#x5757;&#x8D1F;&#x8D23;&#x63D0;&#x4F9B;&#x5B9E;&#x4F53;&#x7ED9;&#x4EA4;&#x4E92;&#x5668;&#x3002;&#x56E0;&#x4E3A;&#x4EA4;&#x4E92;&#x5668;&#x8981;&#x5B8C;&#x6210;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#xFF0C;&#x56E0;&#x6B64;&#x5B83;&#x9700;&#x8981;&#x4ECE;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x4E2D;&#x83B7;&#x53D6;&#x5B9E;&#x4F53;&#x5E76;&#x64CD;&#x7EB5;&#x5B83;&#x4EEC;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x66F4;&#x65B0;&#x540E;&#x7684;&#x5B9E;&#x4F53;&#x518D;&#x653E;&#x56DE;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x4E2D;&#x3002;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x7BA1;&#x7406;&#x5B9E;&#x4F53;&#x7684;&#x6301;&#x4E45;&#x5316;&#xFF0C;&#x800C;&#x5B9E;&#x4F53;&#x5E94;&#x8BE5;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x5168;&#x7136;&#x4E0D;&#x77E5;&#xFF0C;&#x6B63;&#x56E0;&#x5982;&#x6B64;&#xFF0C;&#x5B9E;&#x4F53;&#x5E76;&#x4E0D;&#x77E5;&#x9053;&#x5982;&#x4F55;&#x5BF9;&#x81EA;&#x5DF1;&#x8FDB;&#x884C;&#x6301;&#x4E45;&#x5316;&#x3002;</p>
+<p>&#x4EA4;&#x4E92;&#x5668;&#x540C;&#x6837;&#x4E0D;&#x9700;&#x8981;&#x77E5;&#x9053;&#x5982;&#x4F55;&#x5C06;&#x5B9E;&#x4F53;&#x6301;&#x4E45;&#x5316;&#xFF0C;&#x6709;&#x65F6;&#x4EA4;&#x4E92;&#x5668;&#x66F4;&#x5E0C;&#x671B;&#x4F7F;&#x7528;&#x4E00;&#x4E2A; data manager &#x6765;&#x4F7F;&#x5176;&#x4E0E;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x7684;&#x4EA4;&#x4E92;&#x53D8;&#x5F97;&#x5BB9;&#x6613;&#x3002;Data manager &#x53EF;&#x4EE5;&#x5904;&#x7406;&#x66F4;&#x591A;&#x7684;&#x9488;&#x5BF9;&#x5B58;&#x50A8;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x6BD4;&#x5982;&#x521B;&#x5EFA;&#x83B7;&#x53D6;&#x8BF7;&#x6C42;&#xFF0C;&#x6784;&#x5EFA;&#x67E5;&#x8BE2;&#x7B49;&#x7B49;&#x3002;&#x8FD9;&#x5C31;&#x4F7F;&#x4EA4;&#x4E92;&#x5668;&#x80FD;&#x591F;&#x5C06;&#x66F4;&#x591A;&#x7684;&#x6CE8;&#x610F;&#x529B;&#x653E;&#x5728;&#x5E94;&#x7528;&#x903B;&#x8F91;&#x4E0A;&#xFF0C;&#x800C;&#x4E0D;&#x5FC5;&#x518D;&#x4E86;&#x89E3;&#x5B9E;&#x4F53;&#x662F;&#x5982;&#x4F55;&#x88AB;&#x805A;&#x96C6;&#x6216;&#x6301;&#x4E45;&#x5316;&#x7684;&#x3002;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x4E3E;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x6765;&#x8BF4;&#x660E;&#x4F7F;&#x7528; data manager &#x6709;&#x610F;&#x4E49;&#x7684;&#xFF0C;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x5047;&#x8BBE;&#x4F60;&#x5728;&#x4F7F;&#x7528; Core Data&#x3002;&#x8FD9;&#x662F;&#x793A;&#x4F8B;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684; data manager &#x7684;&#x63A5;&#x53E3;&#xFF1A;</p>
+<pre><code>@interface VTDListDataManager : NSObject
+
+@property (nonatomic, strong) VTDCoreDataStore *dataStore;
+
+- (void)todoItemsBetweenStartDate:(NSDate *)startDate endDate:(NSDate *)endDate completionBlock:(void (^)(NSArray *todoItems))completionBlock;
+
+@end
+</code></pre><p>&#x5F53;&#x4F7F;&#x7528; TDD &#x6765;&#x5F00;&#x53D1;&#x4E00;&#x4E2A;&#x4EA4;&#x4E92;&#x5668;&#x65F6;&#xFF0C;&#x662F;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x7528;&#x7684;&#x6A21;&#x62DF;&#x5B58;&#x50A8;&#x6765;&#x4EE3;&#x66FF;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x7684;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x7684;&#x3002;&#x907F;&#x514D;&#x4E0E;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x901A;&#x8BAF;&#xFF08;&#x7F51;&#x7EDC;&#x670D;&#x52A1;&#xFF09;&#x4EE5;&#x53CA;&#x907F;&#x514D;&#x8BFB;&#x53D6;&#x78C1;&#x76D8;&#xFF08;&#x6570;&#x636E;&#x5E93;&#xFF09;&#x53EF;&#x4EE5;&#x52A0;&#x5FEB;&#x4F60;&#x6D4B;&#x8BD5;&#x7684;&#x901F;&#x5EA6;&#x5E76;&#x52A0;&#x5F3A;&#x5176;&#x53EF;&#x91CD;&#x590D;&#x6027;&#x3002;</p>
+<p>&#x5C06;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x4FDD;&#x6301;&#x4E3A;&#x4E00;&#x4E2A;&#x754C;&#x9650;&#x6E05;&#x6670;&#x7684;&#x7279;&#x5B9A;&#x5C42;&#x7684;&#x539F;&#x56E0;&#x4E4B;&#x4E00;&#x662F;&#xFF0C;&#x8FD9;&#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x5EF6;&#x8FDF;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x6301;&#x4E45;&#x5316;&#x6280;&#x672F;&#x3002;&#x5982;&#x679C;&#x4F60;&#x7684;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x662F;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x7C7B;&#xFF0C;&#x90A3;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x57FA;&#x7840;&#x7684;&#x6301;&#x4E45;&#x5316;&#x7B56;&#x7565;&#x6765;&#x5F00;&#x59CB;&#x4F60;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x7136;&#x540E;&#x7B49;&#x5230;&#x6709;&#x610F;&#x4E49;&#x7684;&#x65F6;&#x5019;&#x5347;&#x7EA7;&#x81F3; SQLite &#x6216;&#x8005; Core Data&#x3002;&#x800C;&#x56E0;&#x4E3A;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x5C42;&#x7684;&#x5B58;&#x5728;&#xFF0C;&#x4F60;&#x7684;&#x5E94;&#x7528;&#x4EE3;&#x7801;&#x5E93;&#x4E2D;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x6539;&#x53D8;&#x4EFB;&#x4F55;&#x4E1C;&#x897F;&#x3002;</p>
+<p>&#x5728; iOS &#x7684;&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528; Core Data &#x7ECF;&#x5E38;&#x6BD4;&#x6784;&#x67B6;&#x672C;&#x8EAB;&#x8FD8;&#x5BB9;&#x6613;&#x5F15;&#x8D77;&#x66F4;&#x591A;&#x4E89;&#x8BAE;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x5229;&#x7528; VIPER &#x6765;&#x4F7F;&#x7528; Core Data &#x5C06;&#x7ED9;&#x4F60;&#x5E26;&#x6765;&#x4F7F;&#x7528; Core Data &#x7684;&#x524D;&#x6240;&#x672A;&#x6709;&#x7684;&#x826F;&#x597D;&#x4F53;&#x9A8C;&#x3002;&#x5728;&#x6301;&#x4E45;&#x5316;&#x6570;&#x636E;&#x7684;&#x5DE5;&#x5177;&#x5C42;&#x9762;&#x4E0A;&#xFF0C;Core Data &#x53EF;&#x4EE5;&#x4FDD;&#x6301;&#x5FEB;&#x901F;&#x5B58;&#x53D6;&#x548C;&#x4F4E;&#x5185;&#x5B58;&#x5360;&#x7528;&#x65B9;&#x9762;&#xFF0C;&#x7B80;&#x76F4;&#x662F;&#x4E2A;&#x795E;&#x5668;&#x3002;&#x4F46;&#x662F;&#x6709;&#x4E2A;&#x5F88;&#x607C;&#x4EBA;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x5B83;&#x4F1A;&#x50CF;&#x89E6;&#x987B;&#x4E00;&#x6837;&#x628A; <code>NSManagedObjectContext</code>  &#x5EF6;&#x4F38;&#x81F3;&#x4F60;&#x6240;&#x6709;&#x7684;&#x5E94;&#x7528;&#x5B9E;&#x73B0;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x90A3;&#x4E9B;&#x5B83;&#x4EEC;&#x4E0D;&#x8BE5;&#x5F85;&#x7684;&#x5730;&#x65B9;&#x3002;VIPER &#x53EF;&#x4EE5;&#x4F7F; Core Data &#x5F85;&#x5728;&#x6B63;&#x786E;&#x7684;&#x5730;&#x65B9;&#xFF1A;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x5C42;&#x3002;</p>
+<p>&#x5728;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x5E94;&#x7528;&#x4EC5;&#x6709;&#x7684;&#x4E24;&#x90E8;&#x5206;&#x77E5;&#x9053;&#x4F7F;&#x7528;&#x4E86; Core Data&#xFF0C;&#x5176;&#x4E00;&#x662F;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x672C;&#x8EAB;&#xFF0C;&#x5B83;&#x8D1F;&#x8D23;&#x5EFA;&#x7ACB; Core Data &#x5806;&#x6808;&#xFF1B;&#x53E6;&#x4E00;&#x4E2A;&#x662F; data manager&#x3002;Data manager &#x6267;&#x884C;&#x4E86;&#x83B7;&#x53D6;&#x8BF7;&#x6C42;&#xFF0C;&#x5C06;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x8FD4;&#x56DE;&#x7684; NSManagedObject &#x5BF9;&#x8C61;&#x8F6C;&#x6362;&#x4E3A;&#x6807;&#x51C6;&#x7684; PONSO &#x6A21;&#x578B;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x4F20;&#x8F93;&#x56DE;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x5C42;&#x3002;&#x8FD9;&#x6837;&#x4E00;&#x6765;&#xFF0C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6838;&#x5FC3;&#x5C06;&#x4E0D;&#x518D;&#x4F9D;&#x8D56;&#x4E8E; Core Data&#xFF0C;&#x9644;&#x52A0;&#x5F97;&#x5230;&#x7684;&#x597D;&#x5904;&#x662F;&#xFF0C;&#x4F60;&#x4E5F;&#x518D;&#x4E5F;&#x4E0D;&#x7528;&#x62C5;&#x5FC3;&#x8FC7;&#x671F;&#x6570;&#x636E; (stale) &#x548C;&#x6CA1;&#x6709;&#x826F;&#x597D;&#x7EC4;&#x7EC7;&#x7684;&#x591A;&#x7EBF;&#x7A0B; NSManagedObjects &#x6765;&#x7CDF;&#x8E4B;&#x4F60;&#x7684;&#x5DE5;&#x4F5C;&#x6210;&#x679C;&#x4E86;&#x3002;</p>
+<p>&#x5728;&#x901A;&#x8FC7;&#x8BF7;&#x6C42;&#x8BBF;&#x95EE; Core Data &#x5B58;&#x50A8;&#x65F6;&#xFF0C;data manager &#x4E2D;&#x770B;&#x8D77;&#x6765;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF1A;</p>
+<pre><code>@implementation VTDListDataManager
+
+- (void)todoItemsBetweenStartDate:(NSDate *)startDate endDate:(NSDate*)endDate completionBlock:(void (^)(NSArray *todoItems))completionBlock
+{
+    NSCalendar *calendar = [NSCalendar autoupdatingCurrentCalendar];
+
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@&quot;(date &gt;= %@) AND (date &lt;= %@)&quot;, [calendar dateForBeginningOfDay:startDate], [calendar dateForEndOfDay:endDate]];
+    NSArray *sortDescriptors = @[];
+
+    __weak typeof(self) welf = self;
+    [self.dataStore
+     fetchEntriesWithPredicate:predicate
+     sortDescriptors:sortDescriptors
+     completionBlock:^(NSArray* entries) {
+         if (completionBlock)
+         {
+             completionBlock([welf todoItemsFromDataStoreEntries:entries]);
+         }
+     }];
+}
+
+- (NSArray*)todoItemsFromDataStoreEntries:(NSArray *)entries
+{
+    return [entries arrayFromObjectsCollectedWithBlock:^id(VTDManagedTodoItem *todo) {
+        return [VTDTodoItem todoItemWithDueDate:todo.date name:todo.name];
+    }];
+}
+
+@end
+</code></pre><p>&#x4E0E; Core Data &#x4E00;&#x6837;&#x6781;&#x5BCC;&#x4E89;&#x8BAE;&#x7684;&#x6050;&#x6015;&#x5C31;&#x662F; UI &#x6545;&#x4E8B;&#x677F;&#x4E86;&#x3002;&#x6545;&#x4E8B;&#x677F;&#x5177;&#x6709;&#x5F88;&#x591A;&#x6709;&#x7528;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5982;&#x679C;&#x5B8C;&#x5168;&#x5FFD;&#x89C6;&#x5B83;&#x5C06;&#x4F1A;&#x662F;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x8C03;&#x7528;&#x6545;&#x4E8B;&#x7248;&#x6240;&#x80FD;&#x63D0;&#x4F9B;&#x7684;&#x6240;&#x6709;&#x529F;&#x80FD;&#x6765;&#x5B8C;&#x6210; VIPER &#x7684;&#x6240;&#x6709;&#x76EE;&#x6807;&#x4ECD;&#x7136;&#x662F;&#x5F88;&#x56F0;&#x96BE;&#x7684;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x6240;&#x80FD;&#x505A;&#x51FA;&#x7684;&#x59A5;&#x534F;&#x5C31;&#x662F;&#x9009;&#x62E9;&#x4E0D;&#x4F7F;&#x7528; segues &#x3002;&#x6709;&#x65F6;&#x5019;&#x4F7F;&#x7528; segues &#x662F;&#x6709;&#x6548;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x4F7F;&#x7528; segues &#x7684;&#x5371;&#x9669;&#x6027;&#x5728;&#x4E8E;&#x5B83;&#x4EEC;&#x5F88;&#x96BE;&#x539F;&#x5C01;&#x4E0D;&#x52A8;&#x5730;&#x4FDD;&#x6301;&#x5C4F;&#x5E55;&#x4E4B;&#x95F4;&#x7684;&#x5206;&#x79BB;&#xFF0C;&#x4EE5;&#x53CA; UI &#x548C;&#x5E94;&#x7528;&#x903B;&#x8F91;&#x4E4B;&#x95F4;&#x7684;&#x5206;&#x79BB;&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x5982;&#x679C;&#x5B9E;&#x73B0; prepareForSegue &#x65B9;&#x6CD5;&#x662F;&#x5FC5;&#x987B;&#x7684;&#x8BDD;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x5C3D;&#x91CF;&#x4E0D;&#x53BB;&#x4F7F;&#x7528; segues&#x3002;</p>
+<p>&#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;&#x6545;&#x4E8B;&#x677F;&#x662F;&#x4E00;&#x4E2A;&#x5B9E;&#x73B0;&#x7528;&#x6237;&#x754C;&#x9762;&#x5E03;&#x5C40;&#x6709;&#x6548;&#x65B9;&#x6CD5;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x5728;&#x4F7F;&#x7528;&#x81EA;&#x52A8;&#x5E03;&#x5C40;&#x7684;&#x65F6;&#x5019;&#x3002;&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x5728;&#x5B9E;&#x73B0;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x4E24;&#x4E2A;&#x754C;&#x9762;&#x7684;&#x5B9E;&#x4F8B;&#x4E2D;&#x4F7F;&#x7528;&#x6545;&#x4E8B;&#x677F;&#xFF0C;&#x5E76;&#x4E14;&#x4F7F;&#x7528;&#x8FD9;&#x6837;&#x7684;&#x4EE3;&#x7801;&#x6765;&#x6267;&#x884C;&#x81EA;&#x5DF1;&#x7684;&#x5BFC;&#x822A;&#x64CD;&#x4F5C;&#x3002;</p>
+<pre><code>static NSString *ListViewControllerIdentifier = @&quot;VTDListViewController&quot;;
+
+@implementation VTDListWireframe
+
+- (void)presentListInterfaceFromWindow:(UIWindow *)window 
+{
+    VTDListViewController *listViewController = [self listViewControllerFromStoryboard];
+    listViewController.eventHandler = self.listPresenter;
+    self.listPresenter.userInterface = listViewController;
+    self.listViewController = listViewController;
+
+    [self.rootWireframe showRootViewController:listViewController
+                                      inWindow:window];
+}
+
+- (VTDListViewController *)listViewControllerFromStoryboard 
+{
+    UIStoryboard *storyboard = [self mainStoryboard];
+    VTDListViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:ListViewControllerIdentifier];
+    return viewController;
+}
+
+- (UIStoryboard *)mainStoryboard 
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@&quot;Main&quot;
+                                                         bundle:[NSBundle mainBundle]];
+    return storyboard;
+}
+
+@end
+</code></pre><h2 id="&#x4F7F;&#x7528;-viper-&#x6784;&#x5EFA;&#x6A21;&#x5757;">&#x4F7F;&#x7528; VIPER &#x6784;&#x5EFA;&#x6A21;&#x5757;</h2>
+<p>&#x4E00;&#x822C;&#x5728;&#x4F7F;&#x7528; VIPER &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#x4E00;&#x4E2A;&#x5C4F;&#x5E55;&#x6216;&#x4E00;&#x7EC4;&#x5C4F;&#x5E55;&#x503E;&#x5411;&#x4E8E;&#x805A;&#x5728;&#x4E00;&#x8D77;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x3002;&#x6A21;&#x5757;&#x53EF;&#x4EE5;&#x4EE5;&#x591A;&#x79CD;&#x5F62;&#x5F0F;&#x4F53;&#x73B0;&#xFF0C;&#x4F46;&#x4E00;&#x822C;&#x6700;&#x597D;&#x628A;&#x5B83;&#x60F3;&#x6210;&#x662F;&#x4E00;&#x79CD;&#x7279;&#x6027;&#x3002;&#x5728;&#x64AD;&#x5BA2;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x53EF;&#x80FD;&#x662F;&#x97F3;&#x9891;&#x64AD;&#x653E;&#x5668;&#x6216;&#x8BA2;&#x9605;&#x6D4F;&#x89C8;&#x5668;&#x3002;&#x7136;&#x800C;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x5217;&#x8868;&#x548C;&#x6DFB;&#x52A0;&#x4E8B;&#x9879;&#x7684;&#x5C4F;&#x5E55;&#x90FD;&#x5C06;&#x4F5C;&#x4E3A;&#x5355;&#x72EC;&#x7684;&#x6A21;&#x5757;&#x88AB;&#x5EFA;&#x7ACB;&#x3002;</p>
+<p>&#x5C06;&#x4F60;&#x7684;&#x5E94;&#x7528;&#x4F5C;&#x4E3A;&#x4E00;&#x7EC4;&#x6A21;&#x5757;&#x6765;&#x8BBE;&#x8BA1;&#x6709;&#x5F88;&#x591A;&#x597D;&#x5904;&#xFF0C;&#x5176;&#x4E2D;&#x4E4B;&#x4E00;&#x5C31;&#x662F;&#x6A21;&#x5757;&#x53EF;&#x4EE5;&#x6709;&#x975E;&#x5E38;&#x660E;&#x786E;&#x548C;&#x5B9A;&#x4E49;&#x826F;&#x597D;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x5E76;&#x4E14;&#x72EC;&#x7ACB;&#x4E8E;&#x5176;&#x4ED6;&#x7684;&#x6A21;&#x5757;&#x3002;&#x8FD9;&#x5C31;&#x4F7F;&#x589E;&#x52A0;&#x6216;&#x8005;&#x79FB;&#x9664;&#x7279;&#x6027;&#x53D8;&#x5F97;&#x66F4;&#x52A0;&#x7B80;&#x5355;&#xFF0C;&#x4E5F;&#x4F7F;&#x5728;&#x754C;&#x9762;&#x4E2D;&#x5411;&#x7528;&#x6237;&#x5C55;&#x793A;&#x5404;&#x79CD;&#x53EF;&#x53D8;&#x6A21;&#x5757;&#x53D8;&#x5F97;&#x66F4;&#x52A0;&#x7B80;&#x5355;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x80FD;&#x5C06;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x4E2D;&#x5404;&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x5206;&#x9694;&#x66F4;&#x52A0;&#x660E;&#x786E;&#xFF0C;&#x6211;&#x4EEC;&#x4E3A;&#x6DFB;&#x52A0;&#x6A21;&#x5757;&#x5B9A;&#x4E49;&#x4E86;&#x4E24;&#x4E2A;&#x534F;&#x8BAE;&#x3002;&#x4E00;&#x4E2A;&#x662F;&#x6A21;&#x5757;&#x63A5;&#x53E3;&#xFF0C;&#x5B83;&#x5B9A;&#x4E49;&#x4E86;&#x6A21;&#x5757;&#x53EF;&#x4EE5;&#x505A;&#x4EC0;&#x4E48;&#xFF1B;&#x53E6;&#x4E00;&#x4E2A;&#x5219;&#x662F;&#x6A21;&#x5757;&#x7684;&#x4EE3;&#x7406;&#xFF0C;&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x8BE5;&#x6A21;&#x5757;&#x505A;&#x4E86;&#x4EC0;&#x4E48;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>@protocol VTDAddModuleInterface &lt;NSObject&gt;
+
+- (void)cancelAddAction;
+- (void)saveAddActionWithName:(NSString *)name dueDate:(NSDate *)dueDate;
+
+@end
+
+
+@protocol VTDAddModuleDelegate &lt;NSObject&gt;
+
+- (void)addModuleDidCancelAddAction;
+- (void)addModuleDidSaveAddAction;
+
+@end
+</code></pre><p>&#x56E0;&#x4E3A;&#x6A21;&#x5757;&#x5FC5;&#x987B;&#x8981;&#x88AB;&#x5C55;&#x793A;&#xFF0C;&#x624D;&#x80FD;&#x5BF9;&#x7528;&#x6237;&#x4EA7;&#x751F;&#x4EF7;&#x503C;&#xFF0C;&#x6240;&#x4EE5;&#x6A21;&#x5757;&#x7684;&#x5C55;&#x793A;&#x5668;&#x901A;&#x5E38;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x6A21;&#x578B;&#x7684;&#x63A5;&#x53E3;&#x3002;&#x5F53;&#x53E6;&#x4E00;&#x4E2A;&#x6A21;&#x578B;&#x60F3;&#x8981;&#x5C55;&#x73B0;&#x5F53;&#x524D;&#x6A21;&#x5757;&#x65F6;&#xFF0C;&#x5B83;&#x7684;&#x5C55;&#x793A;&#x5668;&#x5C31;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x6A21;&#x578B;&#x7684;&#x59D4;&#x6258;&#x534F;&#x8BAE;&#xFF0C;&#x8FD9;&#x6837;&#x5B83;&#x5C31;&#x80FD;&#x5728;&#x5C55;&#x793A;&#x65F6;&#x77E5;&#x9053;&#x5F53;&#x524D;&#x6A21;&#x5757;&#x505A;&#x4E86;&#x4E9B;&#x4EC0;&#x4E48;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x53EF;&#x80FD;&#x5305;&#x62EC;&#x5B9E;&#x4F53;&#xFF0C;&#x4EA4;&#x4E92;&#x5668;&#x548C;&#x7BA1;&#x7406;&#x5668;&#x7684;&#x901A;&#x7528;&#x5E94;&#x7528;&#x903B;&#x8F91;&#x5C42;&#xFF0C;&#x8FD9;&#x4E9B;&#x901A;&#x5E38;&#x53EF;&#x7528;&#x4E8E;&#x591A;&#x4E2A;&#x5C4F;&#x5E55;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x8FD9;&#x53D6;&#x51B3;&#x4E8E;&#x8FD9;&#x4E9B;&#x5C4F;&#x5E55;&#x4E4B;&#x95F4;&#x7684;&#x4EA4;&#x4E92;&#x53CA;&#x5B83;&#x4EEC;&#x7684;&#x76F8;&#x4F3C;&#x5EA6;&#x3002;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x53EF;&#x4EE5;&#x50CF;&#x5728;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x5217;&#x8868;&#x91CC;&#x9762;&#x4E00;&#x6837;&#xFF0C;&#x7B80;&#x5355;&#x7684;&#x53EA;&#x4EE3;&#x8868;&#x4E00;&#x4E2A;&#x5C4F;&#x5E55;&#x3002;&#x8FD9;&#x6837;&#x4E00;&#x6765;&#xFF0C;&#x5E94;&#x7528;&#x903B;&#x8F91;&#x5C42;&#x5BF9;&#x4E8E;&#x5B83;&#x7684;&#x7279;&#x5B9A;&#x6A21;&#x5757;&#x7684;&#x884C;&#x4E3A;&#x6765;&#x8BF4;&#x5C31;&#x975E;&#x5E38;&#x7279;&#x6709;&#x4E86;&#x3002;</p>
+<p>&#x6A21;&#x5757;&#x540C;&#x6837;&#x662F;&#x7EC4;&#x7EC7;&#x4EE3;&#x7801;&#x7684;&#x7B80;&#x4FBF;&#x9014;&#x5F84;&#x3002;&#x5C06;&#x6A21;&#x5757;&#x6240;&#x6709;&#x7684;&#x7F16;&#x7801;&#x90FD;&#x653E;&#x5728;&#x5B83;&#x81EA;&#x5DF1;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x5E76;&#x5728; Xcode &#x4E2D;&#x5EFA;&#x4E00;&#x4E2A; group&#xFF0C;&#x8FD9;&#x4F1A;&#x5728;&#x4F60;&#x9700;&#x8981;&#x5BFB;&#x627E;&#x548C;&#x6539;&#x53D8;&#x66F4;&#x52A0;&#x5BB9;&#x6613;&#x3002;&#x5F53;&#x4F60;&#x5728;&#x8981;&#x5BFB;&#x627E;&#x4E00;&#x4E2A;&#x7C7B;&#x65F6;&#xFF0C;&#x5B83;&#x6070;&#x5230;&#x597D;&#x5904;&#x5730;&#x5C31;&#x5728;&#x4F60;&#x6240;&#x671F;&#x5F85;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x8FD9;&#x79CD;&#x611F;&#x89C9;&#x771F;&#x662F;&#x65E0;&#x6CD5;&#x5F62;&#x5BB9;&#x7684;&#x68D2;&#x3002;</p>
+<p>&#x5229;&#x7528; VIPER &#x5EFA;&#x7ACB;&#x6A21;&#x5757;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x597D;&#x5904;&#x662F;&#x5B83;&#x4F7F;&#x5F97;&#x6269;&#x5C55;&#x5230;&#x591A;&#x5E73;&#x53F0;&#x65F6;&#x53D8;&#x5F97;&#x66F4;&#x52A0;&#x7B80;&#x5355;&#x3002;&#x72EC;&#x7ACB;&#x5728;&#x4EA4;&#x4E92;&#x5668;&#x5C42;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x7528;&#x4F8B;&#x7684;&#x5E94;&#x7528;&#x903B;&#x8F91;&#x5141;&#x8BB8;&#x4F60;&#x53EF;&#x4EE5;&#x4E13;&#x6CE8;&#x4E8E;&#x4E3A;&#x5E73;&#x677F;&#xFF0C;&#x7535;&#x8BDD;&#x6216;&#x8005; Mac &#x6784;&#x5EFA;&#x65B0;&#x7684;&#x7528;&#x6237;&#x754C;&#x9762;&#xFF0C;&#x540C;&#x65F6;&#x53EF;&#x4EE5;&#x91CD;&#x7528;&#x4F60;&#x7684;&#x5E94;&#x7528;&#x5C42;&#x3002;</p>
+<p>&#x8FDB;&#x4E00;&#x6B65;&#x6765;&#x8BF4;&#xFF0C;iPad &#x5E94;&#x7528;&#x7684;&#x7528;&#x6237;&#x754C;&#x9762;&#x80FD;&#x591F;&#x5C06;&#x90E8;&#x5206; iPhone &#x5E94;&#x7528;&#x7684;&#x89C6;&#x56FE;&#xFF0C;&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;&#x53CA;&#x5C55;&#x793A;&#x5668;&#x8FDB;&#x884C;&#x518D;&#x5229;&#x7528;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;iPad &#x5C4F;&#x5E55;&#x5C06;&#x7531; &#x2018;super&#x2019; &#x5C55;&#x793A;&#x5668;&#x548C;&#x7EBF;&#x6846;&#x6765;&#x4EE3;&#x8868;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x5229;&#x7528; iPhone &#x4F7F;&#x7528;&#x8FC7;&#x7684;&#x5C55;&#x793A;&#x5668;&#x548C;&#x7EBF;&#x6846;&#x6765;&#x7EC4;&#x6210;&#x5C4F;&#x5E55;&#x3002;&#x5EFA;&#x7ACB;&#x8FDB;&#x800C;&#x7EF4;&#x62A4;&#x4E00;&#x4E2A;&#x8DE8;&#x591A;&#x5E73;&#x53F0;&#x7684;&#x5E94;&#x7528;&#x662F;&#x4E00;&#x4E2A;&#x5DE8;&#x5927;&#x7684;&#x6311;&#x6218;&#xFF0C;&#x4F46;&#x662F;&#x597D;&#x7684;&#x6784;&#x67B6;&#x53EF;&#x4EE5;&#x5BF9;&#x6574;&#x4E2A;&#x6A21;&#x578B;&#x548C;&#x5E94;&#x7528;&#x5C42;&#x7684;&#x518D;&#x5229;&#x7528;&#x6709;&#x5927;&#x5E45;&#x5EA6;&#x7684;&#x63D0;&#x5347;&#xFF0C;&#x5E76;&#x4F7F;&#x5176;&#x5B9E;&#x73B0;&#x8D77;&#x6765;&#x66F4;&#x52A0;&#x5BB9;&#x6613;&#x3002;</p>
+<h2 id="&#x5229;&#x7528;-viper-&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;">&#x5229;&#x7528; VIPER &#x8FDB;&#x884C;&#x6D4B;&#x8BD5;</h2>
+<p>VIPER &#x7684;&#x51FA;&#x73B0;&#x6FC0;&#x53D1;&#x4E86;&#x4E00;&#x4E2A;&#x5173;&#x6CE8;&#x70B9;&#x7684;&#x5206;&#x79BB;&#xFF0C;&#x8FD9;&#x4F7F;&#x5F97;&#x91C7;&#x7528; TDD &#x53D8;&#x5F97;&#x66F4;&#x52A0;&#x7B80;&#x4FBF;&#x3002;&#x4EA4;&#x4E92;&#x5668;&#x5305;&#x542B;&#x72EC;&#x7ACB;&#x4E0E;&#x4EFB;&#x4F55; UI &#x7684;&#x7EAF;&#x7CB9;&#x903B;&#x8F91;&#xFF0C;&#x8FD9;&#x4F7F;&#x6D4B;&#x8BD5;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#x66F4;&#x52A0;&#x7B80;&#x5355;&#x3002;&#x540C;&#x65F6;&#x5C55;&#x793A;&#x5668;&#x5305;&#x542B;&#x7528;&#x6765;&#x4E3A;&#x663E;&#x793A;&#x51C6;&#x5907;&#x6570;&#x636E;&#x7684;&#x903B;&#x8F91;&#xFF0C;&#x5E76;&#x4E14;&#x5B83;&#x4E5F;&#x72EC;&#x7ACB;&#x4E8E;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A; UIKit &#x90E8;&#x4EF6;&#x3002;&#x5BF9;&#x4E8E;&#x8FD9;&#x4E2A;&#x903B;&#x8F91;&#x7684;&#x5F00;&#x53D1;&#x4E5F;&#x5F88;&#x5BB9;&#x6613;&#x7528;&#x6D4B;&#x8BD5;&#x6765;&#x9A71;&#x52A8;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x66F4;&#x503E;&#x5411;&#x4E8E;&#x5148;&#x4ECE;&#x4EA4;&#x4E92;&#x5668;&#x4E0B;&#x624B;&#x3002;&#x7528;&#x6237;&#x754C;&#x9762;&#x91CC;&#x6240;&#x6709;&#x90E8;&#x5206;&#x90FD;&#x670D;&#x52A1;&#x4E8E;&#x7528;&#x4F8B;&#xFF0C;&#x800C;&#x901A;&#x8FC7;&#x91C7;&#x7528; TDD &#x6765;&#x6D4B;&#x8BD5;&#x9A71;&#x52A8;&#x4EA4;&#x4E92;&#x5668;&#x7684; API &#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x5BF9;&#x7528;&#x6237;&#x754C;&#x9762;&#x548C;&#x7528;&#x4F8B;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x6709;&#x4E00;&#x4E2A;&#x66F4;&#x597D;&#x7684;&#x4E86;&#x89E3;&#x3002;</p>
+<p>&#x4F5C;&#x4E3A;&#x5B9E;&#x4F8B;&#xFF0C;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E00;&#x4E0B;&#x8D1F;&#x8D23;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x5217;&#x8868;&#x7684;&#x4EA4;&#x4E92;&#x5668;&#x3002;&#x5BFB;&#x627E;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x7684;&#x7B56;&#x7565;&#x662F;&#x8981;&#x627E;&#x51FA;&#x6240;&#x6709;&#x7684;&#x5C06;&#x5728;&#x4E0B;&#x5468;&#x672B;&#x524D;&#x622A;&#x6B62;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x5E76;&#x5C06;&#x8FD9;&#x4E9B;&#x9879;&#x76EE;&#x5206;&#x522B;&#x5F52;&#x7C7B;&#x81F3;&#x622A;&#x6B62;&#x4E8E;&#x4ECA;&#x5929;&#xFF0C;&#x660E;&#x5929;&#xFF0C;&#x672C;&#x5468;&#x6216;&#x8005;&#x4E0B;&#x5468;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x7F16;&#x5199;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x662F;&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x4EA4;&#x4E92;&#x5668;&#x80FD;&#x591F;&#x627E;&#x5230;&#x6240;&#x6709;&#x7684;&#x622A;&#x6B62;&#x4E8E;&#x4E0B;&#x5468;&#x672B;&#x7684;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#xFF1A;</p>
+<pre><code>- (void)testFindingUpcomingItemsRequestsAllToDoItemsFromTodayThroughEndOfNextWeek
+{
+    [[self.dataManager expect] todoItemsBetweenStartDate:self.today endDate:self.endOfNextWeek completionBlock:OCMOCK_ANY];
+    [self.interactor findUpcomingItems];
+}
+</code></pre><p>&#x4E00;&#x65E6;&#x77E5;&#x9053;&#x4E86;&#x4EA4;&#x4E92;&#x5668;&#x627E;&#x5230;&#x4E86;&#x6B63;&#x786E;&#x7684;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x9700;&#x8981;&#x7F16;&#x5199;&#x51E0;&#x4E2A;&#x5C0F;&#x6D4B;&#x8BD5;&#x7528;&#x6765;&#x786E;&#x8BA4;&#x5B83;&#x786E;&#x5B9E;&#x5C06;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x5206;&#x914D;&#x5230;&#x4E86;&#x6B63;&#x786E;&#x7684;&#x76F8;&#x5BF9;&#x65E5;&#x671F;&#x7EC4;&#x5185;&#xFF08;&#x6BD4;&#x5982;&#x8BF4;&#x4ECA;&#x5929;&#xFF0C;&#x660E;&#x5929;&#xFF0C;&#x7B49;&#x7B49;&#xFF09;&#x3002;</p>
+<pre><code>- (void)testFindingUpcomingItemsWithOneItemDueTodayReturnsOneUpcomingItemsForToday
+{
+    NSArray *todoItems = @[[VTDTodoItem todoItemWithDueDate:self.today name:@&quot;Item 1&quot;]];
+    [self dataStoreWillReturnToDoItems:todoItems];
+
+    NSArray *upcomingItems = @[[VTDUpcomingItem upcomingItemWithDateRelation:VTDNearTermDateRelationToday dueDate:self.today title:@&quot;Item 1&quot;]];
+    [self expectUpcomingItems:upcomingItems];
+
+    [self.interactor findUpcomingItems];
+}
+</code></pre><p>&#x65E2;&#x7136;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x77E5;&#x9053;&#x4E86;&#x4EA4;&#x4E92;&#x5668;&#x7684; API &#x957F;&#x4EC0;&#x4E48;&#x6837;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x662F;&#x5F00;&#x53D1;&#x5C55;&#x793A;&#x5668;&#x3002;&#x4E00;&#x65E6;&#x5C55;&#x793A;&#x5668;&#x63A5;&#x6536;&#x5230;&#x4E86;&#x4EA4;&#x4E92;&#x5668;&#x4F20;&#x6765;&#x7684;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x9700;&#x8981;&#x6D4B;&#x8BD5;&#x770B;&#x770B;&#x6211;&#x4EEC;&#x662F;&#x5426;&#x9002;&#x5F53;&#x7684;&#x5C06;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x683C;&#x5F0F;&#x5316;&#x5E76;&#x4E14;&#x5728;&#x7528;&#x6237;&#x754C;&#x9762;&#x4E2D;&#x6B63;&#x786E;&#x7684;&#x663E;&#x793A;&#x5B83;&#x3002;</p>
+<pre><code>- (void)testFoundZeroUpcomingItemsDisplaysNoContentMessage
+{
+    [[self.ui expect] showNoContentMessage];
+
+    [self.presenter foundUpcomingItems:@[]];
+}
+
+- (void)testFoundUpcomingItemForTodayDisplaysUpcomingDataWithNoDay
+{
+    VTDUpcomingDisplayData *displayData = [self displayDataWithSectionName:@&quot;Today&quot;
+                                                          sectionImageName:@&quot;check&quot;
+                                                                 itemTitle:@&quot;Get a haircut&quot;
+                                                                itemDueDay:@&quot;&quot;];
+    [[self.ui expect] showUpcomingDisplayData:displayData];
+
+    NSCalendar *calendar = [NSCalendar gregorianCalendar];
+    NSDate *dueDate = [calendar dateWithYear:2014 month:5 day:29];
+    VTDUpcomingItem *haircut = [VTDUpcomingItem upcomingItemWithDateRelation:VTDNearTermDateRelationToday dueDate:dueDate title:@&quot;Get a haircut&quot;];
+
+    [self.presenter foundUpcomingItems:@[haircut]];
+}
+
+- (void)testFoundUpcomingItemForTomorrowDisplaysUpcomingDataWithDay
+{
+    VTDUpcomingDisplayData *displayData = [self displayDataWithSectionName:@&quot;Tomorrow&quot;
+                                                          sectionImageName:@&quot;alarm&quot;
+                                                                 itemTitle:@&quot;Buy groceries&quot;
+                                                                itemDueDay:@&quot;Thursday&quot;];
+    [[self.ui expect] showUpcomingDisplayData:displayData];
+
+    NSCalendar *calendar = [NSCalendar gregorianCalendar];
+    NSDate *dueDate = [calendar dateWithYear:2014 month:5 day:29];
+    VTDUpcomingItem *groceries = [VTDUpcomingItem upcomingItemWithDateRelation:VTDNearTermDateRelationTomorrow dueDate:dueDate title:@&quot;Buy groceries&quot;];
+
+    [self.presenter foundUpcomingItems:@[groceries]];
+}
+</code></pre><p>&#x540C;&#x6837;&#x9700;&#x8981;&#x6D4B;&#x8BD5;&#x7684;&#x662F;&#x5E94;&#x7528;&#x662F;&#x5426;&#x5728;&#x7528;&#x6237;&#x60F3;&#x8981;&#x65B0;&#x5EFA;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x65F6;&#x6B63;&#x786E;&#x542F;&#x52A8;&#x4E86;&#x76F8;&#x5E94;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<pre><code>- (void)testAddNewToDoItemActionPresentsAddToDoUI
+{
+    [[self.wireframe expect] presentAddInterface];
+
+    [self.presenter addNewEntry];
+}
+</code></pre><p>&#x8FD9;&#x65F6;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F00;&#x53D1;&#x89C6;&#x56FE;&#x529F;&#x80FD;&#x4E86;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x6CA1;&#x6709;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x7684;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x5C55;&#x793A;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<pre><code>- (void)testShowingNoContentMessageShowsNoContentView
+{
+    [self.view showNoContentMessage];
+
+    XCTAssertEqualObjects(self.view.view, self.view.noContentView, @&quot;the no content view should be the view&quot;);
+}
+</code></pre><p>&#x6709;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x51FA;&#x73B0;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x786E;&#x4FDD;&#x5217;&#x8868;&#x662F;&#x663E;&#x793A;&#x51FA;&#x6765;&#x7684;&#xFF1A;</p>
+<pre><code>- (void)testShowingUpcomingItemsShowsTableView
+{
+    [self.view showUpcomingDisplayData:nil];
+
+    XCTAssertEqualObjects(self.view.view, self.view.tableView, @&quot;the table view should be the view&quot;);
+}
+</code></pre><p>&#x9996;&#x5148;&#x5EFA;&#x7ACB;&#x4EA4;&#x4E92;&#x5668;&#x662F;&#x4E00;&#x79CD;&#x7B26;&#x5408; TDD &#x7684;&#x81EA;&#x7136;&#x89C4;&#x5F8B;&#x3002;&#x5982;&#x679C;&#x4F60;&#x9996;&#x5148;&#x5F00;&#x53D1;&#x4EA4;&#x4E92;&#x5668;&#xFF0C;&#x7D27;&#x63A5;&#x7740;&#x662F;&#x5C55;&#x793A;&#x5668;&#xFF0C;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x9996;&#x5148;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x4F4D;&#x4E8E;&#x8FD9;&#x4E9B;&#x5C42;&#x7684;&#x5957;&#x4EF6;&#x6D4B;&#x8BD5;&#xFF0C;&#x5E76;&#x4E14;&#x4E3A;&#x5B9E;&#x73B0;&#x8FD9;&#x662F;&#x5B9E;&#x4F8B;&#x5960;&#x5B9A;&#x57FA;&#x7840;&#x3002;&#x7531;&#x4E8E;&#x4F60;&#x4E0D;&#x9700;&#x8981;&#x4E3A;&#x4E86;&#x6D4B;&#x8BD5;&#x5B83;&#x4EEC;&#x800C;&#x53BB;&#x4E0E;&#x7528;&#x6237;&#x754C;&#x9762;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x4E9B;&#x7C7B;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x5FEB;&#x901F;&#x8FED;&#x4EE3;&#x3002;&#x5728;&#x4F60;&#x9700;&#x8981;&#x5F00;&#x53D1;&#x89C6;&#x56FE;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x5DE5;&#x4F5C;&#x5E76;&#x6D4B;&#x8BD5;&#x8FC7;&#x7684;&#x903B;&#x8F91;&#x548C;&#x8868;&#x73B0;&#x5C42;&#x6765;&#x4E0E;&#x5176;&#x8FDB;&#x884C;&#x8FDE;&#x63A5;&#x3002;&#x5728;&#x5FEB;&#x8981;&#x5B8C;&#x6210;&#x5BF9;&#x89C6;&#x56FE;&#x7684;&#x5F00;&#x53D1;&#x65F6;&#xFF0C;&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#x7B2C;&#x4E00;&#x6B21;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#x65F6;&#x6240;&#x6709;&#x90E8;&#x4EF6;&#x90FD;&#x8FD0;&#x884C;&#x826F;&#x597D;&#xFF0C;&#x56E0;&#x4E3A;&#x4F60;&#x6240;&#x6709;&#x5DF2;&#x901A;&#x8FC7;&#x7684;&#x6D4B;&#x8BD5;&#x5DF2;&#x7ECF;&#x544A;&#x8BC9;&#x4F60;&#x5B83;&#x53EF;&#x4EE5;&#x5DE5;&#x4F5C;&#x3002;</p>
+<h2 id="&#x7ED3;&#x8BBA;">&#x7ED3;&#x8BBA;</h2>
+<p>&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x4F60;&#x559C;&#x6B22;&#x8FD9;&#x7BC7;&#x5BF9; VIPER &#x7684;&#x4ECB;&#x7ECD;&#x3002;&#x6216;&#x8BB8;&#x4F60;&#x4EEC;&#x90FD;&#x5F88;&#x597D;&#x5947;&#x63A5;&#x4E0B;&#x6765;&#x5E94;&#x8BE5;&#x505A;&#x4EC0;&#x4E48;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5E0C;&#x671B;&#x901A;&#x8FC7; VIPER &#x6765;&#x5BF9;&#x4F60;&#x4E0B;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x8FDB;&#x884C;&#x8BBE;&#x8BA1;&#xFF0C;&#x8BE5;&#x4ECE;&#x54EA;&#x91CC;&#x5F00;&#x59CB;&#x5462;&#xFF1F;</p>
+<p>&#x6211;&#x4EEC;&#x7AED;&#x5C3D;&#x5168;&#x529B;&#x4F7F;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x548C;&#x6211;&#x4EEC;&#x5229;&#x7528; VIPER &#x5B9E;&#x73B0;&#x7684;&#x5E94;&#x7528;&#x5B9E;&#x4F8B;&#x8DB3;&#x591F;&#x660E;&#x786E;&#x5E76;&#x4E14;&#x8FDB;&#x884C;&#x4E86;&#x5F88;&#x597D;&#x7684;&#x5B9A;&#x4E49;&#x3002;&#x6211;&#x4EEC;&#x7684;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x91CC;&#x5217;&#x8868;&#x7A0B;&#x5E8F;&#x76F8;&#x5F53;&#x76F4;&#x63A5;&#x7B80;&#x5355;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x51C6;&#x786E;&#x5730;&#x89E3;&#x91CA;&#x4E86;&#x5982;&#x4F55;&#x5229;&#x7528; VIPER &#x6765;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x3002;&#x5728;&#x5B9E;&#x9645;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x6311;&#x6218;&#x548C;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x6765;&#x51B3;&#x5B9A;&#x8981;&#x5982;&#x4F55;&#x5B9E;&#x8DF5;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x3002;&#x6839;&#x636E;&#x4EE5;&#x5F80;&#x7684;&#x7ECF;&#x9A8C;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x6BCF;&#x4E2A;&#x9879;&#x76EE;&#x5728;&#x4F7F;&#x7528; VIPER &#x65F6;&#x90FD;&#x6216;&#x591A;&#x6216;&#x5C11;&#x5730;&#x6539;&#x53D8;&#x4E86;&#x4E00;&#x4E9B;&#x7B56;&#x7565;&#xFF0C;&#x4F46;&#x5B83;&#x4EEC;&#x65E0;&#x4E00;&#x4F8B;&#x5916;&#x7684;&#x90FD;&#x4ECE;&#x4E2D;&#x5F97;&#x76CA;&#xFF0C;&#x627E;&#x5230;&#x4E86;&#x6B63;&#x786E;&#x7684;&#x65B9;&#x5411;&#x3002;</p>
+<p>&#x5F88;&#x591A;&#x60C5;&#x51B5;&#x4E0B;&#x7531;&#x4E8E;&#x67D0;&#x4E9B;&#x539F;&#x56E0;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x60F3;&#x8981;&#x504F;&#x79BB; VIPER &#x6240;&#x6307;&#x5F15;&#x7684;&#x9053;&#x8DEF;&#x3002;&#x53EF;&#x80FD;&#x4F60;&#x9047;&#x5230;&#x4E86;&#x5F88;&#x591A; <a href="http://inessential.com/2014/03/16/smaller_please" target="_blank">&apos;bunny&apos;</a> &#x5BF9;&#x8C61;&#xFF0C;&#x6216;&#x8005;&#x4F60;&#x7684;&#x5E94;&#x7528;&#x4F7F;&#x7528;&#x4E86;&#x6545;&#x4E8B;&#x677F;&#x7684; segues&#x3002;&#x6CA1;&#x5173;&#x7CFB;&#x7684;&#xFF0C;&#x5728;&#x8FD9;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F60;&#x53EA;&#x9700;&#x8981;&#x5728;&#x505A;&#x51B3;&#x5B9A;&#x65F6;&#x7A0D;&#x5FAE;&#x8003;&#x8651;&#x4E0B; VIPER &#x6240;&#x4EE3;&#x8868;&#x7684;&#x7CBE;&#x795E;&#x5C31;&#x597D;&#x3002;VIPER &#x7684;&#x6838;&#x5FC3;&#x5728;&#x4E8E;&#x5B83;&#x662F;&#x5EFA;&#x7ACB;&#x5728;<a href="http://en.wikipedia.org/wiki/Single_responsibility_principle" target="_blank">&#x5355;&#x4E00;&#x8D23;&#x4EFB;&#x539F;&#x5219;</a>&#x4E0A;&#x7684;&#x67B6;&#x6784;&#x3002;&#x5982;&#x679C;&#x4F60;&#x78B0;&#x5230;&#x4E86;&#x4E9B;&#x8BB8;&#x9EBB;&#x70E6;&#xFF0C;&#x60F3;&#x60F3;&#x8FD9;&#x4E9B;&#x539F;&#x5219;&#x518D;&#x8003;&#x8651;&#x5982;&#x4F55;&#x524D;&#x8FDB;&#x3002;</p>
+<p>&#x4F60;&#x4E00;&#x5B9A;&#x60F3;&#x77E5;&#x9053;&#x5728;&#x73B0;&#x6709;&#x7684;&#x5E94;&#x7528;&#x4E2D;&#x80FD;&#x5426;&#x53EA;&#x7528; VIPER &#x3002;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x4F7F;&#x7528; VIPER &#x6784;&#x5EFA;&#x65B0;&#x7684;&#x7279;&#x6027;&#x3002;&#x6211;&#x4EEC;&#x8BB8;&#x591A;&#x73B0;&#x6709;&#x9879;&#x76EE;&#x90FD;&#x4F7F;&#x7528;&#x4E86;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5229;&#x7528; VIPER &#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x8FD9;&#x80FD;&#x5E2E;&#x52A9;&#x4F60;&#x53D1;&#x73B0;&#x8BB8;&#x591A;&#x5EFA;&#x7ACB;&#x5728;&#x5355;&#x4E00;&#x8D23;&#x4EFB;&#x539F;&#x5219;&#x57FA;&#x7840;&#x4E0A;&#x9020;&#x6210;&#x96BE;&#x4EE5;&#x8FD0;&#x7528;&#x67B6;&#x6784;&#x7684;&#x73B0;&#x6709;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x6700;&#x4F1F;&#x5927;&#x7684;&#x4E8B;&#x60C5;&#x4E4B;&#x4E00;&#x5C31;&#x662F;&#x6BCF;&#x4E2A;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x90FD;&#x662F;&#x4E0D;&#x540C;&#x7684;&#xFF0C;&#x800C;&#x8BBE;&#x8BA1;&#x6BCF;&#x4E2A;&#x5E94;&#x7528;&#x7684;&#x67B6;&#x6784;&#x7684;&#x65B9;&#x5F0F;&#x4E5F;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x3002;&#x8FD9;&#x5C31;&#x610F;&#x5473;&#x7740;&#x6BCF;&#x4E2A;&#x5E94;&#x7528;&#x5BF9;&#x4E8E;&#x6211;&#x4EEC;&#x6765;&#x8BF4;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x5B66;&#x4E60;&#x548C;&#x5C1D;&#x8BD5;&#x7684;&#x673A;&#x9047;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x51B3;&#x5B9A;&#x5F00;&#x59CB;&#x4F7F;&#x7528; VIPER&#xFF0C;&#x4F60;&#x4F1A;&#x53D7;&#x76CA;&#x532A;&#x6D45;&#x3002;&#x611F;&#x8C22;&#x4F60;&#x7684;&#x9605;&#x8BFB;&#x3002;</p>
+<h2 id="swift-&#x8865;&#x5145;">Swift &#x8865;&#x5145;</h2>
+<p>&#x82F9;&#x679C;&#x4E0A;&#x5468;&#x5728; WWDC &#x4ECB;&#x7ECD;&#x4E86;&#x4E00;&#x95E8;&#x79F0;&#x4E4B;&#x4E3A; <a href="https://developer.apple.com/swift/" target="_blank">Swift</a> &#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x6765;&#x4F5C;&#x4E3A; Cocoa &#x548C; Cocoa Touch &#x5F00;&#x53D1;&#x7684;&#x672A;&#x6765;&#x3002;&#x73B0;&#x5728;&#x53D1;&#x8868;&#x5173;&#x4E8E; Swift &#x7684;&#x5B8C;&#x6574;&#x610F;&#x89C1;&#x8FD8;&#x4E3A;&#x65F6;&#x5C1A;&#x65E9;&#xFF0C;&#x4F46;&#x4F17;&#x6240;&#x5468;&#x77E5;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x5BF9;&#x6211;&#x4EEC;&#x5982;&#x4F55;&#x8BBE;&#x8BA1;&#x548C;&#x6784;&#x5EFA;&#x5E94;&#x7528;&#x6709;&#x7740;&#x91CD;&#x5927;&#x5F71;&#x54CD;&#x3002;&#x6211;&#x4EEC;&#x51B3;&#x5B9A;&#x4F7F;&#x7528; <a href="https://github.com/objcio/issue-13-viper-swift" target="_blank">Swift &#x91CD;&#x5199;&#x6211;&#x4EEC;&#x7684;&#x5F85;&#x529E;&#x4E8B;&#x9879;&#x6E05;&#x5355;</a>&#xFF0C;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x5B66;&#x4E60;&#x5B83;&#x5BF9; VIPER &#x610F;&#x5473;&#x7740;&#x4EC0;&#x4E48;&#x3002;&#x81F3;&#x4ECA;&#x4E3A;&#x6B62;&#xFF0C;&#x6536;&#x83B7;&#x9887;&#x4E30;&#x3002;Swift &#x4E2D;&#x7684;&#x4E00;&#x4E9B;&#x7279;&#x6027;&#x5BF9;&#x4E8E;&#x6784;&#x5EFA;&#x5E94;&#x7528;&#x7684;&#x4F53;&#x9A8C;&#x6709;&#x7740;&#x663E;&#x8457;&#x7684;&#x63D0;&#x5347;&#x3002;</p>
+<h3 id="&#x7ED3;&#x6784;&#x4F53;">&#x7ED3;&#x6784;&#x4F53;</h3>
+<p>&#x5728; VIPER &#x4E2D;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x5C0F;&#x578B;&#xFF0C;&#x8F7B;&#x91CF;&#x7EA7;&#x7684; model &#x7C7B;&#x6765;&#x5728;&#x6BD4;&#x5982;&#x4ECE;&#x5C55;&#x793A;&#x5668;&#x5230;&#x89C6;&#x56FE;&#x8FD9;&#x6837;&#x4E0D;&#x540C;&#x7684;&#x5C42;&#x95F4;&#x4F20;&#x9012;&#x6570;&#x636E;&#x3002;&#x8FD9;&#x4E9B; PONSOs &#x901A;&#x5E38;&#x662F;&#x53EA;&#x662F;&#x7B80;&#x5355;&#x5730;&#x5E26;&#x6709;&#x5C11;&#x91CF;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x4E14;&#x901A;&#x5E38;&#x8FD9;&#x4E9B;&#x7C7B;&#x4E0D;&#x4F1A;&#x88AB;&#x7EE7;&#x627F;&#x3002;Swift &#x7684;&#x7ED3;&#x6784;&#x4F53;&#x975E;&#x5E38;&#x9002;&#x5408;&#x8FD9;&#x4E2A;&#x60C5;&#x51B5;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x4F8B;&#x5B50;&#x6765;&#x81EA; VIPER Swift&#x3002;&#x8FD9;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#x9700;&#x8981;&#x88AB;&#x5224;&#x65AD;&#x662F;&#x5426;&#x76F8;&#x7B49;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x91CD;&#x8F7D;&#x4E86; == &#x64CD;&#x4F5C;&#x7B26;&#x6765;&#x6BD4;&#x8F83;&#x8FD9;&#x4E2A;&#x7C7B;&#x578B;&#x7684;&#x4E24;&#x4E2A;&#x5B9E;&#x4F8B;&#x3002;</p>
+<pre><code>struct UpcomingDisplayItem : Equatable, Printable {
+    let title : String = &quot;&quot;
+    let dueDate : String = &quot;&quot;
+
+    var description : String { get {
+        return &quot;\(title) -- \(dueDate)&quot;
+    }}
+
+    init(title: String, dueDate: String) {
+        self.title = title
+        self.dueDate = dueDate
+    }
+}
+
+func == (leftSide: UpcomingDisplayItem, rightSide: UpcomingDisplayItem) -&gt; Bool {
+    var hasEqualSections = false
+    hasEqualSections = rightSide.title == leftSide.title
+
+    if hasEqualSections == false {
+        return false
+    }
+
+    hasEqualSections = rightSide.dueDate == rightSide.dueDate
+
+    return hasEqualSections
+}
+</code></pre><h3 id="&#x7C7B;&#x578B;&#x5B89;&#x5168;">&#x7C7B;&#x578B;&#x5B89;&#x5168;</h3>
+<p>&#x4E5F;&#x8BB8; Objective-C &#x548C; Swift &#x7684;&#x6700;&#x5927;&#x533A;&#x522B;&#x662F;&#x5B83;&#x4EEC;&#x5728;&#x5BF9;&#x4E8E;&#x7C7B;&#x578B;&#x5904;&#x7406;&#x4E0A;&#x7684;&#x4E0D;&#x540C;&#x3002; Objective-C &#x662F;&#x52A8;&#x6001;&#x7C7B;&#x578B;&#xFF0C;&#x800C; Swift &#x6545;&#x610F;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x505A;&#x4E86;&#x4E25;&#x683C;&#x7684;&#x7C7B;&#x578B;&#x68C0;&#x67E5;&#x3002;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C; VIPER &#x7684;&#x67B6;&#x6784;&#xFF0C; &#x5E94;&#x7528;&#x7531;&#x4E0D;&#x540C;&#x5C42;&#x6784;&#x6210;&#xFF0C;&#x7C7B;&#x578B;&#x5B89;&#x5168;&#x662F;&#x63D0;&#x5347;&#x7A0B;&#x5E8F;&#x5458;&#x6548;&#x7387;&#x548C;&#x8BBE;&#x8BA1;&#x67B6;&#x6784;&#x6709;&#x975E;&#x5E38;&#x5927;&#x7684;&#x597D;&#x5904;&#x3002;&#x7F16;&#x8BD1;&#x5668;&#x5E2E;&#x52A9;&#x4F60;&#x786E;&#x4FDD;&#x6B63;&#x786E;&#x7C7B;&#x578B;&#x7684;&#x5BB9;&#x5668;&#x548C;&#x5BF9;&#x8C61;&#x5728;&#x5C42;&#x7684;&#x8FB9;&#x754C;&#x4F20;&#x9012;&#x3002;&#x5982;&#x4E0A;&#x6240;&#x793A;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x597D;&#x5730;&#x65B9;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x88AB;&#x8BBE;&#x8BA1;&#x4E3A;&#x5B58;&#x5728;&#x4E8E;&#x4E24;&#x5C42;&#x4E4B;&#x95F4;&#xFF0C;&#x90A3;&#x4E48;&#x7531;&#x4E8E;&#x7C7B;&#x578B;&#x5B89;&#x5168;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x5B83;&#x5C06;&#x6C38;&#x8FDC;&#x65E0;&#x6CD5;&#x8131;&#x79BB;&#x8FD9;&#x4E9B;&#x5C42;&#x4E4B;&#x95F4;&#x3002;</p>
+<h2 id="&#x6269;&#x5C55;&#x9605;&#x8BFB;">&#x6269;&#x5C55;&#x9605;&#x8BFB;</h2>
+<ul>
+<li><a href="https://github.com/objcio/issue-13-viper" target="_blank">VIPER TODO, &#x6587;&#x7AE0;&#x793A;&#x4F8B;</a></li>
+<li><a href="https://github.com/objcio/issue-13-viper-swift" target="_blank">VIPER SWIFT, &#x57FA;&#x4E8E; Swift &#x7684;&#x6587;&#x7AE0;&#x793A;&#x4F8B;</a></li>
+<li><a href="https://github.com/mutualmobile/Counter" target="_blank">&#x53E6;&#x4E00;&#x4E2A;&#x8BA1;&#x6570;&#x5668;&#x5E94;&#x7528;</a></li>
+<li><a href="http://mutualmobile.github.io/blog/2013/12/04/viper-introduction/" target="_blank">Mutual Mobile &#x5173;&#x4E8E; VIPER &#x7684;&#x4ECB;&#x7ECD;</a></li>
+<li><a href="http://blog.8thlight.com/uncle-bob/2011/11/22/Clean-Architecture.html" target="_blank">&#x7B80;&#x660E;&#x67B6;&#x6784;</a></li>
+<li><a href="http://objccn.io/issue-1-1/" target="_blank">&#x66F4;&#x8F7B;&#x91CF;&#x7684; View Controllers</a></li>
+<li><a href="http://objccn.io/issue-1-3/" target="_blank">&#x6D4B;&#x8BD5; View Controllers</a></li>
+<li><a href="http://inessential.com/2014/03/16/smaller_please" target="_blank">Bunnies</a></li>
+</ul>
+<hr>
+<p><a href="http://objccn.io/issue-13" target="_blank">&#x8BDD;&#x9898; #13 &#x4E0B;&#x7684;&#x66F4;&#x591A;&#x6587;&#x7AE0;</a></p>
+<p>&#x539F;&#x6587; <a href="http://www.objc.io/issue-13/viper.html" target="_blank">Architecting iOS Apps with VIPER</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="issue-13-4-Phenmod.html" class="navigation navigation-prev " aria-label="Previous page: 子类">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../issue16/issue-16-0-hewigovens.html" class="navigation navigation-next " aria-label="Next page: swift">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"使用VIPER构建IOS应用","level":"1.11.5","depth":2,"next":{"title":"swift","level":"1.12","depth":1,"path":"publish/issue16/issue-16-0-hewigovens.md","ref":"publish/issue16/issue-16-0-hewigovens.md","articles":[{"title":"Swift强大之处","level":"1.12.1","depth":2,"path":"publish/issue16/issue-16-1-lizixroy.md","ref":"publish/issue16/issue-16-1-lizixroy.md","articles":[]},{"title":"结构体和值类型","level":"1.12.2","depth":2,"path":"publish/issue16/issue-16-2-Onetaway.md","ref":"publish/issue16/issue-16-2-Onetaway.md","articles":[]},{"title":"swift方法的多面性","level":"1.12.3","depth":2,"path":"publish/issue16/issue-16-3-weekwood.md","ref":"publish/issue16/issue-16-3-weekwood.md","articles":[]},{"title":"Swift的函数式API","level":"1.12.4","depth":2,"path":"publish/issue16/issue-16-4-callmewhy.md","ref":"publish/issue16/issue-16-4-callmewhy.md","articles":[]},{"title":"Playground快速原型制作","level":"1.12.5","depth":2,"path":"publish/issue16/issue-16-5-programmerDu.md","ref":"publish/issue16/issue-16-5-programmerDu.md","articles":[]}]},"previous":{"title":"子类","level":"1.11.4","depth":2,"path":"publish/issue13/issue-13-4-Phenmod.md","ref":"publish/issue13/issue-13-4-Phenmod.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"publish/issue13/issue-13-5-weekwood.md","mtime":"2019-09-09T09:18:07.208Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-09T09:59:37.321Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

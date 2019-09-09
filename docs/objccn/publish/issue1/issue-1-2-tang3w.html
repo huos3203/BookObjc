@@ -1,0 +1,2467 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>整洁的 Table View 代码 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="issue-1-3-tang3w.html" />
+    
+    
+    <link rel="prev" href="issue-1-1-tang3w.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="issue-1-0-tang3w.html">
+            
+                <a href="issue-1-0-tang3w.html">
+            
+                    
+                    更轻量的 View Controllers
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="issue-1-1-tang3w.html">
+            
+                <a href="issue-1-1-tang3w.html">
+            
+                    
+                    更轻量的 View Controllers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="issue-1-2-tang3w.html">
+            
+                <a href="issue-1-2-tang3w.html">
+            
+                    
+                    整洁的 Table View 代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="issue-1-3-tang3w.html">
+            
+                <a href="issue-1-3-tang3w.html">
+            
+                    
+                    测试View Controllers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="issue-1-4-tang3w.html">
+            
+                <a href="issue-1-4-tang3w.html">
+            
+                    
+                    View Controller容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../issue2/issue-2-0-FangYiXiong.html">
+            
+                <a href="../issue2/issue-2-0-FangYiXiong.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../issue2/issue-2-1-beyondvincent.html">
+            
+                <a href="../issue2/issue-2-1-beyondvincent.html">
+            
+                    
+                    并发编程：API 及挑战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../issue2/issue-2-2-onevcat.html">
+            
+                <a href="../issue2/issue-2-2-onevcat.html">
+            
+                    
+                    常见的后台实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../issue2/issue-2-3-webfrogs.html">
+            
+                <a href="../issue2/issue-2-3-webfrogs.html">
+            
+                    
+                    底层并发API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../issue2/issue-2-4-onevcat.html">
+            
+                <a href="../issue2/issue-2-4-onevcat.html">
+            
+                    
+                    线程安全类的设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../issue2/issue-2-5-xinjixjz.html">
+            
+                <a href="../issue2/issue-2-5-xinjixjz.html">
+            
+                    
+                    测试并发程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../issue3/issue-3-0-answer-huang.html">
+            
+                <a href="../issue3/issue-3-0-answer-huang.html">
+            
+                    
+                    Views
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../issue3/issue-3-1-answer-huang.html">
+            
+                <a href="../issue3/issue-3-1-answer-huang.html">
+            
+                    
+                    绘制像素到屏幕上
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../issue3/issue-3-2-answer-huang.html">
+            
+                <a href="../issue3/issue-3-2-answer-huang.html">
+            
+                    
+                    理解Scroll Views
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../issue3/issue-3-3-answer-huang.html">
+            
+                <a href="../issue3/issue-3-3-answer-huang.html">
+            
+                    
+                    自定义Collection View布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../issue3/issue-3-4-Migrant.html">
+            
+                <a href="../issue3/issue-3-4-Migrant.html">
+            
+                    
+                    自定义控件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../issue3/issue-3-5-answer-huang.html">
+            
+                <a href="../issue3/issue-3-5-answer-huang.html">
+            
+                    
+                    先进的自动布局工具箱
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../issue4/issue-4-0-unblue.html">
+            
+                <a href="../issue4/issue-4-0-unblue.html">
+            
+                    
+                    Core Data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../issue4/issue-4-1-shjborage.html">
+            
+                <a href="../issue4/issue-4-1-shjborage.html">
+            
+                    
+                    Core Data概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../issue4/issue-4-2-itouch2.html">
+            
+                <a href="../issue4/issue-4-2-itouch2.html">
+            
+                    
+                    一个完整的Core Data应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../issue4/issue-4-3-sjpsega.html">
+            
+                <a href="../issue4/issue-4-3-sjpsega.html">
+            
+                    
+                    用SQLite和FMDB替代Core Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../issue4/issue-4-4-panda.html">
+            
+                <a href="../issue4/issue-4-4-panda.html">
+            
+                    
+                    数据模型和模型对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../issue4/issue-4-5-liming.html">
+            
+                <a href="../issue4/issue-4-5-liming.html">
+            
+                    
+                    导入大数据集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../issue4/issue-4-6-ckitakishi.html">
+            
+                <a href="../issue4/issue-4-6-ckitakishi.html">
+            
+                    
+                    Fetch请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../issue4/issue-4-7-xinjixjz.html">
+            
+                <a href="../issue4/issue-4-7-xinjixjz.html">
+            
+                    
+                    自定义Core Data迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../issue5/issue-5-0-FangYiXiong.html">
+            
+                <a href="../issue5/issue-5-0-FangYiXiong.html">
+            
+                    
+                    iOS7
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../issue5/issue-5-1-hexielaoyuehan.html">
+            
+                <a href="../issue5/issue-5-1-hexielaoyuehan.html">
+            
+                    
+                    初识TextKit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../issue5/issue-5-2-morisunshine.html">
+            
+                <a href="../issue5/issue-5-2-morisunshine.html">
+            
+                    
+                    UICollectionView + UIKit力学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../issue5/issue-5-3-FangYixiong.html">
+            
+                <a href="../issue5/issue-5-3-FangYixiong.html">
+            
+                    
+                    View Controller转场
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../issue5/issue-5-4-FangYixiong.html">
+            
+                <a href="../issue5/issue-5-4-FangYixiong.html">
+            
+                    
+                    从NSURLConnection到NSURLSession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../issue5/issue-5-5-demon1105.html">
+            
+                <a href="../issue5/issue-5-5-demon1105.html">
+            
+                    
+                    iOS7的多任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../issue5/issue-5-6-test_0x01.html">
+            
+                <a href="../issue5/issue-5-6-test_0x01.html">
+            
+                    
+                    iOS7:隐藏技巧和变通之道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../issue5/issue-5-7-FangYixiong.html">
+            
+                <a href="../issue5/issue-5-7-FangYixiong.html">
+            
+                    
+                    为iOS7重新设计App
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../issue7/issue-7-0-JeOam.html">
+            
+                <a href="../issue7/issue-7-0-JeOam.html">
+            
+                    
+                    Foundation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../issue7/issue-7-1-FANWENBIN.html">
+            
+                <a href="../issue7/issue-7-1-FANWENBIN.html">
+            
+                    
+                    基础集合类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../issue7/issue-7-2-onevcat.html">
+            
+                <a href="../issue7/issue-7-2-onevcat.html">
+            
+                    
+                    值对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../issue7/issue-7-3-DJBen.html">
+            
+                <a href="../issue7/issue-7-3-DJBen.html">
+            
+                    
+                    KVC 和 KVO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../issue7/issue-7-4-DJBen.html">
+            
+                <a href="../issue7/issue-7-4-DJBen.html">
+            
+                    
+                    消息传递机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../issue7/issue-7-5-itouch2.html">
+            
+                <a href="../issue7/issue-7-5-itouch2.html">
+            
+                    
+                    自定义Formatters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../issue7/issue-7-6-onevcat.html">
+            
+                <a href="../issue7/issue-7-6-onevcat.html">
+            
+                    
+                    语言标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../issue9/issue-9-0-FangYiXiong.html">
+            
+                <a href="../issue9/issue-9-0-FangYiXiong.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../issue9/issue-9-1-frederick036.html">
+            
+                <a href="../issue9/issue-9-1-frederick036.html">
+            
+                    
+                    NSString与Unicode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../issue9/issue-9-2-Nix.html">
+            
+                <a href="../issue9/issue-9-2-Nix.html">
+            
+                    
+                    玩转字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../issue9/issue-9-3-YCFlame.html">
+            
+                <a href="../issue9/issue-9-3-YCFlame.html">
+            
+                    
+                    字符串本地化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../issue9/issue-9-4-riven.html">
+            
+                <a href="../issue9/issue-9-4-riven.html">
+            
+                    
+                    字符串解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../issue9/issue-9-5-answer-huang.html">
+            
+                <a href="../issue9/issue-9-5-answer-huang.html">
+            
+                    
+                    字符串渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../issue10/issue-10-0-sjpsega.html">
+            
+                <a href="../issue10/issue-10-0-sjpsega.html">
+            
+                    
+                    同步数据
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../issue10/issue-10-1-xinjixjz.html">
+            
+                <a href="../issue10/issue-10-1-xinjixjz.html">
+            
+                    
+                    数据同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../issue10/issue-10-2-weekwood.html">
+            
+                <a href="../issue10/issue-10-2-weekwood.html">
+            
+                    
+                    iCloud和Core Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../issue10/issue-10-3-migrant.html">
+            
+                <a href="../issue10/issue-10-3-migrant.html">
+            
+                    
+                    精通iCloud文档存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../issue10/issue-10-4-YCFlame.html">
+            
+                <a href="../issue10/issue-10-4-YCFlame.html">
+            
+                    
+                    同步案例学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../issue10/issue-10-5-answer-huang.html">
+            
+                <a href="../issue10/issue-10-5-answer-huang.html">
+            
+                    
+                    Core Data 网络应用实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../issue10/issue-10-6-sunset.html">
+            
+                <a href="../issue10/issue-10-6-sunset.html">
+            
+                    
+                    IP,TCP 和 HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../issue12/issue-12-0-FangYiXiojng.html">
+            
+                <a href="../issue12/issue-12-0-FangYiXiojng.html">
+            
+                    
+                    动画
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../issue12/issue-12-1-ckitakishi.html">
+            
+                <a href="../issue12/issue-12-1-ckitakishi.html">
+            
+                    
+                    动画解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../issue12/issue-12-2-nixzhu.html">
+            
+                <a href="../issue12/issue-12-2-nixzhu.html">
+            
+                    
+                    Layer中自定义属性的动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../issue12/issue-12-3-happyjiahan.html">
+            
+                <a href="../issue12/issue-12-3-happyjiahan.html">
+            
+                    
+                    自定义ViewController容器转场
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../issue12/issue-12-4-onevcat.html">
+            
+                <a href="../issue12/issue-12-4-onevcat.html">
+            
+                    
+                    View-Layer协作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../issue12/issue-12-5-weekwood.html">
+            
+                <a href="../issue12/issue-12-5-weekwood.html">
+            
+                    
+                    Collection View 动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../issue12/issue-12-6-morisunshine.html">
+            
+                <a href="../issue12/issue-12-6-morisunshine.html">
+            
+                    
+                    交互式动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../issue13/issue-13-0-panda.html">
+            
+                <a href="../issue13/issue-13-0-panda.html">
+            
+                    
+                    架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../issue13/issue-13-1-nixzhu.html">
+            
+                <a href="../issue13/issue-13-1-nixzhu.html">
+            
+                    
+                    MVVM介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../issue13/issue-13-2-happyjiahan.html">
+            
+                <a href="../issue13/issue-13-2-happyjiahan.html">
+            
+                    
+                    避免滥用单例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../issue13/issue-13-3-panda.html">
+            
+                <a href="../issue13/issue-13-3-panda.html">
+            
+                    
+                    IOS中的行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../issue13/issue-13-4-Phenmod.html">
+            
+                <a href="../issue13/issue-13-4-Phenmod.html">
+            
+                    
+                    子类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../issue13/issue-13-5-weekwood.html">
+            
+                <a href="../issue13/issue-13-5-weekwood.html">
+            
+                    
+                    使用VIPER构建IOS应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../issue16/issue-16-0-hewigovens.html">
+            
+                <a href="../issue16/issue-16-0-hewigovens.html">
+            
+                    
+                    swift
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../issue16/issue-16-1-lizixroy.html">
+            
+                <a href="../issue16/issue-16-1-lizixroy.html">
+            
+                    
+                    Swift强大之处
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../issue16/issue-16-2-Onetaway.html">
+            
+                <a href="../issue16/issue-16-2-Onetaway.html">
+            
+                    
+                    结构体和值类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../issue16/issue-16-3-weekwood.html">
+            
+                <a href="../issue16/issue-16-3-weekwood.html">
+            
+                    
+                    swift方法的多面性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../issue16/issue-16-4-callmewhy.html">
+            
+                <a href="../issue16/issue-16-4-callmewhy.html">
+            
+                    
+                    Swift的函数式API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../issue16/issue-16-5-programmerDu.html">
+            
+                <a href="../issue16/issue-16-5-programmerDu.html">
+            
+                    
+                    Playground快速原型制作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../issue18/issue-18-0-yulingtianxia.html">
+            
+                <a href="../issue18/issue-18-0-yulingtianxia.html">
+            
+                    
+                    游戏
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../issue18/issue-18-1-weekwood.html">
+            
+                <a href="../issue18/issue-18-1-weekwood.html">
+            
+                    
+                    设计优雅的移动游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../issue18/issue-18-2-migrant.html">
+            
+                <a href="../issue18/issue-18-2-migrant.html">
+            
+                    
+                    Metal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../issue18/issue-18-3-sunnyxx.html">
+            
+                <a href="../issue18/issue-18-3-sunnyxx.html">
+            
+                    
+                    Scene Kit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../issue18/issue-18-4-callmewhy.html">
+            
+                <a href="../issue18/issue-18-4-callmewhy.html">
+            
+                    
+                    游戏中的多点互联
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../issue18/issue-18-5-shuye.html">
+            
+                <a href="../issue18/issue-18-5-shuye.html">
+            
+                    
+                    虚拟音域-声音设计的艺术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../issue21/issue-21-0-bifidy.html">
+            
+                <a href="../issue21/issue-21-0-bifidy.html">
+            
+                    
+                    相机与照片
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../issue21/issue-21-1-onevcat.html">
+            
+                <a href="../issue21/issue-21-1-onevcat.html">
+            
+                    
+                    相机工作原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../issue21/issue-21-2-bifidy.html">
+            
+                <a href="../issue21/issue-21-2-bifidy.html">
+            
+                    
+                    图片格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../issue21/issue-21-3-nathanwhy.html">
+            
+                <a href="../issue21/issue-21-3-nathanwhy.html">
+            
+                    
+                    iOS上的相机捕捉
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="../issue21/issue-21-4-CrazyZombies.html">
+            
+                <a href="../issue21/issue-21-4-CrazyZombies.html">
+            
+                    
+                    照片框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.5" data-path="../issue21/issue-21-5-weekwood.html">
+            
+                <a href="../issue21/issue-21-5-weekwood.html">
+            
+                    
+                    照片扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.6" data-path="../issue21/issue-21-6-april.html">
+            
+                <a href="../issue21/issue-21-6-april.html">
+            
+                    
+                    Core Image 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.7" data-path="../issue21/issue-21-7-nangege.html">
+            
+                <a href="../issue21/issue-21-7-nangege.html">
+            
+                    
+                    GPU加速下的图像处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.8" data-path="../issue21/issue-21-8-dopcn.html">
+            
+                <a href="../issue21/issue-21-8-dopcn.html">
+            
+                    
+                    GPU加速下的图像视觉
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.9" data-path="../issue21/issue-21-9-Phenmod.html">
+            
+                <a href="../issue21/issue-21-9-Phenmod.html">
+            
+                    
+                    基于OpenCV的人脸识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../issue24/issue-24-1-april.html">
+            
+                <a href="../issue24/issue-24-1-april.html">
+            
+                    
+                    音频
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../issue24/issue-24-1-april.html">
+            
+                <a href="../issue24/issue-24-1-april.html">
+            
+                    
+                    音频处理的狗屋
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../issue24/issue-24-2-lizix.html">
+            
+                <a href="../issue24/issue-24-2-lizix.html">
+            
+                    
+                    使用Swift进行函数式信号处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../issue24/issue-24-3-bifidy.html">
+            
+                <a href="../issue24/issue-24-3-bifidy.html">
+            
+                    
+                    播放，失败，迭代：面向产品的音效设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="../issue24/issue-24-4-draveness.html">
+            
+                <a href="../issue24/issue-24-4-draveness.html">
+            
+                    
+                    音频API一览
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../issue23/issue-23-0-bifidy.html">
+            
+                <a href="../issue23/issue-23-0-bifidy.html">
+            
+                    
+                    视频
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../issue23/issue-23-1-nathanwhy.html">
+            
+                <a href="../issue23/issue-23-1-nathanwhy.html">
+            
+                    
+                    在iOS上捕获视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../issue23/issue-23-2-pupboss.html">
+            
+                <a href="../issue23/issue-23-2-pupboss.html">
+            
+                    
+                    Core Image 和视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../issue23/issue-23-3-pupboss.html">
+            
+                <a href="../issue23/issue-23-3-pupboss.html">
+            
+                    
+                    视频工具箱和硬件加速
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../issue19/issue-19-0-bifidy.html">
+            
+                <a href="../issue19/issue-19-0-bifidy.html">
+            
+                    
+                    调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../issue19/issue-19-1-weekwood.html">
+            
+                <a href="../issue19/issue-19-1-weekwood.html">
+            
+                    
+                    调试：案例学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../issue19/issue-19-2-nangege.html">
+            
+                <a href="../issue19/issue-19-2-nangege.html">
+            
+                    
+                    与调试器共舞 - LLDB的华尔兹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../issue19/issue-19-3-bifidy.html">
+            
+                <a href="../issue19/issue-19-3-bifidy.html">
+            
+                    
+                    调试核对清单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.4" data-path="../issue19/issue-19-4-migrant.html">
+            
+                <a href="../issue19/issue-19-4-migrant.html">
+            
+                    
+                    DTrace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.5" data-path="../issue19/issue-19-5-dopcn.html">
+            
+                <a href="../issue19/issue-19-5-dopcn.html">
+            
+                    
+                    活动追踪
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../issue15/issue-15-0-yulingtianxia.html">
+            
+                <a href="../issue15/issue-15-0-yulingtianxia.html">
+            
+                    
+                    测试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../issue15/issue-15-1-weekwood.html">
+            
+                <a href="../issue15/issue-15-1-weekwood.html">
+            
+                    
+                    行为驱动开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../issue15/issue-15-2-morisunshine.html">
+            
+                <a href="../issue15/issue-15-2-morisunshine.html">
+            
+                    
+                    XCTest测试实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../issue15/issue-15-3-sunsets.html">
+            
+                <a href="../issue15/issue-15-3-sunsets.html">
+            
+                    
+                    依赖注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.4" data-path="../issue15/issue-15-4-Onetaway.html">
+            
+                <a href="../issue15/issue-15-4-Onetaway.html">
+            
+                    
+                    糟糕的测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.5" data-path="../issue15/issue-15-5-ryan.html">
+            
+                <a href="../issue15/issue-15-5-ryan.html">
+            
+                    
+                    置换测试：Mock,Stub和其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.6" data-path="../issue15/issue-15-6-callmewhy.html">
+            
+                <a href="../issue15/issue-15-6-callmewhy.html">
+            
+                    
+                    UI测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.7" data-path="../issue15/issue-15-7-oa414.html">
+            
+                <a href="../issue15/issue-15-7-oa414.html">
+            
+                    
+                    截图测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../issue17/issue-17-0-weekwood.html">
+            
+                <a href="../issue17/issue-17-0-weekwood.html">
+            
+                    
+                    安全
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../issue17/issue-17-1-programmerDu.html">
+            
+                <a href="../issue17/issue-17-1-programmerDu.html">
+            
+                    
+                    为什么今天安全仍然重要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../issue17/issue-17-2-dopcn.html">
+            
+                <a href="../issue17/issue-17-2-dopcn.html">
+            
+                    
+                    代码签名探析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../issue17/issue-17-3-callmewhy.html">
+            
+                <a href="../issue17/issue-17-3-callmewhy.html">
+            
+                    
+                    收据验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../issue20/issue-20-0-bifidy.html">
+            
+                <a href="../issue20/issue-20-0-bifidy.html">
+            
+                    
+                    访谈
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../issue20/issue-20-1-april.html">
+            
+                <a href="../issue20/issue-20-1-april.html">
+            
+                    
+                    终身学习的一代人
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="../issue20/issue-20-2-programmerDu.html">
+            
+                <a href="../issue20/issue-20-2-programmerDu.html">
+            
+                    
+                    让东西变得不那么糟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3" data-path="../issue20/issue-20-3-hewigovens.html">
+            
+                <a href="../issue20/issue-20-3-hewigovens.html">
+            
+                    
+                    学无止境
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../issue6/issue-6-0-FangYiXiong.html">
+            
+                <a href="../issue6/issue-6-0-FangYiXiong.html">
+            
+                    
+                    Build工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" data-path="../issue6/issue-6-1-BeyondVincent.html">
+            
+                <a href="../issue6/issue-6-1-BeyondVincent.html">
+            
+                    
+                    Build过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" data-path="../issue6/issue-6-2-sunsets.html">
+            
+                <a href="../issue6/issue-6-2-sunsets.html">
+            
+                    
+                    编译器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.3" data-path="../issue6/issue-6-3-yishuiliunian.html">
+            
+                <a href="../issue6/issue-6-3-yishuiliunian.html">
+            
+                    
+                    Mach-O可执行文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.4" data-path="../issue6/issue-6-4-programmer.du.html">
+            
+                <a href="../issue6/issue-6-4-programmer.du.html">
+            
+                    
+                    深入理解CocoaPods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.5" data-path="../issue6/issue-6-5-yuan12xin.html">
+            
+                <a href="../issue6/issue-6-5-yuan12xin.html">
+            
+                    
+                    为iOS建立Travis CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../issue8/issue-8-0-vienta.html">
+            
+                <a href="../issue8/issue-8-0-vienta.html">
+            
+                    
+                    四轴无人机项目
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../issue8/issue-8-1-phpmaple.html">
+            
+                <a href="../issue8/issue-8-1-phpmaple.html">
+            
+                    
+                    项目介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.2" data-path="../issue8/issue-8-2-weekwood.html">
+            
+                <a href="../issue8/issue-8-2-weekwood.html">
+            
+                    
+                    与四轴无人机的通讯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.3" data-path="../issue8/issue-8-3-weekwood.html">
+            
+                <a href="../issue8/issue-8-3-weekwood.html">
+            
+                    
+                    导航应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.4" data-path="../issue8/issue-8-4-zincsamael.html">
+            
+                <a href="../issue8/issue-8-4-zincsamael.html">
+            
+                    
+                    客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../issue11/issue-11-0-FangYixiong.html">
+            
+                <a href="../issue11/issue-11-0-FangYixiong.html">
+            
+                    
+                    Android
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="../issue11/issue-11-1-nixzhu.html">
+            
+                <a href="../issue11/issue-11-1-nixzhu.html">
+            
+                    
+                    iOS开发者的Android第一课
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.2" data-path="../issue11/Issue-11-2-sunset.html">
+            
+                <a href="../issue11/Issue-11-2-sunset.html">
+            
+                    
+                    Android Intents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.3" data-path="../issue11/issue-11-3-Daisyyaya.html">
+            
+                <a href="../issue11/issue-11-3-Daisyyaya.html">
+            
+                    
+                    响应式Android应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.4" data-path="../issue11/issue-11-4-weekwood.html">
+            
+                <a href="../issue11/issue-11-4-weekwood.html">
+            
+                    
+                    Android通讯中心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.5" data-path="../issue11/issue-11-5-zinc.html">
+            
+                <a href="../issue11/issue-11-5-zinc.html">
+            
+                    
+                    Android中的SQLite数据库支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.6" data-path="../issue11/issue-11-6-Bayonetta.html">
+            
+                <a href="../issue11/issue-11-6-Bayonetta.html">
+            
+                    
+                    依赖注入和注解，为什么Java比你想象的要好
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../issue14/issue-14-0-johnnywjy.html">
+            
+                <a href="../issue14/issue-14-0-johnnywjy.html">
+            
+                    
+                    回到Mac
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="../issue14/issue-14-1-ckitakishi.html">
+            
+                <a href="../issue14/issue-14-1-ckitakishi.html">
+            
+                    
+                    使Mac应用数据脚本化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.2" data-path="../issue14/issue-14-2-onevcat.html">
+            
+                <a href="../issue14/issue-14-2-onevcat.html">
+            
+                    
+                    在沙盒中编写脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.3" data-path="../issue14/issue-14-3-oa414.html">
+            
+                <a href="../issue14/issue-14-3-oa414.html">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.4" data-path="../issue14/issue-14-4-hewigovens.html">
+            
+                <a href="../issue14/issue-14-4-hewigovens.html">
+            
+                    
+                    XPC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.5" data-path="../issue14/issue-14-5-crazycatcher.html">
+            
+                <a href="../issue14/issue-14-5-crazycatcher.html">
+            
+                    
+                    从UIKit到AppKit
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../issue22/issue-22-0-programmerDu.html">
+            
+                <a href="../issue22/issue-22-0-programmerDu.html">
+            
+                    
+                    iOS项目管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.1" data-path="../issue22/issue-22-1-bifidy.html">
+            
+                <a href="../issue22/issue-22-1-bifidy.html">
+            
+                    
+                    Omni内部
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.2" data-path="../issue22/issue-22-2-wongzigii.html">
+            
+                <a href="../issue22/issue-22-2-wongzigii.html">
+            
+                    
+                    Artsy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.3" data-path="../issue22/issue-22-3-April.html">
+            
+                <a href="../issue22/issue-22-3-April.html">
+            
+                    
+                    Square Register中的扩张
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.4" data-path="../issue22/issue-22-4-morisunshine.html">
+            
+                <a href="../issue22/issue-22-4-morisunshine.html">
+            
+                    
+                    代码审查的艺术：Dropbox的故事
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.5" data-path="../issue22/issue-22-5-lizixroy.html">
+            
+                <a href="../issue22/issue-22-5-lizixroy.html">
+            
+                    
+                    响应式视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >整洁的 Table View 代码</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>Table view &#x662F; iOS &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#x975E;&#x5E38;&#x901A;&#x7528;&#x7684;&#x7EC4;&#x4EF6;&#x3002;&#x8BB8;&#x591A;&#x4EE3;&#x7801;&#x548C; table view &#x90FD;&#x6709;&#x76F4;&#x63A5;&#x6216;&#x95F4;&#x63A5;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x968F;&#x4FBF;&#x4E3E;&#x51E0;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x6BD4;&#x5982;&#x63D0;&#x4F9B;&#x6570;&#x636E;&#x3001;&#x66F4;&#x65B0; table view&#xFF0C;&#x63A7;&#x5236;&#x5B83;&#x7684;&#x884C;&#x4E3A;&#x4EE5;&#x53CA;&#x54CD;&#x5E94;&#x9009;&#x62E9;&#x4E8B;&#x4EF6;&#x3002;&#x5728;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x5C55;&#x793A;&#x4FDD;&#x6301; table view &#x76F8;&#x5173;&#x4EE3;&#x7801;&#x7684;&#x6574;&#x6D01;&#x548C;&#x826F;&#x597D;&#x7EC4;&#x7EC7;&#x7684;&#x6280;&#x672F;&#x3002;</p>
+<h2 id="uitableviewcontroller-vs-uiviewcontroller">UITableViewController vs. UIViewController</h2>
+<p>Apple &#x63D0;&#x4F9B;&#x4E86; <code>UITableViewController</code> &#x4F5C;&#x4E3A; table views &#x4E13;&#x5C5E;&#x7684; view controller &#x7C7B;&#x3002;Table view controllers &#x5B9E;&#x73B0;&#x4E86;&#x4E00;&#x4E9B;&#x975E;&#x5E38;&#x6709;&#x7528;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x6765;&#x5E2E;&#x4F60;&#x907F;&#x514D;&#x4E00;&#x904D;&#x53C8;&#x4E00;&#x904D;&#x5730;&#x5199;&#x90A3;&#x4E9B;&#x6B7B;&#x677F;&#x7684;&#x4EE3;&#x7801;&#xFF01;&#x4F46;&#x662F;&#x8BDD;&#x53C8;&#x8BF4;&#x56DE;&#x6765;&#xFF0C;table view controller &#x53EA;&#x9650;&#x4E8E;&#x7BA1;&#x7406;&#x4E00;&#x4E2A;&#x5168;&#x5C4F;&#x5C55;&#x793A;&#x7684; table view&#x3002;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x4F60;&#x60F3;&#x8981;&#x7684;&#xFF0C;&#x4F46;&#x5982;&#x679C;&#x4E0D;&#x662F;&#xFF0C;&#x8FD8;&#x6709;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#x6765;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x5C31;&#x50CF;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x5C55;&#x793A;&#x7684;&#x90A3;&#x6837;&#x3002;</p>
+<h3 id="table-view-controllers-&#x7684;&#x7279;&#x6027;">Table View Controllers &#x7684;&#x7279;&#x6027;</h3>
+<p>Table view controllers &#x4F1A;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x663E;&#x793A; table view &#x7684;&#x65F6;&#x5019;&#x5E2E;&#x4F60;&#x52A0;&#x8F7D;&#x5176;&#x6570;&#x636E;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x5B83;&#x8FD8;&#x4F1A;&#x5E2E;&#x4F60;&#x5207;&#x6362; table view &#x7684;&#x7F16;&#x8F91;&#x6A21;&#x5F0F;&#x3001;&#x54CD;&#x5E94;&#x952E;&#x76D8;&#x901A;&#x77E5;&#x3001;&#x4EE5;&#x53CA;&#x4E00;&#x4E9B;&#x5C0F;&#x4EFB;&#x52A1;&#xFF0C;&#x6BD4;&#x5982;&#x95EA;&#x73B0;&#x4FA7;&#x8FB9;&#x7684;&#x6ED1;&#x52A8;&#x63D0;&#x793A;&#x6761;&#x548C;&#x6E05;&#x9664;&#x9009;&#x4E2D;&#x65F6;&#x7684;&#x80CC;&#x666F;&#x8272;&#x3002;&#x4E3A;&#x4E86;&#x8BA9;&#x8FD9;&#x4E9B;&#x7279;&#x6027;&#x751F;&#x6548;&#xFF0C;&#x5F53;&#x4F60;&#x5728;&#x5B50;&#x7C7B;&#x4E2D;&#x8986;&#x5199;&#x7C7B;&#x4F3C; <code>viewWillAppear:</code> &#x6216;&#x8005; <code>viewDidAppear:</code> &#x7B49;&#x4E8B;&#x4EF6;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x8C03;&#x7528; super &#x7248;&#x672C;&#x3002;</p>
+<p>Table view controllers &#x76F8;&#x5BF9;&#x4E8E;&#x6807;&#x51C6; view controllers &#x7684;&#x4E00;&#x4E2A;&#x7279;&#x522B;&#x7684;&#x597D;&#x5904;&#x662F;&#x5B83;&#x652F;&#x6301; Apple &#x5B9E;&#x73B0;&#x7684;&#x201C;&#x4E0B;&#x62C9;&#x5237;&#x65B0;&#x201D;&#x3002;&#x76EE;&#x524D;&#xFF0C;&#x6587;&#x6863;&#x4E2D;&#x552F;&#x4E00;&#x7684;&#x4F7F;&#x7528; <code>UIRefreshControl</code> &#x7684;&#x65B9;&#x5F0F;&#x5C31;&#x662F;&#x901A;&#x8FC7; table view controller &#xFF0C;&#x867D;&#x7136;&#x901A;&#x8FC7;&#x52AA;&#x529B;&#x5728;&#x5176;&#x4ED6;&#x5730;&#x65B9;&#x4E5F;&#x80FD;&#x8BA9;&#x5B83;&#x5DE5;&#x4F5C;&#xFF08;<a href="http://stackoverflow.com/questions/12805003/uirefreshcontrol-issues" target="_blank">&#x89C1;&#x6B64;&#x5904;</a>&#xFF09;&#xFF0C;&#x4F46;&#x5F88;&#x53EF;&#x80FD;&#x5728;&#x4E0B;&#x4E00;&#x6B21; iOS &#x66F4;&#x65B0;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x4E0D;&#x884C;&#x4E86;&#x3002;</p>
+<p>&#x8FD9;&#x4E9B;&#x8981;&#x7D20;&#x52A0;&#x4E00;&#x8D77;&#xFF0C;&#x4E3A;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x5927;&#x90E8;&#x5206; Apple &#x6240;&#x5B9A;&#x4E49;&#x7684;&#x6807;&#x51C6; table view &#x4EA4;&#x4E92;&#x884C;&#x4E3A;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x7684;&#x5E94;&#x7528;&#x6070;&#x597D;&#x7B26;&#x5408;&#x8FD9;&#x4E9B;&#x6807;&#x51C6;&#xFF0C;&#x90A3;&#x4E48;&#x76F4;&#x63A5;&#x4F7F;&#x7528; table view controllers &#x6765;&#x907F;&#x514D;&#x5199;&#x90A3;&#x4E9B;&#x6B7B;&#x677F;&#x7684;&#x4EE3;&#x7801;&#x662F;&#x4E2A;&#x5F88;&#x597D;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<h3 id="table-view-controllers-&#x7684;&#x9650;&#x5236;">Table View Controllers &#x7684;&#x9650;&#x5236;</h3>
+<p>Table view controllers &#x7684; view &#x5C5E;&#x6027;&#x6C38;&#x8FDC;&#x90FD;&#x662F;&#x4E00;&#x4E2A; table view&#x3002;&#x5982;&#x679C;&#x4F60;&#x7A0D;&#x540E;&#x51B3;&#x5B9A;&#x5728; table view &#x65C1;&#x8FB9;&#x663E;&#x793A;&#x4E00;&#x4E9B;&#x4E1C;&#x897F;&#xFF08;&#x6BD4;&#x5982;&#x4E00;&#x4E2A;&#x5730;&#x56FE;&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x4F9D;&#x8D56;&#x4E8E;&#x90A3;&#x4E9B;&#x5947;&#x602A;&#x7684; hacks&#xFF0C;&#x4F30;&#x8BA1;&#x5C31;&#x6CA1;&#x4EC0;&#x4E48;&#x529E;&#x6CD5;&#x4E86;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x662F;&#x7528;&#x4EE3;&#x7801;&#x6216; .xib &#x6587;&#x4EF6;&#x6765;&#x5B9A;&#x4E49;&#x7684;&#x754C;&#x9762;&#xFF0C;&#x90A3;&#x4E48;&#x8FC1;&#x79FB;&#x5230;&#x4E00;&#x4E2A;&#x6807;&#x51C6; view controller &#x5C06;&#x4F1A;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x3002;&#x4F46;&#x662F;&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x4E86; storyboards&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x8981;&#x591A;&#x5305;&#x542B;&#x51E0;&#x4E2A;&#x6B65;&#x9AA4;&#x3002;&#x9664;&#x975E;&#x91CD;&#x65B0;&#x521B;&#x5EFA;&#xFF0C;&#x5426;&#x5219;&#x4F60;&#x5E76;&#x4E0D;&#x80FD;&#x5728; storyboards &#x4E2D;&#x5C06; table view controller &#x6539;&#x6210;&#x4E00;&#x4E2A;&#x6807;&#x51C6;&#x7684; view controller&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x4F60;&#x5FC5;&#x987B;&#x5C06;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x62F7;&#x8D1D;&#x5230;&#x65B0;&#x7684; view controller&#xFF0C;&#x7136;&#x540E;&#x518D;&#x91CD;&#x65B0;&#x8FDE;&#x63A5;&#x4E00;&#x904D;&#x3002;</p>
+<p>&#x6700;&#x540E;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x628A;&#x8FC1;&#x79FB;&#x540E;&#x4E22;&#x5931;&#x7684; table view controller &#x7684;&#x7279;&#x6027;&#x7ED9;&#x8865;&#x56DE;&#x6765;&#x3002;&#x5927;&#x591A;&#x6570;&#x90FD;&#x662F; <code>viewWillAppear:</code> &#x6216; <code>viewDidAppear:</code> &#x4E2D;&#x7B80;&#x5355;&#x7684;&#x4E00;&#x6761;&#x8BED;&#x53E5;&#x3002;&#x5207;&#x6362;&#x7F16;&#x8F91;&#x6A21;&#x5F0F;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A; action &#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x6765;&#x5207;&#x6362; table view &#x7684; <code>editing</code> &#x5C5E;&#x6027;&#x3002;&#x5927;&#x591A;&#x6570;&#x5DE5;&#x4F5C;&#x6765;&#x81EA;&#x91CD;&#x65B0;&#x521B;&#x5EFA;&#x5BF9;&#x952E;&#x76D8;&#x7684;&#x652F;&#x6301;&#x3002;</p>
+<p>&#x5728;&#x9009;&#x62E9;&#x8FD9;&#x6761;&#x8DEF;&#x4E4B;&#x524D;&#xFF0C;&#x5176;&#x5B9E;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x66F4;&#x8F7B;&#x677E;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5206;&#x79BB;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5173;&#x5FC3;&#x7684;&#x529F;&#x80FD;&#xFF08;&#x5173;&#x6CE8;&#x70B9;&#x5206;&#x79BB;&#xFF09;&#xFF0C;&#x8BA9;&#x4F60;&#x83B7;&#x5F97;&#x989D;&#x5916;&#x7684;&#x597D;&#x5904;&#xFF1A;</p>
+<h3 id="&#x4F7F;&#x7528;-child-view-controllers">&#x4F7F;&#x7528; Child View Controllers</h3>
+<p>&#x548C;&#x5B8C;&#x5168;&#x629B;&#x5F03; table view controller &#x4E0D;&#x540C;&#xFF0C;&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x5C06;&#x5B83;&#x4F5C;&#x4E3A; child view controller &#x6DFB;&#x52A0;&#x5230;&#x5176;&#x4ED6; view controller &#x4E2D;&#xFF08;<a href="http://objccn.io/issue-1-4" target="_blank">&#x5173;&#x4E8E;&#x6B64;&#x8BDD;&#x9898;&#x7684;&#x6587;&#x7AE0;</a>&#xFF09;&#x3002;&#x8FD9;&#x6837;&#xFF0C;parent view controller &#x5728;&#x7BA1;&#x7406;&#x5176;&#x4ED6;&#x7684;&#x4F60;&#x9700;&#x8981;&#x7684;&#x65B0;&#x52A0;&#x7684;&#x754C;&#x9762;&#x5143;&#x7D20;&#x7684;&#x540C;&#x65F6;&#xFF0C;table view controller &#x8FD8;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x7BA1;&#x7406;&#x5B83;&#x7684; table view&#x3002;</p>
+<pre><code>- (void)addPhotoDetailsTableView
+{
+    DetailsViewController *details = [[DetailsViewController alloc] init];
+    details.photo = self.photo;
+    details.delegate = self;
+    [self addChildViewController:details];
+    CGRect frame = self.view.bounds;
+    frame.origin.y = 110;
+    details.view.frame = frame;
+    [self.view addSubview:details.view];
+    [details didMoveToParentViewController:self];
+}
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x4F60;&#x5C31;&#x5FC5;&#x987B;&#x5728; child view controller &#x548C; parent view controller &#x4E4B;&#x95F4;&#x5EFA;&#x7ACB;&#x6D88;&#x606F;&#x4F20;&#x9012;&#x7684;&#x6E20;&#x9053;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x7528;&#x6237;&#x9009;&#x62E9;&#x4E86;&#x4E00;&#x4E2A; table view &#x4E2D;&#x7684; cell&#xFF0C;parent view controller &#x9700;&#x8981;&#x77E5;&#x9053;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x6765;&#x63A8;&#x5165;&#x5176;&#x4ED6; view controller&#x3002;&#x6839;&#x636E;&#x4F7F;&#x7528;&#x4E60;&#x60EF;&#xFF0C;&#x901A;&#x5E38;&#x6700;&#x6E05;&#x6670;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x4E3A;&#x8FD9;&#x4E2A; table view controller &#x5B9A;&#x4E49;&#x4E00;&#x4E2A; delegate protocol&#xFF0C;&#x7136;&#x540E;&#x5230; parent view controller &#x4E2D;&#x53BB;&#x5B9E;&#x73B0;&#x3002;</p>
+<pre><code>@protocol DetailsViewControllerDelegate
+- (void)didSelectPhotoAttributeWithKey:(NSString *)key;
+@end
+
+@interface PhotoViewController () 
+@end
+
+@implementation PhotoViewController
+// ...
+- (void)didSelectPhotoAttributeWithKey:(NSString *)key
+{
+    DetailViewController *controller = [[DetailViewController alloc] init];
+    controller.key = key;
+    [self.navigationController pushViewController:controller animated:YES];
+}
+@end
+</code></pre><p>&#x5C31;&#x50CF;&#x4F60;&#x770B;&#x5230;&#x7684;&#x90A3;&#x6837;&#xFF0C;&#x8FD9;&#x79CD;&#x7ED3;&#x6784;&#x4E3A; view controller &#x4E4B;&#x95F4;&#x7684;&#x6D88;&#x606F;&#x4F20;&#x9012;&#x5E26;&#x6765;&#x4E86;&#x989D;&#x5916;&#x7684;&#x5F00;&#x9500;&#xFF0C;&#x4F46;&#x662F;&#x4F5C;&#x4E3A;&#x56DE;&#x62A5;&#xFF0C;&#x4EE3;&#x7801;&#x5C01;&#x88C5;&#x548C;&#x5206;&#x79BB;&#x975E;&#x5E38;&#x6E05;&#x6670;&#xFF0C;&#x6709;&#x66F4;&#x597D;&#x7684;&#x590D;&#x7528;&#x6027;&#x3002;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x7684;&#x4E0D;&#x540C;&#xFF0C;&#x8FD9;&#x65E2;&#x53EF;&#x80FD;&#x8BA9;&#x4E8B;&#x60C5;&#x53D8;&#x5F97;&#x66F4;&#x7B80;&#x5355;&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x4F1A;&#x66F4;&#x590D;&#x6742;&#xFF0C;&#x9700;&#x8981;&#x8BFB;&#x8005;&#x81EA;&#x884C;&#x659F;&#x914C;&#x548C;&#x51B3;&#x5B9A;&#x3002;</p>
+<h2 id="&#x5206;&#x79BB;&#x5173;&#x6CE8;&#x70B9;&#xFF08;separating-concerns&#xFF09;">&#x5206;&#x79BB;&#x5173;&#x6CE8;&#x70B9;&#xFF08;Separating Concerns&#xFF09;</h2>
+<p>&#x5F53;&#x5904;&#x7406; table views &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6709;&#x8BB8;&#x591A;&#x5404;&#x79CD;&#x5404;&#x6837;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x8FD9;&#x4E9B;&#x4EFB;&#x52A1;&#x7A7F;&#x68AD;&#x4E8E; models&#xFF0C;controllers &#x548C; views &#x4E4B;&#x95F4;&#x3002;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x8BA9; view controllers &#x505A;&#x6240;&#x6709;&#x7684;&#x4E8B;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5C3D;&#x53EF;&#x80FD;&#x5730;&#x628A;&#x8FD9;&#x4E9B;&#x4EFB;&#x52A1;&#x5212;&#x5206;&#x5230;&#x5408;&#x9002;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x8FD9;&#x6837;&#x6709;&#x5229;&#x4E8E;&#x9605;&#x8BFB;&#x3001;&#x7EF4;&#x62A4;&#x548C;&#x6D4B;&#x8BD5;&#x3002;</p>
+<p>&#x8FD9;&#x91CC;&#x63CF;&#x8FF0;&#x7684;&#x6280;&#x672F;&#x662F;&#x6587;&#x7AE0;<a href="http://objccn.io/issue-1-1" target="_blank">&#x66F4;&#x8F7B;&#x91CF;&#x7684; View Controllers</a> &#x4E2D;&#x7684;&#x6982;&#x5FF5;&#x7684;&#x5EF6;&#x4F38;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x6765;&#x7406;&#x89E3;&#x5982;&#x4F55;&#x91CD;&#x6784; data source &#x548C; model &#x7684;&#x903B;&#x8F91;&#x3002;&#x7ED3;&#x5408; table views&#xFF0C;&#x6211;&#x4EEC;&#x6765;&#x5177;&#x4F53;&#x770B;&#x770B;&#x5982;&#x4F55;&#x5728; view controllers &#x548C; views &#x4E4B;&#x95F4;&#x5206;&#x79BB;&#x5173;&#x6CE8;&#x70B9;&#x3002;</p>
+<h3 id="&#x642D;&#x5EFA;-model-&#x5BF9;&#x8C61;&#x548C;-cells-&#x4E4B;&#x95F4;&#x7684;&#x6865;&#x6881;">&#x642D;&#x5EFA; Model &#x5BF9;&#x8C61;&#x548C; Cells &#x4E4B;&#x95F4;&#x7684;&#x6865;&#x6881;</h3>
+<p>&#x6709;&#x65F6;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5C06;&#x60F3;&#x663E;&#x793A;&#x7684; model &#x5C42;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x4F20;&#x5230; view &#x5C42;&#x4E2D;&#x53BB;&#x663E;&#x793A;&#x3002;&#x7531;&#x4E8E;&#x6211;&#x4EEC;&#x540C;&#x65F6;&#x4E5F;&#x5E0C;&#x671B;&#x8BA9; model &#x548C; view &#x4E4B;&#x95F4;&#x660E;&#x786E;&#x5206;&#x79BB;&#xFF0C;&#x6240;&#x4EE5;&#x901A;&#x5E38;&#x628A;&#x8FD9;&#x4E2A;&#x4EFB;&#x52A1;&#x8F6C;&#x79FB;&#x5230; table view &#x7684; data source &#x4E2D;&#x53BB;&#x5904;&#x7406;&#xFF1A;</p>
+<pre><code>- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    PhotoCell *cell = [tableView dequeueReusableCellWithIdentifier:@&quot;PhotoCell&quot;];
+    Photo *photo = [self itemAtIndexPath:indexPath];
+    cell.photoTitleLabel.text = photo.name;
+    NSString* date = [self.dateFormatter stringFromDate:photo.creationDate];
+    cell.photoDateLabel.text = date;
+}
+</code></pre><p>&#x4F46;&#x662F;&#x8FD9;&#x6837;&#x7684;&#x4EE3;&#x7801;&#x4F1A;&#x8BA9; data source &#x53D8;&#x5F97;&#x6DF7;&#x4E71;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x5411; data source &#x66B4;&#x9732;&#x4E86; cell &#x7684;&#x8BBE;&#x8BA1;&#x3002;&#x6700;&#x597D;&#x5206;&#x89E3;&#x51FA;&#x6765;&#xFF0C;&#x653E;&#x5230; cell &#x7C7B;&#x7684;&#x4E00;&#x4E2A; category &#x4E2D;&#x3002;</p>
+<pre><code>@implementation PhotoCell (ConfigureForPhoto)
+
+- (void)configureForPhoto:(Photo *)photo
+{
+    self.photoTitleLabel.text = photo.name;
+    NSString* date = [self.dateFormatter stringFromDate:photo.creationDate];
+    self.photoDateLabel.text = date;
+}
+
+@end
+</code></pre><p>&#x6709;&#x4E86;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x7684; data source &#x65B9;&#x6CD5;&#x5C31;&#x53D8;&#x5F97;&#x7B80;&#x5355;&#x4E86;&#x3002;</p>
+<pre><code>- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    PhotoCell *cell = [tableView dequeueReusableCellWithIdentifier:PhotoCellIdentifier];
+    [cell configureForPhoto:[self itemAtIndexPath:indexPath]];
+    return cell;
+}
+</code></pre><p>&#x5728;&#x6211;&#x4EEC;&#x7684;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;table view &#x7684; data source &#x5DF2;&#x7ECF;<a href="http://objccn.io/issue-1-1" target="_blank">&#x5206;&#x89E3;&#x5230;&#x5355;&#x72EC;&#x7684;&#x7C7B;&#x4E2D;&#x4E86;</a>&#xFF0C;&#x5B83;&#x7528;&#x4E00;&#x4E2A;&#x8BBE;&#x7F6E; cell &#x7684; block &#x6765;&#x521D;&#x59CB;&#x5316;&#x3002;&#x8FD9;&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A; block &#x5C31;&#x53D8;&#x5F97;&#x8FD9;&#x6837;&#x7B80;&#x5355;&#x4E86;&#xFF1A;</p>
+<pre><code>TableViewCellConfigureBlock block = ^(PhotoCell *cell, Photo *photo) {
+    [cell configureForPhoto:photo];
+};
+</code></pre><h3 id="&#x8BA9;-cells-&#x53EF;&#x590D;&#x7528;">&#x8BA9; Cells &#x53EF;&#x590D;&#x7528;</h3>
+<p>&#x6709;&#x65F6;&#x591A;&#x79CD; model &#x5BF9;&#x8C61;&#x9700;&#x8981;&#x7528;&#x540C;&#x4E00;&#x7C7B;&#x578B;&#x7684; cell &#x6765;&#x8868;&#x793A;&#xFF0C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8FDB;&#x4E00;&#x6B65;&#x8BA9; cell &#x53EF;&#x4EE5;&#x590D;&#x7528;&#x3002;&#x9996;&#x5148;&#xFF0C;&#x6211;&#x4EEC;&#x7ED9; cell &#x5B9A;&#x4E49;&#x4E00;&#x4E2A; protocol&#xFF0C;&#x9700;&#x8981;&#x7528;&#x8FD9;&#x4E2A; cell &#x663E;&#x793A;&#x7684;&#x5BF9;&#x8C61;&#x5FC5;&#x987B;&#x9075;&#x5FAA;&#x8FD9;&#x4E2A; protocol&#x3002;&#x7136;&#x540E;&#x7B80;&#x5355;&#x4FEE;&#x6539; category &#x4E2D;&#x7684;&#x8BBE;&#x7F6E;&#x65B9;&#x6CD5;&#xFF0C;&#x8BA9;&#x5B83;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x9075;&#x5FAA;&#x8FD9;&#x4E2A; protocol &#x7684;&#x4EFB;&#x4F55;&#x5BF9;&#x8C61;&#x3002;&#x8FD9;&#x4E9B;&#x7B80;&#x5355;&#x7684;&#x6B65;&#x9AA4;&#x8BA9; cell &#x548C;&#x4EFB;&#x4F55;&#x7279;&#x6B8A;&#x7684; model &#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x5F97;&#x4EE5;&#x89E3;&#x8026;&#xFF0C;&#x8BA9;&#x5B83;&#x53EF;&#x9002;&#x5E94;&#x4E0D;&#x540C;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</p>
+<h3 id="&#x5728;-cell-&#x5185;&#x90E8;&#x63A7;&#x5236;-cell-&#x7684;&#x72B6;&#x6001;">&#x5728; Cell &#x5185;&#x90E8;&#x63A7;&#x5236; Cell &#x7684;&#x72B6;&#x6001;</h3>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x81EA;&#x5B9A;&#x4E49; table views &#x9ED8;&#x8BA4;&#x7684;&#x9AD8;&#x4EAE;&#x6216;&#x9009;&#x62E9;&#x884C;&#x4E3A;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x4E24;&#x4E2A; delegate &#x65B9;&#x6CD5;&#xFF0C;&#x628A;&#x70B9;&#x51FB;&#x7684; cell &#x4FEE;&#x6539;&#x6210;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x7684;&#x6837;&#x5B50;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>- (void)tableView:(UITableView *)tableView
+        didHighlightRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    PhotoCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    cell.photoTitleLabel.shadowColor = [UIColor darkGrayColor];
+    cell.photoTitleLabel.shadowOffset = CGSizeMake(3, 3);
+}
+
+- (void)tableView:(UITableView *)tableView
+        didUnhighlightRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    PhotoCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    cell.photoTitleLabel.shadowColor = nil;
+}
+</code></pre><p>&#x7136;&#x800C;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A; delegate &#x65B9;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x53C8;&#x57FA;&#x4E8E;&#x4E86; view controller &#x77E5;&#x6653; cell &#x5B9E;&#x73B0;&#x7684;&#x5177;&#x4F53;&#x7EC6;&#x8282;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x66FF;&#x6362;&#x6216;&#x91CD;&#x65B0;&#x8BBE;&#x8BA1; cell&#xFF0C;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x6539;&#x5199; delegate &#x4EE3;&#x7801;&#x3002;View &#x7684;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#x548C; delegate &#x7684;&#x5B9E;&#x73B0;&#x4EA4;&#x7EC7;&#x5728;&#x4E00;&#x8D77;&#x4E86;&#x3002;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x628A;&#x8FD9;&#x4E9B;&#x7EC6;&#x8282;&#x79FB;&#x5230; cell &#x81EA;&#x8EAB;&#x4E2D;&#x53BB;&#x3002;</p>
+<pre><code>@implementation PhotoCell
+// ...
+- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated
+{
+    [super setHighlighted:highlighted animated:animated];
+    if (highlighted) {
+        self.photoTitleLabel.shadowColor = [UIColor darkGrayColor];
+        self.photoTitleLabel.shadowOffset = CGSizeMake(3, 3);
+    } else {
+        self.photoTitleLabel.shadowColor = nil;
+    }
+}
+@end
+</code></pre><p>&#x603B;&#x7684;&#x6765;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x52AA;&#x529B;&#x628A; view &#x5C42;&#x548C; controller &#x5C42;&#x7684;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#x5206;&#x79BB;&#x5F00;&#x3002;delegate &#x80AF;&#x5B9A;&#x5F97;&#x6E05;&#x695A;&#x4E00;&#x4E2A; view &#x8BE5;&#x663E;&#x793A;&#x4EC0;&#x4E48;&#x72B6;&#x6001;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x4E0D;&#x5E94;&#x8BE5;&#x4E86;&#x89E3;&#x5982;&#x4F55;&#x4FEE;&#x6539; view &#x7ED3;&#x6784;&#x6216;&#x8005;&#x7ED9;&#x67D0;&#x4E9B; subviews &#x8BBE;&#x7F6E;&#x67D0;&#x4E9B;&#x5C5E;&#x6027;&#x4EE5;&#x83B7;&#x5F97;&#x6B63;&#x786E;&#x7684;&#x72B6;&#x6001;&#x3002;&#x6240;&#x6709;&#x8FD9;&#x4E9B;&#x903B;&#x8F91;&#x90FD;&#x5E94;&#x8BE5;&#x5C01;&#x88C5;&#x5230; view &#x5185;&#x90E8;&#xFF0C;&#x7136;&#x540E;&#x7ED9;&#x5916;&#x90E8;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684; API&#x3002;</p>
+<h3 id="&#x63A7;&#x5236;&#x591A;&#x4E2A;-cell-&#x7C7B;&#x578B;">&#x63A7;&#x5236;&#x591A;&#x4E2A; Cell &#x7C7B;&#x578B;</h3>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A; table view &#x91CC;&#x9762;&#x6709;&#x591A;&#x79CD;&#x7C7B;&#x578B;&#x7684; cell&#xFF0C;data source &#x65B9;&#x6CD5;&#x5F88;&#x5FEB;&#x5C31;&#x96BE;&#x4EE5;&#x63A7;&#x5236;&#x4E86;&#x3002;&#x5728;&#x6211;&#x4EEC;&#x793A;&#x4F8B;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;photo details table &#x6709;&#x4E24;&#x79CD;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684; cell&#xFF1A;&#x4E00;&#x79CD;&#x7528;&#x4E8E;&#x663E;&#x793A;&#x51E0;&#x4E2A;&#x661F;&#xFF0C;&#x53E6;&#x4E00;&#x79CD;&#x7528;&#x6765;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x952E;&#x503C;&#x5BF9;&#x3002;&#x4E3A;&#x4E86;&#x5212;&#x5206;&#x5904;&#x7406;&#x4E0D;&#x540C; cell &#x7C7B;&#x578B;&#x7684;&#x4EE3;&#x7801;&#xFF0C;data source &#x65B9;&#x6CD5;&#x7B80;&#x5355;&#x5730;&#x901A;&#x8FC7;&#x5224;&#x65AD; cell &#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x628A;&#x4EFB;&#x52A1;&#x6D3E;&#x53D1;&#x7ED9;&#x5176;&#x4ED6;&#x6307;&#x5B9A;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<pre><code>- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *key = self.keys[(NSUInteger) indexPath.row];
+    id value = [self.photo valueForKey:key];
+    UITableViewCell *cell;
+    if ([key isEqual:PhotoRatingKey]) {
+        cell = [self cellForRating:value indexPath:indexPath];
+    } else {
+        cell = [self detailCellForKey:key value:value];
+    }
+    return cell;
+}
+
+- (RatingCell *)cellForRating:(NSNumber *)rating
+                    indexPath:(NSIndexPath *)indexPath
+{
+    // ...
+}
+
+- (UITableViewCell *)detailCellForKey:(NSString *)key
+                                value:(id)value
+{
+    // ...
+}
+</code></pre><h3 id="&#x7F16;&#x8F91;-table-view">&#x7F16;&#x8F91; Table View</h3>
+<p>Table view &#x63D0;&#x4F9B;&#x4E86;&#x6613;&#x4E8E;&#x4F7F;&#x7528;&#x7684;&#x7F16;&#x8F91;&#x7279;&#x6027;&#xFF0C;&#x5141;&#x8BB8;&#x4F60;&#x5BF9; cell &#x8FDB;&#x884C;&#x5220;&#x9664;&#x6216;&#x91CD;&#x65B0;&#x6392;&#x5E8F;&#x3002;&#x8FD9;&#x4E9B;&#x4E8B;&#x4EF6;&#x90FD;&#x53EF;&#x4EE5;&#x8BA9; table view &#x7684; data source &#x901A;&#x8FC7; <a href="http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewDataSource_Protocol/Reference/Reference.html#//apple_ref/occ/intfm/UITableViewDataSource/tableView:commitEditingStyle:forRowAtIndexPath:" target="_blank">delegate &#x65B9;&#x6CD5;</a>&#x5F97;&#x5230;&#x901A;&#x77E5;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x901A;&#x5E38;&#x6211;&#x4EEC;&#x80FD;&#x5728;&#x8FD9;&#x4E9B; delegate &#x65B9;&#x6CD5;&#x4E2D;&#x770B;&#x5230;&#x5BF9;&#x6570;&#x636E;&#x7684;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x4FEE;&#x6539;&#x6570;&#x636E;&#x5F88;&#x660E;&#x663E;&#x662F;&#x5C5E;&#x4E8E; model &#x5C42;&#x7684;&#x4EFB;&#x52A1;&#x3002;Model &#x5E94;&#x8BE5;&#x4E3A;&#x8BF8;&#x5982;&#x5220;&#x9664;&#x6216;&#x91CD;&#x65B0;&#x6392;&#x5E8F;&#x7B49;&#x64CD;&#x4F5C;&#x66B4;&#x9732;&#x4E00;&#x4E2A; API&#xFF0C;&#x7136;&#x540E;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728; data source &#x65B9;&#x6CD5;&#x4E2D;&#x8C03;&#x7528;&#x5B83;&#x3002;&#x8FD9;&#x6837;&#xFF0C;controller &#x5C31;&#x53EF;&#x4EE5;&#x626E;&#x6F14; view &#x548C; model &#x4E4B;&#x95F4;&#x7684;&#x534F;&#x8C03;&#x8005;&#xFF0C;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x77E5;&#x9053; model &#x5C42;&#x7684;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#x3002;&#x5E76;&#x4E14;&#x8FD8;&#x6709;&#x989D;&#x5916;&#x7684;&#x597D;&#x5904;&#xFF0C;model &#x7684;&#x903B;&#x8F91;&#x4E5F;&#x53D8;&#x5F97;&#x66F4;&#x5BB9;&#x6613;&#x6D4B;&#x8BD5;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4E0D;&#x518D;&#x548C; view controllers &#x7684;&#x4EFB;&#x52A1;&#x6DF7;&#x6742;&#x5728;&#x4E00;&#x8D77;&#x4E86;&#x3002;</p>
+<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
+<p>Table view controllers&#xFF08;&#x4EE5;&#x53CA;&#x5176;&#x4ED6;&#x7684; controller &#x5BF9;&#x8C61;&#xFF01;&#xFF09;&#x5E94;&#x8BE5;&#x5728; model &#x548C; view &#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x626E;&#x6F14;<a href="http://developer.apple.com/library/mac/#documentation/General/Conceptual/DevPedia-CocoaCore/ControllerObject.html" target="_blank">&#x534F;&#x8C03;&#x8005;&#x548C;&#x8C03;&#x89E3;&#x8005;&#x7684;&#x89D2;&#x8272;</a>&#x3002;&#x5B83;&#x4E0D;&#x5E94;&#x8BE5;&#x5173;&#x5FC3;&#x660E;&#x663E;&#x5C5E;&#x4E8E; view &#x5C42;&#x6216; model &#x5C42;&#x7684;&#x4EFB;&#x52A1;&#x3002;&#x4F60;&#x5E94;&#x8BE5;&#x59CB;&#x7EC8;&#x8BB0;&#x4F4F;&#x8FD9;&#x70B9;&#xFF0C;&#x8FD9;&#x6837; delegate &#x548C; data source &#x65B9;&#x6CD5;&#x4F1A;&#x53D8;&#x5F97;&#x66F4;&#x5C0F;&#x5DE7;&#xFF0C;&#x6700;&#x591A;&#x5305;&#x542B;&#x4E00;&#x4E9B;&#x7B80;&#x5355;&#x7684;&#x6837;&#x677F;&#x4EE3;&#x7801;&#x3002;</p>
+<p>&#x8FD9;&#x4E0D;&#x4EC5;&#x51CF;&#x5C11;&#x4E86; table view controllers &#x90A3;&#x6837;&#x7684;&#x5927;&#x5C0F;&#x548C;&#x590D;&#x6742;&#x6027;&#xFF0C;&#x800C;&#x4E14;&#x8FD8;&#x628A;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x548C; view &#x7684;&#x903B;&#x8F91;&#x653E;&#x5230;&#x4E86;&#x66F4;&#x5408;&#x9002;&#x7684;&#x5730;&#x65B9;&#x3002;Controller &#x5C42;&#x7684;&#x91CC;&#x91CC;&#x5916;&#x5916;&#x7684;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#x90FD;&#x88AB;&#x5C01;&#x88C5;&#x6210;&#x4E86;&#x7B80;&#x5355;&#x7684; API&#xFF0C;&#x6700;&#x7EC8;&#xFF0C;&#x5B83;&#x53D8;&#x5F97;&#x66F4;&#x52A0;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#xFF0C;&#x4E5F;&#x66F4;&#x5229;&#x4E8E;&#x56E2;&#x961F;&#x534F;&#x4F5C;&#x3002;</p>
+<h3 id="&#x6269;&#x5C55;&#x9605;&#x8BFB;">&#x6269;&#x5C55;&#x9605;&#x8BFB;</h3>
+<ul>
+<li><a href="http://www.sebastianrehnby.com/blog/2013/01/01/skinnier-controllers-using-view-categories/" target="_blank">Blog: Skinnier Controllers using View Categories</a></li>
+<li><a href="http://developer.apple.com/library/ios/#documentation/userexperience/conceptual/tableview_iphone/AboutTableViewsiPhone/AboutTableViewsiPhone.html" target="_blank">Table View Programming Guide</a></li>
+<li><a href="http://developer.apple.com/library/mac/#documentation/General/Conceptual/DevPedia-CocoaCore/ControllerObject.html" target="_blank">Cocoa Core Competencies: Controller Object</a></li>
+</ul>
+<hr>
+<p><a href="http://objccn.io/issue-1" target="_blank">&#x8BDD;&#x9898; #1 &#x4E0B;&#x7684;&#x66F4;&#x591A;&#x6587;&#x7AE0;</a></p>
+<p>&#x539F;&#x6587;<a href="http://www.objc.io/issue-1/table-views.html" target="_blank">Clean table view code</a></p>
+<p>&#x8BD1;&#x6587;<a href="http://tang3w.com/translate/objective-c/objc.io/2013/10/23/&#x6574;&#x7406;-table-view-&#x7684;&#x4EE3;&#x7801;.html" target="_blank">&#x6574;&#x7406; Table View &#x7684;&#x4EE3;&#x7801; - &#x8A00;&#x65E0;&#x4E0D;&#x5C3D;</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="issue-1-1-tang3w.html" class="navigation navigation-prev " aria-label="Previous page: 更轻量的 View Controllers">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="issue-1-3-tang3w.html" class="navigation navigation-next " aria-label="Next page: 测试View Controllers">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"整洁的 Table View 代码","level":"1.2.2","depth":2,"next":{"title":"测试View Controllers","level":"1.2.3","depth":2,"path":"publish/issue1/issue-1-3-tang3w.md","ref":"publish/issue1/issue-1-3-tang3w.md","articles":[]},"previous":{"title":"更轻量的 View Controllers","level":"1.2.1","depth":2,"path":"publish/issue1/issue-1-1-tang3w.md","ref":"publish/issue1/issue-1-1-tang3w.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"publish/issue1/issue-1-2-tang3w.md","mtime":"2019-09-09T09:18:07.196Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-09T09:59:37.321Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

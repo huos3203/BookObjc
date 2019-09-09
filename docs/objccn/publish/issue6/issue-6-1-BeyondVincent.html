@@ -1,0 +1,2471 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Build过程 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="issue-6-2-sunsets.html" />
+    
+    
+    <link rel="prev" href="issue-6-0-FangYiXiong.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../issue1/issue-1-0-tang3w.html">
+            
+                <a href="../issue1/issue-1-0-tang3w.html">
+            
+                    
+                    更轻量的 View Controllers
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../issue1/issue-1-1-tang3w.html">
+            
+                <a href="../issue1/issue-1-1-tang3w.html">
+            
+                    
+                    更轻量的 View Controllers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../issue1/issue-1-2-tang3w.html">
+            
+                <a href="../issue1/issue-1-2-tang3w.html">
+            
+                    
+                    整洁的 Table View 代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../issue1/issue-1-3-tang3w.html">
+            
+                <a href="../issue1/issue-1-3-tang3w.html">
+            
+                    
+                    测试View Controllers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../issue1/issue-1-4-tang3w.html">
+            
+                <a href="../issue1/issue-1-4-tang3w.html">
+            
+                    
+                    View Controller容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../issue2/issue-2-0-FangYiXiong.html">
+            
+                <a href="../issue2/issue-2-0-FangYiXiong.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../issue2/issue-2-1-beyondvincent.html">
+            
+                <a href="../issue2/issue-2-1-beyondvincent.html">
+            
+                    
+                    并发编程：API 及挑战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../issue2/issue-2-2-onevcat.html">
+            
+                <a href="../issue2/issue-2-2-onevcat.html">
+            
+                    
+                    常见的后台实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../issue2/issue-2-3-webfrogs.html">
+            
+                <a href="../issue2/issue-2-3-webfrogs.html">
+            
+                    
+                    底层并发API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../issue2/issue-2-4-onevcat.html">
+            
+                <a href="../issue2/issue-2-4-onevcat.html">
+            
+                    
+                    线程安全类的设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../issue2/issue-2-5-xinjixjz.html">
+            
+                <a href="../issue2/issue-2-5-xinjixjz.html">
+            
+                    
+                    测试并发程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../issue3/issue-3-0-answer-huang.html">
+            
+                <a href="../issue3/issue-3-0-answer-huang.html">
+            
+                    
+                    Views
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../issue3/issue-3-1-answer-huang.html">
+            
+                <a href="../issue3/issue-3-1-answer-huang.html">
+            
+                    
+                    绘制像素到屏幕上
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../issue3/issue-3-2-answer-huang.html">
+            
+                <a href="../issue3/issue-3-2-answer-huang.html">
+            
+                    
+                    理解Scroll Views
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../issue3/issue-3-3-answer-huang.html">
+            
+                <a href="../issue3/issue-3-3-answer-huang.html">
+            
+                    
+                    自定义Collection View布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../issue3/issue-3-4-Migrant.html">
+            
+                <a href="../issue3/issue-3-4-Migrant.html">
+            
+                    
+                    自定义控件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../issue3/issue-3-5-answer-huang.html">
+            
+                <a href="../issue3/issue-3-5-answer-huang.html">
+            
+                    
+                    先进的自动布局工具箱
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../issue4/issue-4-0-unblue.html">
+            
+                <a href="../issue4/issue-4-0-unblue.html">
+            
+                    
+                    Core Data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../issue4/issue-4-1-shjborage.html">
+            
+                <a href="../issue4/issue-4-1-shjborage.html">
+            
+                    
+                    Core Data概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../issue4/issue-4-2-itouch2.html">
+            
+                <a href="../issue4/issue-4-2-itouch2.html">
+            
+                    
+                    一个完整的Core Data应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../issue4/issue-4-3-sjpsega.html">
+            
+                <a href="../issue4/issue-4-3-sjpsega.html">
+            
+                    
+                    用SQLite和FMDB替代Core Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../issue4/issue-4-4-panda.html">
+            
+                <a href="../issue4/issue-4-4-panda.html">
+            
+                    
+                    数据模型和模型对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../issue4/issue-4-5-liming.html">
+            
+                <a href="../issue4/issue-4-5-liming.html">
+            
+                    
+                    导入大数据集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../issue4/issue-4-6-ckitakishi.html">
+            
+                <a href="../issue4/issue-4-6-ckitakishi.html">
+            
+                    
+                    Fetch请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../issue4/issue-4-7-xinjixjz.html">
+            
+                <a href="../issue4/issue-4-7-xinjixjz.html">
+            
+                    
+                    自定义Core Data迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../issue5/issue-5-0-FangYiXiong.html">
+            
+                <a href="../issue5/issue-5-0-FangYiXiong.html">
+            
+                    
+                    iOS7
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../issue5/issue-5-1-hexielaoyuehan.html">
+            
+                <a href="../issue5/issue-5-1-hexielaoyuehan.html">
+            
+                    
+                    初识TextKit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../issue5/issue-5-2-morisunshine.html">
+            
+                <a href="../issue5/issue-5-2-morisunshine.html">
+            
+                    
+                    UICollectionView + UIKit力学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../issue5/issue-5-3-FangYixiong.html">
+            
+                <a href="../issue5/issue-5-3-FangYixiong.html">
+            
+                    
+                    View Controller转场
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../issue5/issue-5-4-FangYixiong.html">
+            
+                <a href="../issue5/issue-5-4-FangYixiong.html">
+            
+                    
+                    从NSURLConnection到NSURLSession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../issue5/issue-5-5-demon1105.html">
+            
+                <a href="../issue5/issue-5-5-demon1105.html">
+            
+                    
+                    iOS7的多任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../issue5/issue-5-6-test_0x01.html">
+            
+                <a href="../issue5/issue-5-6-test_0x01.html">
+            
+                    
+                    iOS7:隐藏技巧和变通之道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../issue5/issue-5-7-FangYixiong.html">
+            
+                <a href="../issue5/issue-5-7-FangYixiong.html">
+            
+                    
+                    为iOS7重新设计App
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../issue7/issue-7-0-JeOam.html">
+            
+                <a href="../issue7/issue-7-0-JeOam.html">
+            
+                    
+                    Foundation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../issue7/issue-7-1-FANWENBIN.html">
+            
+                <a href="../issue7/issue-7-1-FANWENBIN.html">
+            
+                    
+                    基础集合类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../issue7/issue-7-2-onevcat.html">
+            
+                <a href="../issue7/issue-7-2-onevcat.html">
+            
+                    
+                    值对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../issue7/issue-7-3-DJBen.html">
+            
+                <a href="../issue7/issue-7-3-DJBen.html">
+            
+                    
+                    KVC 和 KVO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../issue7/issue-7-4-DJBen.html">
+            
+                <a href="../issue7/issue-7-4-DJBen.html">
+            
+                    
+                    消息传递机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../issue7/issue-7-5-itouch2.html">
+            
+                <a href="../issue7/issue-7-5-itouch2.html">
+            
+                    
+                    自定义Formatters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../issue7/issue-7-6-onevcat.html">
+            
+                <a href="../issue7/issue-7-6-onevcat.html">
+            
+                    
+                    语言标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../issue9/issue-9-0-FangYiXiong.html">
+            
+                <a href="../issue9/issue-9-0-FangYiXiong.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../issue9/issue-9-1-frederick036.html">
+            
+                <a href="../issue9/issue-9-1-frederick036.html">
+            
+                    
+                    NSString与Unicode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../issue9/issue-9-2-Nix.html">
+            
+                <a href="../issue9/issue-9-2-Nix.html">
+            
+                    
+                    玩转字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../issue9/issue-9-3-YCFlame.html">
+            
+                <a href="../issue9/issue-9-3-YCFlame.html">
+            
+                    
+                    字符串本地化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../issue9/issue-9-4-riven.html">
+            
+                <a href="../issue9/issue-9-4-riven.html">
+            
+                    
+                    字符串解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../issue9/issue-9-5-answer-huang.html">
+            
+                <a href="../issue9/issue-9-5-answer-huang.html">
+            
+                    
+                    字符串渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../issue10/issue-10-0-sjpsega.html">
+            
+                <a href="../issue10/issue-10-0-sjpsega.html">
+            
+                    
+                    同步数据
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../issue10/issue-10-1-xinjixjz.html">
+            
+                <a href="../issue10/issue-10-1-xinjixjz.html">
+            
+                    
+                    数据同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../issue10/issue-10-2-weekwood.html">
+            
+                <a href="../issue10/issue-10-2-weekwood.html">
+            
+                    
+                    iCloud和Core Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../issue10/issue-10-3-migrant.html">
+            
+                <a href="../issue10/issue-10-3-migrant.html">
+            
+                    
+                    精通iCloud文档存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../issue10/issue-10-4-YCFlame.html">
+            
+                <a href="../issue10/issue-10-4-YCFlame.html">
+            
+                    
+                    同步案例学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../issue10/issue-10-5-answer-huang.html">
+            
+                <a href="../issue10/issue-10-5-answer-huang.html">
+            
+                    
+                    Core Data 网络应用实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../issue10/issue-10-6-sunset.html">
+            
+                <a href="../issue10/issue-10-6-sunset.html">
+            
+                    
+                    IP,TCP 和 HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../issue12/issue-12-0-FangYiXiojng.html">
+            
+                <a href="../issue12/issue-12-0-FangYiXiojng.html">
+            
+                    
+                    动画
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../issue12/issue-12-1-ckitakishi.html">
+            
+                <a href="../issue12/issue-12-1-ckitakishi.html">
+            
+                    
+                    动画解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../issue12/issue-12-2-nixzhu.html">
+            
+                <a href="../issue12/issue-12-2-nixzhu.html">
+            
+                    
+                    Layer中自定义属性的动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../issue12/issue-12-3-happyjiahan.html">
+            
+                <a href="../issue12/issue-12-3-happyjiahan.html">
+            
+                    
+                    自定义ViewController容器转场
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../issue12/issue-12-4-onevcat.html">
+            
+                <a href="../issue12/issue-12-4-onevcat.html">
+            
+                    
+                    View-Layer协作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../issue12/issue-12-5-weekwood.html">
+            
+                <a href="../issue12/issue-12-5-weekwood.html">
+            
+                    
+                    Collection View 动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../issue12/issue-12-6-morisunshine.html">
+            
+                <a href="../issue12/issue-12-6-morisunshine.html">
+            
+                    
+                    交互式动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../issue13/issue-13-0-panda.html">
+            
+                <a href="../issue13/issue-13-0-panda.html">
+            
+                    
+                    架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../issue13/issue-13-1-nixzhu.html">
+            
+                <a href="../issue13/issue-13-1-nixzhu.html">
+            
+                    
+                    MVVM介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../issue13/issue-13-2-happyjiahan.html">
+            
+                <a href="../issue13/issue-13-2-happyjiahan.html">
+            
+                    
+                    避免滥用单例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../issue13/issue-13-3-panda.html">
+            
+                <a href="../issue13/issue-13-3-panda.html">
+            
+                    
+                    IOS中的行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../issue13/issue-13-4-Phenmod.html">
+            
+                <a href="../issue13/issue-13-4-Phenmod.html">
+            
+                    
+                    子类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../issue13/issue-13-5-weekwood.html">
+            
+                <a href="../issue13/issue-13-5-weekwood.html">
+            
+                    
+                    使用VIPER构建IOS应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../issue16/issue-16-0-hewigovens.html">
+            
+                <a href="../issue16/issue-16-0-hewigovens.html">
+            
+                    
+                    swift
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../issue16/issue-16-1-lizixroy.html">
+            
+                <a href="../issue16/issue-16-1-lizixroy.html">
+            
+                    
+                    Swift强大之处
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../issue16/issue-16-2-Onetaway.html">
+            
+                <a href="../issue16/issue-16-2-Onetaway.html">
+            
+                    
+                    结构体和值类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../issue16/issue-16-3-weekwood.html">
+            
+                <a href="../issue16/issue-16-3-weekwood.html">
+            
+                    
+                    swift方法的多面性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../issue16/issue-16-4-callmewhy.html">
+            
+                <a href="../issue16/issue-16-4-callmewhy.html">
+            
+                    
+                    Swift的函数式API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../issue16/issue-16-5-programmerDu.html">
+            
+                <a href="../issue16/issue-16-5-programmerDu.html">
+            
+                    
+                    Playground快速原型制作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../issue18/issue-18-0-yulingtianxia.html">
+            
+                <a href="../issue18/issue-18-0-yulingtianxia.html">
+            
+                    
+                    游戏
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../issue18/issue-18-1-weekwood.html">
+            
+                <a href="../issue18/issue-18-1-weekwood.html">
+            
+                    
+                    设计优雅的移动游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../issue18/issue-18-2-migrant.html">
+            
+                <a href="../issue18/issue-18-2-migrant.html">
+            
+                    
+                    Metal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../issue18/issue-18-3-sunnyxx.html">
+            
+                <a href="../issue18/issue-18-3-sunnyxx.html">
+            
+                    
+                    Scene Kit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../issue18/issue-18-4-callmewhy.html">
+            
+                <a href="../issue18/issue-18-4-callmewhy.html">
+            
+                    
+                    游戏中的多点互联
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../issue18/issue-18-5-shuye.html">
+            
+                <a href="../issue18/issue-18-5-shuye.html">
+            
+                    
+                    虚拟音域-声音设计的艺术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../issue21/issue-21-0-bifidy.html">
+            
+                <a href="../issue21/issue-21-0-bifidy.html">
+            
+                    
+                    相机与照片
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../issue21/issue-21-1-onevcat.html">
+            
+                <a href="../issue21/issue-21-1-onevcat.html">
+            
+                    
+                    相机工作原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../issue21/issue-21-2-bifidy.html">
+            
+                <a href="../issue21/issue-21-2-bifidy.html">
+            
+                    
+                    图片格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../issue21/issue-21-3-nathanwhy.html">
+            
+                <a href="../issue21/issue-21-3-nathanwhy.html">
+            
+                    
+                    iOS上的相机捕捉
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="../issue21/issue-21-4-CrazyZombies.html">
+            
+                <a href="../issue21/issue-21-4-CrazyZombies.html">
+            
+                    
+                    照片框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.5" data-path="../issue21/issue-21-5-weekwood.html">
+            
+                <a href="../issue21/issue-21-5-weekwood.html">
+            
+                    
+                    照片扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.6" data-path="../issue21/issue-21-6-april.html">
+            
+                <a href="../issue21/issue-21-6-april.html">
+            
+                    
+                    Core Image 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.7" data-path="../issue21/issue-21-7-nangege.html">
+            
+                <a href="../issue21/issue-21-7-nangege.html">
+            
+                    
+                    GPU加速下的图像处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.8" data-path="../issue21/issue-21-8-dopcn.html">
+            
+                <a href="../issue21/issue-21-8-dopcn.html">
+            
+                    
+                    GPU加速下的图像视觉
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.9" data-path="../issue21/issue-21-9-Phenmod.html">
+            
+                <a href="../issue21/issue-21-9-Phenmod.html">
+            
+                    
+                    基于OpenCV的人脸识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../issue24/issue-24-1-april.html">
+            
+                <a href="../issue24/issue-24-1-april.html">
+            
+                    
+                    音频
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../issue24/issue-24-1-april.html">
+            
+                <a href="../issue24/issue-24-1-april.html">
+            
+                    
+                    音频处理的狗屋
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../issue24/issue-24-2-lizix.html">
+            
+                <a href="../issue24/issue-24-2-lizix.html">
+            
+                    
+                    使用Swift进行函数式信号处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../issue24/issue-24-3-bifidy.html">
+            
+                <a href="../issue24/issue-24-3-bifidy.html">
+            
+                    
+                    播放，失败，迭代：面向产品的音效设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="../issue24/issue-24-4-draveness.html">
+            
+                <a href="../issue24/issue-24-4-draveness.html">
+            
+                    
+                    音频API一览
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../issue23/issue-23-0-bifidy.html">
+            
+                <a href="../issue23/issue-23-0-bifidy.html">
+            
+                    
+                    视频
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../issue23/issue-23-1-nathanwhy.html">
+            
+                <a href="../issue23/issue-23-1-nathanwhy.html">
+            
+                    
+                    在iOS上捕获视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../issue23/issue-23-2-pupboss.html">
+            
+                <a href="../issue23/issue-23-2-pupboss.html">
+            
+                    
+                    Core Image 和视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../issue23/issue-23-3-pupboss.html">
+            
+                <a href="../issue23/issue-23-3-pupboss.html">
+            
+                    
+                    视频工具箱和硬件加速
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../issue19/issue-19-0-bifidy.html">
+            
+                <a href="../issue19/issue-19-0-bifidy.html">
+            
+                    
+                    调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../issue19/issue-19-1-weekwood.html">
+            
+                <a href="../issue19/issue-19-1-weekwood.html">
+            
+                    
+                    调试：案例学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../issue19/issue-19-2-nangege.html">
+            
+                <a href="../issue19/issue-19-2-nangege.html">
+            
+                    
+                    与调试器共舞 - LLDB的华尔兹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../issue19/issue-19-3-bifidy.html">
+            
+                <a href="../issue19/issue-19-3-bifidy.html">
+            
+                    
+                    调试核对清单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.4" data-path="../issue19/issue-19-4-migrant.html">
+            
+                <a href="../issue19/issue-19-4-migrant.html">
+            
+                    
+                    DTrace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.5" data-path="../issue19/issue-19-5-dopcn.html">
+            
+                <a href="../issue19/issue-19-5-dopcn.html">
+            
+                    
+                    活动追踪
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../issue15/issue-15-0-yulingtianxia.html">
+            
+                <a href="../issue15/issue-15-0-yulingtianxia.html">
+            
+                    
+                    测试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../issue15/issue-15-1-weekwood.html">
+            
+                <a href="../issue15/issue-15-1-weekwood.html">
+            
+                    
+                    行为驱动开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../issue15/issue-15-2-morisunshine.html">
+            
+                <a href="../issue15/issue-15-2-morisunshine.html">
+            
+                    
+                    XCTest测试实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../issue15/issue-15-3-sunsets.html">
+            
+                <a href="../issue15/issue-15-3-sunsets.html">
+            
+                    
+                    依赖注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.4" data-path="../issue15/issue-15-4-Onetaway.html">
+            
+                <a href="../issue15/issue-15-4-Onetaway.html">
+            
+                    
+                    糟糕的测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.5" data-path="../issue15/issue-15-5-ryan.html">
+            
+                <a href="../issue15/issue-15-5-ryan.html">
+            
+                    
+                    置换测试：Mock,Stub和其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.6" data-path="../issue15/issue-15-6-callmewhy.html">
+            
+                <a href="../issue15/issue-15-6-callmewhy.html">
+            
+                    
+                    UI测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.7" data-path="../issue15/issue-15-7-oa414.html">
+            
+                <a href="../issue15/issue-15-7-oa414.html">
+            
+                    
+                    截图测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../issue17/issue-17-0-weekwood.html">
+            
+                <a href="../issue17/issue-17-0-weekwood.html">
+            
+                    
+                    安全
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../issue17/issue-17-1-programmerDu.html">
+            
+                <a href="../issue17/issue-17-1-programmerDu.html">
+            
+                    
+                    为什么今天安全仍然重要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../issue17/issue-17-2-dopcn.html">
+            
+                <a href="../issue17/issue-17-2-dopcn.html">
+            
+                    
+                    代码签名探析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../issue17/issue-17-3-callmewhy.html">
+            
+                <a href="../issue17/issue-17-3-callmewhy.html">
+            
+                    
+                    收据验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../issue20/issue-20-0-bifidy.html">
+            
+                <a href="../issue20/issue-20-0-bifidy.html">
+            
+                    
+                    访谈
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../issue20/issue-20-1-april.html">
+            
+                <a href="../issue20/issue-20-1-april.html">
+            
+                    
+                    终身学习的一代人
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="../issue20/issue-20-2-programmerDu.html">
+            
+                <a href="../issue20/issue-20-2-programmerDu.html">
+            
+                    
+                    让东西变得不那么糟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3" data-path="../issue20/issue-20-3-hewigovens.html">
+            
+                <a href="../issue20/issue-20-3-hewigovens.html">
+            
+                    
+                    学无止境
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="issue-6-0-FangYiXiong.html">
+            
+                <a href="issue-6-0-FangYiXiong.html">
+            
+                    
+                    Build工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.21.1" data-path="issue-6-1-BeyondVincent.html">
+            
+                <a href="issue-6-1-BeyondVincent.html">
+            
+                    
+                    Build过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" data-path="issue-6-2-sunsets.html">
+            
+                <a href="issue-6-2-sunsets.html">
+            
+                    
+                    编译器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.3" data-path="issue-6-3-yishuiliunian.html">
+            
+                <a href="issue-6-3-yishuiliunian.html">
+            
+                    
+                    Mach-O可执行文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.4" data-path="issue-6-4-programmer.du.html">
+            
+                <a href="issue-6-4-programmer.du.html">
+            
+                    
+                    深入理解CocoaPods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.5" data-path="issue-6-5-yuan12xin.html">
+            
+                <a href="issue-6-5-yuan12xin.html">
+            
+                    
+                    为iOS建立Travis CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../issue8/issue-8-0-vienta.html">
+            
+                <a href="../issue8/issue-8-0-vienta.html">
+            
+                    
+                    四轴无人机项目
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../issue8/issue-8-1-phpmaple.html">
+            
+                <a href="../issue8/issue-8-1-phpmaple.html">
+            
+                    
+                    项目介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.2" data-path="../issue8/issue-8-2-weekwood.html">
+            
+                <a href="../issue8/issue-8-2-weekwood.html">
+            
+                    
+                    与四轴无人机的通讯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.3" data-path="../issue8/issue-8-3-weekwood.html">
+            
+                <a href="../issue8/issue-8-3-weekwood.html">
+            
+                    
+                    导航应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.4" data-path="../issue8/issue-8-4-zincsamael.html">
+            
+                <a href="../issue8/issue-8-4-zincsamael.html">
+            
+                    
+                    客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../issue11/issue-11-0-FangYixiong.html">
+            
+                <a href="../issue11/issue-11-0-FangYixiong.html">
+            
+                    
+                    Android
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="../issue11/issue-11-1-nixzhu.html">
+            
+                <a href="../issue11/issue-11-1-nixzhu.html">
+            
+                    
+                    iOS开发者的Android第一课
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.2" data-path="../issue11/Issue-11-2-sunset.html">
+            
+                <a href="../issue11/Issue-11-2-sunset.html">
+            
+                    
+                    Android Intents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.3" data-path="../issue11/issue-11-3-Daisyyaya.html">
+            
+                <a href="../issue11/issue-11-3-Daisyyaya.html">
+            
+                    
+                    响应式Android应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.4" data-path="../issue11/issue-11-4-weekwood.html">
+            
+                <a href="../issue11/issue-11-4-weekwood.html">
+            
+                    
+                    Android通讯中心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.5" data-path="../issue11/issue-11-5-zinc.html">
+            
+                <a href="../issue11/issue-11-5-zinc.html">
+            
+                    
+                    Android中的SQLite数据库支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.6" data-path="../issue11/issue-11-6-Bayonetta.html">
+            
+                <a href="../issue11/issue-11-6-Bayonetta.html">
+            
+                    
+                    依赖注入和注解，为什么Java比你想象的要好
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../issue14/issue-14-0-johnnywjy.html">
+            
+                <a href="../issue14/issue-14-0-johnnywjy.html">
+            
+                    
+                    回到Mac
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="../issue14/issue-14-1-ckitakishi.html">
+            
+                <a href="../issue14/issue-14-1-ckitakishi.html">
+            
+                    
+                    使Mac应用数据脚本化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.2" data-path="../issue14/issue-14-2-onevcat.html">
+            
+                <a href="../issue14/issue-14-2-onevcat.html">
+            
+                    
+                    在沙盒中编写脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.3" data-path="../issue14/issue-14-3-oa414.html">
+            
+                <a href="../issue14/issue-14-3-oa414.html">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.4" data-path="../issue14/issue-14-4-hewigovens.html">
+            
+                <a href="../issue14/issue-14-4-hewigovens.html">
+            
+                    
+                    XPC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.5" data-path="../issue14/issue-14-5-crazycatcher.html">
+            
+                <a href="../issue14/issue-14-5-crazycatcher.html">
+            
+                    
+                    从UIKit到AppKit
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../issue22/issue-22-0-programmerDu.html">
+            
+                <a href="../issue22/issue-22-0-programmerDu.html">
+            
+                    
+                    iOS项目管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.1" data-path="../issue22/issue-22-1-bifidy.html">
+            
+                <a href="../issue22/issue-22-1-bifidy.html">
+            
+                    
+                    Omni内部
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.2" data-path="../issue22/issue-22-2-wongzigii.html">
+            
+                <a href="../issue22/issue-22-2-wongzigii.html">
+            
+                    
+                    Artsy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.3" data-path="../issue22/issue-22-3-April.html">
+            
+                <a href="../issue22/issue-22-3-April.html">
+            
+                    
+                    Square Register中的扩张
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.4" data-path="../issue22/issue-22-4-morisunshine.html">
+            
+                <a href="../issue22/issue-22-4-morisunshine.html">
+            
+                    
+                    代码审查的艺术：Dropbox的故事
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.5" data-path="../issue22/issue-22-5-lizixroy.html">
+            
+                <a href="../issue22/issue-22-5-lizixroy.html">
+            
+                    
+                    响应式视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Build过程</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x8FD1;&#x4E9B;&#x65E5;&#x5B50;&#x6211;&#x4EEC;&#x88AB;&#x5BA0;&#x574F;&#x4E86; -- &#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x5355;&#x51FB; Xcode &#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x6309;&#x94AE;&#xFF08;&#x8FD9;&#x4E2A;&#x6309;&#x94AE;&#x770B;&#x8D77;&#x6765;&#x6709;&#x70B9;&#x50CF;&#x662F;&#x5728;&#x64AD;&#x653E;&#x4E00;&#x4E9B;&#x97F3;&#x4E50;&#x7684;&#x52A8;&#x4F5C;&#xFF09;&#xFF0C;&#x8FC7;&#x51E0;&#x79D2;&#x949F;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x7A0B;&#x5E8F;&#x5C31;&#x4F1A;&#x8FD0;&#x884C;&#x8D77;&#x6765;&#x4E86;&#xFF0C;&#x9664;&#x975E;&#x9047;&#x5230;&#x4E00;&#x4E9B;&#x9519;&#x8BEF;&#xFF0C;&#x8FD9;&#x975E;&#x5E38;&#x7684;&#x795E;&#x5947;&#x3002;</p>
+<p>&#x5728;&#x672C;&#x6587;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4ECE;&#x66F4;&#x9AD8;&#x7EA7;&#x522B;&#x7684;&#x89D2;&#x5EA6;&#x6765;&#x89E3;&#x8BFB; Build &#x8FC7;&#x7A0B;&#xFF0C;&#x5E76;&#x63A2;&#x7D22;&#x4E00;&#x4E0B;&#x5728; Xcode &#x754C;&#x9762;&#x4E2D;&#x66B4;&#x9732;&#x51FA;&#x7684; project setting &#x4FE1;&#x606F;&#x4E0E; Build &#x8FC7;&#x7A0B;&#x6709;&#x4EC0;&#x4E48;&#x5173;&#x7CFB;&#x3002;&#x4E3A;&#x4E86;&#x66F4;&#x52A0;&#x6DF1;&#x5165;&#x7684;&#x63A2;&#x7D22; Build &#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E00;&#x6B65;&#x5B9E;&#x9645;&#x6267;&#x884C;&#x7684;&#x5DE5;&#x4F5C;&#xFF0C;&#x6211;&#x90FD;&#x4F1A;&#x5728;&#x672C;&#x6587;&#x4E2D;&#x5F15;&#x5165;&#x4E00;&#x4E9B;&#x522B;&#x7684;&#x6587;&#x7AE0;&#x3002;</p>
+<h2 id="&#x89E3;&#x5BC6;-build-&#x65E5;&#x5FD7;">&#x89E3;&#x5BC6; Build &#x65E5;&#x5FD7;</h2>
+<p>&#x4E3A;&#x4E86;&#x4E86;&#x89E3; Xcode build &#x8FC7;&#x7A0B;&#x7684;&#x5185;&#x90E8;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#xFF0C;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x628A;&#x7A81;&#x7834;&#x53E3;&#x7784;&#x51C6;&#x5B8C;&#x6574;&#x7684; log &#x6587;&#x4EF6;&#x4E0A;&#x3002;&#x6253;&#x5F00; Log Navigator &#xFF0C;&#x4ECE;&#x5217;&#x8868;&#x4E2D;&#x9009;&#x62E9;&#x4E00;&#x4E2A; Build &#xFF0C;Xcode &#x4F1A;&#x5C06; log &#x6587;&#x4EF6;&#x5F88;&#x5B8C;&#x7F8E;&#x7684;&#x5C55;&#x73B0;&#x51FA;&#x6765;&#x3002;</p>
+<p><img src="https://objccn.io/images/issue-6/build-log.png" alt="Xcode build log navigator"></p>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E0A;&#x9762;&#x7684; Xcode &#x754C;&#x9762;&#x4E2D;&#x9690;&#x85CF;&#x4E86;&#x5927;&#x91CF;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x4EFB;&#x52A1;&#xFF0C;&#x7136;&#x540E;&#x70B9;&#x51FB;&#x53F3;&#x8FB9;&#x7684;&#x5C55;&#x5F00;&#x6309;&#x94AE;&#xFF0C;&#x5C31;&#x80FD;&#x770B;&#x5230;&#x6BCF;&#x4E2A;&#x4EFB;&#x52A1;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x3002;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x53EF;&#x9009;&#x7684;&#x65B9;&#x6848;&#x5C31;&#x662F;&#x9009;&#x4E2D;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x6216;&#x8005;&#x591A;&#x4E2A;&#x4EFB;&#x52A1;&#xFF0C;&#x7136;&#x540E;&#x9009;&#x62E9;&#x7EC4;&#x5408;&#x952E; Cmd-C&#xFF0C;&#x8FD9;&#x5C06;&#x4F1A;&#x628A;&#x6240;&#x6709;&#x7684;&#x7EAF;&#x6587;&#x672C;&#x4FE1;&#x606F;&#x62F7;&#x8D1D;&#x81F3;&#x7C98;&#x8D34;&#x677F;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x9009;&#x62E9; Editor &#x83DC;&#x5355;&#x4E2D;&#x7684; &quot;Copy transcript for shown results&quot;&#xFF0C;&#x4EE5;&#x6B64;&#x5C06;&#x6240;&#x6709;&#x7684; log &#x4FE1;&#x606F;&#x62F7;&#x8D1D;&#x5230;&#x7C98;&#x8D34;&#x677F;&#x4E2D;&#x3002;</p>
+<p>&#x672C;&#x6587;&#x7ED9;&#x51FA;&#x7684;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;log &#x4FE1;&#x606F;&#x5C06;&#x8FD1;&#x6709; 10,000 &#x884C;&#xFF08;&#x5176;&#x5B9E;&#x5927;&#x591A;&#x6570;&#x7684; log &#x4FE1;&#x606F;&#x662F;&#x7F16;&#x8BD1; OpenSSL &#x65F6;&#x751F;&#x6210;&#x7684;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x6240;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x751F;&#x6210;&#x7684;&#xFF09;&#x3002;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x5C31;&#x5F00;&#x59CB;&#x5427;&#xFF01;</p>
+<p>&#x6CE8;&#x610F;&#x89C2;&#x5BDF;&#x8F93;&#x51FA;&#x7684; log &#x4FE1;&#x606F;&#xFF0C;&#x9996;&#x5148;&#x4F1A;&#x53D1;&#x73B0; log &#x4FE1;&#x606F;&#x88AB;&#x5206;&#x4E3A;&#x4E0D;&#x540C;&#x7684;&#x51E0;&#x5927;&#x5757;&#xFF0C;&#x5B83;&#x4EEC;&#x4E0E;&#x6211;&#x4EEC;&#x5DE5;&#x7A0B;&#x4E2D;&#x7684;targets&#x76F8;&#x4E92;&#x5BF9;&#x5E94;&#x7740;&#xFF1A;</p>
+<pre><code>Build target Pods-SSZipArchive
+...
+Build target Makefile-openssl
+...
+Build target Pods-AFNetworking
+...
+Build target crypto
+...
+Build target Pods
+...
+Build target ssl
+...
+Build target objcio
+</code></pre><p>&#x672C;&#x6587;&#x6D89;&#x53CA;&#x5230;&#x7684;&#x5DE5;&#x7A0B;&#x6709;&#x51E0;&#x4E2A;&#x4F9D;&#x8D56;&#x9879;&#xFF1A;&#x5176;&#x4E2D; AFNetworking &#x548C; SSZipArchive &#x5305;&#x542B;&#x5728; Pods &#x4E2D;&#xFF0C;&#x800C; OpenSSL &#x5219;&#x4EE5;&#x5B50;&#x5DE5;&#x7A0B;&#x7684;&#x5F62;&#x5F0F;&#x5305;&#x542B;&#x5728;&#x5DE5;&#x7A0B;&#x4E2D;&#x3002;</p>
+<p>&#x9488;&#x5BF9;&#x5DE5;&#x7A0B;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A; target&#xFF0C;Xcode &#x90FD;&#x4F1A;&#x6267;&#x884C;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x5C06;&#x76F8;&#x5173;&#x7684;&#x6E90;&#x7801;&#xFF0C;&#x6839;&#x636E;&#x6240;&#x9009;&#x5B9A;&#x7684;&#x5E73;&#x53F0;&#xFF0C;&#x8F6C;&#x6362;&#x4E3A;&#x673A;&#x5668;&#x53EF;&#x8BFB;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x3002;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x8BE6;&#x7EC6;&#x7684;&#x4E86;&#x89E3;&#x4E00;&#x4E0B;&#x7B2C;&#x4E00;&#x4E2A; target&#xFF1A;SSZipArchive&#x3002;</p>
+<p>&#x5728;&#x9488;&#x5BF9;&#x8FD9;&#x4E2A; target &#x8F93;&#x51FA;&#x7684; log &#x4FE1;&#x606F;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6BCF;&#x4E2A;&#x4EFB;&#x52A1;&#x88AB;&#x6267;&#x884C;&#x7684;&#x8BE6;&#x7EC6;&#x60C5;&#x51B5;&#x3002;&#x4F8B;&#x5982;&#x7B2C;&#x4E00;&#x4E2A;&#x4EFB;&#x52A1;&#x662F;&#x5904;&#x7406;&#x4E00;&#x4E2A;&#x9884;&#x7F16;&#x8BD1;&#x5934;&#x6587;&#x4EF6;&#xFF08;&#x4E3A;&#x4E86;&#x589E;&#x5F3A; log &#x4FE1;&#x606F;&#x7684;&#x53EF;&#x8BFB;&#x6027;&#xFF0C;&#x6211;&#x7701;&#x7565;&#x4E86;&#x8BB8;&#x591A;&#x7EC6;&#x8282;&#xFF09;&#xFF1A;</p>
+<pre><code>(1) ProcessPCH /.../Pods-SSZipArchive-prefix.pch.pch Pods-SSZipArchive-prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+    (2) cd /.../Dev/objcio/Pods
+        setenv LANG en_US.US-ASCII
+        setenv PATH &quot;...&quot;
+    (3) /.../Xcode.app/.../clang 
+            (4) -x objective-c-header 
+            (5) -arch armv7 
+            ... configuration and warning flags ...
+            (6) -DDEBUG=1 -DCOCOAPODS=1 
+            ... include paths and more ...
+            (7) -c 
+            (8) /.../Pods-SSZipArchive-prefix.pch 
+            (9) -o /.../Pods-SSZipArchive-prefix.pch.pch
+</code></pre><p>&#x5728; build &#x5904;&#x7406;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E2A;&#x4EFB;&#x52A1;&#x90FD;&#x4F1A;&#x51FA;&#x73B0;&#x7C7B;&#x4F3C;&#x4E0A;&#x9762;&#x7684;&#x8FD9;&#x4E9B; log &#x4FE1;&#x606F;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684; log &#x4FE1;&#x606F;&#x8FDB;&#x4E00;&#x6B65;&#x4E86;&#x89E3;&#x8BE6;&#x60C5;&#x3002;</p>
+<ol>
+<li>&#x7C7B;&#x4F3C;&#x4E0A;&#x9762;&#x7684;&#x6BCF;&#x4E2A; log &#x4FE1;&#x606F;&#x5757;&#x90FD;&#x4F1A;&#x5229;&#x7528;&#x4E00;&#x884C; log &#x4FE1;&#x606F;&#x6765;&#x63CF;&#x8FF0;&#x76F8;&#x5173;&#x7684;&#x4EFB;&#x52A1;&#x4F5C;&#x4E3A;&#x8D77;&#x70B9;&#x3002;</li>
+<li>&#x63A5;&#x7740;&#x8F93;&#x51FA;&#x5E26;&#x7F29;&#x8FDB;&#x7684;3&#x884C; log &#x4FE1;&#x606F;&#xFF0C;&#x5217;&#x51FA;&#x4E86;&#x8BE5;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x7684;&#x8BED;&#x53E5;&#x3002;&#x6B64;&#x5904;&#xFF0C;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x53D1;&#x751F;&#x4E86;&#x6539;&#x53D8;&#xFF0C;&#x5E76;&#x5BF9; LANG &#x548C; PATH &#x73AF;&#x5883;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#x3002;</li>
+<li>&#x8FD9;&#x91CC;&#x662F;&#x53D1;&#x751F;&#x5947;&#x8FF9;&#x7684;&#x5730;&#x65B9;&#x3002;&#x4E3A;&#x4E86;&#x5904;&#x7406;&#x4E00;&#x4E2A;<code>.pch</code>&#x6587;&#x4EF6;&#xFF0C;&#x8C03;&#x7528;&#x4E86; clang&#xFF0C;&#x5E76;&#x9644;&#x5E26;&#x4E86;&#x8BB8;&#x591A;&#x53EF;&#x9009;&#x9879;&#x3002;&#x4E0B;&#x9762;&#x8DDF;&#x7740;&#x8F93;&#x51FA;&#x7684; log &#x4FE1;&#x606F;&#x663E;&#x793A;&#x4E86;&#x5B8C;&#x6574;&#x7684;&#x8C03;&#x7528;&#x8FC7;&#x7A0B;&#xFF0C;&#x4EE5;&#x53CA;&#x6240;&#x6709;&#x7684;&#x53C2;&#x6570;&#x3002;&#x6211;&#x4EEC;&#x770B;&#x770B;&#x5176;&#x4E2D;&#x7684;&#x51E0;&#x4E2A;&#x53C2;&#x6570;...</li>
+<li><code>-x</code> &#x6807;&#x793A;&#x7B26;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x6B64;&#x5904;&#x662F; <code>objective-c-header</code>&#x3002;</li>
+<li>&#x76EE;&#x6807;&#x67B6;&#x6784;&#x6307;&#x5B9A;&#x4E3A; <code>armv7</code>&#x3002;</li>
+<li>&#x6697;&#x793A; <code>#defines</code> &#x7684;&#x5185;&#x5BB9;&#x5DF2;&#x7ECF;&#x88AB;&#x6DFB;&#x52A0;&#x4E86;&#x3002;</li>
+<li><code>-c</code> &#x6807;&#x793A;&#x7B26;&#x7528;&#x6765;&#x544A;&#x8BC9; clang &#x5177;&#x4F53;&#x8BE5;&#x5982;&#x4F55;&#x505A;&#x3002;<code>-c</code> &#x8868;&#x793A;&#xFF1A;&#x8FD0;&#x884C;&#x9884;&#x5904;&#x7406;&#x5668;&#x3001;&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x5668;&#x3001;&#x7C7B;&#x578B;&#x68C0;&#x67E5;&#x3001;LLVM &#x7684;&#x751F;&#x6210;&#x548C;&#x4F18;&#x5316;&#xFF0C;&#x4EE5;&#x53CA; target &#x6307;&#x5B9A;&#x6C47;&#x7F16;&#x4EE3;&#x7801;&#x7684;&#x751F;&#x6210;&#x9636;&#x6BB5;&#xFF0C;&#x6700;&#x540E;&#xFF0C;&#x8FD0;&#x884C;&#x6C47;&#x7F16;&#x5668;&#x4EE5;&#x4EA7;&#x51FA;&#x4E00;&#x4E2A;<code>.o</code>&#x7684;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x3002;</li>
+<li>&#x8F93;&#x5165;&#x6587;&#x4EF6;&#x3002;</li>
+<li>&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x3002;</li>
+</ol>
+<p>&#x867D;&#x7136;&#x6709;&#x5927;&#x91CF;&#x7684; log &#x4FE1;&#x606F;&#xFF0C;&#x4E0D;&#x8FC7;&#x6211;&#x4E0D;&#x4F1A;&#x5BF9;&#x6BCF;&#x4E2A;&#x4EFB;&#x52A1;&#x505A;&#x8BE6;&#x7EC6;&#x7684;&#x4ECB;&#x7ECD;&#x3002;&#x6211;&#x4EEC;&#x7684;&#x91CD;&#x70B9;&#x662F;&#x8BA9;&#x4F60;&#x5168;&#x9762;&#x7684;&#x4E86;&#x89E3;&#x5728;&#x6574;&#x4E2A; build &#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x54EA;&#x4E9B;&#x5DE5;&#x5177;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x4EE5;&#x53CA;&#x80CC;&#x540E;&#x4F1A;&#x4F7F;&#x7528;&#x5230;&#x4E86;&#x54EA;&#x4E9B;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x9488;&#x5BF9;&#x8FD9;&#x4E2A; target &#xFF0C;&#x867D;&#x7136;&#x53EA;&#x6709;&#x4E00;&#x4E2A; <code>.pch</code> &#x6587;&#x4EF6;&#xFF0C;&#x4F46;&#x5B9E;&#x9645;&#x4E0A;&#x8FD9;&#x91CC;&#x5BF9; <code>objective-c-header</code> &#x6587;&#x4EF6;&#x7684;&#x5904;&#x7406;&#x6709;&#x4E24;&#x4E2A;&#x4EFB;&#x52A1;&#x3002;&#x901A;&#x8FC7;&#x89C2;&#x5BDF;&#x5177;&#x4F53;&#x8F93;&#x51FA;&#x7684; log &#x4FE1;&#x606F;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#x8BE6;&#x60C5;&#xFF1A;</p>
+<pre><code>ProcessPCH /.../Pods-SSZipArchive-prefix.pch.pch Pods-SSZipArchive-prefix.pch normal armv7 objective-c ...
+ProcessPCH /.../Pods-SSZipArchive-prefix.pch.pch Pods-SSZipArchive-prefix.pch normal armv7s objective-c ...
+</code></pre><p>&#x4ECE;&#x4E0A;&#x9762;&#x7684; log &#x4FE1;&#x606F;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x660E;&#x663E;&#x7684;&#x770B;&#x51FA; target &#x9488;&#x5BF9;&#x4E24;&#x79CD;&#x67B6;&#x6784;&#x505A;&#x4E86; build -- armv7 &#x548C; armv7s -- &#x56E0;&#x6B64; clang &#x5BF9;&#x6587;&#x4EF6;&#x505A;&#x4E86;&#x4E24;&#x6B21;&#x5904;&#x7406;&#xFF0C;&#x6BCF;&#x6B21;&#x9488;&#x5BF9;&#x4E00;&#x79CD;&#x67B6;&#x6784;&#x3002;</p>
+<p>&#x5728;&#x5904;&#x7406;&#x9884;&#x7F16;&#x8BD1;&#x5934;&#x6587;&#x4EF6;&#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x9488;&#x5BF9; SSZipArchive target &#x6709;&#x53E6;&#x5916;&#x7684;&#x51E0;&#x4E2A;&#x4EFB;&#x52A1;&#x7C7B;&#x578B;&#x3002;</p>
+<pre><code>CompileC ...
+Libtool ...
+CreateUniversalBinary ...
+</code></pre><p>&#x987E;&#x540D;&#x601D;&#x4E49;&#xFF1A;<code>CompileC</code> &#x7528;&#x6765;&#x7F16;&#x8BD1; <code>.m</code> &#x548C; <code>.c</code> &#x6587;&#x4EF6;&#xFF0C;<code>Libtool</code> &#x7528;&#x6765;&#x4ECE;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x4E2D;&#x6784;&#x5EFA; library&#xFF0C;&#x800C; <code>CreateUniversalBinary</code> &#x5219;&#x5C06;&#x4E0A;&#x4E00;&#x9636;&#x6BB5;&#x4EA7;&#x751F;&#x7684;&#x4E24;&#x4E2A; <code>.a</code> &#x6587;&#x4EF6;&#xFF08;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#x5BF9;&#x5E94;&#x4E00;&#x79CD;&#x67B6;&#x6784;&#xFF09;&#x5408;&#x5E76;&#x4E3A;&#x4E00;&#x4E2A;&#x901A;&#x7528;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x80FD;&#x540C;&#x65F6;&#x5728; armv7 &#x548C; armv7s &#x4E0A;&#x9762;&#x8FD0;&#x884C;&#x3002;</p>
+<p>&#x63A5;&#x7740;&#xFF0C;&#x5728;&#x5DE5;&#x7A0B;&#x4E2D;&#x5176;&#x5B83;&#x4E00;&#x4E9B;&#x4F9D;&#x8D56;&#x9879;&#x4E5F;&#x4F1A;&#x53D1;&#x751F;&#x4E8E;&#x6B64;&#x7C7B;&#x4F3C;&#x7684;&#x6B65;&#x9AA4;&#x3002;AFNetworking &#x88AB;&#x7F16;&#x8BD1;&#x4E4B;&#x540E;&#xFF0C;&#x4F1A;&#x4E0E; SSZipArchive &#x8FDB;&#x884C;&#x94FE;&#x63A5;&#xFF0C;&#x4EE5;&#x5F53;&#x505A; pod library&#x3002;OpenSSL &#x7F16;&#x8BD1;&#x4E4B;&#x540E;&#xFF0C;&#x4F1A;&#x63A5;&#x7740;&#x5904;&#x7406; crypto &#x548C; ssl target&#x3002;</p>
+<p>&#x5F53;&#x6240;&#x6709;&#x7684;&#x4F9D;&#x8D56;&#x9879;&#x90FD; build &#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x8F6E;&#x5230;&#x6211;&#x4EEC;&#x7A0B;&#x5E8F;&#x7684; target &#x4E86;&#x3002;Build &#x8BE5; target &#x65F6;&#xFF0C;&#x8F93;&#x51FA;&#x7684; log &#x4FE1;&#x606F;&#x4F1A;&#x5305;&#x542B;&#x4E00;&#x4E9B;&#x975E;&#x5E38;&#x6709;&#x4EF7;&#x503C;&#xFF0C;&#x5E76;&#x4E14;&#x4E4B;&#x524D;&#x6CA1;&#x6709;&#x51FA;&#x73B0;&#x8FC7;&#x7684;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code>PhaseScriptExecution ...
+DataModelVersionCompile ...
+Ld ...
+GenerateDSYMFile ...
+CopyStringsFile ...
+CpResource ...
+CopyPNGFile ...
+CompileAssetCatalog ...
+ProcessInfoPlistFile ...
+ProcessProductPackaging /.../some-hash.mobileprovision ...
+ProcessProductPackaging objcio/objcio.entitlements ...
+CodeSign ...
+</code></pre><p>&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4EFB;&#x52A1;&#x5217;&#x8868;&#x4E2D;&#xFF0C;&#x6839;&#x636E;&#x540D;&#x79F0;&#x4E0D;&#x80FD;&#x533A;&#x5206;&#x7684;&#x552F;&#x4E00;&#x4EFB;&#x52A1;&#x53EF;&#x80FD;&#x5C31;&#x662F; <code>Ld</code>&#xFF0C;<code>Ld</code> &#x662F;&#x4E00;&#x4E2A; linker &#x5DE5;&#x5177;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x4E0E; <code>libtool</code> &#x975E;&#x5E38;&#x76F8;&#x4F3C;&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;<code>libtool</code>&#x4E5F;&#x662F;&#x7B80;&#x5355;&#x7684;&#x8C03;&#x7528; <code>ld</code> &#x548C; <code>lipo</code>&#x3002;&apos;ld&apos;&#x88AB;&#x7528;&#x6765;&#x6784;&#x5EFA;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#xFF0C;&#x800C;<code>libtool</code>&#x5219;&#x7528;&#x6765;&#x6784;&#x5EFA; library &#x6587;&#x4EF6;&#x3002;&#x9605;&#x8BFB;<a href="http://www.objccn.io/issue-6-3" target="_blank">Daniel</a> &#x548C; <a href="http://www.objccn.io/issue-6-2" target="_blank">Chris</a>&#x4E24;&#x7BC7;&#x6587;&#x7AE0;&#xFF0C;&#x53EF;&#x4EE5;&#x4E86;&#x89E3;&#x5230;&#x66F4;&#x591A;&#x5173;&#x4E8E;&#x7F16;&#x8BD1;&#x548C;&#x94FE;&#x63A5;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x3002;</p>
+<p>&#x4E0A;&#x9762;&#x6BCF;&#x4E00;&#x4E2A;&#x6B65;&#x9AA4;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x90FD;&#x4F1A;&#x8C03;&#x7528;&#x76F8;&#x5173;&#x7684;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#x6765;&#x505A;&#x5B9E;&#x9645;&#x7684;&#x5DE5;&#x4F5C;&#xFF0C;&#x8FD9;&#x8DDF;&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x7684;&#x7684; <code>ProcessPCH</code> &#x7C7B;&#x4F3C;&#x3002;&#x81F3;&#x6B64;&#xFF0C;&#x6211;&#x5C06;&#x4E0D;&#x4F1A;&#x7EE7;&#x7EED;&#x4ECB;&#x7ECD;&#x8FD9;&#x4E9B; log &#x4FE1;&#x606F;&#x4E86;&#xFF0C;&#x6211;&#x5C06;&#x5E26;&#x9886;&#x5927;&#x5BB6;&#x4ECE;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x89D2;&#x5EA6;&#x6765;&#x7EE7;&#x7EED;&#x63A2;&#x7D22;&#x8FD9;&#x4E9B;&#x4EFB;&#x52A1;&#xFF1A;Xcode &#x662F;&#x5982;&#x4F55;&#x77E5;&#x9053;&#x54EA;&#x4E9B;&#x4EFB;&#x52A1;&#x9700;&#x8981;&#x88AB;&#x6267;&#x884C;&#xFF1F;</p>
+<h2 id="build&#x8FC7;&#x7A0B;&#x7684;&#x63A7;&#x5236;">Build&#x8FC7;&#x7A0B;&#x7684;&#x63A7;&#x5236;</h2>
+<p>&#x5F53;&#x4F60;&#x9009;&#x62E9; Xcode 5 &#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5DE5;&#x7A0B;&#x65F6;&#xFF0C;&#x4F1A;&#x5728; project editor &#x9876;&#x90E8;&#x663E;&#x793A;&#x51FA; 6 &#x4E2A; tabs&#xFF1A;General, Capabilities, Info, Build Settings, Build Phases &#x4EE5;&#x53CA; Build Rules&#x3002;</p>
+<p><img src="https://objccn.io/images/issue-6/project-editor-tabs.png" alt="Xcode project editor tabs"></p>
+<p>&#x5BF9;&#x4E8E;&#x6211;&#x4EEC;&#x7406;&#x89E3; build &#x8FC7;&#x7A0B;&#x6765;&#x8BF4;&#xFF0C;&#x5176;&#x4E2D;&#x6700;&#x540E; 3 &#x9879;&#x4E0E; build &#x8FC7;&#x7A0B;&#x7D27;&#x5BC6;&#x76F8;&#x8FDE;&#x3002;</p>
+<h3 id="build-phases">Build Phases</h3>
+<p>Build Phases &#x4EE3;&#x8868;&#x7740;&#x5C06;&#x4EE3;&#x7801;&#x8F6C;&#x53D8;&#x4E3A;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x7684;&#x6700;&#x9AD8;&#x7EA7;&#x522B;&#x89C4;&#x5219;&#x3002;&#x91CC;&#x9762;&#x63CF;&#x8FF0;&#x4E86; build &#x8FC7;&#x7A0B;&#x4E2D;&#x5FC5;&#x987B;&#x6267;&#x884C;&#x7684;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x89C4;&#x5219;&#x3002;</p>
+<p><img src="https://objccn.io/images/issue-6/build-phases.png" alt="Xcode build phases"></p>
+<p>&#x9996;&#x5148;&#x662F; target &#x4F9D;&#x8D56;&#x9879;&#x7684;&#x6784;&#x5EFA;&#x3002;&#x8FD9;&#x91CC;&#x4F1A;&#x544A;&#x8BC9; build &#x7CFB;&#x7EDF;&#xFF0C;build &#x5F53;&#x524D;&#x7684; target &#x4E4B;&#x524D;&#xFF0C;&#x5FC5;&#x987B;&#x5148;&#x5BF9;&#x8FD9;&#x91CC;&#x7684;&#x4F9D;&#x8D56;&#x6027;&#x8FDB;&#x884C; build&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#x8FD9;&#x5E76;&#x4E0D;&#x5C5E;&#x4E8E;&#x771F;&#x6B63;&#x7684; build phase&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#xFF0C;Xcode &#x53EA;&#x4E0D;&#x8FC7;&#x5C06;&#x5176;&#x4E0E; build phase &#x663E;&#x793A;&#x5230;&#x4E00;&#x5757;&#x7F62;&#x4E86;&#x3002;</p>
+<p>&#x63A5;&#x7740;&#x5728; build phase&#x4E2D;&#x662F;&#x4E00;&#x4E2A; CocoaPods &#x76F8;&#x5173;&#x7684;&#x811A;&#x672C; <em>script execution</em> -- &#x66F4;&#x591A; CocoaPods &#x76F8;&#x5173;&#x4FE1;&#x606F;&#x548C; &#x5B83;&#x7684; build &#x8FC7;&#x7A0B;&#x53EF;&#x4EE5;&#x67E5;&#x770B;<a href="http://www.objc.io/issue-6-4" target="_blank">Michele&#x7684;&#x6587;&#x7AE0;</a> -- &#x63A5;&#x7740;&#x5728; <code>Compile Sources</code> section &#x4E2D;&#x89C4;&#x5B9A;&#x4E86;&#x6240;&#x6709;&#x5FC5;&#x987B;&#x53C2;&#x4E0E;&#x7F16;&#x8BD1;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x9700;&#x8981;&#x7559;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x8FD9;&#x91CC;&#x5E76;&#x6CA1;&#x6709;&#x6307;&#x660E;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x662F;<em>&#x5982;&#x4F55;</em>&#x88AB;&#x7F16;&#x8BD1;&#x5904;&#x7406;&#x7684;&#x3002;&#x5173;&#x4E8E;&#x5904;&#x7406;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x7684;&#x66F4;&#x591A;&#x5185;&#x5BB9;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x7814;&#x7A76; build rules &#x548C; build settings &#x65F6;&#x5B66;&#x4E60;&#x5230;&#x3002;&#x6B64;&#x5904;&#x5217;&#x51FA;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x5C06;&#x6839;&#x636E;&#x76F8;&#x5173;&#x7684; rules &#x548C; settings &#x88AB;&#x5904;&#x7406;&#x3002;</p>
+<p>&#x5F53;&#x7F16;&#x8BD1;&#x7ED3;&#x675F;&#x4E4B;&#x540E;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x662F;&#x5C06;&#x7F16;&#x8BD1;&#x6240;&#x751F;&#x6210;&#x7684;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x94FE;&#x63A5;&#x5230;&#x4E00;&#x5757;&#x3002;&#x6CE8;&#x610F;&#x89C2;&#x5BDF;&#xFF0C;Xcode &#x4E2D;&#x7684; build phase &#x4E4B;&#x540E;&#x662F;&#xFF1A;&quot;Link Binary with Libraries.&quot; &#x8FD9;&#x91CC;&#x9762;&#x5217;&#x51FA;&#x4E86;&#x6240;&#x6709;&#x7684;&#x9759;&#x6001;&#x5E93;&#x548C;&#x52A8;&#x6001;&#x5E93;&#xFF0C;&#x8FD9;&#x4E9B;&#x5E93;&#x4F1A;&#x53C2;&#x4E0E;&#x4E0A;&#x9762;&#x7F16;&#x8BD1;&#x9636;&#x6BB5;&#x751F;&#x6210;&#x7684;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x94FE;&#x63A5;&#x3002;&#x9759;&#x6001;&#x5E93;&#x548C;&#x52A8;&#x6001;&#x5E93;&#x7684;&#x5904;&#x7406;&#x8FC7;&#x7A0B;&#x6709;&#x975E;&#x5E38;&#x5927;&#x7684;&#x533A;&#x522B;&#xFF0C;&#x76F8;&#x5173;&#x5185;&#x5BB9;&#x8BF7;&#x53C2;&#x8003; Daniel&#x7684;&#x6587;&#x7AE0; <a href="http://www.objccn.io/issue-6-3" target="_blank">Mach-O &#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;</a>&#x3002;</p>
+<p>&#x5F53;&#x94FE;&#x63A5;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;build phase &#x4E2D;&#x6700;&#x540E;&#x9700;&#x8981;&#x5904;&#x7406;&#x7684;&#x5C31;&#x662F;&#x5C06;&#x9759;&#x6001;&#x8D44;&#x6E90;&#xFF08;&#x4F8B;&#x5982;&#x56FE;&#x7247;&#x548C;&#x5B57;&#x4F53;&#xFF09;&#x62F7;&#x8D1D;&#x5230; app bundle &#x4E2D;&#x3002;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x56FE;&#x7247;&#x8D44;&#x6E90;&#x662F;PNG&#x683C;&#x5F0F;&#xFF0C;&#x90A3;&#x4E48;&#x4E0D;&#x4EC5;&#x4EC5;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x62F7;&#x8D1D;&#xFF0C;&#x8FD8;&#x4F1A;&#x505A;&#x4E00;&#x4E9B;&#x4F18;&#x5316;&#xFF08;&#x5982;&#x679C; build settings &#x4E2D;&#x7684; PNG &#x4F18;&#x5316;&#x662F;&#x6253;&#x5F00;&#x7684;&#x8BDD;&#xFF09;&#x3002;</p>
+<p>&#x867D;&#x7136;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x7684;&#x62F7;&#x8D1D;&#x662F; build phase &#x4E2D;&#x7684;&#x6700;&#x540E;&#x4E00;&#x6B65;&#xFF0C;&#x4F46; build &#x8FD8;&#x6CA1;&#x6709;&#x5B8C;&#x6210;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x8FD8;&#x6CA1;&#x6709;&#x8FDB;&#x884C; code signing &#xFF08;&#x8FD9;&#x5E76;&#x4E0D;&#x662F; build phase &#x8003;&#x8651;&#x7684;&#x8303;&#x7574;&#xFF09;&#xFF0C;code signing &#x5C5E;&#x4E8E; build &#x6B65;&#x9AA4;&#x4E2D;&#x7684;&#x6700;&#x540E;&#x4E00;&#x6B65; &quot;Packaging&quot;&#x3002;</p>
+<h3 id="&#x5B9A;&#x5236;build-phases">&#x5B9A;&#x5236;Build Phases</h3>
+<p>&#x81F3;&#x6B64;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x8003;&#x8651;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x7684;&#x8BDD;&#xFF0C;&#x4F60;&#x5DF2;&#x7ECF;&#x53EF;&#x4EE5;&#x5B8C;&#x5168;&#x638C;&#x63E1;&#x4E86;&#x4E0A;&#x9762;&#x4ECB;&#x7ECD;&#x7684; build phases&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728; build phases &#x4E2D;&#x6DFB;&#x52A0;&#x8FD0;&#x884C;&#x81EA;&#x5B9A;&#x4E49;&#x811A;&#x672C;&#xFF0C;&#x5C31;&#x50CF;<a href="http://www.objccn.io/issue-6-4/" target="_blank">CocoaPods</a>&#x4F7F;&#x7528;&#x7684;&#x4E00;&#x6837;&#xFF0C;&#x6765;&#x505A;&#x989D;&#x5916;&#x7684;&#x5DE5;&#x4F5C;&#x3002;&#x5F53;&#x7136;&#x4E5F;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x8D44;&#x6E90;&#x7684;&#x62F7;&#x8D1D;&#x4EFB;&#x52A1;&#xFF0C;&#x5F53;&#x4F60;&#x9700;&#x8981;&#x5C06;&#x67D0;&#x4E9B;&#x786E;&#x5B9A;&#x7684;&#x8D44;&#x6E90;&#x62F7;&#x8D1D;&#x5230;&#x6307;&#x5B9A;&#x7684; target &#x76EE;&#x5F55;&#x4E2D;&#xFF0C;&#x8FD9;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#x5B9A;&#x5236; build phases &#x6709;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x597D;&#x7528;&#x7684;&#x529F;&#x80FD;&#xFF1A;&#x6DFB;&#x52A0;&#x5E26;&#x6709;&#x6C34;&#x5370;&#xFF08;&#x5305;&#x62EC;&#x7248;&#x672C;&#x53F7;&#x548C; commit hash&#xFF09;&#x7684; app icon -- &#x53EA;&#x9700;&#x8981;&#x5728; build phase &#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A; &quot;Run Script&quot;&#xFF0C;&#x5E76;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x6765;&#x83B7;&#x53D6;&#x7248;&#x672C;&#x53F7;&#x548C; commit hash&#xFF1A;</p>
+<pre><code>version=`/usr/libexec/PlistBuddy -c &quot;Print CFBundleVersion&quot; &quot;${INFOPLIST_FILE}&quot;`
+commit=`git rev-parse --short HEAD`
+</code></pre><p>&#x7136;&#x540E;&#x4F7F;&#x7528; ImageMagick &#x6765;&#x4FEE;&#x6539; app icon&#x3002;&#x8FD9;&#x91CC;&#x6709;&#x4E00;&#x4E2A;<a href="https://github.com/krzysztofzablocki/IconOverlaying" target="_blank">&#x5B8C;&#x6574;&#x7684;&#x793A;&#x4F8B;</a>&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x5E0C;&#x671B;&#x81EA;&#x5DF1;&#x6216;&#x8005;&#x522B;&#x4EBA;&#x7F16;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x770B;&#x8D77;&#x6765;&#x6BD4;&#x8F83;&#x7B80;&#x6D01;&#x70B9;&#xFF0C;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A; &quot;Run Script&quot;&#xFF1A;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x6E90;&#x6587;&#x4EF6;&#x8D85;&#x8FC7;&#x6307;&#x5B9A;&#x884C;&#x6570;&#xFF0C;&#x5C31;&#x53D1;&#x51FA;&#x8B66;&#x544A;&#x3002;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x6240;&#x793A;&#xFF0C;&#x8BBE;&#x7F6E;&#x7684;&#x884C;&#x6570;&#x4E3A; 200&#x3002;</p>
+<pre><code>find &quot;${SRCROOT}&quot; \( -name &quot;*.h&quot; -or -name &quot;*.m&quot; \) -print0 | xargs -0 wc -l | awk &apos;$1 &gt; 200 &amp;&amp; $2 != &quot;total&quot; { print $2 &quot;:1: warning: file more than 200 lines&quot; }&apos;
+</code></pre><h3 id="build-rules">Build Rules</h3>
+<p>Build rules &#x6307;&#x5B9A;&#x4E86;&#x4E0D;&#x540C;&#x7684;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x8BE5;&#x5982;&#x4F55;&#x7F16;&#x8BD1;&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x8FD9;&#x91CC;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;&#x5BF9;&#x7279;&#x5B9A;&#x7C7B;&#x578B;&#x7684;&#x6587;&#x4EF6;&#x6DFB;&#x52A0;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x5728;&#x6B64;&#x5904;&#x6DFB;&#x52A0;&#x4E00;&#x6761;&#x65B0;&#x7684;&#x89C4;&#x5219;&#x3002;</p>
+<p>&#x4E00;&#x6761; build rule &#x6307;&#x5B9A;&#x4E86;&#x5176;&#x5E94;&#x7528;&#x4E8E;&#x54EA;&#x79CD;&#x7C7B;&#x578B;&#x6587;&#x4EF6;&#xFF0C;&#x8BE5;&#x7C7B;&#x578B;&#x6587;&#x4EF6;&#x662F;&#x5982;&#x4F55;&#x88AB;&#x5904;&#x7406;&#x7684;&#xFF0C;&#x4EE5;&#x53CA;&#x8F93;&#x51FA;&#x7684;&#x5185;&#x5BB9;&#x8BE5;&#x5982;&#x4F55;&#x5904;&#x7F6E;&#x3002;&#x6BD4;&#x65B9;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x6761;&#x9884;&#x5904;&#x7406;&#x89C4;&#x5219;&#xFF0C;&#x8BE5;&#x89C4;&#x5219;&#x5C06; Objective-C &#x7684;&#x5B9E;&#x73B0;&#x6587;&#x4EF6;&#x5F53;&#x505A;&#x8F93;&#x5165;&#xFF0C;&#x89E3;&#x6790;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6CE8;&#x91CA;&#x5185;&#x5BB9;&#xFF0C;&#x6700;&#x540E;&#x518D;&#x8F93;&#x51FA;&#x4E00;&#x4E2A; <code>.m</code> &#x6587;&#x4EF6;&#xFF0C;&#x6587;&#x4EF6;&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x751F;&#x6210;&#x7684;&#x4EE3;&#x7801;&#x3002;&#x7531;&#x4E8E;&#x6211;&#x4EEC;&#x4E0D;&#x80FD;&#x5C06; <code>.m</code> &#x6587;&#x4EF6;&#x65E2;&#x5F53;&#x505A;&#x8F93;&#x5165;&#x53C8;&#x5F53;&#x505A;&#x8F93;&#x51FA;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4F7F;&#x7528;&#x4E86; <code>.mal</code> &#x540E;&#x7F00;&#xFF0C;&#x5B9A;&#x5236;&#x7684; build rule &#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="https://objccn.io/images/issue-6/custom-build-rule.png" alt="Custom build rule"></p>
+<p>&#x4E0A;&#x9762;&#x7684;&#x89C4;&#x5219;&#x5E94;&#x7528;&#x4E8E;&#x6240;&#x6709;&#x540E;&#x7F00;&#x4E3A; <code>*.mal</code> &#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x4F1A;&#x88AB;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x811A;&#x672C;&#x5904;&#x7406;&#xFF08;&#x8C03;&#x7528;&#x6211;&#x4EEC;&#x7684;&#x9884;&#x5904;&#x7406;&#x5668;&#xFF0C;&#x5E76;&#x9644;&#x5E26;&#x4E0A;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x53C2;&#x6570;&#xFF09;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x8BE5;&#x89C4;&#x5219;&#x544A;&#x8BC9; build system &#x5728;&#x54EA;&#x91CC;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#x6B64;&#x89C4;&#x5219;&#x7684;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x5728;&#x811A;&#x672C;&#x4E2D;&#xFF0C;&#x6211;&#x4F7F;&#x7528;&#x4E86;&#x5C11;&#x91CF;&#x7684;&#x53D8;&#x91CF;&#x6765;&#x6307;&#x5B9A;&#x6B63;&#x786E;&#x7684;&#x8DEF;&#x5F84;&#x548C;&#x6587;&#x4EF6;&#x540D;&#x3002;&#x5728;&#x82F9;&#x679C;&#x7684; <a href="https://developer.apple.com/library/mac/documentation/DeveloperTools/Reference/XcodeBuildSettingRef/1-Build_Setting_Reference/build_setting_ref.html#//apple_ref/doc/uid/TP40003931-CH3-SW105" target="_blank">Build Setting Reference</a> &#x6587;&#x6863;&#x4E2D;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#x6240;&#x6709;&#x53EF;&#x7528;&#x7684;&#x53D8;&#x91CF;&#x3002;build &#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x8981;&#x60F3;&#x89C2;&#x5BDF;&#x6240;&#x6709;&#x5DF2;&#x5B58;&#x5728;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728; build phase &#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A; &quot;Run Script&quot;&#xFF0C;&#x5E76;&#x52FE;&#x9009;&#x4E0A; &quot;Show environment variables in build log&quot;&#x3002;</p>
+<h3 id="build-settings">Build Settings</h3>
+<p>&#x81F3;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x4E86;&#x89E3;&#x5230;&#x5728; build phases &#x4E2D;&#x662F;&#x5982;&#x4F55;&#x5B9A;&#x4E49; build &#x5904;&#x7406;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x4EE5;&#x53CA; build rules &#x662F;&#x5982;&#x4F55;&#x6307;&#x5B9A;&#x54EA;&#x4E9B;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x5728;&#x7F16;&#x8BD1;&#x9636;&#x6BB5;&#x9700;&#x8981;&#x88AB;&#x9884;&#x5904;&#x7406;&#x3002;&#x5728; build settings &#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x6BCF;&#x4E2A;&#x4EFB;&#x52A1;&#xFF08;&#x4E4B;&#x524D;&#x5728; build log &#x8F93;&#x51FA;&#x4E2D;&#x770B;&#x5230;&#x7684;&#x4EFB;&#x52A1;&#xFF09;&#x7684;&#x8BE6;&#x7EC6;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x4F60;&#x4F1A;&#x53D1;&#x73B0; build &#x8FC7;&#x7A0B;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x9636;&#x6BB5;&#xFF0C;&#x90FD;&#x6709;&#x8BB8;&#x591A;&#x9009;&#x9879;&#xFF1A;&#x4ECE;&#x7F16;&#x8BD1;&#x3001;&#x94FE;&#x63A5;&#x4E00;&#x76F4;&#x5230; code signing &#x548C; packaging&#x3002;&#x6CE8;&#x610F;&#xFF0C;settings &#x662F;&#x5982;&#x4F55;&#x88AB;&#x5206;&#x5272;&#x4E3A;&#x4E0D;&#x540C;&#x7684;&#x90E8;&#x5206; -- &#x5176;&#x5B9E;&#x8FD9;&#x5927;&#x90E8;&#x5206;&#x4F1A;&#x4E0E; build phases &#x6709;&#x5173;&#x8054;&#xFF0C;&#x6709;&#x65F6;&#x5019;&#x4E5F;&#x4F1A;&#x6307;&#x5B9A;&#x7F16;&#x8BD1;&#x7684;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x8FD9;&#x4E9B;&#x9009;&#x9879;&#x57FA;&#x672C;&#x90FD;&#x6709;&#x5F88;&#x597D;&#x7684;&#x6587;&#x6863;&#x4ECB;&#x7ECD;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x53F3;&#x8FB9;&#x9762;&#x677F;&#x4E2D;&#x7684; quick help inspector &#x6216;&#x8005; <a href="https://developer.apple.com/library/mac/documentation/DeveloperTools/Reference/XcodeBuildSettingRef/1-Build_Setting_Reference/build_setting_ref.html#//apple_ref/doc/uid/TP40003931-CH3-SW105" target="_blank">Build Setting Reference</a> &#x4E2D;&#x67E5;&#x770B;&#x5230;&#x3002;</p>
+<h2 id="&#x5DE5;&#x7A0B;&#x6587;&#x4EF6;">&#x5DE5;&#x7A0B;&#x6587;&#x4EF6;</h2>
+<p>&#x4E0A;&#x9762;&#x6211;&#x4EEC;&#x4ECB;&#x7ECD;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x90FD;&#x88AB;&#x4FDD;&#x5B58;&#x5728;&#x5DE5;&#x7A0B;&#x6587;&#x4EF6;&#xFF08;<code>.pbxproj</code>&#xFF09;&#x4E2D;&#xFF0C;&#x9664;&#x4E86;&#x5176;&#x5B83;&#x4E00;&#x4E9B;&#x5DE5;&#x7A0B;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF08;&#x4F8B;&#x5982; file groups&#xFF09;&#xFF0C;&#x6211;&#x4EEC;&#x5F88;&#x5C11;&#x4F1A;&#x6DF1;&#x5165;&#x8BE5;&#x6587;&#x4EF6;&#x5185;&#x90E8;&#xFF0C;&#x9664;&#x975E;&#x5728;&#x4EE3;&#x7801; merge &#x65F6;&#x53D1;&#x751F;&#x51B2;&#x7A81;&#xFF0C;&#x6216;&#x8BB8;&#x4F1A;&#x8FDB;&#x53BB;&#x770B;&#x770B;&#x3002;</p>
+<p>&#x5EFA;&#x8BAE;&#x4F60;&#x7528;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x5DE5;&#x7A0B;&#x6587;&#x4EF6;&#xFF0C;&#x4ECE;&#x5934;&#x5230;&#x5C3E;&#x770B;&#x4E00;&#x904D;&#x91CC;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x5B83;&#x7684;&#x53EF;&#x8BFB;&#x6027;&#x975E;&#x5E38;&#x9AD8;&#xFF0C;&#x91CC;&#x9762;&#x7684;&#x8BB8;&#x591A;&#x5185;&#x5BB9;&#x4E00;&#x770B;&#x5C31;&#x77E5;&#x9053;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#x4E86;&#xFF0C;&#x4E0D;&#x4F1A;&#x5B58;&#x5728;&#x592A;&#x5927;&#x7684;&#x95EE;&#x9898;&#x3002;&#x901A;&#x8FC7;&#x9605;&#x8BFB;&#x5E76;&#x5B8C;&#x5168;&#x7406;&#x89E3;&#x5DE5;&#x7A0B;&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x5BF9;&#x4E8E;&#x5408;&#x5E76;&#x5DE5;&#x7A0B;&#x6587;&#x4EF6;&#x7684;&#x51B2;&#x7A81;&#x975E;&#x5E38;&#x6709;&#x5E2E;&#x52A9;&#x3002;</p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x770B;&#x6587;&#x4EF6;&#x4E2D;&#x53EB;&#x505A; <code>rootObject</code> &#x7684;&#x6761;&#x76EE;&#x3002;&#x5728;&#x6211;&#x7684;&#x5DE5;&#x7A0B;&#x4E2D;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code>rootObject = 1793817C17A9421F0078255E /* Project object */;
+</code></pre><p>&#x6839;&#x636E;&#x8FD9;&#x4E2A; ID&#xFF08;<code>1793817C17A9421F0078255E</code>&#xFF09;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x627E;&#x5230; main &#x5DE5;&#x7A0B;&#x7684;&#x5B9A;&#x4E49;&#xFF1A;</p>
+<pre><code>/* Begin PBXProject section */
+    1793817C17A9421F0078255E /* Project object */ = {
+        isa = PBXProject;
+...
+</code></pre><p>&#x5728;&#x8FD9;&#x90E8;&#x5206;&#x4E2D;&#x6709;&#x4E00;&#x4E9B; keys&#xFF0C;&#x987A;&#x4ECE;&#x8FD9;&#x4E9B; key&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4E86;&#x89E3;&#x5230;&#x66F4;&#x591A;&#x5173;&#x4E8E;&#x8FD9;&#x4E2A;&#x5DE5;&#x7A0B;&#x6587;&#x4EF6;&#x7684;&#x7EC4;&#x6210;&#x3002;&#x4F8B;&#x5982;&#xFF0C;<code>mainGroup</code> &#x6307;&#x5411;&#x4E86; root file group&#x3002;&#x5982;&#x679C;&#x4F60;&#x6309;&#x7167;&#x8FD9;&#x4E2A;&#x601D;&#x8DEF;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5FEB;&#x901F;&#x4E86;&#x89E3;&#x5230;&#x5728; <code>.pbxproj</code> &#x6587;&#x4EF6;&#x4E2D;&#x5DE5;&#x7A0B;&#x7684;&#x7ED3;&#x6784;&#x3002;&#x4E0B;&#x9762;&#x6211;&#x8981;&#x6765;&#x4ECB;&#x7ECD;&#x4E00;&#x4E9B;&#x4E0E; build &#x8FC7;&#x7A0B;&#x76F8;&#x5173;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x5176;&#x4E2D; <code>target</code> key &#x6307;&#x5411;&#x4E86; build target &#x7684;&#x5B9A;&#x4E49;&#xFF1A;</p>
+<pre><code>targets = (
+    1793818317A9421F0078255E /* objcio */,
+    170E83CE17ABF256006E716E /* objcio Tests */,
+);
+</code></pre><p>&#x6839;&#x636E;&#x7B2C;&#x4E00;&#x4E2A;&#x5185;&#x5BB9;&#xFF0C;&#x6211;&#x4EEC;&#x627E;&#x5230;&#x4E00;&#x4E2A; target &#x7684;&#x5B9A;&#x4E49;&#xFF1A;</p>
+<pre><code>1793818317A9421F0078255E /* objcio */ = {
+    isa = PBXNativeTarget;
+    buildConfigurationList = 179381B617A9421F0078255E /* Build configuration list for PBXNativeTarget &quot;objcio&quot; */;
+    buildPhases = (
+        F3EB8576A1C24900A8F9CBB6 /* Check Pods Manifest.lock */,
+        1793818017A9421F0078255E /* Sources */,
+        1793818117A9421F0078255E /* Frameworks */,
+        1793818217A9421F0078255E /* Resources */,
+        FF25BB7F4B7D4F87AC7A4265 /* Copy Pods Resources */,
+    );
+    buildRules = (
+    );
+    dependencies = (
+        1769BED917CA8239008B6F5D /* PBXTargetDependency */,
+        1769BED717CA8236008B6F5D /* PBXTargetDependency */,
+    );
+    name = objcio;
+    productName = objcio;
+    productReference = 1793818417A9421F0078255E /* objcio.app */;
+    productType = &quot;com.apple.product-type.application&quot;;
+};
+</code></pre><p>&#x5176;&#x4E2D; <code>buildConfigurationList</code> &#x6307;&#x5411;&#x4E86;&#x53EF;&#x7528;&#x7684;&#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x4E00;&#x822C;&#x662F; <code>Debug</code> &#x548C; <code>Release</code>&#x3002;&#x6839;&#x636E; debug &#x5BF9;&#x5E94;&#x7684; id&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x627E;&#x5230; build setting tab &#x4E2D;&#x6240;&#x6709;&#x9009;&#x9879;&#x5B58;&#x50A8;&#x7684;&#x4F4D;&#x7F6E;&#xFF1A;</p>
+<pre><code>179381B717A9421F0078255E /* Debug */ = {
+    isa = XCBuildConfiguration;
+    baseConfigurationReference = 05D234D6F5E146E9937E8997 /* Pods.xcconfig */;
+    buildSettings = {
+        ALWAYS_SEARCH_USER_PATHS = YES;
+        ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+        CODE_SIGN_ENTITLEMENTS = objcio/objcio.entitlements;
+...
+</code></pre><p><code>buildPhases</code> &#x5C5E;&#x6027;&#x5219;&#x7B80;&#x5355;&#x7684;&#x5217;&#x51FA;&#x4E86;&#x5728; Xcode &#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x6240;&#x6709; build phases&#x3002;&#x8FD9;&#x975E;&#x5E38;&#x5BB9;&#x6613;&#x8BC6;&#x522B;&#x51FA;&#x6765;&#xFF08;Xcode &#x4E2D;&#x7684;&#x53C2;&#x6570;&#x4F7F;&#x7528;&#x4E86;&#x5B83;&#x4EEC;&#x539F;&#x672C;&#x771F;&#x6B63;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x5E76;&#x4EE5; C &#x98CE;&#x683C;&#x8FDB;&#x884C;&#x6CE8;&#x91CA;&#xFF09;&#x3002;<code>buildRules</code> &#x5C5E;&#x6027;&#x662F;&#x7A7A;&#x7684;&#xFF1A;&#x56E0;&#x4E3A;&#x5728;&#x8BE5;&#x5DE5;&#x7A0B;&#x4E2D;&#xFF0C;&#x6211;&#x6CA1;&#x6709;&#x81EA;&#x5B9A;&#x4E49; build rules&#x3002;<code>dependencies</code> &#x5217;&#x51FA;&#x4E86;&#x5728; Xcode build phase tab &#x4E2D;&#x5217;&#x51FA;&#x7684; target &#x4F9D;&#x8D56;&#x9879;&#x3002;</p>
+<p>&#x6CA1;&#x90A3;&#x4E48;&#x5413;&#x4EBA;&#xFF0C;&#x4E0D;&#x662F;&#x5417;&#xFF1F;&#x5DE5;&#x7A0B;&#x4E2D;&#x5269;&#x4E0B;&#x7684;&#x5185;&#x5BB9;&#x5C31;&#x7559;&#x7ED9;&#x4F60;&#x53BB;&#x5F53;&#x505A;&#x7EC3;&#x4E60;&#x6765;&#x4E86;&#x89E3;&#x5427;&#x3002;&#x53EA;&#x9700;&#x8981;&#x987A;&#x7740;&#x5BF9;&#x8C61;&#x7684; ID &#x8D70;&#xFF0C;&#x5373;&#x53EF;&#xFF0C;&#x4E00;&#x65E6;&#x4F60;&#x627E;&#x5230;&#x4E86;&#x6572;&#x95E8;&#xFF0C;&#x7406;&#x89E3;&#x4E86;Xcode&#x4E2D;&#x5DE5;&#x7A0B;&#x8BBE;&#x7F6E;&#x7684;&#x4E0D;&#x540C; section &#xFF0C;&#x90A3;&#x4E48;&#x5BF9;&#x4E8E; merge &#x5DE5;&#x7A0B;&#x6587;&#x4EF6;&#x7684;&#x51B2;&#x7A81;&#x65F6;&#xFF0C;&#x5C06;&#x53D8;&#x5F97;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x3002;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x5728; GitHub &#x4E2D;&#x5C31;&#x80FD;&#x9605;&#x8BFB;&#x5DE5;&#x7A0B;&#x6587;&#x4EF6;&#xFF0C;&#x800C;&#x4E0D;&#x7528;&#x5C06;&#x5DE5;&#x7A0B;&#x6587;&#x4EF6; clone &#x5230;&#x672C;&#x5730;&#xFF0C;&#x5E76;&#x7528; Xcode &#x6253;&#x5F00;&#x3002;</p>
+<h2 id="&#x5C0F;&#x7ED3;">&#x5C0F;&#x7ED3;</h2>
+<p>&#x5F53;&#x4ECA;&#x7684;&#x8F6F;&#x4EF6;&#x662F;&#x90FD;&#x7528;&#x5176;&#x5B83;&#x590D;&#x6742;&#x7684;&#x4E00;&#x4E9B;&#x8F6F;&#x4EF6;&#x548C;&#x8D44;&#x6E90;&#x5F00;&#x53D1;&#x51FA;&#x6765;&#x7684;&#xFF0C;&#x4F8B;&#x5982; library &#x548C; build &#x5DE5;&#x5177;&#x7B49;&#x3002;&#x53CD;&#x8FC7;&#x6765;&#xFF0C;&#x8FD9;&#x4E9B;&#x5DE5;&#x5177;&#x662F;&#x6784;&#x5EFA;&#x4E8E;&#x5E95;&#x5C42;&#x67B6;&#x6784;&#x7684;&#xFF0C;&#x8FD9;&#x72B9;&#x5982;&#x5265;&#x6D0B;&#x8471;&#x4E00;&#x6837;&#xFF0C;&#x4E00;&#x5C42;&#x5305;&#x7740;&#x4E00;&#x5C42;&#x3002;&#x867D;&#x7136;&#x8FD9;&#x6837;&#x4E00;&#x5C42;&#x4E00;&#x5C42;&#x7684;&#xFF0C;&#x7ED9;&#x4EBA;&#x611F;&#x89C9;&#x592A;&#x590D;&#x6742;&#xFF0C;&#x4F46;&#x662F;&#x4F60;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x53BB;&#x6DF1;&#x5165;&#x4E86;&#x89E3;&#x5B83;&#x4EEC;&#xFF0C;&#x8FD9;&#x975E;&#x5E38;&#x6709;&#x52A9;&#x4E8E;&#x4F60;&#x5BF9;&#x8F6F;&#x4EF6;&#x7684;&#x6DF1;&#x5165;&#x7406;&#x89E3;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5F53;&#x4F60;&#x4E86;&#x89E3;&#x4E4B;&#x540E;&#xFF0C;&#x8FD9;&#x5E76;&#x6CA1;&#x6709;&#x60F3;&#x8C61;&#x4E2D;&#x7684;&#x90A3;&#x4E48;&#x795E;&#x5947;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x5B83;&#x662F;&#x4E00;&#x5C42;&#x4E00;&#x5C42;&#x5806;&#x780C;&#x8D77;&#x6765;&#x7684;&#xFF0C;&#x6BCF;&#x4E00;&#x5C42;&#x90FD;&#x662F;&#x57FA;&#x4E8E;&#x4E0B;&#x4E00;&#x5C42;&#x6784;&#x5EFA;&#x8D77;&#x6765;&#x7684;&#x3002;</p>
+<p>&#x672C;&#x6587;&#x6240;&#x63A2;&#x7D22; build system &#x7684;&#x5185;&#x90E8;&#x673A;&#x5236;&#x72B9;&#x5982;&#x5265;&#x6389;&#x6D0B;&#x8471;&#x7684;&#x4E00;&#x5C42;&#x3002;&#x5176;&#x5B9E;&#x5F53;&#x6211;&#x4EEC;&#x70B9;&#x51FB; Xcode &#x4E2D;&#x7684;&#x8FD0;&#x884C;&#x6309;&#x94AE;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x5E76;&#x6CA1;&#x5FC5;&#x8981;&#x7406;&#x89E3;&#x8FD9;&#x4E2A;&#x52A8;&#x4F5C;&#x6D89;&#x53CA;&#x5230;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x3002;&#x6211;&#x4EEC;&#x53EA;&#x662F;&#x6DF1;&#x5165;&#x7406;&#x89E3;&#x67D0;&#x4E00;&#x5C42;&#xFF0C;&#x7136;&#x540E;&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x6709;&#x7EC4;&#x7EC7;&#x7684;&#x3001;&#x5E76;&#x4E14;&#x53EF;&#x63A7;&#x7684;&#x8C03;&#x7528;&#x5176;&#x5B83;&#x5DE5;&#x5177;&#x7684;&#x987A;&#x5E8F;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x613F;&#x610F;&#x7684;&#x8BDD;&#xFF0C;&#x53EF;&#x4EE5;&#x505A;&#x8FDB;&#x4E00;&#x6B65;&#x7684;&#x63A2;&#x7D22;&#x3002;&#x6211;&#x5EFA;&#x8BAE;&#x4F60;&#x9605;&#x8BFB;&#x672C;&#x671F;&#x4E2D;&#x7684;&#x5176;&#x5B83;&#x6587;&#x7AE0;&#xFF0C;&#x4EE5;&#x8FDB;&#x4E00;&#x6B65;&#x4E86;&#x89E3;&#x8FD9;&#x4E2A;&#x6D0B;&#x8471;&#x7684;&#x4E0B;&#x4E00;&#x5C42;&#x5185;&#x5BB9;&#xFF01;</p>
+<hr>
+<p><a href="http://objccn.io/issue-6/" target="_blank">&#x8BDD;&#x9898; #6 &#x4E0B;&#x7684;&#x66F4;&#x591A;&#x6587;&#x7AE0;</a></p>
+<p>&#x539F;&#x6587;: <a href="http://www.objc.io/issue-6/build-process.html" target="_blank">The Build Process</a></p>
+<p>&#x8BD1;&#x6587; <a href="http://beyondvincent.com/blog/2013/11/21/123-build-process/" target="_blank">objc.io &#x7B2C;6&#x671F; Build &#x8FC7;&#x7A0B;</a></p>
+<p>&#x7CBE;&#x7EC6;&#x6821;&#x5BF9; <a href="http://beyondvincent.com/" target="_blank">@BeyondVincent</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="issue-6-0-FangYiXiong.html" class="navigation navigation-prev " aria-label="Previous page: Build工具">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="issue-6-2-sunsets.html" class="navigation navigation-next " aria-label="Next page: 编译器">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Build过程","level":"1.21.1","depth":2,"next":{"title":"编译器","level":"1.21.2","depth":2,"path":"publish/issue6/issue-6-2-sunsets.md","ref":"publish/issue6/issue-6-2-sunsets.md","articles":[]},"previous":{"title":"Build工具","level":"1.21","depth":1,"path":"publish/issue6/issue-6-0-FangYiXiong.md","ref":"publish/issue6/issue-6-0-FangYiXiong.md","articles":[{"title":"Build过程","level":"1.21.1","depth":2,"path":"publish/issue6/issue-6-1-BeyondVincent.md","ref":"publish/issue6/issue-6-1-BeyondVincent.md","articles":[]},{"title":"编译器","level":"1.21.2","depth":2,"path":"publish/issue6/issue-6-2-sunsets.md","ref":"publish/issue6/issue-6-2-sunsets.md","articles":[]},{"title":"Mach-O可执行文件","level":"1.21.3","depth":2,"path":"publish/issue6/issue-6-3-yishuiliunian.md","ref":"publish/issue6/issue-6-3-yishuiliunian.md","articles":[]},{"title":"深入理解CocoaPods","level":"1.21.4","depth":2,"path":"publish/issue6/issue-6-4-programmer.du.md","ref":"publish/issue6/issue-6-4-programmer.du.md","articles":[]},{"title":"为iOS建立Travis CI","level":"1.21.5","depth":2,"path":"publish/issue6/issue-6-5-yuan12xin.md","ref":"publish/issue6/issue-6-5-yuan12xin.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"publish/issue6/issue-6-1-BeyondVincent.md","mtime":"2019-09-09T09:18:07.253Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-09T09:59:37.321Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

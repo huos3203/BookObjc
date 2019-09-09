@@ -1,0 +1,2538 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>NSString与Unicode · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="issue-9-2-Nix.html" />
+    
+    
+    <link rel="prev" href="issue-9-0-FangYiXiong.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../issue1/issue-1-0-tang3w.html">
+            
+                <a href="../issue1/issue-1-0-tang3w.html">
+            
+                    
+                    更轻量的 View Controllers
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../issue1/issue-1-1-tang3w.html">
+            
+                <a href="../issue1/issue-1-1-tang3w.html">
+            
+                    
+                    更轻量的 View Controllers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../issue1/issue-1-2-tang3w.html">
+            
+                <a href="../issue1/issue-1-2-tang3w.html">
+            
+                    
+                    整洁的 Table View 代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../issue1/issue-1-3-tang3w.html">
+            
+                <a href="../issue1/issue-1-3-tang3w.html">
+            
+                    
+                    测试View Controllers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../issue1/issue-1-4-tang3w.html">
+            
+                <a href="../issue1/issue-1-4-tang3w.html">
+            
+                    
+                    View Controller容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../issue2/issue-2-0-FangYiXiong.html">
+            
+                <a href="../issue2/issue-2-0-FangYiXiong.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../issue2/issue-2-1-beyondvincent.html">
+            
+                <a href="../issue2/issue-2-1-beyondvincent.html">
+            
+                    
+                    并发编程：API 及挑战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../issue2/issue-2-2-onevcat.html">
+            
+                <a href="../issue2/issue-2-2-onevcat.html">
+            
+                    
+                    常见的后台实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../issue2/issue-2-3-webfrogs.html">
+            
+                <a href="../issue2/issue-2-3-webfrogs.html">
+            
+                    
+                    底层并发API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../issue2/issue-2-4-onevcat.html">
+            
+                <a href="../issue2/issue-2-4-onevcat.html">
+            
+                    
+                    线程安全类的设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../issue2/issue-2-5-xinjixjz.html">
+            
+                <a href="../issue2/issue-2-5-xinjixjz.html">
+            
+                    
+                    测试并发程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../issue3/issue-3-0-answer-huang.html">
+            
+                <a href="../issue3/issue-3-0-answer-huang.html">
+            
+                    
+                    Views
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../issue3/issue-3-1-answer-huang.html">
+            
+                <a href="../issue3/issue-3-1-answer-huang.html">
+            
+                    
+                    绘制像素到屏幕上
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../issue3/issue-3-2-answer-huang.html">
+            
+                <a href="../issue3/issue-3-2-answer-huang.html">
+            
+                    
+                    理解Scroll Views
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../issue3/issue-3-3-answer-huang.html">
+            
+                <a href="../issue3/issue-3-3-answer-huang.html">
+            
+                    
+                    自定义Collection View布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../issue3/issue-3-4-Migrant.html">
+            
+                <a href="../issue3/issue-3-4-Migrant.html">
+            
+                    
+                    自定义控件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../issue3/issue-3-5-answer-huang.html">
+            
+                <a href="../issue3/issue-3-5-answer-huang.html">
+            
+                    
+                    先进的自动布局工具箱
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../issue4/issue-4-0-unblue.html">
+            
+                <a href="../issue4/issue-4-0-unblue.html">
+            
+                    
+                    Core Data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../issue4/issue-4-1-shjborage.html">
+            
+                <a href="../issue4/issue-4-1-shjborage.html">
+            
+                    
+                    Core Data概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../issue4/issue-4-2-itouch2.html">
+            
+                <a href="../issue4/issue-4-2-itouch2.html">
+            
+                    
+                    一个完整的Core Data应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../issue4/issue-4-3-sjpsega.html">
+            
+                <a href="../issue4/issue-4-3-sjpsega.html">
+            
+                    
+                    用SQLite和FMDB替代Core Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../issue4/issue-4-4-panda.html">
+            
+                <a href="../issue4/issue-4-4-panda.html">
+            
+                    
+                    数据模型和模型对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../issue4/issue-4-5-liming.html">
+            
+                <a href="../issue4/issue-4-5-liming.html">
+            
+                    
+                    导入大数据集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../issue4/issue-4-6-ckitakishi.html">
+            
+                <a href="../issue4/issue-4-6-ckitakishi.html">
+            
+                    
+                    Fetch请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../issue4/issue-4-7-xinjixjz.html">
+            
+                <a href="../issue4/issue-4-7-xinjixjz.html">
+            
+                    
+                    自定义Core Data迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../issue5/issue-5-0-FangYiXiong.html">
+            
+                <a href="../issue5/issue-5-0-FangYiXiong.html">
+            
+                    
+                    iOS7
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../issue5/issue-5-1-hexielaoyuehan.html">
+            
+                <a href="../issue5/issue-5-1-hexielaoyuehan.html">
+            
+                    
+                    初识TextKit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../issue5/issue-5-2-morisunshine.html">
+            
+                <a href="../issue5/issue-5-2-morisunshine.html">
+            
+                    
+                    UICollectionView + UIKit力学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../issue5/issue-5-3-FangYixiong.html">
+            
+                <a href="../issue5/issue-5-3-FangYixiong.html">
+            
+                    
+                    View Controller转场
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../issue5/issue-5-4-FangYixiong.html">
+            
+                <a href="../issue5/issue-5-4-FangYixiong.html">
+            
+                    
+                    从NSURLConnection到NSURLSession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../issue5/issue-5-5-demon1105.html">
+            
+                <a href="../issue5/issue-5-5-demon1105.html">
+            
+                    
+                    iOS7的多任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../issue5/issue-5-6-test_0x01.html">
+            
+                <a href="../issue5/issue-5-6-test_0x01.html">
+            
+                    
+                    iOS7:隐藏技巧和变通之道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../issue5/issue-5-7-FangYixiong.html">
+            
+                <a href="../issue5/issue-5-7-FangYixiong.html">
+            
+                    
+                    为iOS7重新设计App
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../issue7/issue-7-0-JeOam.html">
+            
+                <a href="../issue7/issue-7-0-JeOam.html">
+            
+                    
+                    Foundation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../issue7/issue-7-1-FANWENBIN.html">
+            
+                <a href="../issue7/issue-7-1-FANWENBIN.html">
+            
+                    
+                    基础集合类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../issue7/issue-7-2-onevcat.html">
+            
+                <a href="../issue7/issue-7-2-onevcat.html">
+            
+                    
+                    值对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../issue7/issue-7-3-DJBen.html">
+            
+                <a href="../issue7/issue-7-3-DJBen.html">
+            
+                    
+                    KVC 和 KVO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../issue7/issue-7-4-DJBen.html">
+            
+                <a href="../issue7/issue-7-4-DJBen.html">
+            
+                    
+                    消息传递机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../issue7/issue-7-5-itouch2.html">
+            
+                <a href="../issue7/issue-7-5-itouch2.html">
+            
+                    
+                    自定义Formatters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../issue7/issue-7-6-onevcat.html">
+            
+                <a href="../issue7/issue-7-6-onevcat.html">
+            
+                    
+                    语言标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="issue-9-0-FangYiXiong.html">
+            
+                <a href="issue-9-0-FangYiXiong.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.8.1" data-path="issue-9-1-frederick036.html">
+            
+                <a href="issue-9-1-frederick036.html">
+            
+                    
+                    NSString与Unicode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="issue-9-2-Nix.html">
+            
+                <a href="issue-9-2-Nix.html">
+            
+                    
+                    玩转字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="issue-9-3-YCFlame.html">
+            
+                <a href="issue-9-3-YCFlame.html">
+            
+                    
+                    字符串本地化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="issue-9-4-riven.html">
+            
+                <a href="issue-9-4-riven.html">
+            
+                    
+                    字符串解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="issue-9-5-answer-huang.html">
+            
+                <a href="issue-9-5-answer-huang.html">
+            
+                    
+                    字符串渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../issue10/issue-10-0-sjpsega.html">
+            
+                <a href="../issue10/issue-10-0-sjpsega.html">
+            
+                    
+                    同步数据
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../issue10/issue-10-1-xinjixjz.html">
+            
+                <a href="../issue10/issue-10-1-xinjixjz.html">
+            
+                    
+                    数据同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../issue10/issue-10-2-weekwood.html">
+            
+                <a href="../issue10/issue-10-2-weekwood.html">
+            
+                    
+                    iCloud和Core Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../issue10/issue-10-3-migrant.html">
+            
+                <a href="../issue10/issue-10-3-migrant.html">
+            
+                    
+                    精通iCloud文档存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../issue10/issue-10-4-YCFlame.html">
+            
+                <a href="../issue10/issue-10-4-YCFlame.html">
+            
+                    
+                    同步案例学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../issue10/issue-10-5-answer-huang.html">
+            
+                <a href="../issue10/issue-10-5-answer-huang.html">
+            
+                    
+                    Core Data 网络应用实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../issue10/issue-10-6-sunset.html">
+            
+                <a href="../issue10/issue-10-6-sunset.html">
+            
+                    
+                    IP,TCP 和 HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../issue12/issue-12-0-FangYiXiojng.html">
+            
+                <a href="../issue12/issue-12-0-FangYiXiojng.html">
+            
+                    
+                    动画
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../issue12/issue-12-1-ckitakishi.html">
+            
+                <a href="../issue12/issue-12-1-ckitakishi.html">
+            
+                    
+                    动画解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../issue12/issue-12-2-nixzhu.html">
+            
+                <a href="../issue12/issue-12-2-nixzhu.html">
+            
+                    
+                    Layer中自定义属性的动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../issue12/issue-12-3-happyjiahan.html">
+            
+                <a href="../issue12/issue-12-3-happyjiahan.html">
+            
+                    
+                    自定义ViewController容器转场
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../issue12/issue-12-4-onevcat.html">
+            
+                <a href="../issue12/issue-12-4-onevcat.html">
+            
+                    
+                    View-Layer协作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../issue12/issue-12-5-weekwood.html">
+            
+                <a href="../issue12/issue-12-5-weekwood.html">
+            
+                    
+                    Collection View 动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../issue12/issue-12-6-morisunshine.html">
+            
+                <a href="../issue12/issue-12-6-morisunshine.html">
+            
+                    
+                    交互式动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../issue13/issue-13-0-panda.html">
+            
+                <a href="../issue13/issue-13-0-panda.html">
+            
+                    
+                    架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../issue13/issue-13-1-nixzhu.html">
+            
+                <a href="../issue13/issue-13-1-nixzhu.html">
+            
+                    
+                    MVVM介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../issue13/issue-13-2-happyjiahan.html">
+            
+                <a href="../issue13/issue-13-2-happyjiahan.html">
+            
+                    
+                    避免滥用单例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../issue13/issue-13-3-panda.html">
+            
+                <a href="../issue13/issue-13-3-panda.html">
+            
+                    
+                    IOS中的行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../issue13/issue-13-4-Phenmod.html">
+            
+                <a href="../issue13/issue-13-4-Phenmod.html">
+            
+                    
+                    子类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../issue13/issue-13-5-weekwood.html">
+            
+                <a href="../issue13/issue-13-5-weekwood.html">
+            
+                    
+                    使用VIPER构建IOS应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../issue16/issue-16-0-hewigovens.html">
+            
+                <a href="../issue16/issue-16-0-hewigovens.html">
+            
+                    
+                    swift
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../issue16/issue-16-1-lizixroy.html">
+            
+                <a href="../issue16/issue-16-1-lizixroy.html">
+            
+                    
+                    Swift强大之处
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../issue16/issue-16-2-Onetaway.html">
+            
+                <a href="../issue16/issue-16-2-Onetaway.html">
+            
+                    
+                    结构体和值类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../issue16/issue-16-3-weekwood.html">
+            
+                <a href="../issue16/issue-16-3-weekwood.html">
+            
+                    
+                    swift方法的多面性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../issue16/issue-16-4-callmewhy.html">
+            
+                <a href="../issue16/issue-16-4-callmewhy.html">
+            
+                    
+                    Swift的函数式API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../issue16/issue-16-5-programmerDu.html">
+            
+                <a href="../issue16/issue-16-5-programmerDu.html">
+            
+                    
+                    Playground快速原型制作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../issue18/issue-18-0-yulingtianxia.html">
+            
+                <a href="../issue18/issue-18-0-yulingtianxia.html">
+            
+                    
+                    游戏
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../issue18/issue-18-1-weekwood.html">
+            
+                <a href="../issue18/issue-18-1-weekwood.html">
+            
+                    
+                    设计优雅的移动游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../issue18/issue-18-2-migrant.html">
+            
+                <a href="../issue18/issue-18-2-migrant.html">
+            
+                    
+                    Metal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../issue18/issue-18-3-sunnyxx.html">
+            
+                <a href="../issue18/issue-18-3-sunnyxx.html">
+            
+                    
+                    Scene Kit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../issue18/issue-18-4-callmewhy.html">
+            
+                <a href="../issue18/issue-18-4-callmewhy.html">
+            
+                    
+                    游戏中的多点互联
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../issue18/issue-18-5-shuye.html">
+            
+                <a href="../issue18/issue-18-5-shuye.html">
+            
+                    
+                    虚拟音域-声音设计的艺术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../issue21/issue-21-0-bifidy.html">
+            
+                <a href="../issue21/issue-21-0-bifidy.html">
+            
+                    
+                    相机与照片
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../issue21/issue-21-1-onevcat.html">
+            
+                <a href="../issue21/issue-21-1-onevcat.html">
+            
+                    
+                    相机工作原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../issue21/issue-21-2-bifidy.html">
+            
+                <a href="../issue21/issue-21-2-bifidy.html">
+            
+                    
+                    图片格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../issue21/issue-21-3-nathanwhy.html">
+            
+                <a href="../issue21/issue-21-3-nathanwhy.html">
+            
+                    
+                    iOS上的相机捕捉
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="../issue21/issue-21-4-CrazyZombies.html">
+            
+                <a href="../issue21/issue-21-4-CrazyZombies.html">
+            
+                    
+                    照片框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.5" data-path="../issue21/issue-21-5-weekwood.html">
+            
+                <a href="../issue21/issue-21-5-weekwood.html">
+            
+                    
+                    照片扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.6" data-path="../issue21/issue-21-6-april.html">
+            
+                <a href="../issue21/issue-21-6-april.html">
+            
+                    
+                    Core Image 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.7" data-path="../issue21/issue-21-7-nangege.html">
+            
+                <a href="../issue21/issue-21-7-nangege.html">
+            
+                    
+                    GPU加速下的图像处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.8" data-path="../issue21/issue-21-8-dopcn.html">
+            
+                <a href="../issue21/issue-21-8-dopcn.html">
+            
+                    
+                    GPU加速下的图像视觉
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.9" data-path="../issue21/issue-21-9-Phenmod.html">
+            
+                <a href="../issue21/issue-21-9-Phenmod.html">
+            
+                    
+                    基于OpenCV的人脸识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../issue24/issue-24-1-april.html">
+            
+                <a href="../issue24/issue-24-1-april.html">
+            
+                    
+                    音频
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../issue24/issue-24-1-april.html">
+            
+                <a href="../issue24/issue-24-1-april.html">
+            
+                    
+                    音频处理的狗屋
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../issue24/issue-24-2-lizix.html">
+            
+                <a href="../issue24/issue-24-2-lizix.html">
+            
+                    
+                    使用Swift进行函数式信号处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../issue24/issue-24-3-bifidy.html">
+            
+                <a href="../issue24/issue-24-3-bifidy.html">
+            
+                    
+                    播放，失败，迭代：面向产品的音效设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="../issue24/issue-24-4-draveness.html">
+            
+                <a href="../issue24/issue-24-4-draveness.html">
+            
+                    
+                    音频API一览
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../issue23/issue-23-0-bifidy.html">
+            
+                <a href="../issue23/issue-23-0-bifidy.html">
+            
+                    
+                    视频
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../issue23/issue-23-1-nathanwhy.html">
+            
+                <a href="../issue23/issue-23-1-nathanwhy.html">
+            
+                    
+                    在iOS上捕获视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../issue23/issue-23-2-pupboss.html">
+            
+                <a href="../issue23/issue-23-2-pupboss.html">
+            
+                    
+                    Core Image 和视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../issue23/issue-23-3-pupboss.html">
+            
+                <a href="../issue23/issue-23-3-pupboss.html">
+            
+                    
+                    视频工具箱和硬件加速
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../issue19/issue-19-0-bifidy.html">
+            
+                <a href="../issue19/issue-19-0-bifidy.html">
+            
+                    
+                    调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../issue19/issue-19-1-weekwood.html">
+            
+                <a href="../issue19/issue-19-1-weekwood.html">
+            
+                    
+                    调试：案例学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../issue19/issue-19-2-nangege.html">
+            
+                <a href="../issue19/issue-19-2-nangege.html">
+            
+                    
+                    与调试器共舞 - LLDB的华尔兹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../issue19/issue-19-3-bifidy.html">
+            
+                <a href="../issue19/issue-19-3-bifidy.html">
+            
+                    
+                    调试核对清单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.4" data-path="../issue19/issue-19-4-migrant.html">
+            
+                <a href="../issue19/issue-19-4-migrant.html">
+            
+                    
+                    DTrace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.5" data-path="../issue19/issue-19-5-dopcn.html">
+            
+                <a href="../issue19/issue-19-5-dopcn.html">
+            
+                    
+                    活动追踪
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../issue15/issue-15-0-yulingtianxia.html">
+            
+                <a href="../issue15/issue-15-0-yulingtianxia.html">
+            
+                    
+                    测试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../issue15/issue-15-1-weekwood.html">
+            
+                <a href="../issue15/issue-15-1-weekwood.html">
+            
+                    
+                    行为驱动开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../issue15/issue-15-2-morisunshine.html">
+            
+                <a href="../issue15/issue-15-2-morisunshine.html">
+            
+                    
+                    XCTest测试实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../issue15/issue-15-3-sunsets.html">
+            
+                <a href="../issue15/issue-15-3-sunsets.html">
+            
+                    
+                    依赖注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.4" data-path="../issue15/issue-15-4-Onetaway.html">
+            
+                <a href="../issue15/issue-15-4-Onetaway.html">
+            
+                    
+                    糟糕的测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.5" data-path="../issue15/issue-15-5-ryan.html">
+            
+                <a href="../issue15/issue-15-5-ryan.html">
+            
+                    
+                    置换测试：Mock,Stub和其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.6" data-path="../issue15/issue-15-6-callmewhy.html">
+            
+                <a href="../issue15/issue-15-6-callmewhy.html">
+            
+                    
+                    UI测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.7" data-path="../issue15/issue-15-7-oa414.html">
+            
+                <a href="../issue15/issue-15-7-oa414.html">
+            
+                    
+                    截图测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../issue17/issue-17-0-weekwood.html">
+            
+                <a href="../issue17/issue-17-0-weekwood.html">
+            
+                    
+                    安全
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../issue17/issue-17-1-programmerDu.html">
+            
+                <a href="../issue17/issue-17-1-programmerDu.html">
+            
+                    
+                    为什么今天安全仍然重要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../issue17/issue-17-2-dopcn.html">
+            
+                <a href="../issue17/issue-17-2-dopcn.html">
+            
+                    
+                    代码签名探析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../issue17/issue-17-3-callmewhy.html">
+            
+                <a href="../issue17/issue-17-3-callmewhy.html">
+            
+                    
+                    收据验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../issue20/issue-20-0-bifidy.html">
+            
+                <a href="../issue20/issue-20-0-bifidy.html">
+            
+                    
+                    访谈
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../issue20/issue-20-1-april.html">
+            
+                <a href="../issue20/issue-20-1-april.html">
+            
+                    
+                    终身学习的一代人
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="../issue20/issue-20-2-programmerDu.html">
+            
+                <a href="../issue20/issue-20-2-programmerDu.html">
+            
+                    
+                    让东西变得不那么糟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3" data-path="../issue20/issue-20-3-hewigovens.html">
+            
+                <a href="../issue20/issue-20-3-hewigovens.html">
+            
+                    
+                    学无止境
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../issue6/issue-6-0-FangYiXiong.html">
+            
+                <a href="../issue6/issue-6-0-FangYiXiong.html">
+            
+                    
+                    Build工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" data-path="../issue6/issue-6-1-BeyondVincent.html">
+            
+                <a href="../issue6/issue-6-1-BeyondVincent.html">
+            
+                    
+                    Build过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" data-path="../issue6/issue-6-2-sunsets.html">
+            
+                <a href="../issue6/issue-6-2-sunsets.html">
+            
+                    
+                    编译器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.3" data-path="../issue6/issue-6-3-yishuiliunian.html">
+            
+                <a href="../issue6/issue-6-3-yishuiliunian.html">
+            
+                    
+                    Mach-O可执行文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.4" data-path="../issue6/issue-6-4-programmer.du.html">
+            
+                <a href="../issue6/issue-6-4-programmer.du.html">
+            
+                    
+                    深入理解CocoaPods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.5" data-path="../issue6/issue-6-5-yuan12xin.html">
+            
+                <a href="../issue6/issue-6-5-yuan12xin.html">
+            
+                    
+                    为iOS建立Travis CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../issue8/issue-8-0-vienta.html">
+            
+                <a href="../issue8/issue-8-0-vienta.html">
+            
+                    
+                    四轴无人机项目
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../issue8/issue-8-1-phpmaple.html">
+            
+                <a href="../issue8/issue-8-1-phpmaple.html">
+            
+                    
+                    项目介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.2" data-path="../issue8/issue-8-2-weekwood.html">
+            
+                <a href="../issue8/issue-8-2-weekwood.html">
+            
+                    
+                    与四轴无人机的通讯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.3" data-path="../issue8/issue-8-3-weekwood.html">
+            
+                <a href="../issue8/issue-8-3-weekwood.html">
+            
+                    
+                    导航应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.4" data-path="../issue8/issue-8-4-zincsamael.html">
+            
+                <a href="../issue8/issue-8-4-zincsamael.html">
+            
+                    
+                    客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../issue11/issue-11-0-FangYixiong.html">
+            
+                <a href="../issue11/issue-11-0-FangYixiong.html">
+            
+                    
+                    Android
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="../issue11/issue-11-1-nixzhu.html">
+            
+                <a href="../issue11/issue-11-1-nixzhu.html">
+            
+                    
+                    iOS开发者的Android第一课
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.2" data-path="../issue11/Issue-11-2-sunset.html">
+            
+                <a href="../issue11/Issue-11-2-sunset.html">
+            
+                    
+                    Android Intents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.3" data-path="../issue11/issue-11-3-Daisyyaya.html">
+            
+                <a href="../issue11/issue-11-3-Daisyyaya.html">
+            
+                    
+                    响应式Android应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.4" data-path="../issue11/issue-11-4-weekwood.html">
+            
+                <a href="../issue11/issue-11-4-weekwood.html">
+            
+                    
+                    Android通讯中心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.5" data-path="../issue11/issue-11-5-zinc.html">
+            
+                <a href="../issue11/issue-11-5-zinc.html">
+            
+                    
+                    Android中的SQLite数据库支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.6" data-path="../issue11/issue-11-6-Bayonetta.html">
+            
+                <a href="../issue11/issue-11-6-Bayonetta.html">
+            
+                    
+                    依赖注入和注解，为什么Java比你想象的要好
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../issue14/issue-14-0-johnnywjy.html">
+            
+                <a href="../issue14/issue-14-0-johnnywjy.html">
+            
+                    
+                    回到Mac
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="../issue14/issue-14-1-ckitakishi.html">
+            
+                <a href="../issue14/issue-14-1-ckitakishi.html">
+            
+                    
+                    使Mac应用数据脚本化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.2" data-path="../issue14/issue-14-2-onevcat.html">
+            
+                <a href="../issue14/issue-14-2-onevcat.html">
+            
+                    
+                    在沙盒中编写脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.3" data-path="../issue14/issue-14-3-oa414.html">
+            
+                <a href="../issue14/issue-14-3-oa414.html">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.4" data-path="../issue14/issue-14-4-hewigovens.html">
+            
+                <a href="../issue14/issue-14-4-hewigovens.html">
+            
+                    
+                    XPC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.5" data-path="../issue14/issue-14-5-crazycatcher.html">
+            
+                <a href="../issue14/issue-14-5-crazycatcher.html">
+            
+                    
+                    从UIKit到AppKit
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../issue22/issue-22-0-programmerDu.html">
+            
+                <a href="../issue22/issue-22-0-programmerDu.html">
+            
+                    
+                    iOS项目管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.1" data-path="../issue22/issue-22-1-bifidy.html">
+            
+                <a href="../issue22/issue-22-1-bifidy.html">
+            
+                    
+                    Omni内部
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.2" data-path="../issue22/issue-22-2-wongzigii.html">
+            
+                <a href="../issue22/issue-22-2-wongzigii.html">
+            
+                    
+                    Artsy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.3" data-path="../issue22/issue-22-3-April.html">
+            
+                <a href="../issue22/issue-22-3-April.html">
+            
+                    
+                    Square Register中的扩张
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.4" data-path="../issue22/issue-22-4-morisunshine.html">
+            
+                <a href="../issue22/issue-22-4-morisunshine.html">
+            
+                    
+                    代码审查的艺术：Dropbox的故事
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.5" data-path="../issue22/issue-22-5-lizixroy.html">
+            
+                <a href="../issue22/issue-22-5-lizixroy.html">
+            
+                    
+                    响应式视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >NSString与Unicode</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x5F53;&#x4F60;&#x5728;&#x5904;&#x7406;&#x6587;&#x672C;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x662F;&#x5728;&#x5199;&#x4E00;&#x4E9B;&#x975E;&#x5E38;<strong>&#x53E4;&#x8001;&#x7684;&#x4EE3;&#x7801;&#xFF08;legacy code&#xFF09;</strong>&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x4E00;&#x5B9A;&#x8981;&#x4F7F;&#x7528; <a href="http://en.wikipedia.org/wiki/Unicode" target="_blank">Unicode</a>&#x3002;&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;&#x82F9;&#x679C;&#x548C; NeXT &#x4E00;&#x76F4;&#x81F4;&#x529B;&#x4E8E;&#x63A8;&#x52A8; Unicode &#x6807;&#x51C6;&#x7684;&#x5EFA;&#x7ACB;&#xFF0C;&#x800C; NeXT &#x5728; <a href="http://blog.securemacprogramming.com/2013/10/happy-19th-birthday-cocoa/" target="_blank">1994 &#x5E74;</a>&#x63A8;&#x51FA;&#x7684; <a href="http://www.cilinder.be/docs/next/NeXTStep/3.3/nd/Foundation/IntroFoundation.htmld/index.html" target="_blank">Foundation Kit</a> &#x5219;&#x662F;&#x6240;&#x6709;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x4E2D;&#x6700;&#x5148;&#x57FA;&#x4E8E; Unicode &#x7684;&#x6807;&#x51C6;&#x5E93;&#x4E4B;&#x4E00;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5373;&#x4F7F; <a href="https://developer.apple.com/library/ios/documentation/cocoa/reference/foundation/Classes/NSString_Class/Reference/NSString.html" target="_blank"><code>NSString</code></a> &#x5B8C;&#x5168;&#x652F;&#x6301; Unicode&#xFF0C;&#x8FD8;&#x66FF;&#x4F60;&#x5E72;&#x4E86;&#x5927;&#x90E8;&#x5206;&#x7684;&#x91CD;&#x6D3B;&#x513F;&#xFF0C;&#x5904;&#x7406;&#x5404;&#x79CD;&#x8BED;&#x8A00;&#x3001;&#x5404;&#x79CD;&#x4E66;&#x5199;&#x7CFB;&#x7EDF;&#x7684;&#x6587;&#x672C;&#x4ECD;&#x7136;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x590D;&#x6742;&#x7684;&#x4E8B;&#x60C5;&#x3002;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x5458;&#xFF0C;&#x6709;&#x4E9B;&#x4E8B;&#x60C5;&#x4F60;&#x5E94;&#x8BE5;&#x77E5;&#x9053;&#x3002;</p>
+<p>&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x91CC;&#xFF0C;&#x6211;&#x4F1A;&#x5148;&#x5411;&#x4F60;&#x7B80;&#x5355;&#x5730;&#x8BB2;&#x4E00;&#x4E0B; Unicode &#x8FD9;&#x4E2A;&#x6807;&#x51C6;&#xFF0C;&#x7136;&#x540E;&#x89E3;&#x91CA; <code>NSString</code> &#x662F;&#x600E;&#x4E48;&#x5904;&#x7406;&#x5B83;&#x7684;&#xFF0C;&#x518D;&#x8BA8;&#x8BBA;&#x4E00;&#x4E0B;&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x9047;&#x5230;&#x7684;&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x3002;</p>
+<h2 id="&#x5386;&#x53F2;">&#x5386;&#x53F2;</h2>
+<p>&#x8BA1;&#x7B97;&#x673A;&#x6CA1;&#x6CD5;&#x76F4;&#x63A5;&#x5904;&#x7406;&#x6587;&#x672C;&#xFF0C;&#x5B83;&#x53EA;&#x548C;&#x6570;&#x5B57;&#x6253;&#x4EA4;&#x9053;&#x3002;&#x4E3A;&#x4E86;&#x5728;&#x8BA1;&#x7B97;&#x673A;&#x91CC;&#x7528;&#x6570;&#x5B57;&#x8868;&#x793A;&#x6587;&#x672C;&#xFF0C;&#x6211;&#x4EEC;&#x6307;&#x5B9A;&#x4E86;&#x4E00;&#x4E2A;&#x4ECE;&#x5B57;&#x7B26;&#x5230;&#x6570;&#x5B57;&#x7684;&#x6620;&#x5C04;&#x3002;&#x8FD9;&#x4E2A;&#x6620;&#x5C04;&#x5C31;&#x53EB;&#x505A;<a href="http://en.wikipedia.org/wiki/Character_encoding" target="_blank"><strong>&#x7F16;&#x7801;&#xFF08;encoding&#xFF09;</strong></a>&#x3002;</p>
+<p>&#x6700;&#x6709;&#x540D;&#x7684;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x662F; <a href="http://en.wikipedia.org/wiki/ASCII" target="_blank">ASCII</a>&#x3002;ASCII &#x7801;&#x662F; 7 &#x4F4D;&#x7684;&#xFF0C;&#x5B83;&#x5C06;&#x82F1;&#x6587;&#x5B57;&#x6BCD;&#xFF0C;&#x6570;&#x5B57; 0-9 &#x4EE5;&#x53CA;&#x4E00;&#x4E9B;&#x6807;&#x70B9;&#x7B26;&#x53F7;&#x548C;&#x63A7;&#x5236;&#x5B57;&#x7B26;&#x6620;&#x5C04;&#x4E3A; 0-127 &#x8FD9;&#x4E9B;&#x6574;&#x578B;&#x3002;&#x968F;&#x540E;&#xFF0C;&#x4EBA;&#x4EEC;&#x521B;&#x9020;&#x4E86;&#x8BB8;&#x591A;&#x4E0D;&#x540C;&#x7684; 8 &#x4F4D;&#x7F16;&#x7801;&#x6765;&#x5904;&#x7406;&#x82F1;&#x8BED;&#x4EE5;&#x5916;&#x7684;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x3002;&#x5B83;&#x4EEC;&#x5927;&#x591A;&#x90FD;&#x662F;&#x57FA;&#x4E8E; ASCII &#x7F16;&#x7801;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x4F7F;&#x7528;&#x4E86; ASCII &#x6CA1;&#x6709;&#x4F7F;&#x7528;&#x7684;&#x7B2C; 8 &#x4F4D;&#x6765;&#x7F16;&#x5165;&#x5176;&#x5B83;&#x5B57;&#x6BCD;&#x3001;&#x7B26;&#x53F7;&#x751A;&#x81F3;&#x662F;&#x6574;&#x4E2A;&#x5B57;&#x6BCD;&#x8868;&#xFF08;&#x6BD4;&#x5982;&#x897F;&#x91CC;&#x5C14;&#x5B57;&#x6BCD;&#x548C;&#x5E0C;&#x814A;&#x5B57;&#x6BCD;&#xFF09;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#xFF0C;&#x8FD9;&#x4E9B;&#x7F16;&#x7801;&#x7CFB;&#x7EDF;&#x76F8;&#x4E92;&#x4E4B;&#x95F4;&#x5E76;&#x4E0D;&#x517C;&#x5BB9;&#xFF0C;&#x5E76;&#x4E14;&#xFF0C;&#x7531;&#x4E8E; 8 &#x4F4D;&#x7684;&#x7A7A;&#x95F4;&#x5BF9;&#x4E8E;&#x6B27;&#x6D32;&#x7684;&#x6587;&#x5B57;&#x6765;&#x8BF4;&#x90FD;&#x4E0D;&#x591F;&#xFF0C;&#x66F4;&#x4E0D;&#x7528;&#x8BF4;&#x5168;&#x4E16;&#x754C;&#x7684;&#x4E66;&#x5199;&#x7CFB;&#x7EDF;&#x4E86;&#xFF0C;&#x56E0;&#x6B64;&#x8FD9;&#x79CD;&#x4E0D;&#x517C;&#x5BB9;&#x662F;&#x80AF;&#x5B9A;&#x4F1A;&#x51FA;&#x73B0;&#x7684;&#x4E86;&#x3002;&#x8FD9;&#x5BF9;&#x4E8E;&#x5F53;&#x65F6;&#x57FA;&#x4E8E;&#x6587;&#x672C;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x6765;&#x8BF4;&#x662F;&#x5F88;&#x9EBB;&#x70E6;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x90A3;&#x65F6;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x53EA;&#x80FD;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x4E00;&#x79CD;&#x7F16;&#x7801;&#xFF08;&#x4E5F;&#x53EB;&#x505A;&#x5185;&#x7801;&#x8868;&#xFF0C;<a href="http://www.i18nguy.com/unicode/codepages.html" target="_blank">code page</a>&#xFF09;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5728;&#x4E00;&#x53F0;&#x673A;&#x5668;&#x4E0A;&#x5199;&#x4E86;&#x4E00;&#x6BB5;&#x6587;&#x5B57;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x53E6;&#x4E00;&#x53F0;&#x4F7F;&#x7528;&#x4E86;&#x4E0D;&#x540C;&#x7684;&#x5185;&#x7801;&#x8868;&#x7684;&#x673A;&#x5668;&#x4E0A;&#x6253;&#x5F00;&#xFF0C;&#x90A3;&#x4E48;&#x5728; 128-255 &#x8FD9;&#x4E2A;&#x8303;&#x56F4;&#x5185;&#x7684;&#x5B57;&#x7B26;&#x5C31;&#x4F1A;&#x663E;&#x793A;&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#x8BF8;&#x5982;&#x4E2D;&#x6587;&#x3001;&#x65E5;&#x6587;&#x548C;&#x97E9;&#x6587;&#x7684;&#x4E1C;&#x4E9A;&#x6587;&#x5B57;&#x53C8;&#x8BA9;&#x60C5;&#x51B5;&#x66F4;&#x52A0;&#x590D;&#x6742;&#x3002;&#x8FD9;&#x4E9B;&#x4E66;&#x5199;&#x7CFB;&#x7EDF;&#x91CC;&#x5305;&#x542B;&#x7684;&#x5B57;&#x7B26;&#x5B9E;&#x5728;&#x662F;&#x592A;&#x591A;&#x4E86;&#xFF0C;&#x4EE5;&#x81F3;&#x4E8E; 8 &#x4F4D;&#x7684;&#x6570;&#x5B57;&#x6240;&#x80FD;&#x63D0;&#x4F9B;&#x7684; 256 &#x4E2A;&#x4F4D;&#x7F6E;&#x8FDC;&#x8FDC;&#x4E0D;&#x591F;&#x3002;&#x7ED3;&#x679C;&#x5462;&#xFF0C;&#x4EBA;&#x4EEC;&#x5F00;&#x53D1;&#x4E86;&#x66F4;&#x52A0;&#x901A;&#x7528;&#x7684;&#x7F16;&#x7801;&#xFF08;&#x901A;&#x5E38;&#x662F; 16 &#x4F4D;&#x7684;&#xFF09;&#x3002;&#x5F53;&#x4F60;&#x5F00;&#x59CB;&#x7EA0;&#x7ED3;&#x4E8E;&#x5982;&#x4F55;&#x5904;&#x7406;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x88C5;&#x4E0D;&#x4E0B;&#x7684;&#x503C;&#x65F6;&#xFF0C;&#x5982;&#x4F55;&#x628A;&#x5B83;&#x5B58;&#x50A8;&#x5230;&#x5185;&#x5B58;&#x6216;&#x8005;&#x786C;&#x76D8;&#x91CC;&#x5C31;&#x53D8;&#x5F97;&#x5341;&#x5206;&#x5173;&#x952E;&#x4E86;&#x3002;&#x8FD9;&#x65F6;&#xFF0C;&#x5C31;&#x5FC5;&#x987B;&#x518D;&#x8FDB;&#x884C;&#x7B2C;&#x4E8C;&#x6B21;&#x6620;&#x5C04;&#xFF0C;&#x4EE5;&#x6B64;&#x6765;&#x786E;&#x5B9A;<a href="http://en.wikipedia.org/wiki/Endianness" target="_blank">&#x5B57;&#x8282;&#x7684;&#x987A;&#x5E8F;</a>&#x3002;&#x800C;&#x4E14;&#xFF0C;&#x6700;&#x597D;&#x4F7F;&#x7528;<a href="http://en.wikipedia.org/wiki/Variable-width_encoding" target="_blank">&#x53EF;&#x53D8;&#x957F;&#x5EA6;</a>&#x7684;&#x7F16;&#x7801;&#x800C;&#x4E0D;&#x662F;&#x56FA;&#x5B9A;&#x957F;&#x5EA6;&#x7684;&#x3002;&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x7B2C;&#x4E8C;&#x6B21;&#x6620;&#x5C04;&#x5176;&#x5B9E;&#x662F;&#x53E6;&#x4E00;&#x79CD;&#x5F62;&#x5F0F;&#x7684;&#x201C;&#x7F16;&#x7801;&#x201D;&#x3002;&#x6211;&#x4EEC;&#x628A;&#x8FD9;&#x4E24;&#x4E2A;&#x6620;&#x5C04;&#x90FD;&#x53EB;&#x505A;&#x201C;&#x7F16;&#x7801;&#x201D;&#x5F88;&#x5BB9;&#x6613;&#x9020;&#x6210;&#x8BEF;&#x89E3;&#x3002;&#x8FD9;&#x4E2A;&#x5728;&#x4E0B;&#x9762; UTF-8 &#x548C; UTF-16 &#x7684;&#x90E8;&#x5206;&#x91CC;&#x4F1A;&#x518D;&#x4F5C;&#x8BA8;&#x8BBA;&#x3002;</p>
+<p>&#x73B0;&#x4EE3;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x90FD;&#x5DF2;&#x7ECF;&#x4E0D;&#x518D;&#x5C40;&#x9650;&#x4E8E;&#x53EA;&#x80FD;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x4E00;&#x79CD;&#x5185;&#x7801;&#x8868;&#x4E86;&#xFF0C;&#x56E0;&#x6B64;&#x53EA;&#x8981;&#x6BCF;&#x4E2A;&#x6587;&#x6863;&#x90FD;&#x6E05;&#x695A;&#x5730;&#x6807;&#x660E;&#x81EA;&#x5DF1;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x54EA;&#x79CD;&#x7F16;&#x7801;&#xFF0C;&#x5904;&#x7406;&#x51E0;&#x5341;&#x751A;&#x81F3;&#x4E0A;&#x767E;&#x79CD;&#x7F16;&#x7801;&#x7CFB;&#x7EDF;&#x5C3D;&#x7BA1;&#x5F88;&#x8BA8;&#x538C;&#xFF0C;&#x4E5F;&#x5B8C;&#x5168;&#x662F;&#x6709;&#x53EF;&#x80FD;&#x7684;&#x3002;&#x771F;&#x6B63;&#x4E0D;&#x53EF;&#x80FD;&#x7684;&#x662F;&#x5728;&#x4E00;&#x4E2A;&#x6587;&#x6863;&#x91CC;<em>&#x6DF7;&#x5408;</em>&#x4F7F;&#x7528;&#x591A;&#x79CD;&#x7F16;&#x7801;&#x7CFB;&#x7EDF;&#xFF0C;&#x56E0;&#x6B64;&#x64B0;&#x5199;&#x591A;&#x8BED;&#x8A00;&#x7684;&#x6587;&#x6863;&#x4E5F;&#x4E0D;&#x53EF;&#x80FD;&#x4E86;&#xFF0C;&#x800C;&#x6B63;&#x662F;&#x8FD9;&#x4E00;&#x70B9;&#x7EC8;&#x7ED3;&#x4E86;&#x5728; Unicode &#x7F16;&#x7801;&#x51FA;&#x73B0;&#x4E4B;&#x524D;&#xFF0C;&#x591A;&#x79CD;&#x7F16;&#x7801;&#x6DF7;&#x6218;&#x7684;&#x5C40;&#x9762;&#x3002;</p>
+<p><a href="http://www.unicode.org/history/summary.html" target="_blank">1987 &#x5E74;</a>&#xFF0C;&#x6765;&#x81EA;&#x51E0;&#x4E2A;&#x5927;&#x7684;&#x79D1;&#x6280;&#x516C;&#x53F8;&#xFF08;&#x5176;&#x4E2D;&#x5305;&#x62EC;&#x82F9;&#x679C;&#x548C; NeXT&#xFF09;&#x7684;&#x5DE5;&#x7A0B;&#x5E08;&#x4EEC;&#x5F00;&#x59CB;&#x5408;&#x4F5C;&#x81F4;&#x529B;&#x4E8E;&#x5F00;&#x53D1;&#x4E00;&#x79CD;&#x80FD;&#x5728;&#x5168;&#x4E16;&#x754C;&#x6240;&#x6709;&#x4E66;&#x5199;&#x7CFB;&#x7EDF;&#x4E2D;&#x901A;&#x7528;&#x7684;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x7CFB;&#x7EDF;&#xFF0C;&#x4E8E; 1991 &#x5E74; 10 &#x6708;&#x53D1;&#x5E03;&#x7684; 1.0.0 &#x7248;&#x672C;&#x7684; Unicode &#x6807;&#x51C6;&#x5C31;&#x662F;&#x8FD9;&#x4E00;&#x52AA;&#x529B;&#x7684;&#x6210;&#x679C;&#x3002;</p>
+<h2 id="unicode-&#x6982;&#x8981;">Unicode &#x6982;&#x8981;</h2>
+<h3 id="&#x57FA;&#x672C;&#x4ECB;&#x7ECD;">&#x57FA;&#x672C;&#x4ECB;&#x7ECD;</h3>
+<p>&#x7B80;&#x5355;&#x5730;&#x6765;&#x8BF4;&#xFF0C;Unicode &#x6807;&#x51C6;&#x4E3A;&#x4E16;&#x754C;&#x4E0A;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x7684;<sup><a href="#fn_1" id="reffn_1">1</a></sup>&#x4E66;&#x5199;&#x7CFB;&#x7EDF;&#x91CC;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x6216;&#x7B26;&#x53F7;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x552F;&#x4E00;&#x7684;&#x6570;&#x5B57;&#x3002;&#x8FD9;&#x4E2A;&#x6570;&#x5B57;&#x53EB;&#x505A;<strong>&#x7801;&#x70B9;&#xFF08;code points&#xFF09;</strong>&#xFF0C;&#x4EE5; <code>U+xxxx</code> &#x8FD9;&#x6837;&#x7684;&#x683C;&#x5F0F;&#x5199;&#x6210;&#xFF0C;&#x683C;&#x5F0F;&#x91CC;&#x7684; <code>xxxx</code> &#x4EE3;&#x8868;&#x56DB;&#x5230;&#x516D;&#x4E2A;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7684;&#x6570;&#x3002;&#x6BD4;&#x5982;&#xFF0C;U+0041&#xFF08;&#x5341;&#x8FDB;&#x5236;&#x662F; 65&#xFF09;&#x8FD9;&#x4E2A;&#x7801;&#x70B9;&#x4EE3;&#x8868;&#x62C9;&#x4E01;&#x5B57;&#x6BCD;&#x8868;&#xFF08;&#x548C; ASCII &#x4E00;&#x81F4;&#xFF09;&#x91CC;&#x7684;&#x5B57;&#x6BCD; A&#xFF1B;U+1F61B &#x4EE3;&#x8868;&#x540D;&#x4E3A;&#x201C;&#x4F38;&#x51FA;&#x820C;&#x5934;&#x7684;&#x8138;&#x201D;&#x7684; <a href="http://en.wikipedia.org/wiki/Emoji" target="_blank">emoji</a>&#xFF0C;&#x4E5F;&#x5C31;&#x662F; &#x1F61B;&#xFF08;&#x987A;&#x4FBF;&#x8BF4;&#x4E00;&#x4E0B;&#xFF0C;&#x5B57;&#x7B26;&#x7684;&#x540D;&#x5B57;&#x4E5F;&#x662F; Unicode &#x6807;&#x51C6;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;&#xFF09;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x5B98;&#x65B9;&#x7684; <a href="http://www.unicode.org/charts/index.html" target="_blank">Code Charts</a> &#x6216;&#x8005; OS X &#x91CC;&#x81EA;&#x5E26;&#x7684;&#x5B57;&#x7B26;&#x663E;&#x793A;&#x7A0B;&#x5E8F;&#xFF08;&#x5FEB;&#x6377;&#x952E;&#x662F; <kbd>Control</kbd> + <kbd>Option</kbd> + &#x7A7A;&#x683C;&#x952E;&#xFF09;&#x6765;&#x67E5;&#x7801;&#x70B9;&#x3002;</p>
+<blockquote>
+<p><span class="secondary radius label">&#x7F16;&#x8005;&#x6CE8;</span> &#x539F;&#x6587;&#x4E2D;&#x7684;&#x8FD9;&#x4E2A;&#x5FEB;&#x6377;&#x952E;&#x5DF2;&#x7ECF;&#x8FC7;&#x65F6;&#x4E86;&#xFF0C;&#x5728;&#x6700;&#x65B0;&#x7684; OS X Mavericks &#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x5B57;&#x7B26;&#x663E;&#x793A;&#x7A0B;&#x5E8F;&#x7684;&#x5FEB;&#x6377;&#x952E;&#x5E94;&#x8BE5;&#x662F; <kbd>Control</kbd> + <kbd>Cmd</kbd> + &#x7A7A;&#x683C;&#x952E;&#x3002;</p>
+</blockquote>
+<p><img src="https://objccn.io/images/issue-9/os-x-character-viewer-emoji.png" alt="The Character Viewer in OS X showing a table of Emoji and Unicode character information"></p>
+<p>&#x5C31;&#x50CF;&#x4E0A;&#x6587;&#x63D0;&#x5230;&#x7684;&#x5176;&#x5B83;&#x7F16;&#x7801;&#x4E00;&#x6837;&#xFF0C;Unicode &#x4EE5;&#x62BD;&#x8C61;&#x7684;&#x65B9;&#x5F0F;&#x4EE3;&#x8868;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x800C;&#x4E0D;&#x89C4;&#x5B9A;&#x8FD9;&#x4E2A;&#x5B57;&#x7B26;&#x5E94;&#x8BE5;&#x5982;&#x4F55;<strong>&#x5448;&#x73B0;&#xFF08;render&#xFF09;</strong>&#x3002;&#x5982;&#x6B64;&#x4E00;&#x6765;&#xFF0C;Unicode &#x5BF9;&#x4E2D;&#x6587;&#x3001;&#x65E5;&#x6587;&#x548C;&#x97E9;&#x6587;&#xFF08;CJK&#xFF09;&#x91CC;&#x4F7F;&#x7528;&#x7684;&#x6C49;&#x5B57;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x6240;&#x8C13;&#x7684;<a href="http://en.wikipedia.org/wiki/Han_unification" target="_blank">&#x7EDF;&#x4E00;&#x6C49;&#x5B57;</a>&#xFF09;&#x90FD;&#x4F7F;&#x7528;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x7684;&#x7801;&#x70B9;&#xFF08;&#x8FD9;&#x4E00;&#x51B3;&#x5B9A;&#x9887;&#x5177;&#x4E89;&#x8BAE;&#xFF09;&#xFF0C;&#x5C3D;&#x7BA1;&#x5728;&#x8FD9;&#x4E9B;&#x4E66;&#x5199;&#x7CFB;&#x7EDF;&#x91CC;&#xFF0C;&#x6BCF;&#x4E2A;&#x6C49;&#x5B57;&#x90FD;&#x53D1;&#x5C55;&#x51FA;&#x4E86;&#x72EC;&#x7279;&#x7684;<strong>&#x5B57;&#x5F62;&#xFF08;glyph&#xFF09;</strong>&#x53D8;&#x4F53;&#x3002;</p>
+<p>&#x6700;&#x521D;&#xFF0C;Unicode &#x7F16;&#x7801;&#x662F;&#x88AB;&#x8BBE;&#x8BA1;&#x4E3A; 16 &#x4F4D;&#x7684;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86; 65,536 &#x4E2A;&#x5B57;&#x7B26;&#x7684;&#x7A7A;&#x95F4;&#x3002;&#x5F53;&#x65F6;&#x4EBA;&#x4EEC;&#x8BA4;&#x4E3A;&#x8FD9;&#x5DF2;&#x7ECF;&#x5927;&#x5230;&#x8DB3;&#x591F;&#x7F16;&#x7801;&#x4E16;&#x754C;&#x4E0A;&#x73B0;&#x4EE3;&#x6587;&#x672C;&#x91CC;&#x6240;&#x6709;&#x7684;&#x6587;&#x5B57;&#x548C;&#x5B57;&#x7B26;&#x4E86;&#x3002;&#x4E0D;&#x518D;&#x4F7F;&#x7528;&#x7684;&#x548C;&#x7F55;&#x89C1;&#x7684;&#x5B57;&#x7B26;&#x672C;&#x5E94;&#x5728;&#x9700;&#x8981;&#x65F6;&#x88AB;&#x7F16;&#x5165; <a href="http://en.wikipedia.org/wiki/Private_Use_Areas" target="_blank">Private Use Areas</a>&#xFF0C;&#x8FD9;&#x662F; 65,536 &#x4E2A;&#x5B57;&#x7B26;&#x7684;&#x7A7A;&#x95F4;&#x91CC;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x533A;&#x57DF;&#xFF0C;&#x5404;&#x4E2A;&#x673A;&#x6784;&#x53EF;&#x4EE5;&#x7528;&#x5B83;&#x6765;&#x5B9A;&#x4E49;&#x81EA;&#x5DF1;&#x7684;&#x5B57;&#x7B26;&#x6620;&#x5C04;&#xFF08;&#x8FD9;&#x6709;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x51B2;&#x7A81;&#xFF09;&#x3002;&#x82F9;&#x679C;&#x5728;&#x8FD9;&#x4E2A;&#x533A;&#x57DF;&#x91CC;&#x7F16;&#x5165;&#x4E86;&#x4E00;&#x4E9B;&#x81EA;&#x5B9A;&#x4E49;&#x7B26;&#x53F7;&#x548C;&#x63A7;&#x5236;&#x5B57;&#x7B26;&#xFF08;&#x6587;&#x6863;&#x5728;<a href="http://www.unicode.org/Public/MAPPINGS/VENDORS/APPLE/CORPCHAR.TXT" target="_blank">&#x8FD9;&#x91CC;</a>&#xFF09;&#xFF0C;&#x867D;&#x7136;&#x5927;&#x591A;&#x6570;&#x5DF2;&#x7ECF;&#x4E0D;&#x518D;&#x4F7F;&#x7528;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x82F9;&#x679C;&#x7684; logo &#x662F;&#x4E2A;&#x8457;&#x540D;&#x7684;&#x4F8B;&#x5916;&#xFF1A;&#xF8FF;&#xFF0C;&#x5B83;&#x7684;&#x7801;&#x70B9;&#x662F; U+F8FF&#x3002;&#xFF08;&#x4F60;&#x53EF;&#x80FD;&#x770B;&#x5230;&#x7684;&#x662F;&#x53E6;&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x8FD9;&#x53D6;&#x51B3;&#x4E8E;&#x4F60;&#x9605;&#x8BFB;&#x672C;&#x6587;&#x7684;&#x5E73;&#x53F0;&#xFF09;&#x3002;</p>
+<p><a href="http://www.unicode.org/faq/utf_bom.html#gen0" target="_blank">&#x540E;&#x6765;</a>&#xFF0C;&#x8003;&#x8651;&#x5230;&#x8981;&#x7F16;&#x7801;&#x5386;&#x53F2;&#x4E0A;&#x7684;&#x6587;&#x5B57;&#x4EE5;&#x53CA;&#x4E00;&#x4E9B;&#x5F88;&#x5C11;&#x4F7F;&#x7528;&#x7684;&#x65E5;&#x672C;&#x6C49;&#x5B57;&#x548C;&#x4E2D;&#x56FD;&#x6C49;&#x5B57;<sup><a href="#fn_2" id="reffn_2">2</a></sup>&#xFF0C;Unicode &#x7F16;&#x7801;&#x6269;&#x5C55;&#x5230;&#x4E86; 21 &#x4F4D;&#xFF08;&#x4ECE; U+0000 &#x5230; U+10FFFF&#xFF09;&#x3002;&#x8FD9;&#x4E00;&#x70B9;&#x5F88;&#x91CD;&#x8981;&#xFF1A;&#x4E0D;&#x7BA1;&#x63A5;&#x4E0B;&#x6765;&#x7684; <code>NSString</code> &#x7684;&#x5185;&#x5BB9;&#x662F;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#xFF0C;<strong>Unicode &#x4E0D;&#x662F; 16 &#x4F4D;&#x7684;&#x7F16;&#x7801;&#xFF01;</strong>&#x5B83;&#x662F; 21 &#x4F4D;&#x7684;&#x3002;&#x8FD9; 21 &#x4F4D;&#x63D0;&#x4F9B;&#x4E86; 1,114,112 &#x4E2A;&#x7801;&#x70B9;&#xFF0C;&#x5176;&#x4E2D;&#xFF0C;&#x53EA;&#x6709;&#x5927;&#x6982; 10% &#x6B63;&#x5728;&#x4F7F;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x8FD8;&#x6709;&#x76F8;&#x5F53;&#x5927;&#x7684;&#x6269;&#x5145;&#x7A7A;&#x95F4;&#x3002;</p>
+<p>&#x7F16;&#x7801;&#x7A7A;&#x95F4;&#x88AB;&#x5206;&#x6210; 17 &#x4E2A;<strong>&#x5E73;&#x9762;</strong>&#xFF08;<a href="http://en.wikipedia.org/wiki/Plane_%28Unicode%29" target="_blank">plane</a>&#xFF09;&#xFF0C;&#x6BCF;&#x4E2A;&#x5E73;&#x9762;&#x6709; 65,536 &#x4E2A;&#x5B57;&#x7B26;&#x3002;0 &#x53F7;&#x5E73;&#x9762;&#x53EB;&#x505A;<strong>&#x300C;&#x57FA;&#x672C;&#x591A;&#x6587;&#x79CD;&#x5E73;&#x9762;&#x300D;&#xFF08;Basic Multilingual Plane, BMP&#xFF09;</strong>&#xFF0C;&#x6DB5;&#x76D6;&#x4E86;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x4F60;&#x80FD;&#x9047;&#x5230;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x9664;&#x4E86; emoji&#x3002;&#x5176;&#x5B83;&#x5E73;&#x9762;&#x53EB;&#x505A;&#x8865;&#x5145;&#x5E73;&#x9762;&#xFF0C;&#x5927;&#x591A;&#x662F;&#x7A7A;&#x7684;&#x3002;</p>
+<p><a name="peculiar-unicode-features"> </a></p>
+<h3 id="unicode-&#x7684;&#x4E00;&#x4E9B;&#x7279;&#x6027;">Unicode &#x7684;&#x4E00;&#x4E9B;&#x7279;&#x6027;</h3>
+<p>&#x6700;&#x597D;&#x5C06; Unicode &#x770B;&#x505A;&#x662F;&#x5DF2;&#x6709;&#x7684;&#x5404;&#x7F16;&#x7801;&#x7CFB;&#x7EDF;&#xFF08;&#x5B83;&#x4EEC;&#x5927;&#x591A;&#x662F; 8 &#x4F4D;&#x7684;&#xFF09;&#x7684;&#x7EDF;&#x4E00;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;<strong>&#x901A;&#x7528;</strong>&#x7684;&#x7F16;&#x7801;&#x3002;&#x8003;&#x8651;&#x5230;&#x8981;&#x517C;&#x5BB9;&#x4E00;&#x4E9B;&#x53E4;&#x8001;&#x7684;&#x7F16;&#x7801;&#x7CFB;&#x7EDF;&#xFF0C;&#x8FD9;&#x4E2A;&#x6807;&#x51C6;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E9B;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x4E86;&#x89E3;&#x5B83;&#x4EEC;&#x624D;&#x80FD;&#x5728;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x91CC;&#x6B63;&#x786E;&#x5730;&#x5904;&#x7406; Unicode &#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<h4 id="&#x7EC4;&#x5408;&#x5B57;&#x7B26;&#x5E8F;&#x5217;">&#x7EC4;&#x5408;&#x5B57;&#x7B26;&#x5E8F;&#x5217;</h4>
+<p>&#x4E3A;&#x4E86;&#x548C;&#x5DF2;&#x6709;&#x7684;&#x6807;&#x51C6;&#x517C;&#x5BB9;&#xFF0C;&#x67D0;&#x4E9B;&#x5B57;&#x7B26;&#x53EF;&#x4EE5;&#x8868;&#x793A;&#x6210;&#x4EE5;&#x4E0B;&#x4E24;&#x79CD;&#x5F62;&#x5F0F;&#x4E4B;&#x4E00;&#xFF1A;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x7684;&#x7801;&#x70B9;&#xFF0C;&#x6216;&#x8005;&#x4E24;&#x4E2A;&#x4EE5;&#x4E0A;&#x8FDE;&#x7EED;&#x7684;&#x7801;&#x70B9;&#x7EC4;&#x6210;&#x7684;&#x5E8F;&#x5217;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x6709;&#x91CD;&#x97F3;&#x7B26;&#x53F7;&#x7684;&#x5B57;&#x6BCD; &#xE9; &#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8868;&#x793A;&#x6210; U+00E9&#xFF08;&#x300C;&#x6709;&#x5C16;&#x97F3;&#x7B26;&#x53F7;&#x7684;&#x5C0F;&#x5199;&#x62C9;&#x4E01;&#x5B57;&#x6BCD; e&#x300D;&#xFF09;&#xFF0C;&#x6216;&#x8005;&#x4E5F;&#x53EF;&#x4EE5;&#x8868;&#x793A;&#x6210;&#x7531; U+0065&#xFF08;&#x300C;&#x5C0F;&#x5199;&#x62C9;&#x4E01;&#x5B57;&#x6BCD; e&#x300D;&#xFF09;&#x518D;&#x52A0; U+0301&#xFF08;&#x300C;&#x5C16;&#x97F3;&#x7B26;&#x53F7;&#x300D;&#xFF09;&#x7EC4;&#x6210;&#x7684;&#x5206;&#x89E3;&#x5F62;&#x5F0F;&#x3002;&#x8FD9;&#x4E24;&#x4E2A;&#x5F62;&#x5F0F;&#x90FD;&#x662F;<a href="http://en.wikipedia.org/wiki/Precomposed_character" target="_blank">&#x7EC4;&#x5408;&#x5B57;&#x7B26;&#x5E8F;&#x5217;</a>&#x7684;&#x53D8;&#x4F53;&#x3002;&#x7EC4;&#x5408;&#x5B57;&#x7B26;&#x5E8F;&#x5217;&#x4E0D;&#x4EC5;&#x4EC5;&#x51FA;&#x73B0;&#x5728;&#x897F;&#x65B9;&#x6587;&#x5B57;&#x91CC;&#xFF1B;&#x4F8B;&#x5982;&#xFF0C;&#x5728;<a href="http://en.wikipedia.org/wiki/Hangul" target="_blank">&#x8C1A;&#x6587;**</a>&#xFF08;&#x671D;&#x9C9C;&#x3001;&#x97E9;&#x56FD;&#x7684;&#x6587;&#x5B57;&#xFF09;&#x4E2D;&#xFF0C;&#xAC00; &#x8FD9;&#x4E2A;&#x5B57;&#x53EF;&#x4EE5;&#x8868;&#x793A;&#x6210;&#x4E00;&#x4E2A;&#x7801;&#x70B9;&#xFF08;U+AC00&#xFF09;&#xFF0C;&#x6216;&#x8005;&#x662F; &#x1100; + &#x1161; &#xFF08;U+1100&#xFF0C;U+1161&#xFF09;&#x8FD9;&#x4E2A;&#x5E8F;&#x5217;&#x3002;</p>
+<p>&#x5728; Unicode &#x7684;&#x8BED;&#x5883;&#x4E0B;&#xFF0C;&#x4E24;&#x79CD;&#x5F62;&#x5F0F;<strong>&#x5E76;&#x4E0D;&#x76F8;&#x7B49;</strong>&#xFF08;&#x56E0;&#x4E3A;&#x4E24;&#x79CD;&#x5F62;&#x5F0F;&#x5305;&#x542B;&#x4E0D;&#x540C;&#x7684;&#x7801;&#x70B9;&#xFF09;&#xFF0C;&#x4F46;&#x662F;&#x7B26;&#x5408;<strong>&#x300C;&#x6807;&#x51C6;&#x7B49;&#x4EF7;&#x300D;</strong>&#xFF08;<a href="http://en.wikipedia.org/wiki/Unicode_equivalence" target="_blank">canonically equivalent</a>&#xFF09;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5B83;&#x4EEC;&#x6709;&#x7740;&#x76F8;&#x540C;&#x7684;&#x5916;&#x89C2;&#x548C;&#x610F;&#x4E49;&#x3002;</p>
+<h4 id="&#x91CD;&#x590D;&#x7684;&#x5B57;&#x7B26;">&#x91CD;&#x590D;&#x7684;&#x5B57;&#x7B26;</h4>
+<p>&#x8BB8;&#x591A;&#x770B;&#x4E0A;&#x53BB;&#x4E00;&#x6837;&#x7684;&#x5B57;&#x7B26;&#x90FD;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x7801;&#x70B9;&#x7F16;&#x7801;&#x4E86;&#x591A;&#x6B21;&#xFF0C;&#x4EE5;&#x6B64;&#x6765;&#x4EE3;&#x8868;&#x4E0D;&#x540C;&#x7684;&#x542B;&#x4E49;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x62C9;&#x4E01;&#x5B57;&#x6BCD; A&#xFF08;U+0041&#xFF09;&#x5C31;&#x4E0E;<a href="http://en.wikipedia.org/wiki/A_%28Cyrillic%29" target="_blank">&#x897F;&#x91CC;&#x5C14;&#x5B57;&#x6BCD; A</a>&#xFF08;U+0410&#xFF09;&#x5B8C;&#x5168;&#x540C;&#x5F62;&#xFF0C;&#x4F46;&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x5B83;&#x4EEC;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x3002;&#x628A;&#x5B83;&#x4EEC;&#x7F16;&#x5165;&#x4E0D;&#x540C;&#x7684;&#x7801;&#x70B9;&#x4E0D;&#x4EC5;&#x7B80;&#x5316;&#x4E86;&#x4E0E;&#x8001;&#x7684;&#x7F16;&#x7801;&#x7CFB;&#x7EDF;&#x7684;&#x8F6C;&#x6362;&#xFF0C;&#x800C;&#x4E14;&#x80FD;&#x8BA9; Unicode &#x7684;&#x6587;&#x672C;&#x4FDD;&#x7559;&#x5B57;&#x7B26;&#x7684;&#x542B;&#x4E49;&#x3002;</p>
+<p>&#x4F46;&#x4E5F;&#x6709;&#x6781;&#x5C11;&#x6570;&#x771F;&#x6B63;&#x7684;&#x91CD;&#x590D;&#xFF0C;&#x8FD9;&#x4E9B;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x7684;&#x5B57;&#x7B26;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x7801;&#x70B9;&#x4E0A;&#x5B9A;&#x4E49;&#x4E86;&#x591A;&#x6B21;&#x3002;&#x4F8B;&#x5982;&#xFF0C;Unicode &#x8054;&#x76DF;&#x5C31;<a href="http://www.unicode.org/standard/where/#Duplicates" target="_blank">&#x5217;&#x4E3E;</a>&#x51FA;&#x4E86;&#x5B57;&#x6BCD; &#xC5;&#xFF08;&#x300C;&#x4E0A;&#x9762;&#x5E26;&#x4E2A;&#x5706;&#x5708;&#x7684;&#x5927;&#x5199;&#x62C9;&#x4E01;&#x5B57;&#x6BCD; A&#x300D;&#xFF0C;U+00C5&#xFF09;&#x548C;&#x5B57;&#x7B26; &#xC5;&#xFF08;&#x300C;&#x57C3;&#x7C73;&#x300D;&#xFF08;&#x957F;&#x5EA6;&#x5355;&#x4F4D;&#xFF09;&#x7B26;&#x53F7;&#xFF0C;U+212B&#xFF09;&#x3002;&#x8003;&#x8651;&#x5230;&#x300C;&#x57C3;&#x7C73;&#x300D;&#x7B26;&#x53F7;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x88AB;&#x5B9A;&#x4E49;&#x6210;&#x8FD9;&#x4E2A;&#x745E;&#x5178;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x8FD9;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x662F;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x7684;&#x3002;&#x5728; Unicode &#x91CC;&#xFF0C;&#x5B83;&#x4EEC;&#x4E5F;&#x7B26;&#x5408;&#x6807;&#x51C6;&#x7B49;&#x4EF7;&#x4F46;&#x4E0D;&#x76F8;&#x7B49;&#x3002;</p>
+<p>&#x8FD8;&#x6709;&#x66F4;&#x591A;&#x7684;&#x5B57;&#x7B26;&#x548C;&#x5E8F;&#x5217;&#x662F;&#x66F4;&#x5E7F;&#x610F;&#x4E49;&#x4E0A;&#x7684;&#x300C;&#x91CD;&#x590D;&#x300D;&#xFF0C;&#x5728; Unicode &#x6807;&#x51C6;&#x91CC;&#x53EB;&#x505A;<strong>&#x300C;&#x76F8;&#x5BB9;&#x7B49;&#x4EF7;&#x300D;</strong>&#xFF08;<a href="http://en.wikipedia.org/wiki/Unicode_equivalence" target="_blank">compatibility equivalence</a>&#xFF09;&#x3002;&#x76F8;&#x5BB9;&#x7684;&#x5E8F;&#x5217;&#x4EE3;&#x8868;&#x7740;&#x76F8;&#x540C;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x4F46;&#x6709;&#x7740;&#x4E0D;&#x540C;&#x7684;&#x5916;&#x89C2;&#x548C;&#x8868;&#x73B0;&#x3002;&#x4F8B;&#x5B50;&#x5305;&#x62EC;&#x5F88;&#x591A;&#x88AB;&#x7528;&#x4F5C;&#x6570;&#x5B66;&#x548C;&#x6280;&#x672F;&#x7B26;&#x53F7;&#x7684;&#x5E0C;&#x814A;&#x5B57;&#x6BCD;&#xFF0C;&#x8FD8;&#x6709;&#xFF0C;&#x5C3D;&#x7BA1;&#x5DF2;&#x7ECF;&#x6709;&#x4E86;&#x4ECE; U+2160 &#x5230; U+2183 &#x8FD9;&#x4E2A;&#x8303;&#x56F4;&#x91CC;&#x7684;&#x6807;&#x51C6;&#x62C9;&#x4E01;&#x5B57;&#x6BCD;&#xFF0C;&#x7F57;&#x9A6C;&#x6570;&#x5B57;&#x4E5F;&#x88AB;&#x5355;&#x72EC;&#x7F16;&#x5165; Unicode&#x3002;&#x5176;&#x5B83;&#x5173;&#x4E8E;&#x76F8;&#x5BB9;&#x7B49;&#x4EF7;&#x7684;&#x5178;&#x578B;&#x4F8B;&#x5B50;&#x5C31;&#x662F;<strong>&#x8FDE;&#x5B57;</strong>&#xFF08;<a href="http://en.wikipedia.org/wiki/Typographic_ligature" target="_blank">ligature</a>&#xFF09;&#xFF1A;&#x5B57;&#x6BCD; ff&#xFF08;&#x5C0F;&#x5199;&#x62C9;&#x4E01;&#x8FDE;&#x5B57; ff&#xFF0C;U+FB00&#xFF09;&#x548C; ff &#x7684;&#x5E8F;&#x5217;&#xFF08;&#x5C0F;&#x5199;&#x62C9;&#x4E01;&#x5B57;&#x6BCD; f + &#x5C0F;&#x5199;&#x62C9;&#x4E01;&#x5B57;&#x6BCD; f&#xFF0C;U+0066 U+0066&#xFF09;&#x5C31;&#x7B26;&#x5408;&#x76F8;&#x5BB9;&#x7B49;&#x4EF7;&#x4F46;&#x4E0D;&#x7B26;&#x5408;&#x6807;&#x51C6;&#x7B49;&#x4EF7;&#xFF0C;&#x867D;&#x7136;&#x5B83;&#x4EEC;&#x4E5F;&#x53EF;&#x80FD;&#x4EE5;&#x5B8C;&#x5168;&#x4E00;&#x81F4;&#x7684;&#x6837;&#x5B50;&#x5448;&#x73B0;&#x51FA;&#x6765;&#xFF0C;&#x8FD9;&#x53D6;&#x51B3;&#x4E8E;&#x73AF;&#x5883;&#x3001;&#x5B57;&#x4F53;&#x4EE5;&#x53CA;&#x6587;&#x672C;&#x7684;&#x6E32;&#x67D3;&#x7CFB;&#x7EDF;&#x3002;</p>
+<p><a name="normalization-forms"> </a></p>
+<h4 id="&#x6B63;&#x89C4;&#x5F62;&#x5F0F;">&#x6B63;&#x89C4;&#x5F62;&#x5F0F;</h4>
+<p>&#x4ECE;&#x4E0A;&#x9762;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;&#x5728; Unicode &#x91CC;&#xFF0C;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x7B49;&#x4EF7;&#x6027;&#x5E76;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6982;&#x5FF5;&#x3002;&#x9664;&#x4E86;&#x4E00;&#x4E2A;&#x7801;&#x70B9;&#x4E00;&#x4E2A;&#x7801;&#x70B9;&#x5730;&#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x4EE5;&#x5916;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;&#x53E6;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x6765;&#x9274;&#x5B9A;&#x6807;&#x51C6;&#x7B49;&#x4EF7;&#x548C;&#x76F8;&#x5BB9;&#x7B49;&#x4EF7;&#x3002;&#x4E3A;&#x6B64;&#xFF0C;Unicode &#x5B9A;&#x4E49;&#x4E86;&#x51E0;&#x4E2A;<strong>&#x6B63;&#x89C4;&#x5316;</strong>&#xFF08;<a href="http://en.wikipedia.org/wiki/Unicode_normalization#Normalization" target="_blank">normalization</a>&#xFF09;&#x7B97;&#x6CD5;&#x3002;&#x6B63;&#x89C4;&#x5316;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x610F;&#x601D;&#x662F;&#xFF1A;&#x4E3A;&#x4E86;&#x80FD;&#x4F7F;&#x5B83;&#x4E0E;&#x53E6;&#x4E00;&#x4E2A;&#x6B63;&#x89C4;&#x5316;&#x4E86;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x8FDB;&#x884C;&#x4E8C;&#x8FDB;&#x5236;&#x6BD4;&#x8F83;&#xFF08;binary-compare&#xFF09;&#xFF0C;&#x5C06;&#x5176;&#x8F6C;&#x5316;&#x6210;&#x6709;&#x4E14;&#x4EC5;&#x6709;&#x7684;&#x552F;&#x4E00;&#x4E00;&#x4E2A;&#x8868;&#x793A;&#x5F62;&#x5F0F;&#xFF0C;&#x8FD9;&#x4E2A;&#x5F62;&#x5F0F;&#x7531;&#x7B49;&#x4EF7;&#x5B57;&#x7B26;&#x7684;&#x5E8F;&#x5217;&#x7EC4;&#x6210;&#x3002;</p>
+<p>Unicode &#x6807;&#x51C6;&#x91CC;&#x5305;&#x542B;&#x4E86;&#x56DB;&#x4E2A;&#x6B63;&#x89C4;&#x5F62;&#x5F0F;&#xFF0C;&#x5206;&#x522B;&#x662F; C&#x3001;D&#x3001;KD &#x548C; KC&#x3002;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x653E;&#x5165;&#x4E00;&#x4E2A; 2*2 &#x7684;&#x77E9;&#x9635;&#x91CC;&#xFF08;&#x4E0B;&#x9762;&#x8FD8;&#x5217;&#x4E3E;&#x51FA;&#x4E86; <code>NSString</code> &#x63D0;&#x4F9B;&#x7684;&#x5BF9;&#x5E94;&#x65B9;&#x6CD5;&#xFF09;&#xFF1A;  </p>
+<table>
+  <thead>
+    <tr>
+      <th colspan="2" rowspan="2">Unicode &#x6B63;&#x89C4;&#x5F62;&#x5F0F;&#xFF08;NF&#xFF09;</th>
+      <th colspan="2">&#x5B57;&#x7B26;&#x5F62;&#x5F0F;</th>
+    </tr>
+    <tr>
+      <th>&#x5408;&#x6210;&#x5F62;&#x5F0F;&#xFF08;&#xE9;&#xFF09;</th>
+      <th>&#x5206;&#x89E3;&#x5F62;&#x5F0F;&#xFF08;e + &#xB4;&#xFF09;</th>
+    </tr>
+  </thead>
+  <tr>
+    <th rowspan="2">&#x7B49;&#x4EF7;<br>&#x7C7B;&#x522B;</th>
+    <th>&#x6807;&#x51C6;&#x7B49;&#x4EF7;</th>
+    <td>
+      <p>C</p>
+      <p><a href="https://developer.apple.com/library/ios/documentation/cocoa/reference/foundation/classes/NSString_Class/Reference/NSString.html#//apple_ref/occ/instm/NSString/precomposedStringWithCanonicalMapping" target="_blank"><code>precomposed&#x200B;String&#x200B;With&#x200B;Canonical&#x200B;Mapping</code></a></p>
+    </td>
+    <td>
+      <p>D</p>
+      <p><a href="https://developer.apple.com/library/ios/documentation/cocoa/reference/foundation/classes/NSString_Class/Reference/NSString.html#//apple_ref/occ/instm/NSString/decomposedStringWithCanonicalMapping" target="_blank"><code>decomposed&#x200B;String&#x200B;With&#x200B;Canonical&#x200B;Mapping</code></a></p>
+    </td>
+  </tr>
+  <tr>
+    <th>&#x76F8;&#x5BB9;&#x7B49;&#x4EF7;</th>
+    <td>
+      <p>KC</p>
+      <p><a href="https://developer.apple.com/library/ios/documentation/cocoa/reference/foundation/classes/NSString_Class/Reference/NSString.html#//apple_ref/occ/instm/NSString/precomposedStringWithCompatibilityMapping" target="_blank"><code>precomposed&#x200B;String&#x200B;With&#x200B;Compatibility&#x200B;Mapping</code></a></p>
+    </td>
+    <td>
+      <p>KD</p>
+      <p><a href="https://developer.apple.com/library/ios/documentation/cocoa/reference/foundation/classes/NSString_Class/Reference/NSString.html#//apple_ref/occ/instm/NSString/decomposedStringWithCompatibilityMapping" target="_blank"><code>decomposed&#x200B;String&#x200B;With&#x200B;Compatibility&#x200B;Mapping</code></a></p>
+    </td>
+  </tr>
+</table>
+
+
+<p>&#x4EC5;&#x4EC5;&#x4E3A;&#x4E86;&#x6BD4;&#x8F83;&#x7684;&#x8BDD;&#xFF0C;&#x5148;&#x628A;&#x5B57;&#x7B26;&#x4E32;&#x6B63;&#x89C4;&#x5316;&#x6210;&#x5206;&#x89E3;&#x5F62;&#x5F0F;&#xFF08;D&#xFF09;&#x8FD8;&#x662F;&#x5408;&#x6210;&#x5F62;&#x5F0F;&#xFF08;C&#xFF09;&#x5E76;&#x4E0D;&#x91CD;&#x8981;&#x3002;&#x4F46; C &#x5F62;&#x5F0F;&#x7684;&#x7B97;&#x6CD5;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x6B65;&#x9AA4;&#xFF1A;&#x5148;&#x5206;&#x89E3;&#x5B57;&#x7B26;&#x518D;&#x91CD;&#x65B0;&#x7EC4;&#x5408;&#x8D77;&#x6765;&#xFF0C;&#x56E0;&#x6B64; D &#x5F62;&#x5F0F;&#x8981;&#x66F4;&#x5FEB;&#x4E00;&#x4E9B;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x5E8F;&#x5217;&#x91CC;&#x542B;&#x6709;&#x591A;&#x4E2A;&#x7EC4;&#x5408;&#x6807;&#x8BB0;&#xFF0C;&#x90A3;&#x4E48;&#x7EC4;&#x5408;&#x6807;&#x8BB0;&#x7684;&#x987A;&#x5E8F;&#x5728;&#x5206;&#x89E3;&#x540E;&#x4F1A;&#x662F;&#x552F;&#x4E00;&#x7684;&#x3002;&#x53E6;&#x4E00;&#x65B9;&#x9762;&#xFF0C;Unicode &#x8054;&#x76DF;<a href="http://www.unicode.org/faq/normalization.html#2" target="_blank">&#x63A8;&#x8350; C &#x5F62;&#x5F0F;</a>&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x80FD;&#x548C;&#x4ECE;&#x65E7;&#x7684;&#x7F16;&#x7801;&#x7CFB;&#x7EDF;&#x8F6C;&#x6362;&#x8FC7;&#x6765;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x66F4;&#x597D;&#x5730;&#x517C;&#x5BB9;&#x3002;</p>
+<p>&#x4E24;&#x79CD;&#x7B49;&#x4EF7;&#x5BF9;&#x4E8E;&#x5B57;&#x7B26;&#x4E32;&#x6BD4;&#x8F83;&#x6765;&#x8BF4;&#x90FD;&#x5F88;&#x6709;&#x7528;&#xFF0C;&#x5C24;&#x5176;&#x5728;&#x6392;&#x5E8F;&#x548C;&#x67E5;&#x627E;&#x65F6;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x8981;&#x8BB0;&#x4F4F;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x6C38;&#x4E45;&#x4FDD;&#x5B58;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#x4E0D;&#x5E94;&#x8BE5;&#x7528;&#x76F8;&#x5BB9;&#x7B49;&#x4EF7;&#x7684;&#x65B9;&#x5F0F;&#x53BB;&#x5C06;&#x5B83;&#x6B63;&#x89C4;&#x5316;&#xFF0C;&#x56E0;&#x4E3A;<a href="http://zhuanlan.zhihu.com/" target="_blank">&#x8FD9;&#x6837;&#x4F1A;&#x6539;&#x53D8;&#x6587;&#x672C;&#x7684;&#x542B;&#x4E49;</a>&#xFF1A;</p>
+<blockquote>
+<p>&#x4E0D;&#x8981;&#x5BF9;&#x4EFB;&#x610F;&#x6587;&#x672C;&#x90FD;&#x76F2;&#x76EE;&#x5730;&#x4F7F;&#x7528; KC &#x6216; KD &#x8FD9;&#x4E24;&#x79CD;&#x6B63;&#x89C4;&#x5F62;&#x5F0F;&#xFF0C;&#x8FD9;&#x6837;&#x4F1A;&#x6E05;&#x9664;&#x5F88;&#x591A;&#x683C;&#x5F0F;&#x4E0A;&#x7684;&#x5DEE;&#x5F02;&#x3002;&#x5B83;&#x4EEC;&#x80FD;&#x9632;&#x6B62;&#x4E0E;&#x8BB8;&#x591A;&#x8001;&#x65E7;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#x4E4B;&#x95F4;&#x7684;&#x5FAA;&#x73AF;&#x8F6C;&#x5316;&#xFF0C;&#x4E0E;&#x6B64;&#x540C;&#x65F6;&#xFF0C;&#x9664;&#x975E;&#x6709;&#x683C;&#x5F0F;&#x6807;&#x8BB0;&#x4EE3;&#x66FF;&#xFF0C;&#x5426;&#x5219; KC &#x548C; KD &#x8FD8;&#x4F1A;&#x6E05;&#x9664;&#x8BB8;&#x591A;&#x5BF9;&#x6587;&#x672C;&#x7684;&#x8BED;&#x4E49;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x5DEE;&#x5F02;&#x3002;&#x6700;&#x597D;&#x628A;&#x8FD9;&#x4E9B;&#x6B63;&#x89C4;&#x5F62;&#x5F0F;&#x60F3;&#x6210;&#x5B57;&#x6BCD;&#x5927;&#x5199;&#x4E0E;&#x5C0F;&#x5199;&#x4E4B;&#x95F4;&#x7684;&#x6620;&#x5C04;&#xFF1A;&#x6709;&#x65F6;&#x5728;&#x9700;&#x8981;&#x8FA8;&#x8BA4;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x610F;&#x601D;&#x65F6;&#x5F88;&#x6709;&#x7528;&#xFF0C;&#x4F46;&#x4E5F;&#x4F1A;&#x4E0D;&#x6070;&#x5F53;&#x5730;&#x4FEE;&#x6539;&#x6587;&#x672C;&#x3002;</p>
+</blockquote>
+<h4 id="&#x5B57;&#x5F62;&#x53D8;&#x4F53;">&#x5B57;&#x5F62;&#x53D8;&#x4F53;</h4>
+<p>&#x6709;&#x4E9B;&#x5B57;&#x4F53;&#x4F1A;&#x4E3A;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x63D0;&#x4F9B;&#x591A;&#x4E2A;&#x5B57;&#x5F62;&#xFF08;<a href="http://en.wikipedia.org/wiki/Glyph" target="_blank">glyph</a>&#xFF09;&#x53D8;&#x4F53;&#x3002;Unicode &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x53EB;&#x505A;&#x300C;&#x53D8;&#x4F53;&#x5E8F;&#x5217;&#x300D;&#xFF08;<a href="http://en.wikipedia.org/wiki/Variant_form_%28Unicode%29" target="_blank">variation sequences</a>&#xFF09;&#x7684;&#x673A;&#x5236;&#xFF0C;&#x5B83;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x9009;&#x62E9;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x53D8;&#x4F53;&#x3002;&#x8FD9;&#x548C;&#x7EC4;&#x5408;&#x5B57;&#x7B26;&#x5E8F;&#x5217;&#x7684;&#x5DE5;&#x4F5C;&#x673A;&#x5236;&#x5B8C;&#x5168;&#x4E00;&#x6837;&#xFF1A;&#x4E00;&#x4E2A;&#x57FA;&#x51C6;&#x5B57;&#x7B26;&#x52A0;&#x4E0A; 256 &#x4E2A;&#x53D8;&#x4F53;&#x9009;&#x62E9;&#x7B26;&#xFF08;VS1-VS256&#xFF0C;U+FE00 &#x5230; U+FE0F&#xFF0C;&#x8FD8;&#x6709; U+E0100 &#x5230; U+E01EF&#xFF09;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x3002;Unicode &#x6807;&#x51C6;&#x5BF9;&#x300C;&#x6807;&#x51C6;&#x5316;&#x53D8;&#x4F53;&#x5E8F;&#x5217;&#x300D;&#xFF08;<a href="http://unicode.org/Public/UCD/latest/ucd/StandardizedVariants.html" target="_blank">Standardized Variation Sequences</a>&#xFF0C;&#x5728; Unicode &#x6807;&#x51C6;&#x4E2D;&#x5B9A;&#x4E49;&#xFF09;&#x548C;&#x300C;&#x8C61;&#x5F62;&#x6587;&#x5B57;&#x53D8;&#x4F53;&#x5E8F;&#x5217;&#x300D;&#xFF08;<a href="http://www.unicode.org/ivd/" target="_blank">Ideographic Variation Sequences</a>&#xFF0C;&#x662F;&#x7531;&#x7B2C;&#x4E09;&#x65B9;&#x63D0;&#x4EA4;&#x7ED9; Unicode &#x8054;&#x76DF;&#x7684;&#xFF0C;&#x4E00;&#x65E6;&#x6CE8;&#x518C;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x88AB;&#x4EFB;&#x4F55;&#x4EBA;&#x4F7F;&#x7528;&#xFF09;&#x505A;&#x51FA;&#x4E86;&#x533A;&#x5206;&#x3002;&#x6280;&#x672F;&#x4E0A;&#x6765;&#x8BB2;&#xFF0C;&#x4E24;&#x8005;&#x5E76;&#x65E0;&#x533A;&#x522B;&#x3002;</p>
+<p>emoji &#x7684;&#x6837;&#x5F0F;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x6807;&#x51C6;&#x5316;&#x53D8;&#x4F53;&#x5E8F;&#x5217;&#x7684;&#x4F8B;&#x5B50;&#x3002;&#x8BB8;&#x591A; emoji &#x548C;&#x4E00;&#x4E9B;&#x300C;&#x6B63;&#x5E38;&#x300D;&#x7684;&#x5B57;&#x7B26;&#x90FD;&#x6709;&#x4E24;&#x79CD;&#x98CE;&#x683C;&#xFF1A;&#x4E00;&#x79CD;&#x662F;&#x5F69;&#x8272;&#x7684;&#x300C;emoji &#x98CE;&#x683C;&#x300D;&#xFF0C;&#x53E6;&#x4E00;&#x79CD;&#x662F;&#x9ED1;&#x767D;&#x7684;&#xFF0C;&#x66F4;&#x50CF;&#x662F;&#x7B26;&#x53F7;&#x7684;&#x300C;&#x6587;&#x672C;&#x98CE;&#x683C;&#x300D;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x300C;&#x6709;&#x96E8;&#x6EF4;&#x7684;&#x4F1E;&#x300D;&#x8FD9;&#x4E2A;&#x5B57;&#x7B26;&#xFF08;U+2614&#xFF09;&#x53EF;&#x80FD;&#x662F;&#x8FD9;&#x6837;&#xFF1A;&#x2614;&#xFE0F; (U+2614 U+FE0F) &#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF1A; &#x2614;&#xFE0E; (U+2614 U+FE0E)&#x3002;</p>
+<h3 id="unicode-&#x8F6C;&#x6362;&#x683C;&#x5F0F;">Unicode &#x8F6C;&#x6362;&#x683C;&#x5F0F;</h3>
+<p>&#x4ECE;&#x4E0A;&#x6587;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x5B57;&#x7B26;&#x548C;&#x7801;&#x70B9;&#x4E4B;&#x95F4;&#x7684;&#x6620;&#x5C04;&#x53EA;&#x5B8C;&#x6210;&#x4E86;&#x4E00;&#x534A;&#x5DE5;&#x4F5C;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x53E6;&#x4E00;&#x79CD;&#x7F16;&#x7801;&#x6765;&#x786E;&#x5B9A;&#x7801;&#x70B9;&#x5728;&#x5185;&#x5B58;&#x548C;&#x786C;&#x76D8;&#x4E2D;&#x8981;&#x5982;&#x4F55;&#x8868;&#x793A;&#x3002;Unicode &#x6807;&#x51C6;&#x4E3A;&#x6B64;&#x5B9A;&#x4E49;&#x4E86;&#x51E0;&#x79CD;&#x6620;&#x5C04;&#xFF0C;&#x53EB;&#x505A;&#x300C;Unicode &#x8F6C;&#x6362;&#x683C;&#x5F0F;&#x300D;&#xFF08;Unicode Transformation Formats&#xFF0C;&#x7B80;&#x79F0; UTF&#xFF09;&#x3002;&#x65E5;&#x5E38;&#x5DE5;&#x4F5C;&#x4E2D;&#xFF0C;&#x4EBA;&#x4EEC;&#x5C31;&#x76F4;&#x63A5;&#x628A;&#x5B83;&#x4EEC;&#x53EB;&#x505A;&#x300C;&#x7F16;&#x7801;&#x300D;&#x2014;&#x2014; &#x56E0;&#x4E3A;&#x6309;&#x7167;&#x5B9A;&#x4E49;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x7528; UTF &#x7F16;&#x7801;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x8981;&#x4F7F;&#x7528; Unicode&#xFF0C;&#x6240;&#x4EE5;&#x4E5F;&#x5C31;&#x6CA1;&#x5FC5;&#x8981;&#x660E;&#x786E;&#x533A;&#x5206;&#x8FD9;&#x4E24;&#x4E2A;&#x6B65;&#x9AA4;&#x4E86;&#x3002;</p>
+<h3 id="utf-32">UTF-32</h3>
+<p>&#x6700;&#x6E05;&#x695A;&#x660E;&#x4E86;&#x7684;&#x4E00;&#x4E2A; UTF &#x5C31;&#x662F; <a href="http://en.wikipedia.org/wiki/UTF-32" target="_blank">UTF-32</a>&#xFF1A;&#x5B83;&#x5728;&#x6BCF;&#x4E2A;&#x7801;&#x70B9;&#x4E0A;&#x4F7F;&#x7528;&#x6574; 32 &#x4F4D;&#x3002;32 &#x5927;&#x4E8E; 21&#xFF0C;&#x56E0;&#x6B64;&#x6BCF;&#x4E00;&#x4E2A; UTF-32 &#x503C;&#x90FD;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8868;&#x793A;&#x5BF9;&#x5E94;&#x7684;&#x7801;&#x70B9;&#x3002;&#x5C3D;&#x7BA1;&#x7B80;&#x5355;&#xFF0C;UTF-32&#x5374;&#x51E0;&#x4E4E;&#x4ECE;&#x6765;&#x4E0D;&#x5728;&#x5B9E;&#x9645;&#x4E2D;&#x4F7F;&#x7528;&#xFF0C;&#x56E0;&#x4E3A;&#x6BCF;&#x4E2A;&#x5B57;&#x7B26;&#x5360;&#x7528; 4 &#x5B57;&#x8282;&#x592A;&#x6D6A;&#x8D39;&#x7A7A;&#x95F4;&#x4E86;&#x3002;</p>
+<h3 id="utf-16-&#x4EE5;&#x53CA;&#x300C;&#x4EE3;&#x7406;&#x5BF9;&#x300D;&#xFF08;surrogate-pairs&#xFF09;&#x7684;&#x6982;&#x5FF5;">UTF-16 &#x4EE5;&#x53CA;&#x300C;&#x4EE3;&#x7406;&#x5BF9;&#x300D;&#xFF08;Surrogate Pairs&#xFF09;&#x7684;&#x6982;&#x5FF5;</h3>
+<p><a href="http://en.wikipedia.org/wiki/UTF-16" target="_blank">UTF-16</a> &#x8981;&#x5E38;&#x89C1;&#x5F97;&#x591A;&#xFF0C;&#x800C;&#x4E14;&#x5728;&#x4E0B;&#x6587;&#x6211;&#x4EEC;&#x4F1A;&#x770B;&#x5230;&#xFF0C;&#x5B83;&#x4E0E;&#x6211;&#x4EEC;&#x8BA8;&#x8BBA; <code>NSString</code> &#x5BF9; Unicode &#x7684;&#x5B9E;&#x73B0;&#x606F;&#x606F;&#x76F8;&#x5173;&#x3002;&#x5B83;&#x662F;&#x6839;&#x636E;&#x6709; 16 &#x4F4D;&#x56FA;&#x5B9A;&#x957F;&#x5EA6;&#x7684;<strong>&#x7801;&#x5143;&#xFF08;code units&#xFF09;</strong>&#x5B9A;&#x4E49;&#x7684;&#x3002;UTF-16 &#x672C;&#x8EAB;&#x662F;&#x4E00;&#x79CD;&#x957F;&#x5EA6;&#x53EF;&#x53D8;&#x7684;&#x7F16;&#x7801;&#x3002;&#x57FA;&#x672C;&#x591A;&#x6587;&#x79CD;&#x5E73;&#x9762;&#xFF08;BMP&#xFF09;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x7801;&#x70B9;&#x90FD;&#x76F4;&#x63A5;&#x4E0E;&#x4E00;&#x4E2A;&#x7801;&#x5143;&#x76F8;&#x6620;&#x5C04;&#x3002;&#x9274;&#x4E8E; BMP &#x51E0;&#x4E4E;&#x56CA;&#x62EC;&#x4E86;&#x6240;&#x6709;&#x5E38;&#x89C1;&#x5B57;&#x7B26;&#xFF0C;UTF-16 &#x4E00;&#x822C;&#x53EA;&#x9700;&#x8981; UTF-32 &#x4E00;&#x534A;&#x7684;&#x7A7A;&#x95F4;&#x3002;&#x5176;&#x5B83;&#x5E73;&#x9762;&#x91CC;&#x5F88;&#x5C11;&#x4F7F;&#x7528;&#x7684;&#x7801;&#x70B9;&#x90FD;&#x662F;&#x7528;&#x4E24;&#x4E2A; 16 &#x4F4D;&#x7684;&#x7801;&#x5143;&#x6765;&#x7F16;&#x7801;&#x7684;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x5408;&#x8D77;&#x6765;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x7801;&#x70B9;&#x7684;&#x7801;&#x5143;&#x5C31;&#x53EB;&#x505A;<strong>&#x4EE3;&#x7406;&#x5BF9;&#xFF08;surrogate pair&#xFF09;</strong>&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x7528; UTF-16 &#x7F16;&#x7801;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x91CC;&#x7684;&#x5B57;&#x8282;&#x5E8F;&#x5217;&#x4EA7;&#x751F;&#x6B67;&#x4E49;&#xFF0C;&#x4EE5;&#x53CA;&#x80FD;&#x4F7F;&#x68C0;&#x6D4B;&#x4EE3;&#x7406;&#x5BF9;&#x66F4;&#x5BB9;&#x6613;&#xFF0C;Unicode &#x6807;&#x51C6;&#x9650;&#x5236;&#x4E86; U+D800 &#x5230; U+DFFF &#x8303;&#x56F4;&#x5185;&#x7684;&#x7801;&#x70B9;&#x7528;&#x4E8E; UTF-16&#xFF0C;&#x8FD9;&#x4E2A;&#x8303;&#x56F4;&#x5185;&#x7684;&#x7801;&#x70B9;&#x503C;&#x4E0D;&#x80FD;&#x5206;&#x914D;&#x7ED9;&#x4EFB;&#x4F55;&#x5B57;&#x7B26;&#x3002;&#x5F53;&#x7A0B;&#x5E8F;&#x5728;&#x4E00;&#x4E2A; UTF-16 &#x7F16;&#x7801;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x91CC;&#x53D1;&#x73B0;&#x5728;&#x8FD9;&#x4E2A;&#x8303;&#x56F4;&#x5185;&#x7684;&#x5E8F;&#x5217;&#x65F6;&#xFF0C;&#x5C31;&#x80FD;&#x7ACB;&#x523B;&#x77E5;&#x9053;&#x8FD9;&#x662F;&#x67D0;&#x4E2A;&#x4EE3;&#x7406;&#x5BF9;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;&#x5B9E;&#x9645;&#x7684;&#x7F16;&#x7801;&#x7B97;&#x6CD5;&#x5F88;&#x7B80;&#x5355;&#xFF0C;<a href="http://en.wikipedia.org/wiki/UTF-16" target="_blank">&#x7EF4;&#x57FA;&#x767E;&#x79D1;&#x4E0A; UTF-16 &#x7684;&#x6587;&#x7AE0;</a>&#x91CC;&#x6709;&#x66F4;&#x591A;&#x4ECB;&#x7ECD;&#x3002;UTF-16 &#x7684;&#x8FD9;&#x79CD;&#x8BBE;&#x8BA1;&#x4E5F;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x7801;&#x70B9;&#x6700;&#x957F;&#x4E5F;&#x53EA;&#x6709;&#x5947;&#x602A;&#x7684; 21 &#x4F4D;&#x7684;&#x539F;&#x56E0;&#x3002;UTF-16 &#x4E0B;&#xFF0C;U+10FFFF &#x662F;&#x80FD;&#x7F16;&#x7801;&#x7684;&#x6700;&#x9AD8;&#x503C;&#x3002;</p>
+<p>&#x548C;&#x6240;&#x6709;&#x591A;&#x5B57;&#x8282;&#x957F;&#x5EA6;&#x7684;&#x7F16;&#x7801;&#x7CFB;&#x7EDF;&#x4E00;&#x6837;&#xFF0C;UTF-16&#xFF08;&#x4EE5;&#x53CA; UTF-32&#xFF09;&#x8FD8;&#x5F97;&#x89E3;&#x51B3;<a href="http://en.wikipedia.org/wiki/Endianness" target="_blank">&#x5B57;&#x8282;&#x987A;&#x5E8F;</a>&#x7684;&#x95EE;&#x9898;&#x3002;&#x5728;&#x5185;&#x5B58;&#x91CC;&#x5B58;&#x50A8;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#xFF0C;&#x5927;&#x591A;&#x6570;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x81EA;&#x7136;&#x90FD;&#x91C7;&#x7528;&#x81EA;&#x5DF1;&#x8FD0;&#x884C;&#x5E73;&#x53F0;&#x7684; CPU &#x7684;<strong>&#x5B57;&#x8282;&#x5E8F;&#xFF08;endianness&#xFF09;</strong>&#xFF1B;&#x800C;&#x5728;&#x786C;&#x76D8;&#x91CC;&#x5B58;&#x50A8;&#x6216;&#x8005;&#x901A;&#x8FC7;&#x7F51;&#x7EDC;&#x4F20;&#x8F93;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#xFF0C;UTF-16 &#x5141;&#x8BB8;&#x5728;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5F00;&#x5934;&#x63D2;&#x5165;&#x4E00;&#x4E2A;&#x300C;&#x5B57;&#x8282;&#x987A;&#x5E8F;&#x6807;&#x8BB0;&#x300D;&#xFF08;<a href="http://en.wikipedia.org/wiki/Byte_Order_Mark" target="_blank">Byte Order Mask</a>&#xFF0C;&#x7B80;&#x79F0; BOM&#xFF09;&#x3002;&#x5B57;&#x8282;&#x987A;&#x5E8F;&#x6807;&#x8BB0;&#x662F;&#x4E00;&#x4E2A;&#x503C;&#x4E3A; U+FEFF &#x7684;&#x7801;&#x5143;&#xFF0C;&#x901A;&#x8FC7;&#x68C0;&#x67E5;&#x6587;&#x4EF6;&#x7684;&#x5934;&#x4E24;&#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x89E3;&#x7801;&#x5668;&#x5C31;&#x53EF;&#x4EE5;&#x8BC6;&#x522B;&#x51FA;&#x5176;&#x5B57;&#x8282;&#x987A;&#x5E8F;&#x3002;&#x5B57;&#x8282;&#x987A;&#x5E8F;&#x6807;&#x8BB0;&#x4E0D;&#x662F;&#x5FC5;&#x987B;&#x7684;&#xFF0C;Unicode &#x6807;&#x51C6;&#x628A;<strong>&#x9AD8;&#x5B57;&#x8282;&#x987A;&#x5E8F;&#xFF08;big-endian byte order&#xFF09;</strong>&#x5B9A;&#x4E3A;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x3002;UTF-16 &#x9700;&#x8981;&#x6307;&#x660E;&#x5B57;&#x8282;&#x987A;&#x5E8F;&#xFF0C;&#x8FD9;&#x4E5F;&#x662F;&#x4E3A;&#x4EC0;&#x4E48; UTF-16 &#x5728;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#x548C;&#x7F51;&#x7EDC;&#x4F20;&#x8F93;&#x65B9;&#x9762;&#x4E0D;&#x53D7;&#x6B22;&#x8FCE;&#x7684;&#x4E00;&#x4E2A;&#x539F;&#x56E0;&#xFF0C;&#x4E0D;&#x8FC7;&#x5FAE;&#x8F6F;&#x548C;&#x82F9;&#x679C;&#x90FD;&#x5728;&#x81EA;&#x5DF1;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5185;&#x90E8;&#x4F7F;&#x7528;&#x5B83;&#x3002;</p>
+<h4 id="utf-8">UTF-8</h4>
+<p>&#x7531;&#x4E8E; Unicode &#x7684;&#x524D; 256 &#x4E2A;&#x7801;&#x70B9;&#xFF08;U+0000 &#x5230; U+00FF&#xFF09;&#x548C;&#x5E38;&#x89C1;&#x7684; <a href="http://en.wikipedia.org/wiki/ISO/IEC_8859-1" target="_blank">ISO-8859-1</a>(Latin 1) &#x7F16;&#x7801;&#x5B8C;&#x5168;&#x4E00;&#x81F4;&#xFF0C;UTF-16 &#x8FD8;&#x662F;&#x5728;&#x5E38;&#x7528;&#x7684;&#x82F1;&#x6587;&#x548C;&#x897F;&#x6B27;&#x6587;&#x672C;&#x4E0A;&#x6D6A;&#x8D39;&#x4E86;&#x5927;&#x91CF;&#x7684;&#x7A7A;&#x95F4;&#xFF1A;&#x6BCF;&#x4E2A; 16 &#x4F4D;&#x7684;&#x7801;&#x70B9;&#x7684;&#x9AD8; 8 &#x4F4D;&#x7684;&#x503C;&#x90FD;&#x4F1A;&#x662F; 0<sup><a href="#fn_3" id="reffn_3">3</a></sup>&#x3002;&#x4E5F;&#x8BB8;&#x66F4;&#x91CD;&#x8981;&#x7684;&#x662F;&#xFF0C;UTF-16 &#x5BF9;&#x4E00;&#x4E9B;&#x8001;&#x65E7;&#x7684;&#x4EE3;&#x7801;&#x9020;&#x6210;&#x4E86;&#x6311;&#x6218;&#xFF0C;&#x8FD9;&#x4E9B;&#x4EE3;&#x7801;&#x5E38;&#x5E38;&#x4F1A;&#x5047;&#x5B9A;&#x6587;&#x672C;&#x662F;&#x7528; ASCII &#x7F16;&#x7801;&#x7684;&#x3002;Ken Thompson&#xFF08;&#x4ED6;&#x5728; Unix &#x793E;&#x533A;&#x5F88;&#x6709;&#x540D;&#xFF09; &#x548C; Rob Pike &#x5F00;&#x53D1;&#x4E86; <a href="http://en.wikipedia.org/wiki/UTF-8" target="_blank">UTF-8</a> &#x6765;&#x5F25;&#x8865;&#x8FD9;&#x4E9B;&#x4E0D;&#x8DB3;<sup><a href="#fn_4" id="reffn_4">4</a></sup>&#x3002;&#x5B83;&#x7684;&#x8BBE;&#x8BA1;&#x5F88;&#x51FA;&#x8272;&#xFF0C;&#x8BF7;&#x52A1;&#x5FC5;&#x9605;&#x8BFB; <a href="http://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt" target="_blank">Rob Pike &#x5BF9; UTF-8 &#x521B;&#x9020;&#x8FC7;&#x7A0B;&#x7684;&#x8BB2;&#x8FF0;</a>&#x3002;</p>
+<p>UTF-8 &#x4F7F;&#x7528;&#x4E00;&#x5230;&#x56DB;&#x4E2A;<sup><a href="#fn_5" id="reffn_5">5</a></sup>&#x5B57;&#x8282;&#x6765;&#x7F16;&#x7801;&#x4E00;&#x4E2A;&#x7801;&#x70B9;&#x3002;&#x4ECE; 0 &#x5230; 127 &#x7684;&#x8FD9;&#x4E9B;&#x7801;&#x70B9;&#x76F4;&#x63A5;&#x6620;&#x5C04;&#x6210; 1 &#x4E2A;&#x5B57;&#x8282;&#xFF08;&#x5BF9;&#x4E8E;&#x53EA;&#x5305;&#x542B;&#x8FD9;&#x4E2A;&#x8303;&#x56F4;&#x5B57;&#x7B26;&#x7684;&#x6587;&#x672C;&#x6765;&#x8BF4;&#xFF0C;&#x8FD9;&#x4E00;&#x70B9;&#x4F7F;&#x5F97; UTF-8 &#x548C; ASCII &#x5B8C;&#x5168;&#x76F8;&#x540C;&#xFF09;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#x7684; 1,920 &#x4E2A;&#x7801;&#x70B9;&#x6620;&#x5C04;&#x6210; 2 &#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x5728; BMP &#x91CC;&#x6240;&#x6709;&#x5269;&#x4E0B;&#x7684;&#x7801;&#x70B9;&#x9700;&#x8981; 3 &#x4E2A;&#x5B57;&#x8282;&#x3002;Unicode &#x7684;&#x5176;&#x4ED6;&#x5E73;&#x9762;&#x91CC;&#x7684;&#x7801;&#x70B9;&#x5219;&#x9700;&#x8981; 4 &#x4E2A;&#x5B57;&#x8282;&#x3002;UTF-8 &#x662F;&#x57FA;&#x4E8E; 8 &#x4F4D;&#x7684;&#x7801;&#x5143;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x5B83;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x5173;&#x5FC3;&#x5B57;&#x8282;&#x987A;&#x5E8F;&#xFF08;&#x4E0D;&#x8FC7;&#x4ECD;&#x6709;&#x4E00;&#x4E9B;&#x7A0B;&#x5E8F;&#x4F1A;&#x5728; UTF-8 &#x6587;&#x4EF6;&#x91CC;&#x52A0;&#x4E0A;&#x591A;&#x4F59;&#x7684; BOM&#xFF09;&#x3002;</p>
+<p>&#x6709;&#x6548;&#x7387;&#x7684;&#x7A7A;&#x95F4;&#x4F7F;&#x7528;&#xFF08;&#x4EC5;&#x5C31;&#x897F;&#x65B9;&#x8BED;&#x8A00;&#x6765;&#x8BB2;&#xFF09;&#xFF0C;&#x4EE5;&#x53CA;&#x4E0D;&#x9700;&#x8981;&#x64CD;&#x5FC3;&#x5B57;&#x8282;&#x987A;&#x5E8F;&#x95EE;&#x9898;&#x4F7F;&#x5F97; UTF-8 &#x6210;&#x4E3A;&#x5B58;&#x50A8;&#x548C;&#x4EA4;&#x6D41; Unicode &#x6587;&#x672C;&#x65B9;&#x9762;&#x7684;&#x6700;&#x4F73;&#x7F16;&#x7801;&#x3002;&#x5B83;&#x4E5F;&#x5DF2;&#x7ECF;&#x662F;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#x3001;&#x7F51;&#x7EDC;&#x534F;&#x8BAE;&#x4EE5;&#x53CA; Web API &#x9886;&#x57DF;&#x91CC;<strong>&#x4E8B;&#x5B9E;&#x4E0A;</strong>&#x7684;&#x6807;&#x51C6;&#x4E86;&#x3002;</p>
+<h2 id="nsstring-&#x548C;-unicode">NSString &#x548C; Unicode</h2>
+<p><code>NSString</code> &#x662F;&#x5B8C;&#x5168;&#x5EFA;&#x7ACB;&#x5728; Unicode &#x4E4B;&#x4E0A;&#x7684;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x8FD9;&#x65B9;&#x9762;&#x82F9;&#x679C;&#x89E3;&#x91CA;&#x5F97;&#x5E76;&#x4E0D;&#x597D;&#x3002;&#x8FD9;&#x662F;<a href="https://developer.apple.com/library/ios/documentation/CoreFoundation/Conceptual/CFStrings/Articles/UnicodeBasis.html" target="_blank">&#x82F9;&#x679C;&#x7684;&#x6587;&#x6863;&#x5BF9; <code>CFString</code> &#x5BF9;&#x8C61;&#x7684;&#x8BF4;&#x660E;</a>&#xFF08;<code>CFString</code> &#x4E5F;&#x5305;&#x542B;&#x4E86; <code>NSString</code> &#x7684;&#x5E95;&#x5C42;&#x5B9E;&#x73B0;&#xFF09;&#xFF1A;</p>
+<blockquote>
+<p>&#x4ECE;&#x6982;&#x5FF5;&#x4E0A;&#x6765;&#x8BB2;&#xFF0C;CFString &#x4EE3;&#x8868;&#x4E86;&#x4E00;&#x4E2A; Unicode &#x5B57;&#x7B26;&#x7EC4;&#x6210;&#x7684;&#x6570;&#x7EC4;&#x548C;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x603B;&#x6570;&#x7684;&#x8BA1;&#x6570;&#x3002;&#x2026;&#x2026;[Unicode] &#x6807;&#x51C6;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x901A;&#x7528;&#x3001;&#x7EDF;&#x4E00;&#x7684;&#x7F16;&#x7801;&#x65B9;&#x6848;&#xFF0C;&#x5176;&#x4E2D;<strong>&#x6BCF;&#x4E2A;&#x5B57;&#x7B26; 16 &#x4F4D;</strong>&#x3002;  </p>
+</blockquote>
+<p>&#x5F3A;&#x8C03;&#x662F;&#x6211;&#xFF08;&#x539F;&#x6587;&#x4F5C;&#x8005;&#xFF09;&#x52A0;&#x7684;&#x3002;&#x8FD9;&#x5B8C;&#x5168;&#x662F;&#x9519;&#x8BEF;&#x7684;&#xFF01;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x4E86;&#x89E3;&#x4E86; Unicode &#x662F;&#x4E00;&#x79CD; <strong>21 &#x4F4D;</strong>&#x7684;&#x7F16;&#x7801;&#x65B9;&#x6848;&#x3002;&#x4F46;&#x662F;&#x6709;&#x4E86;&#x8FD9;&#x6837;&#x7684;&#x6587;&#x6863;&#xFF0C;&#x96BE;&#x602A;&#x5F88;&#x591A;&#x4EBA;&#x90FD;&#x8BA4;&#x4E3A;&#x5B83;&#x662F; 16 &#x4F4D;&#x7684;&#x5462;&#x3002;</p>
+<p><a href="https://developer.apple.com/library/ios/documentation/cocoa/reference/foundation/Classes/NSString_Class/Reference/NSString.html" target="_blank"><code>NSString</code> &#x7684;&#x6587;&#x6863;</a>&#x540C;&#x6837;&#x8BEF;&#x5BFC;&#x4EBA;&#xFF1A;</p>
+<blockquote>
+<p>&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5BF9;&#x8C61;&#x4EE3;&#x8868;&#x7740;&#x4E00;&#x4E2A; Unicode &#x5B57;&#x7B26;&#x7EC4;&#x6210;&#x7684;&#x6570;&#x7EC4;&#x2026;&#x2026; &#x53EF;&#x4EE5;&#x7528; <code>length</code> &#x65B9;&#x6CD5;&#x6765;&#x83B7;&#x5F97;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5BF9;&#x8C61;&#x6240;&#x5305;&#x542B;&#x7684;&#x5B57;&#x7B26;&#x6570;&#xFF1B;&#x7528; <code>characterAtIndex:</code> &#x65B9;&#x6CD5;&#x53D6;&#x5F97;&#x7279;&#x5B9A;&#x7684;&#x5B57;&#x7B26;&#x3002;&#x8FD9;&#x4E24;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x6CD5;&#x4E3A;&#x8BBF;&#x95EE;&#x5B57;&#x7B26;&#x4E32;&#x5BF9;&#x8C61;&#x63D0;&#x4F9B;&#x4E86;&#x57FA;&#x672C;&#x7684;&#x9014;&#x5F84;&#x3002;  </p>
+</blockquote>
+<p>&#x8FD9;&#x6BB5;&#x8BDD;&#x521D;&#x8BFB;&#x8D77;&#x6765;&#x4F3C;&#x4E4E;&#x597D;&#x4E00;&#x4E9B;&#x4E86;&#xFF0C;&#x5B83;&#x6CA1;&#x6709;&#x53C8;&#x626F;&#x6DE1;&#x5730;&#x8BB2; Unicode &#x5B57;&#x7B26;&#x662F; 16 &#x4F4D;&#x7684;&#x3002;&#x4F46;&#x6DF1;&#x7A76;&#x540E;&#x5C31;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C;<a href="https://developer.apple.com/library/ios/documentation/cocoa/reference/foundation/classes/NSString_Class/Reference/NSString.html#//apple_ref/occ/instm/NSString/characterAtIndex:" target="_blank"><code>characterAtIndex:</code></a> &#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C; <a href="https://developer.apple.com/library/ios/documentation/cocoa/reference/foundation/classes/NSString_Class/Reference/NSString.html#//apple_ref/doc/uid/20000154-SW40" target="_blank"><code>unichar</code></a> &#x4E0D;&#x8FC7;&#x662F;&#x4E2A; 16 &#x4F4D;&#x7684;&#x65E0;&#x7B26;&#x53F7;&#x6574;&#x578B;&#x7F62;&#x4E86;&#x3002;&#x663E;&#x7136;&#xFF0C;&#x5B83;&#x4E0D;&#x591F;&#x7528;&#x6765;&#x8868;&#x793A; 21 &#x4F4D;&#x7684; Unicode &#x5B57;&#x7B26;&#xFF1A;</p>
+<pre><code>typedef unsigned short unichar;
+</code></pre><p>&#x4E8B;&#x5B9E;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF0C;<code>NSString</code> &#x5BF9;&#x8C61;&#x4EE3;&#x8868;&#x7684;&#x5176;&#x5B9E;&#x662F;<strong>&#x7528; UTF-16 &#x7F16;&#x7801;&#x7684;&#x7801;&#x5143;</strong>&#x7EC4;&#x6210;&#x7684;&#x6570;&#x7EC4;&#x3002;&#x76F8;&#x5E94;&#x5730;&#xFF0C;<a href="https://developer.apple.com/library/ios/documentation/cocoa/reference/foundation/classes/NSString_Class/Reference/NSString.html#//apple_ref/occ/instm/NSString/length" target="_blank"><code>length</code></a> &#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x4E5F;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x5305;&#x542B;&#x7684;&#x7801;&#x5143;&#x4E2A;&#x6570;&#xFF08;&#x800C;&#x4E0D;&#x662F;&#x5B57;&#x7B26;&#x4E2A;&#x6570;&#xFF09;&#x3002;<code>NSString</code> &#x8FD8;&#x5728;&#x5F00;&#x53D1;&#x7684;&#x65F6;&#x5019;&#xFF08;&#x5B83;&#x6700;&#x521D;&#x662F;&#x4F5C;&#x4E3A; Foundation Kit &#x7684;&#x4E00;&#x90E8;&#x5206;&#x5728; 1994 &#x5E74;&#x53D1;&#x5E03;&#x7684;&#xFF09;&#xFF0C;Unicode &#x8FD8;&#x662F; 16 &#x4F4D;&#x7684;&#xFF1B;&#x66F4;&#x5E7F;&#x7684;&#x8303;&#x56F4;&#x548C; UTF-16 &#x7684;&#x4EE3;&#x7406;&#x5B57;&#x7B26;&#x673A;&#x5236;&#x5219;&#x662F;&#x4E8E; 1996 &#x5E74;&#x968F;&#x7740; Unicode 2.0 &#x5F15;&#x5165;&#x7684;&#x3002;&#x4ECE;&#x73B0;&#x5728;&#x7684;&#x89D2;&#x5EA6;&#x6765;&#x770B;&#xFF0C;<code>unichar</code> &#x8FD9;&#x4E2A;&#x7C7B;&#x578B;&#x548C; <code>characterAtIndex:</code> &#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x547D;&#x540D;&#x90FD;&#x5F88;&#x7CDF;&#x7CD5;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x4F7F;&#x7A0B;&#x5E8F;&#x5458;&#x5BF9;&#x4E8E; Unicode &#x5B57;&#x7B26;&#xFF08;&#x7801;&#x70B9;&#xFF09;&#x548C; UTF-16 &#x7801;&#x5143;&#x4E24;&#x4E2A;&#x6982;&#x5FF5;&#x56F0;&#x60D1;&#x7684;&#x60C5;&#x51B5;&#x66F4;&#x52A0;&#x4E25;&#x91CD;&#x3002;&#x5982;&#x679C;&#x50CF; <code>codeUnitAtIndex:</code> &#x8FD9;&#x6837;&#x6765;&#x547D;&#x540D;&#x5219;&#x8981;&#x597D;&#x5F97;&#x591A;&#x3002;</p>
+<p>&#x5173;&#x4E8E; <code>NSString</code>&#xFF0C;&#x6700;&#x9700;&#x8981;&#x8BB0;&#x4F4F;&#x7684;&#x662F;&#xFF1A;<code>NSString</code> &#x4EE3;&#x8868;&#x7684;&#x662F;&#x7528; UTF-16 &#x7F16;&#x7801;&#x7684;&#x6587;&#x672C;&#xFF0C;&#x957F;&#x5EA6;&#x3001;&#x7D22;&#x5F15;&#x548C;&#x8303;&#x56F4;&#x90FD;&#x57FA;&#x4E8E; UTF-16 &#x7684;&#x7801;&#x5143;&#x3002;&#x9664;&#x975E;&#x4F60;&#x77E5;&#x9053;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x6216;&#x8005;&#x4F60;&#x63D0;&#x524D;&#x6709;&#x6240;&#x9632;&#x8303;&#xFF0C;&#x4E0D;&#x7136; <code>NSString</code> &#x7C7B;&#x91CC;&#x7684;&#x65B9;&#x6CD5;&#x90FD;&#x662F;&#x57FA;&#x4E8E;&#x4E0A;&#x8FF0;&#x6982;&#x5FF5;&#x7684;&#xFF0C;&#x65E0;&#x6CD5;&#x7ED9;&#x4F60;&#x63D0;&#x4F9B;&#x53EF;&#x9760;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x6BCF;&#x5F53;&#x6587;&#x6863;&#x63D0;&#x53CA;&#x300C;&#x5B57;&#x7B26;&#x300D;&#xFF08;character&#xFF09;&#x6216;&#x8005; <code>unichar</code> &#x65F6;&#xFF0C;&#x5B83;&#x5176;&#x5B9E;&#x90FD;&#x8BF4;&#x7684;&#x662F;&#x7801;&#x5143;&#x3002;&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x5728; String Programming Guide &#x91CC;&#x4E4B;&#x540E;&#x4E00;&#x4E2A;&#x7AE0;&#x8282;&#x4E2D;&#xFF0C;&#x6587;&#x6863;&#x7684;&#x8868;&#x8FF0;&#x662F;&#x6B63;&#x786E;&#x7684;&#xFF0C;&#x4F46;&#x7EE7;&#x7EED;&#x9519;&#x8BEF;&#x5730;&#x4F7F;&#x7528;&#x300C;&#x5B57;&#x7B26;&#x300D;&#xFF08;character&#xFF09;&#x8FD9;&#x4E2A;&#x8BCD;&#x3002;&#x5F3A;&#x70C8;&#x5EFA;&#x8BAE;&#x4F60;&#x9605;&#x8BFB; <a href="https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/Strings/Articles/stringsClusters.html" target="_blank">Characters and Grapheme Clusters</a> &#x8FD9;&#x4E00;&#x7AE0;&#xFF0C;&#x91CC;&#x9762;&#x5F88;&#x597D;&#x5730;&#x89E3;&#x91CA;&#x4E86;&#x771F;&#x5B9E;&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x5C3D;&#x7BA1;&#x5728;&#x6982;&#x5FF5;&#x4E0A; <code>NSString</code> &#x662F;&#x57FA;&#x4E8E; UTF-16 &#x7684;&#xFF0C;&#x4F46;&#x8FD9;&#x5E76;&#x4E0D;&#x610F;&#x5473;&#x7740;&#x8FD9;&#x4E2A;&#x7C7B;&#x603B;&#x662F;&#x80FD;&#x4E0E; UTF-16 &#x7F16;&#x7801;&#x7684;&#x6570;&#x636E;&#x5F88;&#x597D;&#x5730;&#x5DE5;&#x4F5C;&#x3002;&#x5B83;&#x4E0D;&#x4FDD;&#x8BC1;&#x5185;&#x90E8;&#x7684;&#x5B9E;&#x73B0;&#xFF08;&#x4F60;&#x53EF;&#x4EE5;&#x5B50;&#x7C7B;&#x5316; <code>NSString</code> &#x6765;&#x5199;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x5B9E;&#x73B0;&#xFF09;&#x3002;&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x5728;&#x4FDD;&#x8BC1;&#x5FEB;&#x901F;&#x7684;&#xFF08;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6; O(1) &#x7EA7;&#x522B;&#xFF09;&#x4E0E; UTF-16 &#x7801;&#x5143;&#x8F6C;&#x6362;&#x7684;&#x540C;&#x65F6;&#xFF0C;<code>CFString</code> <a href="https://developer.apple.com/library/ios/documentation/CoreFoundation/Conceptual/CFStrings/Articles/StringStorage.html" target="_blank">&#x5C3D;&#x53EF;&#x80FD;&#x6709;&#x6548;&#x7387;&#x5730;&#x5229;&#x7528;&#x5185;&#x5B58;</a>&#xFF0C;&#x8FD9;&#x53D6;&#x51B3;&#x4E8E;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x9605;&#x8BFB; <a href="http://www.opensource.apple.com/source/CF/CF-855.11/CFString.c" target="_blank">CFString &#x7684;&#x6E90;&#x4EE3;&#x7801;</a>&#x6765;&#x81EA;&#x5DF1;&#x9A8C;&#x8BC1;&#x3002;</p>
+<h3 id="&#x5E38;&#x89C1;&#x7684;&#x9677;&#x9631;">&#x5E38;&#x89C1;&#x7684;&#x9677;&#x9631;</h3>
+<p>&#x4E86;&#x89E3;&#x4E86; <code>NSString</code> &#x548C; Unicode&#xFF0C;&#x4F60;&#x73B0;&#x5728;&#x5E94;&#x8BE5;&#x80FD;&#x8FA8;&#x522B;&#x51FA;&#x54EA;&#x4E9B;&#x64CD;&#x4F5C;&#x5BF9;&#x5B57;&#x7B26;&#x4E32;&#x6709;&#x6F5C;&#x5728;&#x7684;&#x5371;&#x9669;&#x3002;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x770B;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#xFF0C;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x907F;&#x514D;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#x3002;&#x4F46;&#x9996;&#x5148;&#xFF0C;&#x6211;&#x4EEC;&#x5F97;&#x77E5;&#x9053;&#x600E;&#x4E48;&#x7528;&#x4EFB;&#x610F;&#x7684; Unicode &#x5B57;&#x7B26;&#x5E8F;&#x5217;&#x521B;&#x5EFA;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;Clang &#x4F1A;&#x628A;&#x6E90;&#x6587;&#x4EF6;&#x770B;&#x4F5C;&#x4EE5; UTF-8 &#x7F16;&#x7801;&#x7684;&#x3002;&#x53EA;&#x8981;&#x4F60;&#x786E;&#x4FDD; Xcode &#x4EE5; UTF-8 &#x7F16;&#x7801;&#x4FDD;&#x5B58;&#x6587;&#x4EF6;&#xFF0C;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7528;&#x5B57;&#x7B26;&#x663E;&#x793A;&#x7A0B;&#x5E8F;&#x63D2;&#x5165;&#x4EFB;&#x610F;&#x5B57;&#x7B26;&#x3002;&#x5982;&#x679C;&#x4F60;&#x66F4;&#x559C;&#x6B22;&#x7528;&#x7801;&#x70B9;&#xFF0C;&#x6700;&#x5927;&#x5230; U+FFFF &#x8FD9;&#x4E2A;&#x8303;&#x56F4;&#x5185;&#x7684;&#x7801;&#x70B9;&#x4F60;&#x53EF;&#x4EE5;&#x4EE5; <code>@&quot;\u266A&quot;</code>&#xFF08;&#x266A;&#xFF09;&#x7684;&#x65B9;&#x5F0F;&#x8F93;&#x5165;&#xFF0C;BMP &#x5916;&#x5176;&#x5B83;&#x5E73;&#x9762;&#x7684;&#x7801;&#x70B9;&#x5219;&#x4EE5; <code>@&quot;\U0001F340&quot;</code>&#xFF08;&#x1F340;&#xFF09;&#x7684;&#x65B9;&#x5F0F;&#x8F93;&#x5165;&#x3002;&#x6709;&#x610F;&#x601D;&#x7684;&#x662F;&#xFF0C;<a href="http://c0x.coding-guidelines.com/6.4.3.html" target="_blank">C99 &#x4E0D;&#x5141;&#x8BB8;</a>&#x6807;&#x51C6; C &#x5B57;&#x7B26;&#x96C6;&#x91CC;&#x7684;&#x5B57;&#x7B26;&#x7528;<strong>&#x901A;&#x7528;&#x5B57;&#x7B26;&#x540D;</strong>&#xFF08;universal character name&#xFF09;&#x6765;&#x6307;&#x5B9A;&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x80FD;&#x8FD9;&#x6837;&#x5199;&#xFF1A;</p>
+<pre><code>NSString *s = @&quot;\u0041&quot;; // Latin capital letter A
+// error: character &apos;A&apos; cannot be specified by a universal character name
+</code></pre><p>&#x6211;&#x8BA4;&#x4E3A;&#x5E94;&#x8BE5;&#x907F;&#x514D;&#x4F7F;&#x7528;<a href="https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/Strings/Articles/formatSpecifiers.html" target="_blank">&#x683C;&#x5F0F;&#x5316;&#x5360;&#x4F4D;&#x7B26;</a> %C&#xFF08;&#x4F7F;&#x7528; <code>unichar</code> &#x7C7B;&#x578B;&#xFF09;&#x6765;&#x521B;&#x5EFA;&#x5B57;&#x7B26;&#x4E32;&#x53D8;&#x91CF;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#x5F88;&#x5BB9;&#x6613;&#x6DF7;&#x6DC6;&#x7801;&#x5143;&#x548C;&#x7801;&#x70B9;&#x3002;&#x4F46;&#x662F;&#x5728;&#x8F93;&#x51FA; log &#x4FE1;&#x606F;&#x65F6; %C &#x5F88;&#x6709;&#x7528;&#x3002;</p>
+<h4 id="&#x957F;&#x5EA6;">&#x957F;&#x5EA6;</h4>
+<p><code>-[NSString length]</code> &#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;&#x91CC; <code>unichar</code> &#x7684;&#x4E2A;&#x6570;&#x3002;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x4E86;&#x89E3;&#x4E86;&#x4E09;&#x4E2A;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x8FD9;&#x4E2A;&#x8FD4;&#x56DE;&#x503C;&#x4E0E;&#x5B9E;&#x9645;&#xFF08;&#x53EF;&#x89C1;&#xFF09;&#x5B57;&#x7B26;&#x6570;&#x4E0D;&#x7B26;&#x7684; Unicode &#x7279;&#x6027;&#x3002;</p>
+<ol>
+<li><p>&#x57FA;&#x672C;&#x591A;&#x6587;&#x79CD;&#x5E73;&#x9762;&#x5916;&#x7684;&#x5B57;&#x7B26;&#xFF1A;&#x8BB0;&#x4F4F;&#xFF0C;BMP &#x91CC;&#x6240;&#x6709;&#x7684;&#x5B57;&#x7B26;&#x5728; UTF-16 &#x91CC;&#x90FD;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A;&#x7801;&#x5143;&#x8868;&#x793A;&#x3002;&#x6240;&#x6709;&#x5176;&#x4F59;&#x7684;&#x5B57;&#x7B26;&#x90FD;&#x9700;&#x8981;&#x4E24;&#x4E2A;&#x7801;&#x5143;&#xFF08;&#x4E00;&#x4E2A;&#x4EE3;&#x7406;&#x5BF9;&#xFF09;&#x3002;&#x57FA;&#x672C;&#x4E0A;&#x6240;&#x6709;&#x73B0;&#x4EE3;&#x4F7F;&#x7528;&#x7684;&#x5B57;&#x7B26;&#x90FD;&#x5728; BMP &#x91CC;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x5B9E;&#x9645;&#x4E2D;&#x5F88;&#x96BE;&#x9047;&#x5230;&#x4EE3;&#x7406;&#x5BF9;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x51E0;&#x5E74;&#x524D;&#x968F;&#x7740; emoji &#x88AB;&#x5F15;&#x5165; Unicode&#xFF08;&#x5728; 1 &#x53F7;&#x5E73;&#x9762;&#xFF09;&#xFF0C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x5DF2;&#x7ECF;&#x6709;&#x6240;&#x53D8;&#x5316;&#x3002;emoji &#x5DF2;&#x7ECF;&#x53D8;&#x5F97;&#x5341;&#x5206;&#x666E;&#x904D;&#xFF0C;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x5FC5;&#x987B;&#x80FD;&#x591F;&#x6B63;&#x786E;&#x5904;&#x7406;&#x5B83;&#x4EEC;&#xFF1A;</p>
+<pre><code> NSString *s = @&quot;\U0001F30D&quot;; // earth globe emoji &#x1F30D;  
+ NSLog(@&quot;The length of %@ is %lu&quot;, s, [s length]);
+ // =&gt; The length of &#x1F30D; is 2  
+</code></pre><p> &#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A;&#x5C0F;&#x82B1;&#x62DB;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x76F4;&#x63A5;&#x8BA1;&#x7B97;&#x5B57;&#x7B26;&#x4E32;&#x5728; UTF-32 &#x7F16;&#x7801;&#x4E0B;&#x6240;&#x9700;&#x8981;&#x7684;&#x5B57;&#x8282;&#x6570;&#xFF0C;&#x518D;&#x9664;&#x4EE5; 4&#xFF1A;  </p>
+<pre><code> NSUInteger realLength =
+ [s lengthOfBytesUsingEncoding:NSUTF32StringEncoding] / 4;  
+ NSLog(@&quot;The real length of %@ is %lu&quot;, s, realLength);  
+ // =&gt; The real length of &#x1F30D; is 1  
+</code></pre></li>
+<li><p>&#x7EC4;&#x5408;&#x5B57;&#x7B26;&#x5E8F;&#x5217;&#xFF1A;&#x5982;&#x679C;&#x5B57;&#x6BCD; &#xE9; &#x662F;&#x4EE5;&#x5206;&#x89E3;&#x5F62;&#x5F0F;&#xFF08;e + &#xB4;&#xFF09;&#x7F16;&#x7801;&#x7684;&#xFF0C;&#x7B97;&#x4F5C;&#x4E24;&#x4E2A;&#x7801;&#x5143;&#xFF1A;</p>
+<pre><code> NSString *s = @&quot;e\u0301&quot;; // e + &#xB4;  
+ NSLog(@&quot;The length of %@ is %lu&quot;, s, [s length]);
+ // =&gt; The length of &#xE9; is 2  
+</code></pre><p> &#x8FD9;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5305;&#x542B;&#x4E86;&#x4E24;&#x4E2A; Unicode &#x5B57;&#x7B26;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x610F;&#x4E49;&#x4E0A;&#xFF0C;&#x8FD4;&#x56DE;&#x503C; <code>2</code> &#x662F;&#x6B63;&#x786E;&#x7684;&#xFF0C;&#x4F46;&#x663E;&#x7136;&#x6B63;&#x5E38;&#x4EBA;&#x90FD;&#x4E0D;&#x4F1A;&#x8FD9;&#x4E48;&#x53BB;&#x6570;&#x3002;&#x53EF;&#x4EE5;&#x7528; <code>precomposedStringWithCanonicalMapping:</code> &#x628A;&#x5B57;&#x7B26;&#x4E32;&#x6B63;&#x89C4;&#x5316;&#x6210; C &#x5F62;&#x5F0F;&#xFF08;&#x5408;&#x6210;&#x5F62;&#x5F0F;&#xFF09;&#x6765;&#x5F97;&#x5230;&#x66F4;&#x597D;&#x7684;&#x7ED3;&#x679C;&#xFF1A;  </p>
+<pre><code> NSString *n = [s precomposedStringWithCanonicalMapping];
+ NSLog(@&quot;The length of %@ is %lu&quot;, n, [n length]);
+ // =&gt; The length of &#xE9; is 1  
+</code></pre><p> &#x4E0D;&#x5DE7;&#x7684;&#x662F;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x6240;&#x6709;&#x60C5;&#x51B5;&#x90FD;&#x80FD;&#x8FD9;&#x6837;&#x505A;&#xFF0C;&#x56E0;&#x4E3A;&#x53EA;&#x6709;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x7EC4;&#x5408;&#x5B57;&#x7B26;&#x5E8F;&#x5217;&#x6709;&#x5408;&#x6210;&#x5F62;&#x5F0F;&#x2014;&#x2014;&#x5176;&#x5B83;&#x57FA;&#x7840;&#x5B57;&#x7B26;&#x4E0E;&#x6807;&#x8BB0;&#x7684;&#x7EC4;&#x5408;&#x5373;&#x4FBF;&#x662F;&#x7ECF;&#x8FC7;&#x6B63;&#x89C4;&#x5316;&#x540E;&#xFF0C;&#x4E5F;&#x4F1A;&#x4FDD;&#x6301;&#x539F;&#x6837;&#x3002;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x77E5;&#x9053;&#x5B57;&#x7B26;&#x4E32;&#x771F;&#x6B63;&#x7684;&#x5B57;&#x7B26;&#x4E2A;&#x6570;&#xFF0C;&#x4F60;&#x53EA;&#x80FD;&#x904D;&#x5386;&#x5B57;&#x7B26;&#x4E32;&#x81EA;&#x5DF1;&#x6570;&#x3002;&#x540E;&#x9762;&#x5FAA;&#x73AF;&#x90A3;&#x4E00;&#x8282;&#x4F1A;&#x7EE7;&#x7EED;&#x8BA8;&#x8BBA;&#x6709;&#x5173;&#x7EC6;&#x8282;&#x3002;</p>
+</li>
+<li><p>&#x53D8;&#x4F53;&#x5E8F;&#x5217;&#xFF1A;&#x5B83;&#x4EEC;&#x548C;&#x5206;&#x89E3;&#x5F62;&#x5F0F;&#x7684;&#x7EC4;&#x5408;&#x5B57;&#x7B26;&#x5E8F;&#x5217;&#x7684;&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;&#x4E00;&#x6837;&#xFF0C;&#x56E0;&#x6B64;&#x53D8;&#x4F53;&#x9009;&#x62E9;&#x7B26;&#x4E5F;&#x7B97;&#x4F5C;&#x5355;&#x72EC;&#x7684;&#x5B57;&#x7B26;&#x3002;</p>
+</li>
+</ol>
+<h4 id="&#x968F;&#x673A;&#x8BBF;&#x95EE;">&#x968F;&#x673A;&#x8BBF;&#x95EE;</h4>
+<p>&#x7528; <code>characterAtIndex:</code> &#x65B9;&#x6CD5;&#x4EE5;&#x7D22;&#x5F15;&#x65B9;&#x5F0F;&#x76F4;&#x63A5;&#x8BBF;&#x95EE; <code>unichar</code> &#x4F1A;&#x6709;&#x540C;&#x6837;&#x7684;&#x95EE;&#x9898;&#x3002;&#x5B57;&#x7B26;&#x4E32;&#x53EF;&#x80FD;&#x4F1A;&#x5305;&#x542B;&#x7EC4;&#x5408;&#x5B57;&#x7B26;&#x5E8F;&#x5217;&#x3001;&#x4EE3;&#x7406;&#x5BF9;&#x6216;&#x53D8;&#x4F53;&#x5E8F;&#x5217;&#x3002;&#x82F9;&#x679C;&#x628A;&#x8FD9;&#x4E9B;&#x90FD;&#x53EB;&#x505A;<strong>&#x5408;&#x6210;&#x5B57;&#x7B26;&#x5E8F;&#x5217;</strong>&#xFF08;composed character sequence&#xFF09;&#xFF0C;&#x8FD9;&#x4E9B;&#x672F;&#x8BED;&#x5C31;&#x53D8;&#x5F97;&#x5BB9;&#x6613;&#x6DF7;&#x6DC6;&#x3002;&#x6CE8;&#x610F;&#x4E0D;&#x8981;&#x628A;&#x5408;&#x6210;&#x5B57;&#x7B26;&#x5E8F;&#x5217;&#xFF08;&#x82F9;&#x679C;&#x7684;&#x672F;&#x8BED;&#xFF09;&#x548C;&#x7EC4;&#x5408;&#x5B57;&#x7B26;&#x5E8F;&#x5217;&#xFF08;Unicode &#x672F;&#x8BED;&#xFF09;&#x641E;&#x6DF7;&#x3002;&#x540E;&#x8005;&#x662F;&#x524D;&#x8005;&#x7684;&#x5B50;&#x96C6;&#x3002;&#x53EF;&#x4EE5;&#x7528; <a href="https://developer.apple.com/library/ios/documentation/cocoa/reference/foundation/classes/NSString_Class/Reference/NSString.html#//apple_ref/occ/instm/NSString/rangeOfComposedCharacterSequenceAtIndex:" target="_blank"><code>rangeOfComposedCharacterSequenceAtIndex:</code></a> &#x6765;&#x786E;&#x5B9A;&#x7279;&#x5B9A;&#x4F4D;&#x7F6E;&#x7684; <code>unichar</code> &#x662F;&#x4E0D;&#x662F;&#x4EE3;&#x8868;&#x5355;&#x4E2A;&#x5B57;&#x7B26;&#xFF08;&#x53EF;&#x80FD;&#x7531;&#x591A;&#x4E2A;&#x7801;&#x70B9;&#x7EC4;&#x6210;&#xFF09;&#x7684;&#x7801;&#x5143;&#x5E8F;&#x5217;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;&#x6BCF;&#x5F53;&#x7ED9;&#x53E6;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x5185;&#x5BB9;&#x672A;&#x77E5;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x8303;&#x56F4;&#x4F5C;&#x53C2;&#x6570;&#x65F6;&#x90FD;&#x5E94;&#x8BE5;&#x8FD9;&#x6837;&#x505A;&#xFF0C;&#x786E;&#x4FDD; Unicode &#x5B57;&#x7B26;&#x4E0D;&#x4F1A;&#x88AB;&#x4ECE;&#x4E2D;&#x95F4;&#x5206;&#x5F00;&#x3002;</p>
+<h4 id="&#x5FAA;&#x73AF;">&#x5FAA;&#x73AF;</h4>
+<p>&#x4F7F;&#x7528; <code>rangeOfComposedCharacterSequenceAtIndex:</code> &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x5199;&#x4E00;&#x4E2A;&#x4EE3;&#x7801;&#x5957;&#x8DEF;&#x6765;&#x6B63;&#x786E;&#x5730;&#x5FAA;&#x73AF;&#x5B57;&#x7B26;&#x4E32;&#x91CC;&#x6240;&#x6709;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x4F46;&#x6BCF;&#x6B21;&#x8981;&#x904D;&#x5386;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#x90FD;&#x5F97;&#x8FD9;&#x6837;&#x505A;&#x592A;&#x4E0D;&#x65B9;&#x4FBF;&#x4E86;&#x3002;&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;<code>NSString</code> &#x6709;&#x66F4;&#x597D;&#x5730;&#x65B9;&#x5F0F;&#xFF1A;<a href="https://developer.apple.com/library/ios/documentation/cocoa/reference/foundation/classes/NSString_Class/Reference/NSString.html#//apple_ref/occ/instm/NSString/enumerateSubstringsInRange:options:usingBlock:" target="_blank"><code>enumerateSubstringsInRange:options:usingBlock:</code></a> &#x65B9;&#x6CD5;&#x3002;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x628A; Unicode &#x62BD;&#x8C61;&#x7684;&#x5730;&#x65B9;&#x9690;&#x85CF;&#x4E86;&#xFF0C;&#x80FD;&#x8BA9;&#x4F60;&#x8F7B;&#x677E;&#x5730;&#x5FAA;&#x73AF;&#x5B57;&#x7B26;&#x4E32;&#x91CC;&#x7684;&#x7EC4;&#x5408;&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x5355;&#x8BCD;&#x3001;&#x884C;&#x3001;&#x53E5;&#x5B50;&#x6216;&#x6BB5;&#x843D;&#x3002;&#x4F60;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x52A0;&#x4E0A; <code>NSStringEnumerationLocalized</code> &#x8FD9;&#x4E2A;&#x9009;&#x9879;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x5728;&#x786E;&#x5B9A;&#x8BCD;&#x8BED;&#x95F4;&#x548C;&#x53E5;&#x5B50;&#x95F4;&#x7684;&#x8FB9;&#x754C;&#x65F6;&#x628A;&#x7528;&#x6237;&#x6240;&#x5728;&#x7684;&#x533A;&#x57DF;&#x8003;&#x8651;&#x8FDB;&#x53BB;&#x3002;&#x8981;&#x904D;&#x5386;&#x5355;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x628A;&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x4E3A; <code>NSStringEnumerationByComposedCharacterSequences</code>&#xFF1A;</p>
+<pre><code>NSString *s = @&quot;The weather on \U0001F30D is \U0001F31E today.&quot;;  
+// The weather on &#x1F30D; is &#x1F31E; today.  
+NSRange fullRange = NSMakeRange(0, [s length]);  
+[s enumerateSubstringsInRange:fullRange  
+                      options:NSStringEnumerationByComposedCharacterSequences  
+                   usingBlock:^(NSString *substring, NSRange substringRange, NSRange enclosingRange, BOOL *stop)
+{
+    NSLog(@&quot;%@ %@&quot;, substring, NSStringFromRange(substringRange));
+}];
+</code></pre><p>&#x8FD9;&#x4E2A;&#x5947;&#x5999;&#x7684;&#x65B9;&#x6CD5;&#x8868;&#x660E;&#xFF0C;&#x82F9;&#x679C;&#x60F3;&#x8BA9;&#x6211;&#x4EEC;&#x628A;&#x5B57;&#x7B26;&#x4E32;&#x770B;&#x505A;&#x5B50;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#xFF08;&#x82F9;&#x679C;&#x610F;&#x4E49;&#x4E0A;&#x7684;&#xFF09;&#x5B57;&#x7B26;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x56E0;&#x4E3A;  </p>
+<ol>
+<li>&#x5355;&#x4E2A; <code>unichar</code> &#x592A;&#x5C0F;&#xFF0C;&#x4E0D;&#x8DB3;&#x4EE5;&#x4EE3;&#x8868;&#x4E00;&#x4E2A;&#x771F;&#x6B63;&#x7684; Unicode &#x5B57;&#x7B26;&#xFF1B;</li>
+<li>&#x4E00;&#x4E9B;&#xFF08;&#x666E;&#x904D;&#x610F;&#x4E49;&#x4E0A;&#x7684;&#xFF09;&#x5B57;&#x7B26;&#x7531;&#x591A;&#x4E2A; Unicode &#x7801;&#x70B9;&#x7EC4;&#x6210;&#x3002;  </li>
+</ol>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x52A0;&#x5165;&#x76F8;&#x5BF9;&#x665A;&#x4E00;&#x4E9B;&#xFF08;&#x5728; OS X 10.6 &#x548C; iOS 4.0 &#x7684;&#x65F6;&#x5019;&#xFF09;&#x3002;&#x5728;&#x4E4B;&#x524D;&#xFF0C;&#x6309;&#x5B57;&#x7B26;&#x5FAA;&#x73AF;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x8981;&#x9EBB;&#x70E6;&#x5F97;&#x591A;&#x3002;</p>
+<h4 id="&#x6BD4;&#x8F83;">&#x6BD4;&#x8F83;</h4>
+<p>&#x9664;&#x975E;&#x4F60;&#x624B;&#x52A8;&#x6267;&#x884C;&#xFF0C;&#x5426;&#x5219;&#x5B57;&#x7B26;&#x4E32;&#x5BF9;&#x8C61;&#x4E0D;&#x4F1A;&#x81EA;&#x5DF1;&#x6B63;&#x89C4;&#x5316;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x76F4;&#x63A5;&#x6BD4;&#x8F83;&#x5305;&#x542B;&#x7EC4;&#x5408;&#x5B57;&#x7B26;&#x5E8F;&#x5217;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x53EF;&#x80FD;&#x4F1A;&#x5F97;&#x51FA;&#x9519;&#x8BEF;&#x7684;&#x7ED3;&#x679C;&#x3002;<a href="https://developer.apple.com/library/ios/documentation/Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/Reference/NSObject.html#//apple_ref/occ/intfm/NSObject/isEqual:" target="_blank"><code>isEqual:</code></a> &#x548C; <a href="https://developer.apple.com/library/ios/documentation/cocoa/reference/foundation/classes/NSString_Class/Reference/NSString.html#//apple_ref/occ/instm/NSString/isEqualToString:" target="_blank"><code>isEqualToString:</code></a> &#x8FD9;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x5730;&#x6BD4;&#x8F83;&#x7684;&#x3002;&#x5982;&#x679C;&#x5E0C;&#x671B;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5408;&#x6210;&#x548C;&#x5206;&#x89E3;&#x7684;&#x5F62;&#x5F0F;&#x76F8;&#x543B;&#x5408;&#xFF0C;&#x5F97;&#x5148;&#x81EA;&#x5DF1;&#x6B63;&#x89C4;&#x5316;&#xFF1A;</p>
+<pre><code>NSString *s = @&quot;\u00E9&quot;; // &#xE9;  
+NSString *t = @&quot;e\u0301&quot;; // e + &#xB4;
+BOOL isEqual = [s isEqualToString:t];
+NSLog(@&quot;%@ is %@ to %@&quot;, s, isEqual ? @&quot;equal&quot; : @&quot;not equal&quot;, t);  
+// =&gt; &#xE9; is not equal to &#xE9;
+
+// Normalizing to form C  
+NSString *sNorm = [s precomposedStringWithCanonicalMapping];  
+NSString *tNorm = [t precomposedStringWithCanonicalMapping];  
+BOOL isEqualNorm = [sNorm isEqualToString:tNorm];  
+NSLog(@&quot;%@ is %@ to %@&quot;, sNorm, isEqualNorm ? @&quot;equal&quot; : @&quot;not equal&quot;, tNorm);  
+// =&gt; &#xE9; is equal to &#xE9;
+</code></pre><p>&#x53E6;&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x662F;&#x4F7F;&#x7528; <a href="https://developer.apple.com/library/ios/documentation/cocoa/reference/foundation/classes/NSString_Class/Reference/NSString.html#//apple_ref/occ/instm/NSString/compare:" target="_blank"><code>compare:</code></a> &#x65B9;&#x6CD5;&#xFF08;&#x6216;&#x8005;&#x5B83;&#x7684;&#x5176;&#x5B83;&#x53D8;&#x5F62;&#x65B9;&#x6CD5;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;<a href="https://developer.apple.com/library/ios/documentation/cocoa/reference/foundation/classes/NSString_Class/Reference/NSString.html#//apple_ref/occ/instm/NSString/localizedCompare:" target="_blank"><code>localizedCompare:</code></a>&#xFF09;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x548C;&#x5B83;&#x76F8;&#x5BB9;&#x7B49;&#x4EF7;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x5BF9;&#x6B64;&#xFF0C;&#x82F9;&#x679C;&#x6CA1;&#x6709;&#x5F88;&#x597D;&#x5730;&#x5199;&#x5165;&#x6587;&#x6863;&#x3002;&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x4F60;&#x5E38;&#x5E38;&#x8FD8;&#x9700;&#x8981;&#x4F5C;&#x6807;&#x51C6;&#x7B49;&#x4EF7;&#x7684;&#x6BD4;&#x8F83;&#x3002;<code>compare:</code> &#x6CA1;&#x6CD5;&#x4F5C;&#x8FD9;&#x4E2A;&#x6BD4;&#x8F83;&#x3002;</p>
+<pre><code>NSString *s = @&quot;ff&quot;; // ff  
+NSString *t = @&quot;\uFB00&quot;; // &#xFB00; ligature  
+NSComparisonResult result = [s localizedCompare:t];  
+NSLog(@&quot;%@ is %@ to %@&quot;, s, result == NSOrderedSame ? @&quot;equal&quot; : @&quot;not equal&quot;, t);  
+// =&gt; ff is equal to &#xFB00;
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x53EA;&#x60F3;&#x7528; <code>compare:</code> &#x6BD4;&#x8F83;&#x800C;&#x4E0D;&#x8003;&#x8651;&#x7B49;&#x4EF7;&#x5173;&#x7CFB;&#xFF0C;<a href="https://developer.apple.com/library/ios/documentation/cocoa/reference/foundation/classes/NSString_Class/Reference/NSString.html#//apple_ref/occ/instm/NSString/compare:options:" target="_blank"><code>compare:options</code></a> &#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x53D8;&#x4F53;&#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x6307;&#x5B9A; <code>NSLiteralSearch</code> &#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x8FD9;&#x80FD;&#x8BA9;&#x6BD4;&#x8F83;&#x66F4;&#x5FEB;&#x3002;</p>
+<h4 id="&#x4ECE;&#x6587;&#x4EF6;&#x6216;&#x7F51;&#x7EDC;&#x8BFB;&#x53D6;&#x6587;&#x672C;">&#x4ECE;&#x6587;&#x4EF6;&#x6216;&#x7F51;&#x7EDC;&#x8BFB;&#x53D6;&#x6587;&#x672C;</h4>
+<p>&#x603B;&#x5730;&#x6765;&#x8BF4;&#xFF0C;&#x53EA;&#x6709;&#x5F53;&#x4F60;&#x77E5;&#x9053;&#x6587;&#x672C;&#x6240;&#x7528;&#x7684;&#x7F16;&#x7801;&#x65F6;&#x6587;&#x672C;&#x6570;&#x636E;&#x624D;&#x662F;&#x6709;&#x7528;&#x7684;&#x3002;&#x5F53;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x4E0B;&#x8F7D;&#x6587;&#x672C;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x901A;&#x5E38;&#x4F60;&#x90FD;&#x77E5;&#x9053;&#x6216;&#x8005;&#x53EF;&#x4EE5;&#x4ECE; HTTP &#x7684;&#x5934;&#x6587;&#x4EF6;&#x4E2D;&#x5F97;&#x77E5;&#x7F16;&#x7801;&#x7C7B;&#x578B;&#x3002;&#x4E4B;&#x540E;&#xFF0C;&#x518D;&#x7528; <code>-[NSString initWithData:encoding:]</code> &#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x5B57;&#x7B26;&#x4E32;&#x5BF9;&#x8C61;&#x5C31;&#x5F88;&#x7B80;&#x5355;&#x4E86;&#x3002;</p>
+<blockquote>
+<p><span class="secondary radius label">&#x7F16;&#x8005;&#x6CE8;</span> &#x8FD9;&#x4E00;&#x6BB5;&#x548C;&#x4E0B;&#x4E00;&#x6BB5;&#x7684;&#x8FD9;&#x4E24;&#x4E2A; <code>NSString</code> &#x7684;&#x65B9;&#x6CD5;&#x5747;&#x4E3A;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x800C;&#x975E;&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x5373;&#x5E94;&#x8BE5;&#x5148; <code>alloc</code> &#x540E;&#x518D;&#x8C03;&#x7528;&#xFF0C;&#x539F;&#x6587;&#x8FD9;&#x6837;&#x5199;&#x4F30;&#x8BA1;&#x53EA;&#x662F;&#x4E3A;&#x4E86;&#x7B80;&#x6D01;&#xFF0C;&#x8BF7;&#x8BFB;&#x8005;&#x77E5;&#x4F1A;&#x3002;</p>
+</blockquote>
+<p>&#x867D;&#x7136;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x672C;&#x8EAB;&#x5E76;&#x4E0D;&#x5305;&#x542B;&#x7F16;&#x7801;&#x4FE1;&#x606F;&#xFF0C;&#x4F46; <code>NSString</code> &#x5E38;&#x5E38;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x67E5;&#x770B;<strong>&#x6269;&#x5C55;&#x6587;&#x4EF6;&#x5C5E;&#x6027;</strong>&#xFF08;extended file attributes&#xFF09;&#x6216;&#x8005;&#x901A;&#x8FC7;&#x89C4;&#x5F8B;&#x8FDB;&#x884C;&#x8BD5;&#x63A2;&#x6027;&#x7684;&#x731C;&#x6D4B;&#x7684;&#x65B9;&#x6CD5;&#xFF08;&#x6BD4;&#x5982;&#xFF0C;&#x4E00;&#x4E2A;&#x6709;&#x6548;&#x7684; UTF-8 &#x6587;&#x4EF6;&#x91CC;&#x5C31;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x67D0;&#x4E9B;&#x7279;&#x5B9A;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x5E8F;&#x5217;&#xFF09;&#x6765;&#x786E;&#x5B9A;&#x6587;&#x4EF6;&#x7684;&#x7F16;&#x7801;&#x3002;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <a href="https://developer.apple.com/library/ios/documentation/cocoa/reference/foundation/classes/NSString_Class/Reference/NSString.html#//apple_ref/occ/instm/NSString/" target="_blank"><code>-[NSString initWithContentsOfURL:encoding:error:]</code></a> &#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x6765;&#x4ECE;&#x7F16;&#x7801;&#x5DF2;&#x77E5;&#x7684;&#x6587;&#x4EF6;&#x91CC;&#x8BFB;&#x53D6;&#x6587;&#x672C;&#x3002;&#x8981;&#x8BFB;&#x53D6;&#x7F16;&#x7801;&#x672A;&#x77E5;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x82F9;&#x679C;&#x63D0;&#x51FA;&#x4E86;&#x4EE5;&#x4E0B;&#x539F;&#x5219;&#xFF1A;</p>
+<blockquote>
+<p>&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x5F97;&#x4E0D;&#x731C;&#x6D4B;&#x6587;&#x4EF6;&#x7684;&#x7F16;&#x7801;&#xFF08;&#x6CE8;&#x610F;&#xFF0C;&#x6CA1;&#x6709;&#x660E;&#x786E;&#x4FE1;&#x606F;&#xFF0C;&#x5C31;&#x53EA;&#x6709;&#x731C;&#x6D4B;&#xFF09;&#xFF1A;</p>
+<ol>
+<li>&#x8BD5;&#x8BD5;&#x8FD9;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#xFF1A;<code>stringWithContentsOfFile:usedEncoding:error:</code> &#x6216;&#x8005; <code>initWithContentsOfFile:usedEncoding:error:</code> &#xFF08;&#x6216;&#x8005;&#x8FD9;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x53C2;&#x6570;&#x4E3A; URL &#x7684;&#x7B49;&#x4EF7;&#x65B9;&#x6CD5;&#xFF09;&#x3002;<br>&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x4F1A;&#x5C1D;&#x8BD5;&#x731C;&#x6D4B;&#x8D44;&#x6E90;&#x7684;&#x7F16;&#x7801;&#xFF0C;&#x5982;&#x679C;&#x731C;&#x6D4B;&#x6210;&#x529F;&#xFF0C;&#x4F1A;&#x4EE5;&#x5F15;&#x7528;&#x7684;&#x5F62;&#x5F0F;&#x5E26;&#x56DE;&#x6240;&#x7528;&#x7684;&#x7F16;&#x7801;&#x3002;</li>
+<li>&#x5982;&#x679C; 1 &#x5931;&#x8D25;&#x4E86;&#xFF0C;&#x8BD5;&#x7740;&#x7528; UTF-8 &#x8BFB;&#x53D6;&#x8D44;&#x6E90;&#x3002;</li>
+<li>&#x5982;&#x679C; 2 &#x5931;&#x8D25;&#x4E86;&#xFF0C;&#x8BD5;&#x8BD5;&#x5408;&#x9002;&#x7684;&#x8001;&#x7684;&#x7F16;&#x7801;&#x3002;<br>&#x8FD9;&#x91CC;&#x300C;&#x5408;&#x9002;&#x7684;&#x300D;&#x53D6;&#x51B3;&#x4E8E;&#x5177;&#x4F53;&#x60C5;&#x51B5;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x662F;&#x9ED8;&#x8BA4;&#x7684; C &#x8BED;&#x8A00;&#x5B57;&#x7B26;&#x4E32;&#x7F16;&#x7801;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F; ISO &#x6216;&#x8005; Windows Latin 1 &#x7F16;&#x7801;&#xFF0C;&#x4EA6;&#x6216;&#x8005;&#x662F;&#x5176;&#x5B83;&#x7684;&#xFF0C;&#x53D6;&#x51B3;&#x4E8E;&#x4F60;&#x7684;&#x6570;&#x636E;&#x6765;&#x6E90;&#x3002;  </li>
+<li>&#x6700;&#x7EC8;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x8BD5;&#x8BD5; Application Kit &#x91CC; <code>NSAttributedString</code> &#x7C7B;&#x7684;&#x8F7D;&#x5165;&#x65B9;&#x6CD5;&#xFF08;&#x6BD4;&#x5982;&#xFF1A;<code>initWithFileURL:options:documentAttributes:error:</code>&#xFF09;&#x3002;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x4F1A;&#x5C1D;&#x8BD5;&#x7EAF;&#x6587;&#x672C;&#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE;&#x4F7F;&#x7528;&#x7684;&#x7F16;&#x7801;&#x3002;&#x53EF;&#x4EE5;&#x7528;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x6253;&#x5F00;&#x4EFB;&#x610F;&#x7684;&#x6587;&#x6863;&#x3002;&#x5982;&#x679C;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x5E76;&#x4E0D;&#x662F;&#x4E13;&#x4E1A;&#x5904;&#x7406;&#x6587;&#x672C;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x4E5F;&#x503C;&#x5F97;&#x8003;&#x8651;&#x3002;&#x5BF9;&#x4E8E; Foundation &#x7EA7;&#x522B;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x6216;&#x8005;&#x4E0D;&#x662F;&#x81EA;&#x7136;&#x8BED;&#x8A00;&#x7684;&#x6587;&#x672C;&#x6765;&#x8BF4;&#xFF0C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x53EF;&#x80FD;&#x4E0D;&#x592A;&#x5408;&#x9002;&#x3002;  </li>
+</ol>
+<p><span class="secondary radius label">&#x7F16;&#x8005;&#x6CE8;</span> &#x7B2C; 4 &#x6761;&#x4E2D; <code>NSAttributedString</code> &#x7684;&#x65B9;&#x6CD5;&#x540D;&#x539F;&#x6587;&#x62FC;&#x5199;&#x6709;&#x8BEF;&#xFF0C;&#x672C;&#x8BD1;&#x6587;&#x5DF2;&#x66F4;&#x6B63;&#x3002;</p>
+</blockquote>
+<h4 id="&#x628A;&#x6587;&#x672C;&#x5199;&#x5165;&#x6587;&#x4EF6;">&#x628A;&#x6587;&#x672C;&#x5199;&#x5165;&#x6587;&#x4EF6;</h4>
+<p>&#x6211;&#x5DF2;&#x7ECF;&#x63D0;&#x5230;&#x8FC7;&#xFF0C;&#x7EAF;&#x6587;&#x672C;&#x6587;&#x4EF6;&#xFF0C;&#x548C;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#x6216;&#x8005;&#x7F51;&#x7EDC;&#x534F;&#x8BAE;&#x5E94;&#x8BE5;&#x9009;&#x62E9; UTF-8 &#x7F16;&#x7801;&#xFF0C;&#x9664;&#x975E;&#x6709;&#x7279;&#x522B;&#x7684;&#x9700;&#x8981;&#x53EA;&#x80FD;&#x7528;&#x5176;&#x5B83;&#x7684;&#x7F16;&#x7801;&#x3002;&#x8981;&#x5411;&#x6587;&#x4EF6;&#x4E2D;&#x5199;&#x5165;&#x6587;&#x672C;&#xFF0C;&#x4F7F;&#x7528;
+<a href="https://developer.apple.com/library/ios/documentation/cocoa/reference/foundation/classes/NSString_Class/Reference/NSString.html#//apple_ref/occ/instm/NSString/writeToURL:atomically:encoding:error:" target="_blank"><code>writeToURL:atomically:encoding:error:</code></a>
+&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4F1A;&#x5728; UTF-16 &#x6216; UTF-32 &#x7F16;&#x7801;&#x7684;&#x6587;&#x4EF6;&#x4E0A;&#x81EA;&#x52A8;&#x52A0;&#x4E0A;&#x5B57;&#x8282;&#x987A;&#x5E8F;&#x6807;&#x8BB0;&#x3002;&#x5B83;&#x8FD8;&#x4F1A;&#x628A;&#x6587;&#x4EF6;&#x7684;&#x7F16;&#x7801;&#x5B58;&#x50A8;&#x5728;&#x540D;&#x4E3A; <code>com.apple.TextEncoding</code> &#x7684;<a href="http://nshipster.com/extended-file-attributes/" target="_blank">&#x6269;&#x5C55;&#x6587;&#x4EF6;&#x5C5E;&#x6027;</a>&#x91CC;&#x3002;&#x9274;&#x4E8E; <code>initWithContentsOf&#x2026;: usedEncoding:error:</code> &#x65B9;&#x6CD5;&#x77E5;&#x9053;&#x6709;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x5F53;&#x4F60;&#x4ECE;&#x6587;&#x4EF6;&#x91CC;&#x8F7D;&#x5165;&#x6587;&#x672C;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x7684; <code>NSString</code> &#x65B9;&#x6CD5;&#x5C31;&#x80FD;&#x8BA9;&#x786E;&#x4FDD;&#x4F7F;&#x7528;&#x6B63;&#x786E;&#x7684;&#x7F16;&#x7801;&#x66F4;&#x52A0;&#x5BB9;&#x6613;&#x3002;</p>
+<h2 id="&#x7ED3;&#x8BED;">&#x7ED3;&#x8BED;</h2>
+<p>&#x6587;&#x672C;&#x5F88;&#x590D;&#x6742;&#x3002;&#x5C3D;&#x7BA1; Unicode &#x5DF2;&#x7ECF;&#x6781;&#x5927;&#x5730;&#x6539;&#x5584;&#x4E86;&#x8F6F;&#x4EF6;&#x5904;&#x7406;&#x6587;&#x672C;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x7A0B;&#x5E8F;&#x5458;&#x8FD8;&#x662F;&#x9700;&#x8981;&#x4E86;&#x89E3;&#x5176;&#x4E2D;&#x7684;&#x8FD0;&#x4F5C;&#x673A;&#x5236;&#x4EE5;&#x4FBF;&#x80FD;&#x6B63;&#x786E;&#x5904;&#x7406;&#x5B83;&#x3002;&#x4ECA;&#x5929;&#xFF0C;&#x51E0;&#x4E4E;&#x6BCF;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x90FD;&#x8981;&#x5904;&#x7406;&#x591A;&#x6587;&#x79CD;&#x6587;&#x672C;&#x3002;&#x5373;&#x4F7F;&#x4F60;&#x7684;&#x5E94;&#x7528;&#x4E0D;&#x9700;&#x8981;&#x4E3A;&#x4E2D;&#x6587;&#x6216;&#x963F;&#x62C9;&#x4F2F;&#x6587;&#x505A;&#x672C;&#x5730;&#x5316;&#xFF0C;&#x53EA;&#x8981;&#x6709;<strong>&#x4EFB;&#x4F55;&#x4E00;&#x5904;</strong>&#x9700;&#x8981;&#x7528;&#x6237;&#x8FDB;&#x884C;&#x8F93;&#x5165;&#xFF0C;&#x4F60;&#x8FD8;&#x662F;&#x5F97;&#x548C; Unicode &#x7684;&#x6574;&#x4E2A;&#x673A;&#x5236;&#x6253;&#x4EA4;&#x9053;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x5168;&#x4E16;&#x754C;&#x7684;&#x8BED;&#x8A00;&#x6765;&#x4F5C;&#x5B8C;&#x6574;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5904;&#x7406;&#x6D4B;&#x8BD5;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x4F60;&#x9700;&#x8981;&#x6D4B;&#x8BD5;&#x8F93;&#x5165;&#x4E3A;&#x975E;&#x82F1;&#x8BED;&#x7684;&#x60C5;&#x51B5;&#x3002;&#x786E;&#x4FDD;&#x5728;&#x4F60;&#x7684;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x91CC;&#x7528;&#x5927;&#x91CF;&#x7684; emoji &#x548C; &#x975E;&#x62C9;&#x4E01;&#x6587;&#x5B57;&#x4F5C;&#x4E3A;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x3002;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x77E5;&#x9053;&#x600E;&#x4E48;&#x8F93;&#x5165;&#x67D0;&#x79CD;&#x6587;&#x5B57;&#xFF0C;&#x7EF4;&#x57FA;&#x767E;&#x79D1;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x4F60;&#x3002;&#x8FD9;&#x91CC;&#x6709;<a href="http://meta.wikimedia.org/wiki/List_of_Wikipedias" target="_blank">&#x5404;&#x79CD;&#x8BED;&#x8A00;&#x7248;&#x672C;&#x7684;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a>&#xFF0C;&#x9009;&#x62E9;&#x67D0;&#x79CD;&#x8BED;&#x8A00;&#xFF0C;&#x968F;&#x673A;&#x9009;&#x53D6;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#xFF0C;&#x62F7;&#x8D1D;&#x91CC;&#x9762;&#x7684;&#x4E00;&#x4E9B;&#x5B57;&#x8BCD;&#xFF0C;&#x7136;&#x540E;&#x5C3D;&#x60C5;&#x5730;&#x6D4B;&#x8BD5;&#x5427;&#x3002;</p>
+<h2 id="&#x6269;&#x5C55;&#x9605;&#x8BFB;">&#x6269;&#x5C55;&#x9605;&#x8BFB;</h2>
+<ul>
+<li>Joel Spolsky: <a href="http://www.joelonsoftware.com/articles/Unicode.html" target="_blank">&#x5173;&#x4E8E; Unicode &#x548C;&#x5B57;&#x7B26;&#x96C6;&#xFF0C;&#x6BCF;&#x4E2A;&#x7A0B;&#x5E8F;&#x5458;&#x7EDD;&#x5BF9;&#x3001;&#x5FC5;&#x987B;&#x8981;&#x4E86;&#x89E3;&#x7684;&#x4E00;&#x70B9;&#x5185;&#x5BB9;</a>&#x3002;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x5DF2;&#x7ECF;&#x6709; 10 &#x5E74;&#x4E86;&#xFF0C;&#x800C;&#x4E14;&#x4E0D;&#x4EC5;&#x9650;&#x4E8E; Cocoa &#x7F16;&#x7A0B;&#xFF0C;&#x4F46;&#x662F;&#x503C;&#x5F97;&#x4E00;&#x8BFB;&#x3002;</li>
+<li><a href="https://twitter.com/RossT" target="_blank">Ross Carter</a> &#x5728; 2012 &#x5E74; NSCoference &#x4E0A;&#x505A;&#x4E86;&#x4E00;&#x6B21;&#x540D;&#x53EB;&#x300C;<a href="https://vimeo.com/86030221" target="_blank">&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x8BB2; Unicode</a>&#x300D; &#x7684;&#x7CBE;&#x5F69;&#x6F14;&#x8BB2;&#x3002;&#x6F14;&#x8BB2;&#x5F88;&#x6709;&#x610F;&#x601D;&#xFF0C;&#x5F3A;&#x70C8;&#x63A8;&#x8350;&#x89C2;&#x770B;&#x3002;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x5C31;&#x662F;&#x57FA;&#x4E8E; Ross &#x7684;&#x6F14;&#x8BB2;&#x7A3F;&#x7684;&#x3002;<a href="http://nsconference.com/" target="_blank">NSConference</a> &#x7684; Scotty &#x4EBA;&#x5F88;&#x597D;&#xFF0C;&#x8BA9; objc.io &#x7684;&#x8BFB;&#x8005;&#x53EF;&#x4EE5;&#x89C2;&#x770B;&#x8FD9;&#x6B21;&#x89C6;&#x9891;&#x3002;&#x8C22;&#x4E86;&#xFF01;</li>
+<li><a href="http://en.wikipedia.org/wiki/Unicode" target="_blank">&#x7EF4;&#x57FA;&#x767E;&#x79D1;&#x4E0A;&#x5173;&#x4E8E; Unicode &#x7684;&#x6587;&#x7AE0;</a>&#x5F88;&#x68D2;&#x3002;</li>
+<li><a href="http://unicode.org" target="_blank">unicode.org</a> &#x662F; Unicode &#x8054;&#x76DF;&#x7684;&#x5B98;&#x7F51;&#xFF0C;&#x4E0A;&#x9762;&#x4E0D;&#x4EC5;&#x6709;&#x5B8C;&#x6574;&#x7684;&#x6807;&#x51C6;&#x548C;&#x7801;&#x8868;&#x7D22;&#x5F15;&#xFF0C;&#x8FD8;&#x6709;&#x5176;&#x5B83;&#x5F88;&#x6709;&#x610F;&#x601D;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x6269;&#x5C55;&#x90E8;&#x5206; <a href="http://www.unicode.org/faq/" target="_blank">FAQ</a> &#x4E5F;&#x5F88;&#x68D2;&#x3002;</li>
+</ul>
+<blockquote id="fn_1">
+<sup>1</sup>. &#x6700;&#x65B0;&#x7684; 6.3.0 &#x7248;&#x672C;&#x7684; Unicode &#x6807;&#x51C6;&#x652F;&#x6301; 100 &#x79CD;&#x6587;&#x5B57;&#x548C; 15 &#x79CD;&#x7B26;&#x53F7;&#x96C6;&#xFF0C;&#x6BD4;&#x5982;&#x6570;&#x5B66;&#x7B26;&#x53F7;&#x548C;&#x9EBB;&#x5C06;&#x724C;&#x3002;&#x5728;&#x8FD8;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x652F;&#x6301;&#x7684;&#x6587;&#x5B57;&#x4E2D;&#xFF0C;&#x6709; 12 &#x79CD;&#x300C;&#x4ECD;&#x6709;&#x4EBA;&#x4F7F;&#x7528;&#x7684;&#x6587;&#x5B57;&#x300D;&#x4EE5;&#x53CA; 31 &#x79CD;&#x300C;&#x53E4;&#x8001;&#x7684;&#x300D;&#x6216;&#x8005;&#x300C;&#x5DF2;&#x7ECF;&#x6D88;&#x4EA1;&#x7684;&#x300D;&#x6587;&#x5B57;&#x3002;<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
+</blockquote>
+<blockquote id="fn_2">
+<sup>2</sup>. &#x5982;&#x4ECA;&#xFF0C;Unicode &#x7F16;&#x7801;&#x4E86;&#x8D85;&#x8FC7; 70,000 &#x4E2A;&#x7EDF;&#x4E00;&#x7684;&#x4E2D;&#x65E5;&#x97E9;&#x6587;&#x5B57;&#xFF08;CJK&#xFF09;&#xFF0C;&#x5355;&#x5355;&#x8FD9;&#x4E9B;&#x6587;&#x5B57;&#x5C31;&#x5DF2;&#x7ECF;&#x8FDC;&#x8FDC;&#x8D85;&#x8FC7;&#x4E86; 16 &#x4F4D;&#x6240;&#x63D0;&#x4F9B;&#x7684;&#x7A7A;&#x95F4;&#x3002;<a href="#reffn_2" title="Jump back to footnote [2] in the text."> &#x21A9;</a>
+</blockquote>
+<blockquote id="fn_3">
+<sup>3</sup>. &#x5C31;&#x8FDE;&#x7528;&#x5176;&#x5B83;&#x6587;&#x5B57;&#x5199;&#x6210;&#x7684;&#x6587;&#x6863;&#x91CC;&#x4E5F;&#x4F1A;&#x5305;&#x542B;&#x5927;&#x91CF;&#x8FD9;&#x4E2A;&#x8303;&#x56F4;&#x91CC;&#x7684;&#x5B57;&#x7B26;&#x3002;&#x5047;&#x8BBE;&#x6709;&#x4E00;&#x4E2A; HTML &#x6587;&#x6863;&#xFF0C;&#x5B83;&#x7684;&#x5185;&#x5BB9;&#x5168;&#x90E8;&#x662F;&#x4E2D;&#x6587;&#xFF0C;&#x4F46;&#x8FD9;&#x4E2A;&#x6587;&#x6863;&#x7684;&#x5B57;&#x7B26;&#x91CC;&#x4ECD;&#x5C06;&#x6709;&#x6781;&#x5927;&#x7684;&#x6BD4;&#x4F8B;&#x662F;&#x7531; HTML &#x6807;&#x8BB0;&#x3001;CSS &#x6837;&#x5F0F;&#x3001;Javascript &#x4EE3;&#x7801;&#x3001;&#x7A7A;&#x683C;&#x3001;&#x6362;&#x884C;&#x7B26;&#x7B49;&#x7EC4;&#x6210;&#x7684;&#x3002;<a href="#reffn_3" title="Jump back to footnote [3] in the text."> &#x21A9;</a>
+</blockquote>
+<blockquote id="fn_4">
+<sup>4</sup>. &#x6211;&#xFF08;&#x539F;&#x6587;&#x4F5C;&#x8005;&#xFF0C;&#x4E0B;&#x540C;&#xFF09;&#x5728; 2012 &#x5E74;&#x7684;&#x4E00;&#x7BC7;&#x535A;&#x6587;&#x91CC;&#x8D28;&#x7591;&#x4E86;<a href="http://oleb.net/blog/2012/09/utf-8/" target="_blank">&#x8BA9; UTF-8 &#x517C;&#x5BB9; ASCII &#x7684;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x6B63;&#x786E;</a>&#x3002;&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x6211;&#x73B0;&#x5728;&#x77E5;&#x9053;&#x4E86;&#xFF0C;UTF-8 &#x7684;&#x6838;&#x5FC3;&#x76EE;&#x6807;&#x4E4B;&#x4E00;&#x5C31;&#x662F;&#x8FD9;&#x4E2A;&#x517C;&#x5BB9;&#x6027;&#xFF0C;&#x4EE5;&#x660E;&#x786E;&#x907F;&#x514D;&#x4E0E;&#x4E0D;&#x652F;&#x6301; Unicode &#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E4B;&#x95F4;&#x7684;&#x95EE;&#x9898;&#x3002;&#x4E0D;&#x8FC7;&#x6211;&#x8FD8;&#x662F;&#x89C9;&#x5F97;&#x592A;&#x591A;&#x7684;&#x5411;&#x524D;&#x517C;&#x5BB9;&#x6700;&#x540E;&#x5F80;&#x5F80;&#x4F1A;&#x6210;&#x4E3A;&#x7D2F;&#x8D58;&#xFF0C;&#x56E0;&#x4E3A;&#x5373;&#x4F7F;&#x5728;&#x4ECA;&#x5929;&#xFF0C;&#x8FD9;&#x4E2A;&#x7279;&#x6027;&#x4ECD;&#x7136;&#x4F1A;&#x628A;&#x4E00;&#x4E9B;&#x6F0F;&#x6D1E;&#x63A9;&#x76D6;&#x5728;&#x6CA1;&#x6709;&#x5145;&#x5206;&#x6D4B;&#x8BD5;&#x7684;&#x5904;&#x7406; Unicode &#x7684;&#x4EE3;&#x7801;&#x91CC;&#x3002;<a href="#reffn_4" title="Jump back to footnote [4] in the text."> &#x21A9;</a>
+</blockquote>
+<blockquote id="fn_5">
+<sup>5</sup>. UTF-8 &#x6700;&#x521D;&#x662F;&#x8BBE;&#x8BA1;&#x7528;&#x6765;&#x7F16;&#x7801;&#x6700;&#x957F;&#x8FBE; 31 &#x4F4D;&#x7684;&#x7801;&#x70B9;&#x7684;&#xFF0C;&#x800C;&#x8FD9;&#x9700;&#x8981;&#x6700;&#x591A;&#x8FBE; 6 &#x5B57;&#x8282;&#x7684;&#x5E8F;&#x5217;&#x3002;&#x540E;&#x6765;&#x4E3A;&#x4E86;&#x9075;&#x5B88; UTF-16 &#x7684;&#x7EA6;&#x675F;&#xFF0C;&#x5C06;&#x5B83;&#x9650;&#x5236;&#x5230;&#x4E86; 21 &#x4F4D;&#x3002;&#x73B0;&#x5728;&#xFF0C;&#x6700;&#x957F;&#x7684; UTF-8 &#x5B57;&#x8282;&#x5E8F;&#x5217;&#x662F; 4 &#x5B57;&#x8282;&#x7684;&#x3002;<a href="#reffn_5" title="Jump back to footnote [5] in the text."> &#x21A9;</a>
+</blockquote>
+<hr>
+<p><a href="http://objccn.io/issue-9" target="_blank">&#x8BDD;&#x9898; #9 &#x4E0B;&#x7684;&#x66F4;&#x591A;&#x6587;&#x7AE0;</a></p>
+<p>&#x539F;&#x6587; <a href="http://www.objc.io/issue-9/unicode.html" target="_blank">NSString and Unicode</a></p>
+<p>&#x8BD1;&#x6587; <a href="http://zhuanlan.zhihu.com/cbbcd/19687727" target="_blank">NSString &amp; Unicode - &#x6CA1;&#x540D;&#x513F;&#x5462; - &#x77E5;&#x4E4E;&#x4E13;&#x680F;</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="issue-9-0-FangYiXiong.html" class="navigation navigation-prev " aria-label="Previous page: 字符串">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="issue-9-2-Nix.html" class="navigation navigation-next " aria-label="Next page: 玩转字符串">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"NSString与Unicode","level":"1.8.1","depth":2,"next":{"title":"玩转字符串","level":"1.8.2","depth":2,"path":"publish/issue9/issue-9-2-Nix.md","ref":"publish/issue9/issue-9-2-Nix.md","articles":[]},"previous":{"title":"字符串","level":"1.8","depth":1,"path":"publish/issue9/issue-9-0-FangYiXiong.md","ref":"publish/issue9/issue-9-0-FangYiXiong.md","articles":[{"title":"NSString与Unicode","level":"1.8.1","depth":2,"path":"publish/issue9/issue-9-1-frederick036.md","ref":"publish/issue9/issue-9-1-frederick036.md","articles":[]},{"title":"玩转字符串","level":"1.8.2","depth":2,"path":"publish/issue9/issue-9-2-Nix.md","ref":"publish/issue9/issue-9-2-Nix.md","articles":[]},{"title":"字符串本地化","level":"1.8.3","depth":2,"path":"publish/issue9/issue-9-3-YCFlame.md","ref":"publish/issue9/issue-9-3-YCFlame.md","articles":[]},{"title":"字符串解析","level":"1.8.4","depth":2,"path":"publish/issue9/issue-9-4-riven.md","ref":"publish/issue9/issue-9-4-riven.md","articles":[]},{"title":"字符串渲染","level":"1.8.5","depth":2,"path":"publish/issue9/issue-9-5-answer-huang.md","ref":"publish/issue9/issue-9-5-answer-huang.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"publish/issue9/issue-9-1-frederick036.md","mtime":"2019-09-09T09:18:07.261Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-09T09:59:37.321Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

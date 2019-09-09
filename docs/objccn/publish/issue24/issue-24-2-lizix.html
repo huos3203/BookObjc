@@ -1,0 +1,2482 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>使用Swift进行函数式信号处理 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="issue-24-3-bifidy.html" />
+    
+    
+    <link rel="prev" href="issue-24-1-april.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../issue1/issue-1-0-tang3w.html">
+            
+                <a href="../issue1/issue-1-0-tang3w.html">
+            
+                    
+                    更轻量的 View Controllers
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../issue1/issue-1-1-tang3w.html">
+            
+                <a href="../issue1/issue-1-1-tang3w.html">
+            
+                    
+                    更轻量的 View Controllers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../issue1/issue-1-2-tang3w.html">
+            
+                <a href="../issue1/issue-1-2-tang3w.html">
+            
+                    
+                    整洁的 Table View 代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../issue1/issue-1-3-tang3w.html">
+            
+                <a href="../issue1/issue-1-3-tang3w.html">
+            
+                    
+                    测试View Controllers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../issue1/issue-1-4-tang3w.html">
+            
+                <a href="../issue1/issue-1-4-tang3w.html">
+            
+                    
+                    View Controller容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../issue2/issue-2-0-FangYiXiong.html">
+            
+                <a href="../issue2/issue-2-0-FangYiXiong.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../issue2/issue-2-1-beyondvincent.html">
+            
+                <a href="../issue2/issue-2-1-beyondvincent.html">
+            
+                    
+                    并发编程：API 及挑战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../issue2/issue-2-2-onevcat.html">
+            
+                <a href="../issue2/issue-2-2-onevcat.html">
+            
+                    
+                    常见的后台实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../issue2/issue-2-3-webfrogs.html">
+            
+                <a href="../issue2/issue-2-3-webfrogs.html">
+            
+                    
+                    底层并发API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../issue2/issue-2-4-onevcat.html">
+            
+                <a href="../issue2/issue-2-4-onevcat.html">
+            
+                    
+                    线程安全类的设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../issue2/issue-2-5-xinjixjz.html">
+            
+                <a href="../issue2/issue-2-5-xinjixjz.html">
+            
+                    
+                    测试并发程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../issue3/issue-3-0-answer-huang.html">
+            
+                <a href="../issue3/issue-3-0-answer-huang.html">
+            
+                    
+                    Views
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../issue3/issue-3-1-answer-huang.html">
+            
+                <a href="../issue3/issue-3-1-answer-huang.html">
+            
+                    
+                    绘制像素到屏幕上
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../issue3/issue-3-2-answer-huang.html">
+            
+                <a href="../issue3/issue-3-2-answer-huang.html">
+            
+                    
+                    理解Scroll Views
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../issue3/issue-3-3-answer-huang.html">
+            
+                <a href="../issue3/issue-3-3-answer-huang.html">
+            
+                    
+                    自定义Collection View布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../issue3/issue-3-4-Migrant.html">
+            
+                <a href="../issue3/issue-3-4-Migrant.html">
+            
+                    
+                    自定义控件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../issue3/issue-3-5-answer-huang.html">
+            
+                <a href="../issue3/issue-3-5-answer-huang.html">
+            
+                    
+                    先进的自动布局工具箱
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../issue4/issue-4-0-unblue.html">
+            
+                <a href="../issue4/issue-4-0-unblue.html">
+            
+                    
+                    Core Data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../issue4/issue-4-1-shjborage.html">
+            
+                <a href="../issue4/issue-4-1-shjborage.html">
+            
+                    
+                    Core Data概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../issue4/issue-4-2-itouch2.html">
+            
+                <a href="../issue4/issue-4-2-itouch2.html">
+            
+                    
+                    一个完整的Core Data应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../issue4/issue-4-3-sjpsega.html">
+            
+                <a href="../issue4/issue-4-3-sjpsega.html">
+            
+                    
+                    用SQLite和FMDB替代Core Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../issue4/issue-4-4-panda.html">
+            
+                <a href="../issue4/issue-4-4-panda.html">
+            
+                    
+                    数据模型和模型对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../issue4/issue-4-5-liming.html">
+            
+                <a href="../issue4/issue-4-5-liming.html">
+            
+                    
+                    导入大数据集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../issue4/issue-4-6-ckitakishi.html">
+            
+                <a href="../issue4/issue-4-6-ckitakishi.html">
+            
+                    
+                    Fetch请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../issue4/issue-4-7-xinjixjz.html">
+            
+                <a href="../issue4/issue-4-7-xinjixjz.html">
+            
+                    
+                    自定义Core Data迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../issue5/issue-5-0-FangYiXiong.html">
+            
+                <a href="../issue5/issue-5-0-FangYiXiong.html">
+            
+                    
+                    iOS7
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../issue5/issue-5-1-hexielaoyuehan.html">
+            
+                <a href="../issue5/issue-5-1-hexielaoyuehan.html">
+            
+                    
+                    初识TextKit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../issue5/issue-5-2-morisunshine.html">
+            
+                <a href="../issue5/issue-5-2-morisunshine.html">
+            
+                    
+                    UICollectionView + UIKit力学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../issue5/issue-5-3-FangYixiong.html">
+            
+                <a href="../issue5/issue-5-3-FangYixiong.html">
+            
+                    
+                    View Controller转场
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../issue5/issue-5-4-FangYixiong.html">
+            
+                <a href="../issue5/issue-5-4-FangYixiong.html">
+            
+                    
+                    从NSURLConnection到NSURLSession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../issue5/issue-5-5-demon1105.html">
+            
+                <a href="../issue5/issue-5-5-demon1105.html">
+            
+                    
+                    iOS7的多任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../issue5/issue-5-6-test_0x01.html">
+            
+                <a href="../issue5/issue-5-6-test_0x01.html">
+            
+                    
+                    iOS7:隐藏技巧和变通之道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../issue5/issue-5-7-FangYixiong.html">
+            
+                <a href="../issue5/issue-5-7-FangYixiong.html">
+            
+                    
+                    为iOS7重新设计App
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../issue7/issue-7-0-JeOam.html">
+            
+                <a href="../issue7/issue-7-0-JeOam.html">
+            
+                    
+                    Foundation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../issue7/issue-7-1-FANWENBIN.html">
+            
+                <a href="../issue7/issue-7-1-FANWENBIN.html">
+            
+                    
+                    基础集合类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../issue7/issue-7-2-onevcat.html">
+            
+                <a href="../issue7/issue-7-2-onevcat.html">
+            
+                    
+                    值对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../issue7/issue-7-3-DJBen.html">
+            
+                <a href="../issue7/issue-7-3-DJBen.html">
+            
+                    
+                    KVC 和 KVO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../issue7/issue-7-4-DJBen.html">
+            
+                <a href="../issue7/issue-7-4-DJBen.html">
+            
+                    
+                    消息传递机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../issue7/issue-7-5-itouch2.html">
+            
+                <a href="../issue7/issue-7-5-itouch2.html">
+            
+                    
+                    自定义Formatters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../issue7/issue-7-6-onevcat.html">
+            
+                <a href="../issue7/issue-7-6-onevcat.html">
+            
+                    
+                    语言标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../issue9/issue-9-0-FangYiXiong.html">
+            
+                <a href="../issue9/issue-9-0-FangYiXiong.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../issue9/issue-9-1-frederick036.html">
+            
+                <a href="../issue9/issue-9-1-frederick036.html">
+            
+                    
+                    NSString与Unicode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../issue9/issue-9-2-Nix.html">
+            
+                <a href="../issue9/issue-9-2-Nix.html">
+            
+                    
+                    玩转字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../issue9/issue-9-3-YCFlame.html">
+            
+                <a href="../issue9/issue-9-3-YCFlame.html">
+            
+                    
+                    字符串本地化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../issue9/issue-9-4-riven.html">
+            
+                <a href="../issue9/issue-9-4-riven.html">
+            
+                    
+                    字符串解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../issue9/issue-9-5-answer-huang.html">
+            
+                <a href="../issue9/issue-9-5-answer-huang.html">
+            
+                    
+                    字符串渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../issue10/issue-10-0-sjpsega.html">
+            
+                <a href="../issue10/issue-10-0-sjpsega.html">
+            
+                    
+                    同步数据
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../issue10/issue-10-1-xinjixjz.html">
+            
+                <a href="../issue10/issue-10-1-xinjixjz.html">
+            
+                    
+                    数据同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../issue10/issue-10-2-weekwood.html">
+            
+                <a href="../issue10/issue-10-2-weekwood.html">
+            
+                    
+                    iCloud和Core Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../issue10/issue-10-3-migrant.html">
+            
+                <a href="../issue10/issue-10-3-migrant.html">
+            
+                    
+                    精通iCloud文档存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../issue10/issue-10-4-YCFlame.html">
+            
+                <a href="../issue10/issue-10-4-YCFlame.html">
+            
+                    
+                    同步案例学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../issue10/issue-10-5-answer-huang.html">
+            
+                <a href="../issue10/issue-10-5-answer-huang.html">
+            
+                    
+                    Core Data 网络应用实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../issue10/issue-10-6-sunset.html">
+            
+                <a href="../issue10/issue-10-6-sunset.html">
+            
+                    
+                    IP,TCP 和 HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../issue12/issue-12-0-FangYiXiojng.html">
+            
+                <a href="../issue12/issue-12-0-FangYiXiojng.html">
+            
+                    
+                    动画
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../issue12/issue-12-1-ckitakishi.html">
+            
+                <a href="../issue12/issue-12-1-ckitakishi.html">
+            
+                    
+                    动画解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../issue12/issue-12-2-nixzhu.html">
+            
+                <a href="../issue12/issue-12-2-nixzhu.html">
+            
+                    
+                    Layer中自定义属性的动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../issue12/issue-12-3-happyjiahan.html">
+            
+                <a href="../issue12/issue-12-3-happyjiahan.html">
+            
+                    
+                    自定义ViewController容器转场
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../issue12/issue-12-4-onevcat.html">
+            
+                <a href="../issue12/issue-12-4-onevcat.html">
+            
+                    
+                    View-Layer协作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../issue12/issue-12-5-weekwood.html">
+            
+                <a href="../issue12/issue-12-5-weekwood.html">
+            
+                    
+                    Collection View 动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../issue12/issue-12-6-morisunshine.html">
+            
+                <a href="../issue12/issue-12-6-morisunshine.html">
+            
+                    
+                    交互式动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../issue13/issue-13-0-panda.html">
+            
+                <a href="../issue13/issue-13-0-panda.html">
+            
+                    
+                    架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../issue13/issue-13-1-nixzhu.html">
+            
+                <a href="../issue13/issue-13-1-nixzhu.html">
+            
+                    
+                    MVVM介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../issue13/issue-13-2-happyjiahan.html">
+            
+                <a href="../issue13/issue-13-2-happyjiahan.html">
+            
+                    
+                    避免滥用单例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../issue13/issue-13-3-panda.html">
+            
+                <a href="../issue13/issue-13-3-panda.html">
+            
+                    
+                    IOS中的行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../issue13/issue-13-4-Phenmod.html">
+            
+                <a href="../issue13/issue-13-4-Phenmod.html">
+            
+                    
+                    子类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../issue13/issue-13-5-weekwood.html">
+            
+                <a href="../issue13/issue-13-5-weekwood.html">
+            
+                    
+                    使用VIPER构建IOS应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../issue16/issue-16-0-hewigovens.html">
+            
+                <a href="../issue16/issue-16-0-hewigovens.html">
+            
+                    
+                    swift
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../issue16/issue-16-1-lizixroy.html">
+            
+                <a href="../issue16/issue-16-1-lizixroy.html">
+            
+                    
+                    Swift强大之处
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../issue16/issue-16-2-Onetaway.html">
+            
+                <a href="../issue16/issue-16-2-Onetaway.html">
+            
+                    
+                    结构体和值类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../issue16/issue-16-3-weekwood.html">
+            
+                <a href="../issue16/issue-16-3-weekwood.html">
+            
+                    
+                    swift方法的多面性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../issue16/issue-16-4-callmewhy.html">
+            
+                <a href="../issue16/issue-16-4-callmewhy.html">
+            
+                    
+                    Swift的函数式API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../issue16/issue-16-5-programmerDu.html">
+            
+                <a href="../issue16/issue-16-5-programmerDu.html">
+            
+                    
+                    Playground快速原型制作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../issue18/issue-18-0-yulingtianxia.html">
+            
+                <a href="../issue18/issue-18-0-yulingtianxia.html">
+            
+                    
+                    游戏
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../issue18/issue-18-1-weekwood.html">
+            
+                <a href="../issue18/issue-18-1-weekwood.html">
+            
+                    
+                    设计优雅的移动游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../issue18/issue-18-2-migrant.html">
+            
+                <a href="../issue18/issue-18-2-migrant.html">
+            
+                    
+                    Metal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../issue18/issue-18-3-sunnyxx.html">
+            
+                <a href="../issue18/issue-18-3-sunnyxx.html">
+            
+                    
+                    Scene Kit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../issue18/issue-18-4-callmewhy.html">
+            
+                <a href="../issue18/issue-18-4-callmewhy.html">
+            
+                    
+                    游戏中的多点互联
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../issue18/issue-18-5-shuye.html">
+            
+                <a href="../issue18/issue-18-5-shuye.html">
+            
+                    
+                    虚拟音域-声音设计的艺术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../issue21/issue-21-0-bifidy.html">
+            
+                <a href="../issue21/issue-21-0-bifidy.html">
+            
+                    
+                    相机与照片
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../issue21/issue-21-1-onevcat.html">
+            
+                <a href="../issue21/issue-21-1-onevcat.html">
+            
+                    
+                    相机工作原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../issue21/issue-21-2-bifidy.html">
+            
+                <a href="../issue21/issue-21-2-bifidy.html">
+            
+                    
+                    图片格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../issue21/issue-21-3-nathanwhy.html">
+            
+                <a href="../issue21/issue-21-3-nathanwhy.html">
+            
+                    
+                    iOS上的相机捕捉
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="../issue21/issue-21-4-CrazyZombies.html">
+            
+                <a href="../issue21/issue-21-4-CrazyZombies.html">
+            
+                    
+                    照片框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.5" data-path="../issue21/issue-21-5-weekwood.html">
+            
+                <a href="../issue21/issue-21-5-weekwood.html">
+            
+                    
+                    照片扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.6" data-path="../issue21/issue-21-6-april.html">
+            
+                <a href="../issue21/issue-21-6-april.html">
+            
+                    
+                    Core Image 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.7" data-path="../issue21/issue-21-7-nangege.html">
+            
+                <a href="../issue21/issue-21-7-nangege.html">
+            
+                    
+                    GPU加速下的图像处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.8" data-path="../issue21/issue-21-8-dopcn.html">
+            
+                <a href="../issue21/issue-21-8-dopcn.html">
+            
+                    
+                    GPU加速下的图像视觉
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.9" data-path="../issue21/issue-21-9-Phenmod.html">
+            
+                <a href="../issue21/issue-21-9-Phenmod.html">
+            
+                    
+                    基于OpenCV的人脸识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="issue-24-1-april.html">
+            
+                <a href="issue-24-1-april.html">
+            
+                    
+                    音频
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="issue-24-1-april.html">
+            
+                <a href="issue-24-1-april.html">
+            
+                    
+                    音频处理的狗屋
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15.2" data-path="issue-24-2-lizix.html">
+            
+                <a href="issue-24-2-lizix.html">
+            
+                    
+                    使用Swift进行函数式信号处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="issue-24-3-bifidy.html">
+            
+                <a href="issue-24-3-bifidy.html">
+            
+                    
+                    播放，失败，迭代：面向产品的音效设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="issue-24-4-draveness.html">
+            
+                <a href="issue-24-4-draveness.html">
+            
+                    
+                    音频API一览
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../issue23/issue-23-0-bifidy.html">
+            
+                <a href="../issue23/issue-23-0-bifidy.html">
+            
+                    
+                    视频
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../issue23/issue-23-1-nathanwhy.html">
+            
+                <a href="../issue23/issue-23-1-nathanwhy.html">
+            
+                    
+                    在iOS上捕获视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../issue23/issue-23-2-pupboss.html">
+            
+                <a href="../issue23/issue-23-2-pupboss.html">
+            
+                    
+                    Core Image 和视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../issue23/issue-23-3-pupboss.html">
+            
+                <a href="../issue23/issue-23-3-pupboss.html">
+            
+                    
+                    视频工具箱和硬件加速
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../issue19/issue-19-0-bifidy.html">
+            
+                <a href="../issue19/issue-19-0-bifidy.html">
+            
+                    
+                    调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../issue19/issue-19-1-weekwood.html">
+            
+                <a href="../issue19/issue-19-1-weekwood.html">
+            
+                    
+                    调试：案例学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../issue19/issue-19-2-nangege.html">
+            
+                <a href="../issue19/issue-19-2-nangege.html">
+            
+                    
+                    与调试器共舞 - LLDB的华尔兹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../issue19/issue-19-3-bifidy.html">
+            
+                <a href="../issue19/issue-19-3-bifidy.html">
+            
+                    
+                    调试核对清单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.4" data-path="../issue19/issue-19-4-migrant.html">
+            
+                <a href="../issue19/issue-19-4-migrant.html">
+            
+                    
+                    DTrace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.5" data-path="../issue19/issue-19-5-dopcn.html">
+            
+                <a href="../issue19/issue-19-5-dopcn.html">
+            
+                    
+                    活动追踪
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../issue15/issue-15-0-yulingtianxia.html">
+            
+                <a href="../issue15/issue-15-0-yulingtianxia.html">
+            
+                    
+                    测试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../issue15/issue-15-1-weekwood.html">
+            
+                <a href="../issue15/issue-15-1-weekwood.html">
+            
+                    
+                    行为驱动开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../issue15/issue-15-2-morisunshine.html">
+            
+                <a href="../issue15/issue-15-2-morisunshine.html">
+            
+                    
+                    XCTest测试实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../issue15/issue-15-3-sunsets.html">
+            
+                <a href="../issue15/issue-15-3-sunsets.html">
+            
+                    
+                    依赖注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.4" data-path="../issue15/issue-15-4-Onetaway.html">
+            
+                <a href="../issue15/issue-15-4-Onetaway.html">
+            
+                    
+                    糟糕的测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.5" data-path="../issue15/issue-15-5-ryan.html">
+            
+                <a href="../issue15/issue-15-5-ryan.html">
+            
+                    
+                    置换测试：Mock,Stub和其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.6" data-path="../issue15/issue-15-6-callmewhy.html">
+            
+                <a href="../issue15/issue-15-6-callmewhy.html">
+            
+                    
+                    UI测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.7" data-path="../issue15/issue-15-7-oa414.html">
+            
+                <a href="../issue15/issue-15-7-oa414.html">
+            
+                    
+                    截图测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../issue17/issue-17-0-weekwood.html">
+            
+                <a href="../issue17/issue-17-0-weekwood.html">
+            
+                    
+                    安全
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../issue17/issue-17-1-programmerDu.html">
+            
+                <a href="../issue17/issue-17-1-programmerDu.html">
+            
+                    
+                    为什么今天安全仍然重要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../issue17/issue-17-2-dopcn.html">
+            
+                <a href="../issue17/issue-17-2-dopcn.html">
+            
+                    
+                    代码签名探析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../issue17/issue-17-3-callmewhy.html">
+            
+                <a href="../issue17/issue-17-3-callmewhy.html">
+            
+                    
+                    收据验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../issue20/issue-20-0-bifidy.html">
+            
+                <a href="../issue20/issue-20-0-bifidy.html">
+            
+                    
+                    访谈
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../issue20/issue-20-1-april.html">
+            
+                <a href="../issue20/issue-20-1-april.html">
+            
+                    
+                    终身学习的一代人
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="../issue20/issue-20-2-programmerDu.html">
+            
+                <a href="../issue20/issue-20-2-programmerDu.html">
+            
+                    
+                    让东西变得不那么糟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3" data-path="../issue20/issue-20-3-hewigovens.html">
+            
+                <a href="../issue20/issue-20-3-hewigovens.html">
+            
+                    
+                    学无止境
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../issue6/issue-6-0-FangYiXiong.html">
+            
+                <a href="../issue6/issue-6-0-FangYiXiong.html">
+            
+                    
+                    Build工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" data-path="../issue6/issue-6-1-BeyondVincent.html">
+            
+                <a href="../issue6/issue-6-1-BeyondVincent.html">
+            
+                    
+                    Build过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" data-path="../issue6/issue-6-2-sunsets.html">
+            
+                <a href="../issue6/issue-6-2-sunsets.html">
+            
+                    
+                    编译器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.3" data-path="../issue6/issue-6-3-yishuiliunian.html">
+            
+                <a href="../issue6/issue-6-3-yishuiliunian.html">
+            
+                    
+                    Mach-O可执行文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.4" data-path="../issue6/issue-6-4-programmer.du.html">
+            
+                <a href="../issue6/issue-6-4-programmer.du.html">
+            
+                    
+                    深入理解CocoaPods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.5" data-path="../issue6/issue-6-5-yuan12xin.html">
+            
+                <a href="../issue6/issue-6-5-yuan12xin.html">
+            
+                    
+                    为iOS建立Travis CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../issue8/issue-8-0-vienta.html">
+            
+                <a href="../issue8/issue-8-0-vienta.html">
+            
+                    
+                    四轴无人机项目
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../issue8/issue-8-1-phpmaple.html">
+            
+                <a href="../issue8/issue-8-1-phpmaple.html">
+            
+                    
+                    项目介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.2" data-path="../issue8/issue-8-2-weekwood.html">
+            
+                <a href="../issue8/issue-8-2-weekwood.html">
+            
+                    
+                    与四轴无人机的通讯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.3" data-path="../issue8/issue-8-3-weekwood.html">
+            
+                <a href="../issue8/issue-8-3-weekwood.html">
+            
+                    
+                    导航应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.4" data-path="../issue8/issue-8-4-zincsamael.html">
+            
+                <a href="../issue8/issue-8-4-zincsamael.html">
+            
+                    
+                    客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../issue11/issue-11-0-FangYixiong.html">
+            
+                <a href="../issue11/issue-11-0-FangYixiong.html">
+            
+                    
+                    Android
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.23.1" data-path="../issue11/issue-11-1-nixzhu.html">
+            
+                <a href="../issue11/issue-11-1-nixzhu.html">
+            
+                    
+                    iOS开发者的Android第一课
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.2" data-path="../issue11/Issue-11-2-sunset.html">
+            
+                <a href="../issue11/Issue-11-2-sunset.html">
+            
+                    
+                    Android Intents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.3" data-path="../issue11/issue-11-3-Daisyyaya.html">
+            
+                <a href="../issue11/issue-11-3-Daisyyaya.html">
+            
+                    
+                    响应式Android应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.4" data-path="../issue11/issue-11-4-weekwood.html">
+            
+                <a href="../issue11/issue-11-4-weekwood.html">
+            
+                    
+                    Android通讯中心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.5" data-path="../issue11/issue-11-5-zinc.html">
+            
+                <a href="../issue11/issue-11-5-zinc.html">
+            
+                    
+                    Android中的SQLite数据库支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23.6" data-path="../issue11/issue-11-6-Bayonetta.html">
+            
+                <a href="../issue11/issue-11-6-Bayonetta.html">
+            
+                    
+                    依赖注入和注解，为什么Java比你想象的要好
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../issue14/issue-14-0-johnnywjy.html">
+            
+                <a href="../issue14/issue-14-0-johnnywjy.html">
+            
+                    
+                    回到Mac
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="../issue14/issue-14-1-ckitakishi.html">
+            
+                <a href="../issue14/issue-14-1-ckitakishi.html">
+            
+                    
+                    使Mac应用数据脚本化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.2" data-path="../issue14/issue-14-2-onevcat.html">
+            
+                <a href="../issue14/issue-14-2-onevcat.html">
+            
+                    
+                    在沙盒中编写脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.3" data-path="../issue14/issue-14-3-oa414.html">
+            
+                <a href="../issue14/issue-14-3-oa414.html">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.4" data-path="../issue14/issue-14-4-hewigovens.html">
+            
+                <a href="../issue14/issue-14-4-hewigovens.html">
+            
+                    
+                    XPC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.5" data-path="../issue14/issue-14-5-crazycatcher.html">
+            
+                <a href="../issue14/issue-14-5-crazycatcher.html">
+            
+                    
+                    从UIKit到AppKit
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../issue22/issue-22-0-programmerDu.html">
+            
+                <a href="../issue22/issue-22-0-programmerDu.html">
+            
+                    
+                    iOS项目管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.1" data-path="../issue22/issue-22-1-bifidy.html">
+            
+                <a href="../issue22/issue-22-1-bifidy.html">
+            
+                    
+                    Omni内部
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.2" data-path="../issue22/issue-22-2-wongzigii.html">
+            
+                <a href="../issue22/issue-22-2-wongzigii.html">
+            
+                    
+                    Artsy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.3" data-path="../issue22/issue-22-3-April.html">
+            
+                <a href="../issue22/issue-22-3-April.html">
+            
+                    
+                    Square Register中的扩张
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.4" data-path="../issue22/issue-22-4-morisunshine.html">
+            
+                <a href="../issue22/issue-22-4-morisunshine.html">
+            
+                    
+                    代码审查的艺术：Dropbox的故事
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.5" data-path="../issue22/issue-22-5-lizixroy.html">
+            
+                <a href="../issue22/issue-22-5-lizixroy.html">
+            
+                    
+                    响应式视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >使用Swift进行函数式信号处理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x548C; Core Audio &#x6253;&#x8FC7;&#x5F88;&#x957F;&#x65F6;&#x95F4;&#x4EA4;&#x9053;&#x7684;&#x5DE5;&#x7A0B;&#x5E08;&#xFF0C;&#x82F9;&#x679C;&#x53D1;&#x5E03; Swift &#x8BA9;&#x6211;&#x611F;&#x5230;&#x5174;&#x594B;&#x53C8;&#x7591;&#x60D1;&#x3002;&#x5174;&#x594B;&#x662F;&#x56E0;&#x4E3A; Swift &#x662F;&#x4E00;&#x4E2A;&#x4E3A;&#x6027;&#x80FD;&#x6253;&#x9020;&#x7684;&#x73B0;&#x4EE3;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x53C8;&#x4E0D;&#x662F;&#x975E;&#x5E38;&#x786E;&#x5B9A;&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x5E94;&#x7528;&#x5230; &#x201C;&#x6211;&#x7684;&#x4E16;&#x754C;&#x201D;&#x3002;&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;&#x5F88;&#x591A;&#x4EBA;&#x5DF2;&#x7ECF;<a href="http://sourceforge.net/projects/faudiostream/" target="_blank">&#x63A2;&#x7D22;&#x548C;&#x514B;&#x670D;&#x4E86;</a>&#x8FD9;&#x4E9B;&#x95EE;&#x9898;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x51B3;&#x5B9A;&#x5C06;&#x6211;&#x4ECE;&#x8FD9;&#x4E9B;&#x9879;&#x76EE;&#x4E2D;&#x5B66;&#x4E60;&#x5230;&#x7684;&#x4E1C;&#x897F;&#x5E94;&#x7528;&#x5230; Swift &#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x4E2D;&#x53BB;&#x3002;</p>
+<h2 id="&#x4FE1;&#x53F7;">&#x4FE1;&#x53F7;</h2>
+<p>&#x4FE1;&#x53F7;&#x5904;&#x7406;&#x7684;&#x57FA;&#x672C;&#x5F53;&#x7136;&#x662F;&#x4FE1;&#x53F7;&#x3002;&#x5728; Swift &#x4E2D;&#xFF0C;&#x6211;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x5B9A;&#x4E49;&#x4FE1;&#x53F7;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">public</span> <span class="hljs-keyword">typealias</span> <span class="hljs-type">Signal</span> = <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">SampleType</span>
+</code></pre>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x628A; <code>Signal</code> &#x7C7B;&#x60F3;&#x8C61;&#x6210;&#x4E00;&#x4E2A;&#x79BB;&#x6563;&#x65F6;&#x95F4;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65F6;&#x95F4;&#x70B9;&#x4E0A;&#x7684;&#x4FE1;&#x53F7;&#x503C;&#x3002;&#x5728;&#x5927;&#x591A;&#x6570;&#x4FE1;&#x53F7;&#x5904;&#x7406;&#x7684;&#x6559;&#x79D1;&#x4E66;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x4F1A;&#x88AB;&#x5199;&#x505A; <code>x[t]</code>, &#x8FD9;&#x6837;&#x4E00;&#x6765;&#x5B83;&#x5C31;&#x5F88;&#x7B26;&#x5408;&#x6211;&#x7684;&#x4E16;&#x754C;&#x89C2;&#x4E86;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x6765;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x7ED9;&#x5B9A;&#x9891;&#x7387;&#x7684;&#x6B63;&#x5F26;&#x6CE2;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">sineWave</span><span class="hljs-params">(sampleRate: Int, frequency: ParameterType)</span></span> -&gt; <span class="hljs-type">Signal</span> {
+    <span class="hljs-keyword">let</span> phi = frequency / <span class="hljs-type">ParameterType</span>(sampleRate)
+    <span class="hljs-keyword">return</span> { i <span class="hljs-keyword">in</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-type">SampleType</span>(sin(<span class="hljs-number">2.0</span> * <span class="hljs-type">ParameterType</span>(i) * phi * <span class="hljs-type">ParameterType</span>(<span class="hljs-type">M_PI</span>)))
+    }
+}
+</code></pre>
+<p><code>sineWave</code> &#x51FD;&#x6570;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; <code>Signal</code>&#xFF0C;<code>Signal</code> &#x672C;&#x8EAB;&#x662F;&#x4E00;&#x4E2A;&#x5C06;&#x91C7;&#x6837;&#x70B9;&#x7684;&#x7D22;&#x5F15;&#x6620;&#x5C04;&#x4E3A;&#x8F93;&#x51FA;&#x6837;&#x70B9;&#x7684;&#x51FD;&#x6570;&#x3002;&#x6211;&#x5C06;&#x8FD9;&#x4E9B;&#x4E0D;&#x9700;&#x8981;&#x201C;&#x8F93;&#x5165;&#x201D;&#x7684;&#x4FE1;&#x53F7;&#x79F0;&#x4E3A;&#x4FE1;&#x53F7;&#x53D1;&#x751F;&#x5668;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x4E0D;&#x9700;&#x8981;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x7684;&#x4E1C;&#x897F;&#x5C31;&#x80FD;&#x521B;&#x9020;&#x4FE1;&#x53F7;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x6B63;&#x5728;&#x8BA8;&#x8BBA;&#x4FE1;&#x53F7;<strong>&#x5904;&#x7406;</strong>&#x3002;&#x90A3;&#x4E48;&#x5982;&#x4F55;&#x66F4;&#x6539;&#x4E00;&#x4E2A;&#x4FE1;&#x53F7;&#x5462;&#xFF1F;</p>
+<p>&#x4EFB;&#x4F55;&#x5173;&#x4E8E;&#x4FE1;&#x53F7;&#x5904;&#x7406;&#x7684;&#x9AD8;&#x5C42;&#x9762;&#x7684;&#x8BA8;&#x8BBA;&#xFF0C;&#x90FD;&#x4E0D;&#x53EF;&#x80FD;&#x79BB;&#x5F00;&#x4E00;&#x4E2A;&#x57FA;&#x7840;&#xFF0C;&#x90A3;&#x5C31;&#x662F;&#x5982;&#x4F55;&#x63A7;&#x5236;&#x589E;&#x76CA; (&#x6216;&#x8005;&#x97F3;&#x91CF;)&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">scale</span><span class="hljs-params">(s: Signal, amplitude: ParameterType)</span></span> -&gt; <span class="hljs-type">Signal</span> {
+    <span class="hljs-keyword">return</span> { i <span class="hljs-keyword">in</span>
+            <span class="hljs-keyword">return</span> <span class="hljs-type">SampleType</span>(s(i) * <span class="hljs-type">SampleType</span>(amplitude))
+    }
+}
+</code></pre>
+<p><code>scale</code> &#x51FD;&#x6570;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; <code>s</code> &#x7684; <code>Signal</code> &#x4F5C;&#x4E3A;&#x8F93;&#x5165;&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65BD;&#x52A0;&#x4E86;&#x6807;&#x91CF;&#x4E4B;&#x540E;&#x7684;&#x65B0; <code>Signal</code>&#x3002;&#x6BCF;&#x6B21;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x7ECF;&#x8FC7; <code>scale</code> &#x540E;&#x7684;&#x4FE1;&#x53F7;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x503C;&#x90FD;&#x662F;&#x5BF9;&#x5E94;&#x7684; <code>s(i)</code> &#x7136;&#x540E;&#x901A;&#x8FC7;&#x6240;&#x63D0;&#x4F9B;&#x7684; <code>amplitude</code> &#x8FDB;&#x884C;&#x52A0;&#x6210;&#xFF0C;&#x6765;&#x4F5C;&#x4E3A;&#x8F93;&#x51FA;&#x3002;&#x5F88;&#x5BB9;&#x6613;&#x5BF9;&#x5427;&#xFF1F;&#x4F46;&#x662F;&#x5F88;&#x5FEB;&#x8FD9;&#x4E9B;&#x6784;&#x4EF6;&#x5C31;&#x4F1A;&#x53D8;&#x5F97;&#x6DF7;&#x4E71;&#x8D77;&#x6765;&#x3002;&#x6765;&#x770B;&#x770B;&#x4EE5;&#x4E0B;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">mix</span><span class="hljs-params">(s1: Signal, s2: Signal)</span></span> -&gt; <span class="hljs-type">Signal</span> {
+    <span class="hljs-keyword">return</span> { i <span class="hljs-keyword">in</span>
+        <span class="hljs-keyword">return</span> s1(i) + s2(i)
+    }
+}
+</code></pre>
+<p>&#x8FD9;&#x8BA9;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x5C06;&#x4E24;&#x4E2A;&#x4FE1;&#x53F7;&#x6DF7;&#x5408;&#x6210;&#x4E00;&#x4E2A;&#x4FE1;&#x53F7;&#x3002;&#x6211;&#x4EEC;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x6DF7;&#x5408;&#x4EFB;&#x610F;&#x591A;&#x4E2A;&#x4FE1;&#x53F7;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">mix</span><span class="hljs-params">(signals: [Signal])</span></span> -&gt; <span class="hljs-type">Signal</span> {
+    <span class="hljs-keyword">return</span> { i <span class="hljs-keyword">in</span>
+        <span class="hljs-keyword">return</span> signals.<span class="hljs-built_in">reduce</span>(<span class="hljs-type">SampleType</span>(<span class="hljs-number">0</span>)) { $<span class="hljs-number">0</span> + $<span class="hljs-number">1</span>(i) }
+    }
+}
+</code></pre>
+<p>&#x8FD9;&#x53EF;&#x4EE5;&#x8BA9;&#x6211;&#x4EEC;&#x5E72;&#x5F88;&#x591A;&#x4E8B;&#x60C5;&#xFF1B;&#x4F46;&#x662F;&#x4E00;&#x4E2A; <code>Signal</code> &#x4EC5;&#x4EC5;&#x9650;&#x4E8E;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x7684;&#x97F3;&#x9891;&#x9891;&#x9053;&#xFF0C;&#x6709;&#x4E9B;&#x97F3;&#x6548;&#x9700;&#x8981;&#x590D;&#x6742;&#x7684;&#x64CD;&#x4F5C;&#x7684;&#x7EC4;&#x5408;&#x540C;&#x65F6;&#x53D1;&#x751F;&#x624D;&#x80FD;&#x505A;&#x5230;&#x3002;</p>
+<h2 id="&#x5904;&#x7406;-block">&#x5904;&#x7406; Block</h2>
+<p>&#x6211;&#x4EEC;&#x5982;&#x4F55;&#x624D;&#x80FD;&#x4EE5;&#x66F4;&#x7075;&#x6D3B;&#x7684;&#x65B9;&#x5F0F;&#x5728;&#x4FE1;&#x53F7;&#x548C;&#x5904;&#x7406;&#x5668;&#x4E4B;&#x95F4;&#x5EFA;&#x7ACB;&#x8054;&#x7CFB;&#xFF0C;&#x6765;&#x8BA9;&#x4FE1;&#x53F7;&#x5904;&#x7406;&#x66F4;&#x63A5;&#x8FD1;&#x4E8E;&#x6211;&#x4EEC;&#x6240;&#x60F3;&#x5462;&#xFF1F;&#x6709;&#x5F88;&#x591A;&#x6D41;&#x884C;&#x7684;&#x73AF;&#x5883;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4; <a href="https://cycling74.com/products/max/" target="_blank">Max</a> &#x548C; <a href="http://puredata.info" target="_blank">PureData</a>&#xFF0C;&#x8FD9;&#x4E9B;&#x73AF;&#x5883;&#x4F1A;&#x5EFA;&#x7ACB;&#x4FE1;&#x53F7;&#x5904;&#x7406;&#x7684; &#x201C;blocks&#x201D;&#xFF0C;&#x5E76;&#x4EE5;&#x6B64;&#x6765;&#x521B;&#x9020;&#x5F3A;&#x5927;&#x7684;&#x97F3;&#x6548;&#x548C;&#x6F14;&#x594F;&#x5DE5;&#x5177;&#x3002;</p>
+<p><a href="http://sourceforge.net/projects/faudiostream/" target="_blank">Faust</a> &#x662F;&#x4E00;&#x4E2A;&#x4E3A;&#x6B64;&#x8BBE;&#x8BA1;&#x51FA;&#x6765;&#x7684;&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x7528;&#x6765;&#x7F16;&#x5199;&#x9AD8;&#x5EA6;&#x590D;&#x6742; (&#x800C;&#x4E14;&#x9AD8;&#x6027;&#x80FD;) &#x7684;&#x4FE1;&#x53F7;&#x5904;&#x7406;&#x4EE3;&#x7801;&#x7684;&#x5F3A;&#x5927;&#x5DE5;&#x5177;&#x3002;Faust &#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x7CFB;&#x5217;&#x8FD0;&#x7B97;&#x7B26;&#x6765;&#x8BA9;&#x4F60;&#x5EFA;&#x7ACB; blocks (&#x5904;&#x7406;&#x5668;)&#xFF0C;&#x8FD9;&#x548C;&#x4FE1;&#x53F7;&#x6D41;&#x56FE;&#x50CF;&#x5F88;&#x76F8;&#x4F3C;&#x3002;</p>
+<p>&#x7C7B;&#x4F3C;&#x5730;&#xFF0C;&#x6211;&#x7528;&#x540C;&#x6837;&#x7684;&#x65B9;&#x5F0F;&#x5EFA;&#x7ACB;&#x4E86;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x9AD8;&#x6548;&#x5DE5;&#x4F5C;&#x7684;&#x73AF;&#x5883;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x5B9A;&#x4E49;&#x7684; <code>Signal</code>&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x57FA;&#x4E8E;&#x8FD9;&#x4E2A;&#x6982;&#x5FF5;&#x8FDB;&#x884C;&#x6269;&#x5C55;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">BlockType</span> </span>{
+    <span class="hljs-keyword">typealias</span> <span class="hljs-type">SignalType</span>
+    <span class="hljs-keyword">var</span> inputCount: <span class="hljs-type">Int</span> { <span class="hljs-keyword">get</span> }
+    <span class="hljs-keyword">var</span> outputCount: <span class="hljs-type">Int</span> { <span class="hljs-keyword">get</span> }
+    <span class="hljs-keyword">var</span> process: [<span class="hljs-type">SignalType</span>] -&gt; [<span class="hljs-type">SignalType</span>] { <span class="hljs-keyword">get</span> }
+
+    <span class="hljs-keyword">init</span>(inputCount: <span class="hljs-type">Int</span>, outputCount: <span class="hljs-type">Int</span>, process: [<span class="hljs-type">SignalType</span>] -&gt; [<span class="hljs-type">SignalType</span>])
+}
+</code></pre>
+<p>&#x4E00;&#x4E2A; <code>Block</code> &#x6709;&#x591A;&#x4E2A;&#x8F93;&#x5165;&#xFF0C;&#x591A;&#x4E2A;&#x8F93;&#x51FA;&#xFF0C;&#x548C;&#x4E00;&#x4E2A; <code>process</code> &#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5C06;&#x4FE1;&#x53F7;&#x4ECE;&#x8F93;&#x5165;&#x96C6;&#x5408;&#x8F6C;&#x6362;&#x6210;&#x8F93;&#x51FA;&#x96C6;&#x5408;&#x3002;Blocks &#x53EF;&#x4EE5;&#x6709;&#x96F6;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x8F93;&#x5165;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6709;&#x96F6;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x8F93;&#x51FA;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x4EE5;&#x4E0B;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x5EFA;&#x7ACB;&#x4E32;&#x884C;&#x7684; blocks&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">serial</span>&lt;B: BlockType&gt;<span class="hljs-params">(lhs: B, rhs: B)</span></span> -&gt; <span class="hljs-type">B</span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-type">B</span>(inputCount: lhs.inputCount, outputCount: rhs.outputCount, process: { inputs <span class="hljs-keyword">in</span>
+        <span class="hljs-keyword">return</span> rhs.process(lhs.process(inputs))
+    })
+}
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5C06; <code>lhs</code> block &#x7684;&#x8F93;&#x51FA;&#x5F53;&#x505A; <code>rhs</code> block &#x7684;&#x8F93;&#x5165;&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x3002;&#x5C31;&#x597D;&#x50CF;&#x5728;&#x4E24;&#x4E2A; blocks &#x4E2D;&#x95F4;&#x8FDE;&#x8D77;&#x4E00;&#x6839;&#x7EBF;&#x4E00;&#x6837;&#x3002;&#x5F53;&#x4F60;&#x60F3;&#x8981;&#x5E76;&#x884C;&#x5730;&#x6267;&#x884C;&#x591A;&#x4E2A; blocks &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E8B;&#x60C5;&#x5C31;&#x53D8;&#x5F97;&#x6709;&#x610F;&#x601D;&#x8D77;&#x6765;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">parallel</span>&lt;B: BlockType&gt;<span class="hljs-params">(lhs: B, rhs: B)</span></span> -&gt; <span class="hljs-type">B</span> {
+    <span class="hljs-keyword">let</span> totalInputs = lhs.inputCount + rhs.inputCount
+    <span class="hljs-keyword">let</span> totalOutputs = lhs.outputCount + rhs.outputCount
+
+    <span class="hljs-keyword">return</span> <span class="hljs-type">B</span>(inputCount: totalInputs, outputCount: totalOutputs, process: { inputs <span class="hljs-keyword">in</span>
+        <span class="hljs-keyword">var</span> outputs: [<span class="hljs-type">B</span>.<span class="hljs-type">SignalType</span>] = []
+
+        outputs += lhs.process(<span class="hljs-type">Array</span>(inputs[<span class="hljs-number">0</span>..&lt;lhs.inputCount]))
+        outputs += rhs.process(<span class="hljs-type">Array</span>(inputs[lhs.inputCount..&lt;lhs.inputCount+rhs.inputCount]))
+
+        <span class="hljs-keyword">return</span> outputs
+    })
+}
+</code></pre>
+<p>&#x4E00;&#x7EC4;&#x5E76;&#x884C;&#x8FD0;&#x884C;&#x7684; blocks &#x5C06;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x7ED3;&#x5408;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x5E76;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x66F4;&#x5927;&#x7684; block&#x3002;&#x6BD4;&#x5982;&#x4E00;&#x5BF9;&#x4EA7;&#x751F;&#x7684;&#x6B63;&#x5F26;&#x6CE2;&#x7684; <code>Block</code> &#x7EC4;&#x5408;&#x5728;&#x4E00;&#x8D77;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; <a href="http://zh.wikipedia.org/wiki/&#x53CC;&#x97F3;&#x591A;&#x9891;" target="_blank">DTMF &#x97F3;&#x8C03;</a>&#xFF0C;&#x6216;&#x8005;&#x4E24;&#x4E2A;&#x5355;&#x9891;&#x5EF6;&#x8FDF;&#x7684; <code>Block</code> &#x53EF;&#x4EE5;&#x7EC4;&#x6210;&#x4E00;&#x4E2A;&#x7ACB;&#x4F53;&#x5EF6;&#x8FDF; <code>Block</code> &#x7B49;&#x3002;&#x8FD9;&#x4E2A;&#x6982;&#x5FF5;&#x5728;&#x5B9E;&#x8DF5;&#x4E2D;&#x662F;&#x975E;&#x5E38;&#x5F3A;&#x5927;&#x7684;&#x3002;</p>
+<p>&#x90A3;&#x4E48;&#x6DF7;&#x5408;&#x5668;&#x5462;&#xFF1F;&#x6211;&#x4EEC;&#x5982;&#x4F55;&#x4ECE;&#x591A;&#x4E2A;&#x8F93;&#x5165;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x5355;&#x9891;&#x9053;&#x7684;&#x7ED3;&#x679C;&#xFF1F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x5982;&#x4E0B;&#x51FD;&#x6570;&#x6765;&#x5C06;&#x591A;&#x4E2A; block &#x5408;&#x5E76;&#x5728;&#x4E00;&#x8D77;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">merge</span>&lt;B: BlockType where B.SignalType == Signal&gt;<span class="hljs-params">(lhs: B, rhs: B)</span></span> -&gt; <span class="hljs-type">B</span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-type">B</span>(inputCount: lhs.inputCount, outputCount: rhs.outputCount, process: { inputs <span class="hljs-keyword">in</span>
+        <span class="hljs-keyword">let</span> leftOutputs = lhs.process(inputs)
+        <span class="hljs-keyword">var</span> rightInputs: [<span class="hljs-type">B</span>.<span class="hljs-type">SignalType</span>] = []
+
+        <span class="hljs-keyword">let</span> k = lhs.outputCount / rhs.inputCount
+        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-number">0</span>..&lt;rhs.inputCount  {
+            <span class="hljs-keyword">var</span> inputsToSum: [<span class="hljs-type">B</span>.<span class="hljs-type">SignalType</span>] = []
+            <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-number">0</span>..&lt;k {
+                inputsToSum.append(leftOutputs[i+(rhs.inputCount*j)])
+            }
+            <span class="hljs-keyword">let</span> summed = inputsToSum.<span class="hljs-built_in">reduce</span>(<span class="hljs-type">NullSignal</span>) { mix($<span class="hljs-number">0</span>, $<span class="hljs-number">1</span>) }
+            rightInputs.append(summed)
+        }
+
+        <span class="hljs-keyword">return</span> rhs.process(rightInputs)
+    })
+}
+</code></pre>
+<p>&#x4ECE; Faust &#x501F;&#x7528;&#x4E00;&#x4E2A;&#x60EF;&#x4F8B;&#xFF0C;&#x8F93;&#x5165;&#x7684;&#x6DF7;&#x5408;&#x662F;&#x8FD9;&#x6837;&#x8FDB;&#x884C;&#x7684;&#xFF1A;&#x53F3;&#x624B;&#x8FB9; block &#x7684;&#x8F93;&#x5165;&#x6765;&#x81EA;&#x4E8E;&#x5DE6;&#x624B;&#x8FB9;&#x5BF9;&#x8F93;&#x5165;&#x53D6;&#x6A21;&#x540E;&#x7684;&#x8F93;&#x51FA;&#x3002;&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x5C06;&#x516D;&#x4E2A;&#x9891;&#x9053;&#x7684;&#x4E09;&#x4E2A;&#x7ACB;&#x4F53;&#x58F0;&#x8F68;&#x53D8;&#x6210;&#x4E00;&#x4E2A;&#x7ACB;&#x4F53;&#x8F93;&#x51FA;&#x7684; block&#xFF1A;&#x8F93;&#x51FA;&#x9891;&#x9053; 0&#xFF0C;2&#xFF0C;4 &#x88AB;&#x6DF7;&#x5408; (&#x6BD4;&#x5982;&#x76F8;&#x52A0;) &#x8FDB;&#x8F93;&#x5165;&#x9891;&#x9053; 0&#xFF0C;&#x7136;&#x540E;&#x8F93;&#x51FA;&#x9891;&#x9053; 1&#xFF0C;3&#xFF0C;5 &#x4F1A;&#x88AB;&#x6DF7;&#x5408;&#x8FDB;&#x8F93;&#x5165;&#x9891;&#x9053; 1&#x3002;</p>
+<p>&#x540C;&#x6837;&#x7684;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x76F8;&#x53CD;&#x7684;&#x65B9;&#x6CD5;&#x5C06; block &#x7684;&#x8F93;&#x51FA;&#x5206;&#x5F00;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">split</span>&lt;B: BlockType&gt;<span class="hljs-params">(lhs: B, rhs: B)</span></span> -&gt; <span class="hljs-type">B</span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-type">B</span>(inputCount: lhs.inputCount, outputCount: rhs.outputCount, process: { inputs <span class="hljs-keyword">in</span>
+        <span class="hljs-keyword">let</span> leftOutputs = lhs.process(inputs)
+        <span class="hljs-keyword">var</span> rightInputs: [<span class="hljs-type">B</span>.<span class="hljs-type">SignalType</span>] = []
+
+        <span class="hljs-comment">// &#x4ECE; lhs &#x5C06;&#x9891;&#x9053;&#x9010;&#x4E2A;&#x590D;&#x5236;&#x8F93;&#x5165;&#x4E2D;</span>
+        <span class="hljs-keyword">let</span> k = lhs.outputCount
+        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-number">0</span>..&lt;rhs.inputCount {
+            rightInputs.append(leftOutputs[i%k])
+        }
+
+        <span class="hljs-keyword">return</span> rhs.process(rightInputs)
+    })
+}
+</code></pre>
+<p>&#x5BF9;&#x4E8E;&#x8F93;&#x51FA;&#x6211;&#x4EEC;&#x4E5F;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C;&#x7684;&#x60EF;&#x4F8B;&#xFF0C;&#x4E00;&#x4E2A;&#x7ACB;&#x4F53;&#x58F0; block &#x4F5C;&#x4E3A;&#x4E09;&#x4E2A;&#x7ACB;&#x4F53;&#x58F0; block &#x7684;&#x8F93;&#x5165; (&#x603B;&#x5171;&#x63A5;&#x53D7;&#x516D;&#x4E2A;&#x58F0;&#x9053;)&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x9891;&#x9053; 0 &#x4F5C;&#x4E3A;&#x8F93;&#x5165; 0&#xFF0C;2&#xFF0C;4&#xFF0C;&#x800C;&#x9891;&#x9053; 1 &#x4F5C;&#x4E3A; 1&#xFF0C;3&#xFF0C;5 &#x7684;&#x8F93;&#x5165;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5F53;&#x7136;&#x4E0D;&#x60F3;&#x88AB;&#x8FD9;&#x4E9B;&#x5F88;&#x957F;&#x7684;&#x51FD;&#x6570;&#x675F;&#x7F1A;&#x4F4F;&#x624B;&#x811A;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x5199;&#x4E86;&#x8FD9;&#x4E9B;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="hljs-comment">// &#x5E76;&#x884C;</span>
+<span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">func</span> |-&lt;B: BlockType&gt;<span class="hljs-params">(lhs: B, rhs: B)</span></span> -&gt; <span class="hljs-type">B</span>
+
+<span class="hljs-comment">// &#x4E32;&#x884C;</span>
+<span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">func</span> --&lt;B: BlockType&gt;<span class="hljs-params">(lhs: B, rhs: B)</span></span> -&gt; <span class="hljs-type">B</span>
+
+<span class="hljs-comment">// &#x5206;&#x5272;</span>
+<span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">func</span> -&lt;&lt;B: BlockType&gt;<span class="hljs-params">(lhs: B, rhs: B)</span></span> -&gt; <span class="hljs-type">B</span>
+
+<span class="hljs-comment">// &#x5408;&#x5E76;</span>
+<span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">func</span> &gt;-&lt;B: BlockType where B.SignalType == Signal&gt;<span class="hljs-params">(lhs: B, rhs: B)</span></span> -&gt; <span class="hljs-type">B</span>
+</code></pre>
+<p>(&#x6211;&#x89C9;&#x5F97;&#x201C;&#x5E76;&#x884C;&#x201D;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x5B9A;&#x4E49;&#x5E76;&#x4E0D;&#x662F;&#x7279;&#x522B;&#x597D;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x770B;&#x4E0A;&#x53BB;&#x548C;&#x51E0;&#x4F55;&#x4E2D;&#x7684;&#x201C;&#x5782;&#x76F4;&#x201D;&#x5C24;&#x5176;&#x76F8;&#x4F3C;&#xFF0C;&#x4F46;&#x662F;&#x73B0;&#x5728;&#x5C31;&#x8FD9;&#x6837;&#xFF0C;&#x975E;&#x5E38;&#x6B22;&#x8FCE;&#x5927;&#x5BB6;&#x7684;&#x610F;&#x89C1;)</p>
+<p>&#x73B0;&#x5728;&#x6709;&#x4E86;&#x8FD9;&#x4E9B;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5EFA;&#x7ACB;&#x4E00;&#x4E9B;&#x6709;&#x8DA3;&#x7684; blocks &#x201C;&#x56FE;&#x201D;&#x3002;&#x6BD4;&#x5982;&#x8BF4; <a href="http://zh.wikipedia.org/wiki/&#x53CC;&#x97F3;&#x591A;&#x9891;" target="_blank">DTMF &#x97F3;&#x8C03;</a>&#x53D1;&#x751F;&#x5668;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> dtmfFrequencies = [
+    ( <span class="hljs-number">941.0</span>, <span class="hljs-number">1336.0</span> ),
+
+    ( <span class="hljs-number">697.0</span>, <span class="hljs-number">1209.0</span> ),
+    ( <span class="hljs-number">697.0</span>, <span class="hljs-number">1336.0</span> ),
+    ( <span class="hljs-number">697.0</span>, <span class="hljs-number">1477.0</span> ),
+
+    ( <span class="hljs-number">770.0</span>, <span class="hljs-number">1209.0</span> ),
+    ( <span class="hljs-number">770.0</span>, <span class="hljs-number">1336.0</span> ),
+    ( <span class="hljs-number">770.0</span>, <span class="hljs-number">1477.0</span> ),
+
+    ( <span class="hljs-number">852.0</span>, <span class="hljs-number">1209.0</span> ),
+    ( <span class="hljs-number">852.0</span>, <span class="hljs-number">1336.0</span> ),
+    ( <span class="hljs-number">852.0</span>, <span class="hljs-number">1477.0</span> ),
+]
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">dtmfTone</span><span class="hljs-params">(digit: Int, sampleRate: Int)</span></span> -&gt; <span class="hljs-type">Block</span> {
+    <span class="hljs-built_in">assert</span>( digit &lt; dtmfFrequencies.<span class="hljs-built_in">count</span> )
+    <span class="hljs-keyword">let</span> (f1, f2) = dtmfFrequencies[digit]
+
+    <span class="hljs-keyword">let</span> f1Block = <span class="hljs-type">Block</span>(inputCount: <span class="hljs-number">0</span>, outputCount: <span class="hljs-number">1</span>, process: { <span class="hljs-number">_</span> <span class="hljs-keyword">in</span> [sineWave(sampleRate, f1)] })
+    <span class="hljs-keyword">let</span> f2Block = <span class="hljs-type">Block</span>(inputCount: <span class="hljs-number">0</span>, outputCount: <span class="hljs-number">1</span>, process: { <span class="hljs-number">_</span> <span class="hljs-keyword">in</span> [sineWave(sampleRate, f2)] })
+
+    <span class="hljs-keyword">return</span> ( f1Block |- f2Block ) &gt;- <span class="hljs-type">Block</span>(inputCount: <span class="hljs-number">1</span>, outputCount: <span class="hljs-number">1</span>, process: { <span class="hljs-keyword">return</span> $<span class="hljs-number">0</span> })
+}
+</code></pre>
+<p><code>dtmfTone</code> &#x51FD;&#x6570;&#x5904;&#x7406;&#x4E24;&#x4E2A;&#x5E76;&#x884C;&#x7684;&#x6B63;&#x5F26;&#x53D1;&#x751F;&#x5668;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x5B83;&#x4EEC;&#x878D;&#x5408;&#x6210;&#x4E00;&#x4E2A; &#x201C;&#x5355;&#x4F4D;&#x5143; block&#x201D;&#xFF0C;&#x8FD9;&#x4E2A; block &#x53EA;&#x662F;&#x5C06;&#x81EA;&#x5DF1;&#x7684;&#x8F93;&#x5165;&#x590D;&#x5236;&#x5230;&#x8F93;&#x51FA;&#x3002;&#x8BB0;&#x4F4F;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x672C;&#x8EAB;&#x5C31;&#x662F;&#x4E00;&#x4E2A; block&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x66F4;&#x5927;&#x7684;&#x7CFB;&#x7EDF;&#x4E2D;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;block&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5F97;&#x51FA;&#x6765;&#x8FD9;&#x4E2A;&#x60F3;&#x6CD5;&#x8574;&#x542B;&#x4E86;&#x5F88;&#x591A;&#x7684;&#x6F5C;&#x529B;&#x3002;&#x901A;&#x8FC7;&#x521B;&#x5EFA;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x66F4;&#x7D27;&#x51D1;&#x548C;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#x7684; DSL (domain specific language) &#x6765;&#x63CF;&#x8FF0;&#x590D;&#x6742;&#x7CFB;&#x7EDF;&#x7684;&#x73AF;&#x5883;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x82B1;&#x66F4;&#x5C11;&#x7684;&#x65F6;&#x95F4;&#x6765;&#x601D;&#x8003;&#x5355;&#x4E2A; block &#x7684;&#x7EC6;&#x8282;&#xFF0C;&#x5E76;&#x8F7B;&#x6613;&#x5730;&#x628A;&#x6240;&#x6709;&#x4E1C;&#x897F;&#x7EC4;&#x5408;&#x5230;&#x4E00;&#x8D77;&#x3002;</p>
+<h2 id="&#x5B9E;&#x8DF5;">&#x5B9E;&#x8DF5;</h2>
+<p>&#x5982;&#x679C;&#x6211;&#x4ECA;&#x5929;&#x8981;&#x5F00;&#x59CB;&#x505A;&#x4E00;&#x4E2A;&#x8981;&#x6C42;&#x6700;&#x9AD8;&#x6027;&#x80FD;&#x4EE5;&#x53CA;&#x4E30;&#x5BCC;&#x529F;&#x80FD;&#x7684;&#x65B0;&#x9879;&#x76EE;&#xFF0C;&#x6211;&#x4F1A;&#x6BEB;&#x4E0D;&#x72B9;&#x8C6B;&#x7684;&#x4F7F;&#x7528; <a href="http://sourceforge.net/projects/faudiostream/" target="_blank">Faust</a>&#x3002;&#x5982;&#x679C;&#x4F60;&#x5BF9;&#x51FD;&#x6570;&#x5F0F;&#x97F3;&#x9891;&#x7F16;&#x7A0B;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x8BDD;&#xFF0C;&#x6211;&#x6781;&#x529B;&#x63A8;&#x8350; Faust&#x3002;</p>
+<p>&#x8BDD;&#x867D;&#x5982;&#x6B64;&#xFF0C;&#x6211;&#x4E00;&#x4E0A;&#x63D0;&#x5230;&#x60F3;&#x6CD5;&#x7684;&#x53EF;&#x884C;&#x6027;&#x5F88;&#x5927;&#x7A0B;&#x5EA6;&#x4E0A;&#x4F9D;&#x8D56;&#x4E8E;&#x82F9;&#x679C;&#x5BF9;&#x7F16;&#x8BD1;&#x5668;&#x7684;&#x6539;&#x8FDB;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x9700;&#x8981;&#x5177;&#x6709;&#x80FD;&#x8BC6;&#x522B;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x5728; block &#x4E2D;&#x7684;&#x6A21;&#x5F0F;&#xFF0C;&#x5E76;&#x8F93;&#x51FA;&#x66F4;&#x667A;&#x80FD;&#x7684;&#x4EE3;&#x7801;&#x7684;&#x80FD;&#x529B;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x82F9;&#x679C;&#x9700;&#x8981;&#x50CF;&#x7F16;&#x8BD1; Haskell &#x4E00;&#x6837;&#x6765;&#x7F16;&#x8BD1; Swift&#x3002;&#x5728; Haskell &#x4E2D;&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#x6A21;&#x5F0F;&#x4F1A;&#x88AB;&#x538B;&#x7F29;&#x6210;&#x67D0;&#x4E00;&#x4E2A;&#x76EE;&#x6807; CPU &#x7684;&#x77E2;&#x91CF;&#x8FD0;&#x7B97;&#x3002;</p>
+<p>&#x8BF4;&#x5B9E;&#x8BDD;&#xFF0C;&#x6211;&#x89C9;&#x5F97; Swift &#x5728;&#x82F9;&#x679C;&#x7684;&#x7BA1;&#x7406;&#x4E0B;&#x662F;&#x5F88;&#x597D;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x4F1A;&#x5728;&#x5C06;&#x6765;&#x770B;&#x89C1;&#x6211;&#x5728;&#x4EE5;&#x4E0A;&#x5448;&#x73B0;&#x7684;&#x60F3;&#x6CD5;&#x4F1A;&#x53D8;&#x5F97;&#x5F88;&#x5E38;&#x89C1;&#xFF0C;&#x800C;&#x4E14;&#x6027;&#x80FD;&#x4E5F;&#x4F1A;&#x53D8;&#x5F97;&#x975E;&#x5E38;&#x597D;&#x3002;</p>
+<h2 id="&#x672A;&#x6765;">&#x672A;&#x6765;</h2>
+<p>&#x6211;&#x4F1A;&#x5C06;&#x8FD9;&#x4E2A;<a href="http://github.com/liscio/FunctionalDSP" target="_blank">&#x201C;&#x51FD;&#x6570;&#x5F0F; DPS&#x201D;&#x9879;&#x76EE;</a> &#x4FDD;&#x7559;&#x5728; GitHub &#x4E0A;&#x9762;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x8DDF;&#x8E2A;&#x8FDB;&#x5C55;&#x5E76;&#x4E14;&#x505A;&#x51FA;&#x8D21;&#x732E;&#x3002;&#x6211;&#x8BA1;&#x5212;&#x53BB;&#x7814;&#x7A76;&#x66F4;&#x52A0;&#x590D;&#x6742;&#x7684; block&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#x90A3;&#x4E9B;&#x9700;&#x8981; FFT &#x6765;&#x8BA1;&#x7B97;&#x8F93;&#x51FA;&#xFF0C;&#x6216;&#x8005;&#x9700;&#x8981; &#x201C;&#x5B58;&#x50A8;&#x201D; &#x6765;&#x8FD0;&#x884C; (&#x6BD4;&#x65B9;&#x8BF4; FIR &#x6EE4;&#x955C;&#x7B49;&#x7B49;) &#x7684;block&#x3002;</p>
+<h2 id="&#x53C2;&#x8003;&#x6587;&#x732E;">&#x53C2;&#x8003;&#x6587;&#x732E;</h2>
+<p>&#x5728;&#x5199;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x7684;&#x8FC7;&#x7A0B;&#x5F53;&#x4E2D;&#xFF0C;&#x6211;&#x7814;&#x7A76;&#x8FC7;&#x4E0B;&#x5217;&#x8BBA;&#x6587;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5BF9;&#x8FD9;&#x65B9;&#x9762;&#x7814;&#x7A76;&#x6709;&#x5174;&#x8DA3;&#x7684;&#x8BDD;&#x6211;&#x5EFA;&#x8BAE;&#x9605;&#x8BFB;&#x5B83;&#x4EEC;&#x3002;&#x5C3D;&#x7BA1;&#x8FD8;&#x6709;&#x5F88;&#x591A;&#x597D;&#x7684;&#x8D44;&#x6E90;&#xFF0C;&#x4F46;&#x56E0;&#x4E3A;&#x6211;&#x65F6;&#x95F4;&#x6709;&#x9650;&#x6240;&#x4EE5;&#x4E0D;&#x80FD;&#x4E00;&#x4E00;&#x5217;&#x4E3E;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E9B;&#x4F1A;&#x662F;&#x975E;&#x5E38;&#x597D;&#x7684;&#x8D77;&#x70B9;&#x3002;</p>
+<ul>
+<li>Thielemann, H. (2004). Audio Processing using Haskell.</li>
+<li>Cheng, E., &amp; Hudak, P. (2009). Audio Processing and Sound Synthesis in Haskell.</li>
+</ul>
+<hr>
+<p><a href="http://www.objccn.io/issue-24" target="_blank">&#x8BDD;&#x9898; #24 &#x4E0B;&#x7684;&#x66F4;&#x591A;&#x6587;&#x7AE0;</a></p>
+<p>&#x539F;&#x6587; <a href="http://www.objc.io/issue-24/functional-signal-processing.html" target="_blank">Functional Signal Processing Using Swift</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="issue-24-1-april.html" class="navigation navigation-prev " aria-label="Previous page: 音频处理的狗屋">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="issue-24-3-bifidy.html" class="navigation navigation-next " aria-label="Next page: 播放，失败，迭代：面向产品的音效设计">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"使用Swift进行函数式信号处理","level":"1.15.2","depth":2,"next":{"title":"播放，失败，迭代：面向产品的音效设计","level":"1.15.3","depth":2,"path":"publish/issue24/issue-24-3-bifidy.md","ref":"publish/issue24/issue-24-3-bifidy.md","articles":[]},"previous":{"title":"音频处理的狗屋","level":"1.15.1","depth":2,"path":"publish/issue24/issue-24-1-april.md","ref":"publish/issue24/issue-24-1-april.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"publish/issue24/issue-24-2-lizix.md","mtime":"2019-09-09T09:18:07.242Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-09T09:59:37.321Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
